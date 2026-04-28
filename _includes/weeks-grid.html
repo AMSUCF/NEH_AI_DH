@@ -1,10 +1,11 @@
 {% assign weekpages = site.pages | where_exp:"p","p.week" | sort:"week" %}
-{%- assign workshop_colors = "coral,cobalt,mustard,plum,coral,cobalt" | split: "," -%}
+{%- assign workshop_colors = "coral,cobalt,mustard,plum" | split: "," -%}
 {%- assign workshop_seen = 0 -%}
 <ol class="weeks-grid" aria-label="Twelve-week schedule">
 {% for w in weekpages %}
   {%- if w.kind == "workshop" -%}
-    {%- assign color = workshop_colors[workshop_seen] -%}
+    {%- assign color_idx = workshop_seen | modulo: 4 -%}
+    {%- assign color = workshop_colors[color_idx] -%}
     {%- assign workshop_seen = workshop_seen | plus: 1 -%}
     {%- assign block_class = "is-workshop is-color-" | append: color -%}
     {%- assign label = "Workshop" -%}

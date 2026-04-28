@@ -6,7 +6,12 @@
 
 **Architecture:** Pure Jekyll — no JS framework, no bundler, no build step beyond `jekyll build`. The design system lives in `assets/css/style.css` and a small set of `_includes`. The schedule grid is rendered by a Liquid loop over `site.pages` filtered to `/weeks/`, reading new `kind` and `theme` keys we'll add to each weekly module's YAML front-matter.
 
-**Tech Stack:** Jekyll (GitHub Pages gem), Liquid templates, vanilla CSS (custom properties, `@keyframes`, variable-font `font-variation-settings`), one inline SVG for the animated stitch border. Google Fonts: Bricolage Grotesque + Inter + JetBrains Mono.
+**Tech Stack:** Jekyll (GitHub Pages gem), Liquid templates, vanilla CSS (custom properties, `@keyframes`, variable-font `font-variation-settings`). Google Fonts: Bricolage Grotesque + Inter + JetBrains Mono.
+
+**As-built deviations from the plan (intentional):**
+- `_data/weeks.yml` was not created. The schedule grid reads per-page front-matter (`kind`, `theme`) via `site.pages | where_exp:"p","p.week"`. Co-locating metadata with the weekly content turned out to be cleaner than a parallel data file at this scale (12 fixed weeks).
+- `_includes/stitch-frame.svg` was not created. The marching stitched border on workshop callouts is built from four `linear-gradient` backgrounds animated via `background-position` in `@keyframes stitchRun` — pure CSS, no extra fetch, no SVG to maintain.
+- The workshop-color rotation was hardened post-review to use `workshop_seen | modulo: 4` instead of indexing into a 6-element array, so a future 7th workshop week won't produce an unstyled tile.
 
 ---
 
