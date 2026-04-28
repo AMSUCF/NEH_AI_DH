@@ -1,190 +1,220 @@
+/* ============================================================
+   NEH DH+AI Workshop Series — Modern-Quilt Design System
+   ============================================================ */
+
 :root {
-  --color-bg: #fbf7ee;
-  --color-surface: #ffffff;
-  --color-ink: #1f2933;
-  --color-muted: #5a6573;
-  --color-accent: #8a3324;
-  --color-accent-soft: #e8d6b0;
-  --color-rule: #d8d2c1;
-  --max-width: 60rem;
-  --serif: "Source Serif 4", Georgia, serif;
-  --sans: "Source Sans 3", system-ui, sans-serif;
-  --mono: "JetBrains Mono", Menlo, monospace;
+  /* Palette */
+  --bone:   #faf6ec;
+  --paper:  #ffffff;
+  --ink:    #141414;
+  --rule:   #1a1a1a;
+  --muted:  #5a5a5a;
+  --coral:  #ff5a4e;
+  --cobalt: #1545c4;
+  --mustard:#e8b53a;
+  --sage:   #7a8f4a;
+  --plum:   #5d2e5f;
+
+  /* Type */
+  --display: "Bricolage Grotesque", "Inter", system-ui, sans-serif;
+  --sans:    "Inter", system-ui, sans-serif;
+  --mono:    "JetBrains Mono", Menlo, monospace;
+
+  /* Layout */
+  --max-width: 64rem;
+  --gutter: 1.5rem;
 }
 
-* { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: border-box; }
 
-html { font-size: 17px; }
+html { font-size: 17px; -webkit-text-size-adjust: 100%; }
 
 body {
   margin: 0;
-  background: var(--color-bg);
-  color: var(--color-ink);
-  font-family: var(--serif);
-  line-height: 1.6;
+  background: var(--bone);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.55;
   -webkit-font-smoothing: antialiased;
 }
 
-a { color: var(--color-accent); text-decoration: underline; text-underline-offset: 2px; }
-a:hover { color: #6b2418; }
-
-.site-header {
-  background: var(--color-accent);
-  color: #fbf7ee;
-  padding: 2.5rem 1.5rem 2rem;
-  border-bottom: 4px solid #6b2418;
-}
-
-.header-content {
-  max-width: var(--max-width);
-  margin: 0 auto;
-}
-
-.site-title {
-  font-family: var(--sans);
-  font-weight: 700;
-  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
-  margin: 0 0 0.25rem;
-  letter-spacing: -0.01em;
-}
-
-.site-tagline {
-  font-family: var(--sans);
-  font-style: italic;
-  margin: 0 0 1rem;
-  opacity: 0.92;
-  font-size: 1rem;
-}
-
-.site-nav { display: flex; flex-wrap: wrap; gap: 1.25rem; }
-
-.nav-link {
-  color: #fbf7ee;
+/* Skip link — visible only when focused */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--ink);
+  color: var(--bone);
+  padding: 0.6rem 1rem;
   font-family: var(--sans);
   font-weight: 600;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 2px;
-  font-size: 0.95rem;
+  z-index: 100;
 }
-.nav-link:hover { color: #fbf7ee; border-bottom-color: var(--color-accent-soft); }
-.nav-link.active { border-bottom-color: var(--color-accent-soft); }
+.skip-link:focus { left: 0; }
 
+/* Focus visible — applied to interactive elements only.
+   Excludes <main> (skip-link target) and <body> so the page-sized
+   containers don't draw a loud full-width outline when focused. */
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+main:focus,
+main:focus-visible,
+body:focus,
+body:focus-visible {
+  outline: none;
+}
+
+/* Layout */
 .content-wrap {
   max-width: var(--max-width);
-  margin: 2.5rem auto;
-  padding: 0 1.5rem;
+  margin: 0 auto;
+  padding: 2.5rem var(--gutter) 3rem;
 }
 
-.page-content h1, .page-content h2, .page-content h3, .page-content h4 {
-  font-family: var(--sans);
-  color: var(--color-ink);
-  margin-top: 2.2rem;
-  margin-bottom: 0.6rem;
-  line-height: 1.25;
-}
-.page-content h1 { font-size: 2rem; border-bottom: 2px solid var(--color-rule); padding-bottom: 0.4rem; }
-.page-content h2 { font-size: 1.45rem; color: var(--color-accent); }
-.page-content h3 { font-size: 1.18rem; }
-.page-content h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-muted); }
+.page-content > :first-child { margin-top: 0; }
 
-.page-content p { margin: 0.8rem 0 1rem; }
-.page-content ul, .page-content ol { padding-left: 1.4rem; }
+/* Headings — variable Bricolage with optical-size scaling */
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4 {
+  font-family: var(--display);
+  color: var(--ink);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 2.4rem 0 0.6rem;
+}
+
+.page-content h1 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-variation-settings: "opsz" 96, "wdth" 108, "wght" 700;
+  margin-top: 0.5rem;
+  animation: heroRise 480ms cubic-bezier(.2,.7,.2,1) both;
+}
+
+.page-content h2 {
+  font-size: clamp(1.45rem, 2.6vw, 1.85rem);
+  font-variation-settings: "opsz" 48, "wdth" 105, "wght" 700;
+}
+
+.page-content h3 {
+  font-size: 1.18rem;
+  font-variation-settings: "opsz" 24, "wdth" 100, "wght" 600;
+}
+
+.page-content h4 {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  font-variation-settings: "opsz" 14, "wdth" 100, "wght" 600;
+  margin-top: 1.6rem;
+}
+
+@keyframes heroRise {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Body copy */
+.page-content p { margin: 0.7rem 0 1rem; max-width: 42rem; }
+.page-content ul,
+.page-content ol { padding-left: 1.4rem; max-width: 42rem; }
 .page-content li { margin: 0.35rem 0; }
 
-.page-content blockquote {
-  border-left: 4px solid var(--color-accent-soft);
-  margin: 1.2rem 0;
-  padding: 0.4rem 1rem;
-  color: var(--color-muted);
-  background: rgba(232, 214, 176, 0.2);
+/* Links */
+a {
+  color: var(--cobalt);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+  text-decoration-style: dashed;
+}
+a:hover, a:focus {
+  color: var(--ink);
+  text-decoration-style: solid;
+  text-decoration-color: var(--coral);
 }
 
+/* Code */
 .page-content code {
   font-family: var(--mono);
   font-size: 0.9em;
-  background: var(--color-accent-soft);
+  background: rgba(232, 181, 58, 0.22);
   padding: 0.1rem 0.35rem;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 .page-content pre {
   font-family: var(--mono);
-  background: #1f2933;
-  color: #fbf7ee;
-  padding: 1rem;
-  border-radius: 6px;
+  background: var(--ink);
+  color: var(--bone);
+  padding: 1rem 1.1rem;
+  border: 2px solid var(--ink);
   overflow-x: auto;
   font-size: 0.88em;
+  line-height: 1.55;
 }
 .page-content pre code { background: transparent; padding: 0; color: inherit; }
 
+/* Blockquote */
+.page-content blockquote {
+  border-left: 4px solid var(--coral);
+  margin: 1.2rem 0;
+  padding: 0.4rem 1rem;
+  color: var(--muted);
+  background: transparent;
+  font-style: italic;
+}
+
+/* Tables (the readings page uses several; the schedule table on index is replaced by the grid in Task 6) */
 .page-content table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1.2rem 0;
+  margin: 1.4rem 0;
   font-family: var(--sans);
   font-size: 0.95rem;
+  border: 2px solid var(--ink);
 }
-.page-content th, .page-content td {
-  border: 1px solid var(--color-rule);
+.page-content th,
+.page-content td {
+  border: 1px solid var(--ink);
   padding: 0.55rem 0.7rem;
   text-align: left;
   vertical-align: top;
 }
-.page-content th { background: var(--color-accent-soft); }
+.page-content th {
+  background: var(--mustard);
+  color: var(--ink);
+  font-family: var(--display);
+  font-variation-settings: "opsz" 14, "wdth" 100, "wght" 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.82rem;
+}
 
+/* Horizontal rule — dashed stitched look */
 .page-content hr {
   border: 0;
-  border-top: 1px solid var(--color-rule);
+  height: 4px;
+  background-image: linear-gradient(90deg, var(--ink) 0 8px, transparent 8px 16px);
+  background-size: 16px 4px;
+  background-repeat: repeat-x;
   margin: 2rem 0;
 }
 
-.workshop-callout {
-  background: var(--color-surface);
-  border: 1px solid var(--color-rule);
-  border-left: 5px solid var(--color-accent);
-  padding: 1rem 1.25rem;
-  margin: 1.5rem 0;
-  border-radius: 4px;
-}
-.workshop-callout strong { font-family: var(--sans); }
-
-.async-callout {
-  background: rgba(232, 214, 176, 0.35);
-  border: 1px dashed var(--color-accent);
-  padding: 1rem 1.25rem;
-  margin: 1.5rem 0;
-  border-radius: 4px;
+/* Reduced-motion gate — kill decorative animations, keep state changes */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
 }
 
-.tag {
-  display: inline-block;
-  font-family: var(--sans);
-  font-size: 0.78rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  padding: 0.15rem 0.55rem;
-  border-radius: 999px;
-  margin-right: 0.4rem;
-}
-.tag-light { background: #d8efd8; color: #1f5230; }
-.tag-standard { background: #fce5b3; color: #6b4a13; }
-.tag-deep { background: #efd0c9; color: #6b2418; }
-
-.site-footer {
-  background: #1f2933;
-  color: #c5c8cc;
-  padding: 2rem 1.5rem;
-  margin-top: 3rem;
-  border-top: 4px solid var(--color-accent);
-}
-.footer-content { max-width: var(--max-width); margin: 0 auto; font-family: var(--sans); font-size: 0.88rem; }
-.footer-copy { margin: 0 0 0.5rem; }
-.footer-note { margin: 0; opacity: 0.75; font-style: italic; }
-
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   html { font-size: 16px; }
-  .content-wrap { margin: 1.5rem auto; }
-  .site-header { padding: 1.5rem 1rem; }
+  .content-wrap { padding: 1.75rem var(--gutter) 2rem; }
 }
