@@ -1,6 +1,8 @@
 ---
 week: 5
 title: "Workshop 3: AI for Visual Analysis"
+kind: workshop
+theme: "Visual analysis with Claude Artifacts"
 starts: 2026-06-08
 workshop:
   title: "Workshop 3: AI for Visual Analysis"

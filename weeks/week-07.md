@@ -1,6 +1,8 @@
 ---
 week: 7
 title: "Workshop 4: Web and Interactive Applications"
+kind: workshop
+theme: "Building interactive tools with Claude Code Web"
 starts: 2026-06-22
 workshop:
   title: "Workshop 4: Web and Interactive Applications"

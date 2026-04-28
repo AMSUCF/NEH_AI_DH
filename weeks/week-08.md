@@ -1,6 +1,8 @@
 ---
 week: 8
 title: "Rebuilding a Handout (Asynchronous)"
+kind: async
+theme: "Code Web reinforcement: rebuild a static handout"
 starts: 2026-06-29
 ---
 

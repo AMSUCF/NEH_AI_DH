@@ -1,6 +1,8 @@
 ---
 week: 1
 title: "Workshop 1: Introducing AI for DH Pedagogy"
+kind: workshop
+theme: "LLMs, models, harnesses, the higher-ed crisis"
 starts: 2026-05-11
 workshop:
   title: "Workshop 1: Introducing AI for DH Pedagogy"

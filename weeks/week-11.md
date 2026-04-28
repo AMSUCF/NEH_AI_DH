@@ -1,6 +1,8 @@
 ---
 week: 11
 title: "Workshop 6: Agentic Futures, Curricular Sustainability"
+kind: workshop
+theme: "Cowork, Claude CLI, agentic futures"
 starts: 2026-07-20
 workshop:
   title: "Workshop 6: Agentic Futures, Curricular Sustainability"

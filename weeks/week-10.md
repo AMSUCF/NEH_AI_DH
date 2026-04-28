@@ -1,6 +1,8 @@
 ---
 week: 10
 title: "UDL and AI Policy (Asynchronous)"
+kind: async
+theme: "UDL and AI syllabus policy"
 starts: 2026-07-13
 ---
 

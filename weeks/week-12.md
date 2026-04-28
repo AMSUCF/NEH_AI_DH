@@ -1,6 +1,8 @@
 ---
 week: 12
 title: "Sustaining and Sharing (Asynchronous)"
+kind: async
+theme: "Sustainability, sharing, final reflection"
 starts: 2026-07-27
 ---
 

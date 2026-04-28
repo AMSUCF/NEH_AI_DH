@@ -1,6 +1,8 @@
 ---
 week: 2
 title: "LLM Fundamentals (Asynchronous)"
+kind: async
+theme: "LLM fundamentals reinforcement"
 starts: 2026-05-18
 ---
 

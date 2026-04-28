@@ -1,6 +1,8 @@
 ---
 week: 9
 title: "Workshop 5: Playful Approaches and Creative Code"
+kind: workshop
+theme: "Playful, accessible, creative code; AI policy drafting"
 starts: 2026-07-06
 workshop:
   title: "Workshop 5: Playful Approaches and Creative Code"

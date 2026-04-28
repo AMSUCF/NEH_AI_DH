@@ -1,6 +1,8 @@
 ---
 week: 3
 title: "Workshop 2: AI for Textual Analysis"
+kind: workshop
+theme: "Text analysis with Claude Projects"
 starts: 2026-05-25
 workshop:
   title: "Workshop 2: AI for Textual Analysis"

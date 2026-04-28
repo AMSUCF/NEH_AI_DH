@@ -1,6 +1,8 @@
 ---
 week: 4
 title: "Distant Reading (Asynchronous)"
+kind: async
+theme: "Distant reading reinforcement"
 starts: 2026-06-01
 ---
 

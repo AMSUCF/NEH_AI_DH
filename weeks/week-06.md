@@ -1,6 +1,8 @@
 ---
 week: 6
 title: "Visual AI in the Wild (Asynchronous)"
+kind: async
+theme: "Image generation, detection, and visual ethics"
 starts: 2026-06-15
 ---
 
