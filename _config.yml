@@ -1,0 +1,25 @@
+title: NEH DH+AI Workshop Series
+description: Building a Digital Humanities Generative AI Learning Community at UCF — Summer 2026
+baseurl: "/NEHWorkshops"
+url: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+
+plugins:
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
