@@ -336,3 +336,87 @@ a:hover, a:focus {
   .site-nav { gap: 1rem; }
   .nav-link { font-size: 0.85rem; }
 }
+
+/* ===== Weeks grid (the quilt top) ===== */
+.weeks-grid {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border: 2px solid var(--ink);
+  background: var(--ink); /* shows as the seams between blocks */
+  max-width: none;
+}
+
+.week-block {
+  position: relative;
+  background: var(--bone);
+  margin: 0;
+  border: 0;
+  outline: 1px solid var(--ink); /* gives every block a clean ink seam */
+  transition: transform 220ms ease, box-shadow 220ms ease, z-index 0s linear 220ms;
+}
+
+.week-block:hover {
+  z-index: 2;
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0 var(--ink);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.week-block-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1.1rem 1rem 1rem;
+  text-decoration: none;
+  color: inherit;
+  min-height: 9.5rem;
+}
+.week-block-link:hover, .week-block-link:focus { text-decoration: none; color: inherit; }
+
+.week-num {
+  font-family: var(--display);
+  font-variation-settings: "opsz" 96, "wdth" 115, "wght" 700;
+  font-size: 2.6rem;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+.week-kind {
+  font-family: var(--display);
+  font-variation-settings: "opsz" 14, "wdth" 100, "wght" 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.week-theme {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  line-height: 1.35;
+  margin-top: auto;
+}
+.week-date {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  margin-top: 0.4rem;
+  opacity: 0.85;
+}
+
+/* Workshop color rotation */
+.week-block.is-color-coral   { background: var(--coral);   color: var(--bone); }
+.week-block.is-color-cobalt  { background: var(--cobalt);  color: var(--bone); }
+.week-block.is-color-mustard { background: var(--mustard); color: var(--ink); }
+.week-block.is-color-plum    { background: var(--plum);    color: var(--bone); }
+.week-block.is-async         { background: var(--bone);    color: var(--ink); }
+
+@media (max-width: 880px) {
+  .weeks-grid { grid-template-columns: repeat(2, 1fr); }
+  .week-num { font-size: 2.2rem; }
+  .week-block-link { min-height: 8rem; }
+}
+@media (max-width: 480px) {
+  .weeks-grid { grid-template-columns: 1fr; }
+  .week-block-link { min-height: 0; padding: 0.85rem 1rem 1rem; }
+}

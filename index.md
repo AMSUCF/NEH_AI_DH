@@ -54,20 +54,7 @@ The series unfolds across three arcs:
 
 All workshops are at CHDR, 10 AM – noon, on Tuesdays. They are streamed and recorded; attendance is optional.
 
-| Week | Of | In-person | Theme |
-|------|----|-----------|-------|
-| [1](weeks/week-01.md) | May 11 | **Workshop 1 — Tue May 13** | LLMs, models, harnesses, the higher-ed crisis |
-| [2](weeks/week-02.md) | May 18 | async deep-dive | LLM fundamentals reinforcement |
-| [3](weeks/week-03.md) | May 25 | **Workshop 2 — Tue May 27** | Text analysis with Claude Projects |
-| [4](weeks/week-04.md) | June 1 | async deep-dive | Distant reading reinforcement |
-| [5](weeks/week-05.md) | June 8 | **Workshop 3 — Tue June 10** | Visual analysis with Claude Artifacts |
-| [6](weeks/week-06.md) | June 15 | async deep-dive | Image generation, detection, and visual ethics |
-| [7](weeks/week-07.md) | June 22 | **Workshop 4 — Tue June 24** | Building interactive tools with Claude Code Web |
-| [8](weeks/week-08.md) | June 29 | async deep-dive | Code Web reinforcement: rebuild a static handout |
-| [9](weeks/week-09.md) | July 6 | **Workshop 5 — Tue July 8** | Playful, accessible, creative code; AI policy drafting |
-| [10](weeks/week-10.md) | July 13 | async deep-dive | UDL and AI syllabus policy |
-| [11](weeks/week-11.md) | July 20 | **Workshop 6 — Tue July 22** | Cowork, Claude CLI, agentic futures |
-| [12](weeks/week-12.md) | July 27 | async deep-dive | Sustainability, sharing, final reflection |
+{% include weeks-grid.html %}
 
 ## How the Asynchronous Weeks Work
 
@@ -98,18 +85,7 @@ The full curated list is available on the [Readings](readings.md) page; the full
 
 ## Weekly Modules
 
-- [Week 1 — May 11: Workshop 1 — Introducing AI for DH Pedagogy](weeks/week-01.md)
-- [Week 2 — May 18: LLM Fundamentals (async)](weeks/week-02.md)
-- [Week 3 — May 25: Workshop 2 — AI for Textual Analysis](weeks/week-03.md)
-- [Week 4 — June 1: Distant Reading (async)](weeks/week-04.md)
-- [Week 5 — June 8: Workshop 3 — AI for Visual Analysis](weeks/week-05.md)
-- [Week 6 — June 15: Visual AI in the Wild (async)](weeks/week-06.md)
-- [Week 7 — June 22: Workshop 4 — Web and Interactive Applications](weeks/week-07.md)
-- [Week 8 — June 29: Rebuilding a Handout (async)](weeks/week-08.md)
-- [Week 9 — July 6: Workshop 5 — Playful Approaches and Creative Code](weeks/week-09.md)
-- [Week 10 — July 13: UDL and AI Policy (async)](weeks/week-10.md)
-- [Week 11 — July 20: Workshop 6 — Agentic Futures, Curricular Sustainability](weeks/week-11.md)
-- [Week 12 — July 27: Sustaining and Sharing (async)](weeks/week-12.md)
+The grid above links to each module. Workshop weeks are colored; async weeks are bone.
 
 ## Acknowledgements
 
