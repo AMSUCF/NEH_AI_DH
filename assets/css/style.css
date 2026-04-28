@@ -478,3 +478,39 @@ a:hover, a:focus {
   font-variation-settings: "opsz" 14, "wdth" 100, "wght" 700;
   color: var(--ink);
 }
+
+/* ===== Reading-time tags ===== */
+.tag {
+  display: inline-block;
+  font-family: var(--display);
+  font-variation-settings: "opsz" 14, "wdth" 100, "wght" 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.18rem 0.6rem;
+  margin-right: 0.4rem;
+  border: 2px solid var(--ink);
+  background: var(--bone);
+  color: var(--ink);
+  white-space: nowrap;
+}
+.tag-light    { background: var(--sage);    color: var(--bone); }
+.tag-standard { background: var(--mustard); color: var(--ink); }
+.tag-deep     { background: var(--plum);    color: var(--bone); }
+
+/* ===== Animated stitch divider — opt-in via class ===== */
+.stitch-divider {
+  height: 4px;
+  margin: 2.25rem auto;
+  max-width: 100%;
+  background-image: linear-gradient(90deg, var(--ink) 0 8px, transparent 8px 16px);
+  background-size: 16px 4px;
+  background-repeat: repeat-x;
+  animation: stitchDraw 1.4s 0.1s cubic-bezier(.55,.06,.26,1) both;
+  width: 100%;
+  transform-origin: left center;
+}
+@keyframes stitchDraw {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
