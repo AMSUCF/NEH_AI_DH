@@ -1,7 +1,7 @@
 title: NEH DH+AI Workshop Series
 description: Building a Digital Humanities Generative AI Learning Community at UCF — Summer 2026
-baseurl: "/NEHWorkshops"
-url: ""
+baseurl: "/NEH_AI_DH"
+url: "https://amsucf.github.io"
 
 markdown: kramdown
 kramdown:
@@ -10,6 +10,13 @@ kramdown:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-relative-links
+
+# jekyll-relative-links rewrites .md links in markdown bodies to the
+# rendered .html URL — keeps existing weeks/week-NN.md hrefs working.
+relative_links:
+  enabled: true
+  collections: false
 
 defaults:
   - scope:
@@ -23,3 +30,6 @@ exclude:
   - LICENSE
   - Gemfile
   - Gemfile.lock
+  - vendor
+  - docs
+  - .superpowers
