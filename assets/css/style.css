@@ -405,7 +405,7 @@ a:hover, a:focus {
 }
 
 /* Workshop color rotation */
-.week-block.is-color-coral   { background: var(--coral);   color: var(--bone); }
+.week-block.is-color-coral   { background: var(--coral);   color: var(--ink); }
 .week-block.is-color-cobalt  { background: var(--cobalt);  color: var(--bone); }
 .week-block.is-color-mustard { background: var(--mustard); color: var(--ink); }
 .week-block.is-color-plum    { background: var(--plum);    color: var(--bone); }
