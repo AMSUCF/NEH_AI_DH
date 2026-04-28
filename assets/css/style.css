@@ -494,7 +494,7 @@ a:hover, a:focus {
   color: var(--ink);
   white-space: nowrap;
 }
-.tag-light    { background: var(--sage);    color: var(--bone); }
+.tag-light    { background: var(--sage);    color: var(--ink); }
 .tag-standard { background: var(--mustard); color: var(--ink); }
 .tag-deep     { background: var(--plum);    color: var(--bone); }
 
