@@ -420,3 +420,61 @@ a:hover, a:focus {
   .weeks-grid { grid-template-columns: 1fr; }
   .week-block-link { min-height: 0; padding: 0.85rem 1rem 1rem; }
 }
+
+/* ===== Workshop callout — animated stitched border ===== */
+.workshop-callout {
+  position: relative;
+  background: var(--paper);
+  padding: 1.1rem 1.35rem;
+  margin: 1.5rem 0;
+  font-family: var(--sans);
+  isolation: isolate;
+}
+.workshop-callout strong {
+  font-family: var(--display);
+  font-variation-settings: "opsz" 14, "wdth" 100, "wght" 700;
+  color: var(--cobalt);
+}
+.workshop-callout::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid var(--ink);
+  pointer-events: none;
+}
+.workshop-callout::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, var(--coral) 50%, transparent 0) repeat-x top    left  / 16px 3px,
+    linear-gradient(90deg, var(--coral) 50%, transparent 0) repeat-x bottom left  / 16px 3px,
+    linear-gradient(0deg,  var(--coral) 50%, transparent 0) repeat-y left   top   / 3px 16px,
+    linear-gradient(0deg,  var(--coral) 50%, transparent 0) repeat-y right  top   / 3px 16px;
+  animation: stitchRun 18s linear infinite;
+}
+@keyframes stitchRun {
+  to {
+    background-position:
+      16px top,
+      -16px bottom,
+      left -16px,
+      right 16px;
+  }
+}
+
+/* ===== Async callout — calmer, non-animated counterpart ===== */
+.async-callout {
+  position: relative;
+  background: rgba(232, 181, 58, 0.18);
+  border: 2px dashed var(--ink);
+  padding: 1.1rem 1.35rem;
+  margin: 1.5rem 0;
+  font-family: var(--sans);
+}
+.async-callout strong {
+  font-family: var(--display);
+  font-variation-settings: "opsz" 14, "wdth" 100, "wght" 700;
+  color: var(--ink);
+}
