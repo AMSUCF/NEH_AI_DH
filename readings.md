@@ -86,7 +86,6 @@ These four anchor the series. You do not need to read them cover-to-cover — wo
 - <span class="tag tag-light">Light</span> MLA Executive Council. ["Educational Technologies and AI Agents."](https://news.mla.hcommons.org/2026/01/30/educational-technologies-and-ai-agents/) *MLA News*, January 30, 2026.
 - <span class="tag tag-light">Light</span> Mollick, Ethan. ["The Future of Education in a World of AI."](https://www.oneusefulthing.org/p/the-future-of-education-in-a-world) *One Useful Thing.*
 - <span class="tag tag-light">Light</span> Locke, Brandon. ["Digital Humanities Pedagogy as Essential Liberal Education."](http://www.digitalhumanities.org/dhq/vol/11/3/000303/000303.html) *Digital Humanities Quarterly* 11.3 (2017).
-- <span class="tag tag-standard">Standard</span> Salter, Anastasia, and Mel Stanfill. ENG 6813 *Interdisciplinary Teaching*, [Week 9 module on Playful, Accessible, and Inclusive Design](../InterdisciplinaryTeaching-main/InterdisciplinaryTeaching-main/weeks/week-09.md). Cross-references the AI policy assignment.
 
 ---
 
@@ -111,9 +110,8 @@ These four anchor the series. You do not need to read them cover-to-cover — wo
 
 ## Companion course materials
 
-The full reading lists for the parallel and companion courses are linked here for reference:
+The full reading lists for related courses are linked here for reference:
 
-- Salter & Stanfill. ENG 6813 *Interdisciplinary Teaching* (Summer 2026) — see `InterdisciplinaryTeaching-main/index.md`.
 - Salter. ENG 6806 *Humanities in the Age of AI* (Fall 2025) — see `HumanitiesAI-main/index.md`.
 - Salter. ENG 6819 *Critical Making in Digital Humanities* (Spring 2026) — see `CriticalMaking2026-main/index.md`.
 - Salter & Fan. *Distant Coding for the Digital Humanities* (MLA 2026) — see `DistantCoding-main/index.md`.

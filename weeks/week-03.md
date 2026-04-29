@@ -16,7 +16,9 @@ This workshop is the first deep dive: we use **Claude Projects** to do textual a
 <div class="workshop-callout" markdown="1">
 **NEH Workshop 2 — Tuesday, May 27, 10 AM – noon, CHDR**
 
-Streamed and recorded. ENG 6813 students who attend extend the workshop discussion; those who do not complete the asynchronous version of this week's exercise.
+Streamed and recorded. Open to UCF faculty, graduate students, and the broader NEH learning community.
+
+[Open the slide deck →]({{ '/slides/web/w03/' | relative_url }}){:.btn}
 </div>
 
 ## What to Bring
@@ -52,13 +54,10 @@ Optional, for a deeper grounding:
 3. Ask Claude to generate an **Artifact** that visualizes one finding (a word cloud, a frequency chart, a network diagram, a comparative table).
 4. Critique what you see. Compare to what you would have noticed in close reading. Document at least one place Claude got it wrong.
 
-ENG 6813 students post the Artifact link, screenshots, and a paragraph of reflection to the workshop discussion.
-
 ## Pedagogical Note
 
 The point of this exercise is not the visualization. The point is the *iteration.* Notice when you have to push back, refine, ask Claude to reconsider. That iteration is the actual humanities work — and it is teachable. When you bring this exercise into a course, scaffold the iteration explicitly: "show me three prompts you tried before you got the result you used."
 
 ## Cross-references
 
-- Companion ENG 6813 module: [Week 3](../../InterdisciplinaryTeaching-main/InterdisciplinaryTeaching-main/weeks/week-03.md)
 - Source materials: `HumanitiesAI/weekfour.md` (distant reading exercise); `DistantCodingUMKC` Example 2 (technology corpus); `CriticalMaking2026/exercises/eight_analysis`.

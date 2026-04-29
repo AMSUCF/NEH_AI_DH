@@ -16,7 +16,9 @@ The second Code Web workshop is a deliberate counterweight to the first. Worksho
 <div class="workshop-callout" markdown="1">
 **NEH Workshop 5 — Tuesday, July 8, 10 AM – noon, CHDR**
 
-Streamed and recorded. ENG 6813 students who attend extend the workshop discussion; those who do not complete the asynchronous version. Note: the *Course Syllabus* deliverable is due Sunday, July 19 — this workshop directly supports that work.
+Streamed and recorded. Open to UCF faculty, graduate students, and the broader NEH learning community.
+
+[Open the slide deck →]({{ '/slides/web/w09/' | relative_url }}){:.btn}
 </div>
 
 ## What to Bring
@@ -59,9 +61,7 @@ Two halves, both required:
 
 **Part A — Build a small playful tool.** Use Claude Code Web to build an interactive teaching tool relevant to your discipline. Deploy via GitHub Pages. Prioritize delight, weirdness, and clarity over scale — small is good. *Source: `HumanitiesAI/weeknine.md` and `weektwelve.md`; `CriticalMaking2026/exercises/`.*
 
-**Part B — Draft a course AI policy.** Write a one-page AI policy for a course you teach (or plan to teach). Address copyright, attribution, accessibility, equity of access, labor, and UDL. Frame the policy as an invitation, not a prohibition — what does ethical use *enable*, not just what does it forbid? *Source: ENG 6813 [Week 9 prompt](../../InterdisciplinaryTeaching-main/InterdisciplinaryTeaching-main/weeks/week-09.md).*
-
-ENG 6813 students post both deliverables (live URL + policy text) to the workshop discussion.
+**Part B — Draft a course AI policy.** Write a one-page AI policy for a course you teach (or plan to teach). Address copyright, attribution, accessibility, equity of access, labor, and UDL. Frame the policy as an invitation, not a prohibition — what does ethical use *enable*, not just what does it forbid?
 
 ## Pedagogical Note
 
@@ -69,5 +69,4 @@ The most common mistake in AI policies is treating them as a fence. The students
 
 ## Cross-references
 
-- Companion ENG 6813 module: [Week 9](../../InterdisciplinaryTeaching-main/InterdisciplinaryTeaching-main/weeks/week-09.md) (Playful, Accessible, and Inclusive Design).
 - Source materials: `HumanitiesAI/weeknine.md` (recommender), `weektwelve.md` (agentic Code Web); `CriticalMaking2026/exercises/eight_analysis.md`, `nine_generation.md`, `eleven_narrative.md`.

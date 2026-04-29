@@ -1,0 +1,329 @@
+{
+  "week": "w09",
+  "title": "Workshop 5 — Playful Approaches and Creative Code",
+  "slides": [
+    {
+      "id": "cover",
+      "layout": "cover",
+      "title": "Workshop 5",
+      "subtitle": "Playful Approaches, Creative Code, AI Policy",
+      "meta": "Tuesday, July 8, 2026 · 10 AM – noon · CHDR",
+      "image": {
+        "src": "cover.webp",
+        "alt": "Procedural — Code and Rules"
+      },
+      "media": [
+        {
+          "source": "AI_WeekNine",
+          "file": "image1.jpeg",
+          "as": "cover",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "why-playful",
+      "layout": "section",
+      "kicker": "Part 1",
+      "title": "Why playful",
+      "lead": "Refik Anadol does it. Mark Sample does it. Allison Parrish does it. Play makes the labor of iteration visible and survivable.",
+      "media": []
+    },
+    {
+      "id": "road-so-far",
+      "layout": "image-bullets",
+      "title": "The road so far",
+      "bullets": [
+        "**Textual** (Workshops 1–2): close reading at corpus scale with Projects.",
+        "**Visual** (Workshop 3): image-to-text and alt-text with Artifacts.",
+        "**Procedural** (Workshop 4 → today): you're now building things that *run.*"
+      ],
+      "image": {
+        "src": "road-so-far.webp",
+        "alt": "The road so far overview"
+      },
+      "media": [
+        {
+          "source": "AI_WeekNine",
+          "file": "image3.png",
+          "as": "road-so-far",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "what-were-building",
+      "layout": "image-bullets",
+      "title": "What we're building toward",
+      "bullets": [
+        "Small. Strange. Made for *one course* or *one corpus*.",
+        "Not an app. Not a startup. A pedagogical artifact.",
+        "Survives because it's specific. Travels because it's open."
+      ],
+      "image": {
+        "src": "building-toward.webp",
+        "alt": "What we are building toward"
+      },
+      "media": [
+        {
+          "source": "AI_WeekNine",
+          "file": "image11.jpeg",
+          "as": "building-toward",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "demo-memorial",
+      "layout": "demo-slot",
+      "title": "Live build: a memorial Artifact",
+      "note": "I build something small and a little strange — a memorial, a generator, a recommender for an obscure corpus. Watch how the dataset shapes the design.",
+      "media": []
+    },
+    {
+      "id": "examples-tools",
+      "layout": "image-bullets",
+      "title": "Pick one (or invent your own)",
+      "bullets": [
+        "A **clickable timeline** for a course unit.",
+        "A **recommender** that takes a few inputs and returns a curated suggestion.",
+        "A **quiz / knowledge-check** that *explains* rather than grades.",
+        "A **generator** — Markov mash-up of public-domain text, a centosizer, a found-poetry tool."
+      ],
+      "image": {
+        "src": "tool-examples.webp",
+        "alt": "Examples of playful tools"
+      },
+      "media": [
+        {
+          "source": "AI_WeekNine",
+          "file": "image14.jpeg",
+          "as": "tool-examples",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "exercise-build-tool",
+      "layout": "exercise",
+      "title": "Build your tool",
+      "prompt": "Use Claude Code Web. Deploy via GitHub Pages.",
+      "steps": [
+        "Pick a topic or dataset *you brought today.*",
+        "Choose one of the four shapes above (or invent yours).",
+        "Prompt Claude with: *what it is, who it's for, what's strange about it.*",
+        "Iterate three times. Each iteration: one specific design decision documented in the conversation.",
+        "Deploy to Pages. Save the URL — you'll share it in the discussion."
+      ],
+      "media": []
+    },
+    {
+      "id": "wapo-bias-recall",
+      "layout": "image-bullets",
+      "title": "Stay alert: bias travels with the model",
+      "bullets": [
+        "*[wapo.com/.../ai-generated-images-bias](https://www.washingtonpost.com/technology/interactive/2023/ai-generated-images-bias-racism-sexism-stereotypes/)* — the same biases ride into your generator.",
+        "Your dataset is a counterweight. Choose it deliberately.",
+        "If you're building a recommender, *whose voices are recommendable?*"
+      ],
+      "image": {
+        "src": "wapo-bias-recall.webp",
+        "alt": "WaPo bias article"
+      },
+      "media": [
+        {
+          "source": "AI_WeekNine",
+          "file": "image52.png",
+          "as": "wapo-bias-recall",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "policy-section",
+      "layout": "section",
+      "kicker": "Part 4",
+      "title": "AI policy drafting",
+      "lead": "Pivot to the syllabus question. Working in pairs, draft (or revise) a one-page course AI policy.",
+      "media": []
+    },
+    {
+      "id": "policy-axes",
+      "layout": "image-bullets",
+      "title": "What a policy has to address",
+      "bullets": [
+        "**Copyright & attribution.** What gets cited, what gets refused.",
+        "**Accessibility.** Including AI as a tool *for* accessibility, not just a problem.",
+        "**Equity of access.** Who pays for Pro? Are alternatives provided?",
+        "**Labor.** Whose labor is being replaced or extended?",
+        "**UDL.** Multiple means of engagement, representation, action/expression."
+      ],
+      "image": {
+        "src": "policy-axes.webp",
+        "alt": "Five axes of AI policy"
+      },
+      "media": [
+        {
+          "source": "AI_WeekNine",
+          "file": "image38.png",
+          "as": "policy-axes",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "invitation-not-fence",
+      "layout": "quote",
+      "quote": "The most common mistake in AI policies is treating them as a fence. The students who most need clear AI guidance are the ones least likely to ask. A policy framed as *invitation* (here is when AI use is welcome, here is how to attribute it, here is what to do if you are unsure) reaches those students. A policy framed as *prohibition* drives them underground.",
+      "attribution": "Pedagogical note for Workshop 5",
+      "media": []
+    },
+    {
+      "id": "udl-frame",
+      "layout": "image-bullets",
+      "title": "UDL as the frame",
+      "bullets": [
+        "**Engagement:** AI can help students enter material in their own way.",
+        "**Representation:** AI can re-present the same content in alt-text, plain language, captions.",
+        "**Action/expression:** AI can scaffold the *output* — a draft, a summary, a frame.",
+        "Universal Design for Learning is *not* a permission slip. It's a structure."
+      ],
+      "image": {
+        "src": "udl-frame.webp",
+        "alt": "UDL principles applied to AI"
+      },
+      "media": [
+        {
+          "source": "AI_WeekNine",
+          "file": "image44.png",
+          "as": "udl-frame",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "exercise-policy",
+      "layout": "exercise",
+      "title": "Draft your AI policy",
+      "prompt": "One page. Bring it to the discussion at minute 105.",
+      "steps": [
+        "Pick a course you teach (or plan to teach).",
+        "Address the five axes above (copyright, accessibility, equity, labor, UDL).",
+        "Frame at least one paragraph as *invitation*: when is AI use welcome?",
+        "Include attribution language: *how* should students cite AI use?",
+        "Include a question: *what should a student do if they're unsure?*"
+      ],
+      "media": []
+    },
+    {
+      "id": "noble-anchor",
+      "layout": "quote",
+      "quote": "Algorithms aren't neutral. They reflect the people who build them, the data that train them, and the contexts they're deployed in.",
+      "attribution": "Safiya Umoja Noble, *My Robot Teacher* podcast",
+      "media": []
+    },
+    {
+      "id": "design-justice",
+      "layout": "image-bullets",
+      "title": "Design Justice as the higher bar",
+      "bullets": [
+        "Costanza-Chock: design *with*, not *for*, the communities most affected.",
+        "Apply that to your course AI policy: *whose feedback shaped it?*",
+        "If only the syllabus drafter signed off, you're not done."
+      ],
+      "image": {
+        "src": "design-justice.webp",
+        "alt": "Design Justice book"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Twelve",
+          "file": "image22.png",
+          "as": "design-justice",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "discussion-policies",
+      "layout": "section",
+      "kicker": "Part 5",
+      "title": "Read each other's policies",
+      "lead": "Trade with the person next to you. Read for the *invitations.* Read for the *enforcement spots that hide in the language.* Read for what's missing.",
+      "media": []
+    },
+    {
+      "id": "mla-statement",
+      "layout": "image-bullets",
+      "title": "Where the discipline is, January 2026",
+      "bullets": [
+        "**MLA Executive Council** statement on educational technologies & AI agents.",
+        "Most direct disciplinary statement on AI policy in humanities classrooms.",
+        "Worth reading *before* you finalize your own policy."
+      ],
+      "image": {
+        "src": "mla-statement.webp",
+        "alt": "MLA statement"
+      },
+      "media": [
+        {
+          "source": "AI_WeekNine",
+          "file": "image48.png",
+          "as": "mla-statement",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "looking-ahead",
+      "layout": "image-bullets",
+      "title": "Looking ahead",
+      "bullets": [
+        "**Async Week 10:** *UDL and AI Policy* — refine the draft you wrote today.",
+        "**Workshop 6 (Week 11):** the agentic horizon — Cowork, Claude CLI, MCP, Superpowers. Tour, not tutorial.",
+        "Bring all three artifacts (ePortfolio, playful tool, AI policy) to Workshop 6."
+      ],
+      "image": {
+        "src": "looking-ahead.webp",
+        "alt": "Looking ahead from Workshop 5"
+      },
+      "media": [
+        {
+          "source": "AI_WeekNine",
+          "file": "image58.png",
+          "as": "looking-ahead",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "layout": "closing",
+      "title": "Small is good",
+      "lead": "Delight, weirdness, and clarity over scale. The tool you built today doesn't have to scale. It has to belong to your students.",
+      "links": [
+        {
+          "label": "Workshop 5 page",
+          "url": "/weeks/week-09.html"
+        },
+        {
+          "label": "Week 10 (async): UDL and AI Policy",
+          "url": "/weeks/week-10.html"
+        },
+        {
+          "label": "Reading: Noble, *Algorithms Aren't Neutral*",
+          "url": "https://calearninglab.org/myrobotteacher/mrt6/"
+        },
+        {
+          "label": "Reading: Costanza-Chock, *Design Justice*",
+          "url": "https://design-justice.pubpub.org/"
+        },
+        {
+          "label": "MLA statement on AI agents",
+          "url": "https://news.mla.hcommons.org/2026/01/30/educational-technologies-and-ai-agents/"
+        }
+      ],
+      "media": []
+    }
+  ]
+}

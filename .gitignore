@@ -3,3 +3,10 @@ Gemfile.lock
 _site/
 .jekyll-cache/
 .jekyll-metadata
+
+# Source PowerPoints (too large for git; extraction tooling lives in slides/_tools)
+slides/*.pptx
+slides/*.ppt
+slides/_extracted/
+slides/_tools/__pycache__/
+slides/_tools/.venv/

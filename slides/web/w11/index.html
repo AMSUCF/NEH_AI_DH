@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Workshop 6 — Agentic Futures, Curricular Sustainability</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css" id="reveal-theme">
+<link rel="stylesheet" href="../../../assets/css/style.css">
+<style>
+:root {
+  --slide-pad: clamp(1.25rem, 3vw, 3rem);
+}
+.reveal {
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  color: var(--ink, #141414);
+  background: var(--bone, #faf6ec);
+}
+.reveal .slides { text-align: left; }
+.reveal .slides section {
+  padding: var(--slide-pad);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+.reveal h1, .reveal h2, .reveal h3 {
+  font-family: 'Bricolage Grotesque', 'Inter', serif;
+  color: var(--ink, #141414);
+  text-transform: none;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5em;
+  line-height: 1.05;
+}
+.reveal h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); }
+.reveal h2 { font-size: clamp(2rem, 5vw, 3.4rem); }
+.reveal h3 { font-size: clamp(1.4rem, 3.5vw, 2rem); }
+.reveal p, .reveal li { font-size: clamp(1.1rem, 2.4vw, 1.6rem); line-height: 1.4; }
+.reveal a { color: var(--cobalt, #1545c4); }
+.reveal code { font-family: 'JetBrains Mono', 'Courier New', monospace; background: rgba(0,0,0,0.06); padding: 0.05em 0.25em; border-radius: 3px; font-size: 0.9em; }
+.reveal blockquote { border-left: 4px solid var(--coral, #ff5a4e); padding: 0.25em 0 0.25em 1rem; margin: 0; font-size: clamp(1.2rem, 2.8vw, 1.9rem); font-style: normal; line-height: 1.35; width: auto; box-shadow: none; }
+.reveal .kicker { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--coral, #ff5a4e); margin: 0 0 0.5rem; }
+.reveal .attribution { font-size: 1rem; color: var(--muted, #5a5a5a); margin-top: 0.5rem; }
+.reveal .caption { font-size: 1rem; color: var(--muted, #5a5a5a); margin-top: 0.75rem; }
+.reveal .lead { font-size: clamp(1.2rem, 2.6vw, 1.8rem); color: var(--muted, #5a5a5a); }
+
+.reveal img, .reveal video { max-width: 100%; max-height: 60vh; object-fit: contain; border-radius: 6px; }
+
+/* Cover */
+.reveal .slide-cover { background: var(--ink, #141414); color: var(--bone, #faf6ec); position: relative; overflow: hidden; }
+.reveal .slide-cover img { position: absolute; inset: 0; width: 100%; height: 100%; max-height: none; object-fit: cover; opacity: 0.35; border-radius: 0; }
+.reveal .slide-cover .cover-text { position: relative; z-index: 1; }
+.reveal .slide-cover h1 { color: var(--bone, #faf6ec); }
+.reveal .slide-cover .subtitle { font-family: 'Bricolage Grotesque', serif; font-size: clamp(1.4rem, 3vw, 2rem); color: var(--mustard, #e8b53a); margin: 0.5rem 0 1.5rem; }
+.reveal .slide-cover .cover-meta { font-family: 'JetBrains Mono', monospace; font-size: 1rem; color: var(--bone, #faf6ec); opacity: 0.85; }
+
+/* Section divider */
+.reveal .slide-section { background: var(--coral, #ff5a4e); color: var(--ink, #141414); }
+.reveal .slide-section h2 { font-size: clamp(2.5rem, 7vw, 5rem); }
+.reveal .slide-section .kicker { color: var(--ink, #141414); }
+.reveal .slide-section .lead { color: var(--ink, #141414); max-width: 60ch; }
+
+/* Image-bullets */
+.reveal .slide-image-bullets { display: grid !important; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+.reveal .slide-image-bullets.no-image { display: block !important; max-width: 70ch; margin-left: auto !important; margin-right: auto !important; }
+.reveal .slide-image-bullets img { max-height: 75vh; }
+.reveal .slide-image-bullets ul { list-style: none; padding: 0; margin: 0; }
+.reveal .slide-image-bullets li { padding-left: 1.5em; position: relative; margin-bottom: 0.7rem; }
+.reveal .slide-image-bullets li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 0.7em; height: 0.7em; background: var(--coral, #ff5a4e); border-radius: 2px; transform: rotate(45deg); }
+@media (max-width: 800px) { .reveal .slide-image-bullets { grid-template-columns: 1fr; } }
+
+/* Image-only */
+.reveal .slide-image-only { align-items: center; text-align: center; }
+.reveal .slide-image-only img { max-height: 80vh; }
+
+/* Quote */
+.reveal .slide-quote { display: grid !important; grid-template-columns: 1fr 1.4fr; gap: 2rem; align-items: center; background: var(--bone, #faf6ec); }
+.reveal .slide-quote.no-image { display: block !important; max-width: 60ch; margin-left: auto !important; margin-right: auto !important; }
+.reveal .slide-quote.no-image blockquote { font-size: clamp(1.6rem, 3.4vw, 2.4rem); }
+.reveal .slide-quote img { max-height: 70vh; }
+@media (max-width: 800px) { .reveal .slide-quote { grid-template-columns: 1fr; } }
+
+/* Video */
+.reveal .slide-video video { width: 100%; max-height: 65vh; }
+
+/* Demo slot */
+.reveal .slide-demo-slot { background: var(--mustard, #e8b53a); color: var(--ink, #141414); }
+.reveal .slide-demo-slot .kicker { color: var(--ink, #141414); }
+
+/* Exercise */
+.reveal .slide-exercise { background: var(--sage, #7a8f4a); color: var(--ink, #141414); }
+.reveal .slide-exercise .kicker { color: var(--ink, #141414); }
+.reveal .slide-exercise ol { counter-reset: ex; padding-left: 0; list-style: none; }
+.reveal .slide-exercise ol li { counter-increment: ex; padding-left: 2.5em; position: relative; margin-bottom: 0.7rem; }
+.reveal .slide-exercise ol li::before { content: counter(ex); position: absolute; left: 0; top: 0; font-family: 'Bricolage Grotesque', serif; font-weight: 700; font-size: 1.4em; color: var(--ink, #141414); }
+.reveal .slide-exercise .prompt { font-style: italic; max-width: 60ch; }
+
+/* Two-col */
+.reveal .slide-two-col .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+@media (max-width: 800px) { .reveal .slide-two-col .cols { grid-template-columns: 1fr; } }
+
+/* Closing */
+.reveal .slide-closing { background: var(--plum, #5d2e5f); color: var(--bone, #faf6ec); }
+.reveal .slide-closing h2 { color: var(--bone, #faf6ec); }
+.reveal .slide-closing a { color: var(--mustard, #e8b53a); }
+.reveal .slide-closing .lead { color: var(--bone, #faf6ec); opacity: 0.9; }
+.reveal .slide-closing .links { list-style: none; padding: 0; }
+.reveal .slide-closing .links li { margin-bottom: 0.5rem; }
+
+/* Progress bar / controls in coral */
+.reveal .progress { color: var(--coral, #ff5a4e); }
+.reveal .controls { color: var(--coral, #ff5a4e); }
+
+/* Back-to-workshop link, fixed top-right of every deck */
+.deck-back {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: var(--bone, #faf6ec);
+  color: var(--ink, #141414);
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid var(--ink, #141414);
+  box-shadow: 2px 2px 0 var(--ink, #141414);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.deck-back:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--ink, #141414);
+  background: var(--coral, #ff5a4e);
+}
+.deck-back:active {
+  transform: translate(1px, 1px);
+  box-shadow: 0 0 0 var(--ink, #141414);
+}
+@media print { .deck-back { display: none; } }
+</style>
+</head>
+<body>
+<a class="deck-back" href="../../../weeks/week-11.html" title="Back to workshop page">← Workshop</a>
+<div class="reveal">
+<div class="slides">
+<section class="slide-cover" id="cover">
+  <img src="../../../assets/slides/w11/cover.webp" alt="Local Futures title slide" loading="lazy">
+  <div class="cover-text">
+    <h1>Workshop 6</h1>
+    <p class="subtitle">Agentic Futures, Curricular Sustainability</p>
+    <p class="cover-meta">Tuesday, July 22, 2026 · 10 AM – noon · CHDR · last in-person session</p>
+  </div>
+</section>
+<section class="slide-section" id="tour-not-tutorial">
+  <p class="kicker">Framing</p>
+  <h2>A tour, not a tutorial</h2>
+  <p class="lead">We look at what is just beyond Code Web — Cowork, the Claude CLI, MCP, the Superpowers workflow — so you leave with a map. The hands-on portion is a <em>writing</em> exercise.</p>
+</section>
+        <section class="slide-image-bullets" id="what-is-an-agent">
+          <div class="bullets-text">
+
+            <h2>What is an agent?</h2>
+            <ul><li><strong>Tool use:</strong> the model can call functions you give it (search, file edit, run command).</li>
+<li><strong>Planning:</strong> the model decides what to do next, in what order.</li>
+<li><strong>Subagents:</strong> the model can spawn helper instances of itself.</li>
+<li>An <em>agent</em> is the loop these compose into. The vocabulary is doing a lot of work.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w11/agent-vocab.webp" alt="Agent vocabulary diagram" loading="lazy">
+        </section>
+<section class="slide-section" id="cowork-section">
+  <p class="kicker">Part 2</p>
+  <h2>Cowork tour</h2>
+  <p class="lead">Live walkthrough of a Cowork session — Claude working alongside you in real time on a shared problem. We use one of <em>your</em> W7 or W9 artifacts as the working surface.</p>
+</section>
+<section class="slide-demo-slot" id="demo-cowork">
+  <p class="kicker">Live demo</p>
+  <h2>Cowork on your ePortfolio or playful tool</h2>
+  <p>What changes when the conversation is collaborative rather than turn-taking. Bring a question that&#x27;s been nagging at your site.</p>
+</section>
+<section class="slide-section" id="cli-section">
+  <p class="kicker">Part 3</p>
+  <h2>Claude CLI tour</h2>
+  <p class="lead">Claude in the terminal. Slash commands, <code>/init</code>, <code>/plan</code>, <code>CLAUDE.md</code> for context engineering, the Superpowers workflow.</p>
+</section>
+<section class="slide-demo-slot" id="demo-cli">
+  <p class="kicker">Live demo</p>
+  <h2>Claude CLI on a small humanities project</h2>
+  <p>Brainstorm → Spec → Plan → Implementation → Review. You watch. You don&#x27;t install.</p>
+</section>
+        <section class="slide-image-bullets" id="superpowers">
+          <div class="bullets-text">
+
+            <h2>Superpowers as a discipline</h2>
+            <ul><li><strong>Brainstorm:</strong> explore intent before any code.</li>
+<li><strong>Spec:</strong> write the design as a checked-in artifact.</li>
+<li><strong>Plan:</strong> decompose into reviewable steps.</li>
+<li><strong>Implementation:</strong> test-driven, gated by review checkpoints.</li>
+<li><strong>Review:</strong> verification before completion claims.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w11/superpowers.webp" alt="Superpowers workflow" loading="lazy">
+        </section>
+<section class="slide-section" id="mcp-section">
+  <p class="kicker">Part 4</p>
+  <h2>MCP, briefly</h2>
+  <p class="lead">Model Context Protocol — &#x27;USB-C for AI.&#x27; One example: connecting Claude to a Zotero library so research and writing share a context.</p>
+</section>
+        <section class="slide-image-bullets" id="mcp-zotero">
+          <div class="bullets-text">
+
+            <h2>Why MCP matters for the next academic year</h2>
+            <ul><li>Connect Claude to a tool <em>you already use</em> (Zotero, Google Drive, your library catalog).</li>
+<li>Now your AI workflow shares the same context as your research.</li>
+<li>Each MCP integration is a <em>humanities choice</em>: which of your tools deserves to be in the loop?</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w11/mcp-zotero.webp" alt="MCP Zotero integration concept" loading="lazy">
+        </section>
+<section class="slide-section" id="labor-frame">
+  <p class="kicker">Reality check</p>
+  <h2>Revisiting text — and labor</h2>
+  <p class="lead">Before we write a <code>CLAUDE.md</code>, the labor question. The Underwood essay you read frames it; this is the practitioner&#x27;s version.</p>
+</section>
+        <section class="slide-image-bullets" id="altman-jobs">
+          <div class="bullets-text">
+
+            <h2>Altman: &#x27;jobs that aren&#x27;t real work&#x27;</h2>
+            <ul><li><a href="https://www.tomshardware.com/tech-industry/sam-altman-says-ai-could-eliminate-jobs-that-arent-real-work">tomshardware.com</a>: the CEO&#x27;s framing of which jobs disappear.</li>
+<li>Whose work is &#x27;not real&#x27;? Look at the verbs.</li>
+<li>Most of what humanists do is on his list.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w11/altman-jobs.webp" alt="Altman jobs article" loading="lazy">
+        </section>
+<section class="slide-quote" id="graeber-empty-room">
+  <img src="../../../assets/slides/w11/graeber.webp" alt="Graeber empty-room article" loading="lazy">
+  <div class="quote-text">
+    <blockquote>The point of bullshit jobs isn&#x27;t that the work is hard or the workers are lazy. It&#x27;s that the work is <em>meaningless</em>, and the worker knows it. AI is being marketed as the cure. It is at least as likely to be a more efficient producer.</blockquote>
+    <p class="attribution">— Echoing David Graeber&#x27;s <em>I Had to Guard an Empty Room</em></p>
+  </div>
+</section>
+<section class="slide-section" id="claudemd-section">
+  <p class="kicker">Part 5</p>
+  <h2>Write your <code>CLAUDE.md</code></h2>
+  <p class="lead">A context file an agent could read to understand your work. Whether or not you ever install the CLI, this document is a deliverable in its own right.</p>
+</section>
+        <section class="slide-exercise" id="exercise-claudemd">
+          <p class="kicker">Exercise</p>
+          <h2>Your <code>CLAUDE.md</code> in 30 minutes</h2>
+          <p class="prompt">Cover at minimum:</p>
+          <ol><li><strong>Who you are and what you do.</strong> One paragraph.</li>
+<li><strong>Your domain.</strong> Disciplines, methods, topics, key conversations.</li>
+<li><strong>Your typical workflows.</strong> What you tend to ask AI for; what you do <em>not</em> want it to do.</li>
+<li><strong>Your preferences.</strong> Citation style, voice, audience defaults.</li>
+<li><strong>Your boundaries.</strong> What you will not delegate. What requires your hand.</li></ol>
+        </section>
+<section class="slide-quote no-image" id="stay-skeptical">
+
+  <div class="quote-text">
+    <blockquote>The most important sentence in any conversation about agentic AI is: <em>what would I have to give up to use this?</em> The answer is rarely zero.</blockquote>
+    <p class="attribution">— Pedagogical note for Workshop 6</p>
+  </div>
+</section>
+        <section class="slide-image-bullets" id="closing-thoughts">
+          <div class="bullets-text">
+
+            <h2>Closing thoughts from the source class</h2>
+            <ul><li>We started in May with ELIZA. We end in July with <code>CLAUDE.md</code>.</li>
+<li>The through-line: refuse to gesture vaguely. Name the labor. Name the choice.</li>
+<li>Take what is useful. Stay skeptical of the rest.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w11/closing-thoughts.webp" alt="Closing thoughts illustration" loading="lazy">
+        </section>
+<section class="slide-section" id="qa-section">
+  <p class="kicker">Part 6</p>
+  <h2>Open Q&amp;A</h2>
+  <p class="lead">Last in-person session of the series. Bring whatever questions you haven&#x27;t had a chance to ask — about agentic tools, your <code>CLAUDE.md</code>, or what to carry into the fall.</p>
+</section>
+        <section class="slide-image-bullets" id="what-comes-next">
+          <div class="bullets-text">
+
+            <h2>What comes next (Week 12, async)</h2>
+            <ul><li><strong>Sustaining and Sharing.</strong> Reflect, share-back to the public community.</li>
+<li>Optional: try the CLI or Cowork on your own.</li>
+<li>Materials stay open after the series ends — bring them into your fall syllabus.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w11/what-next.webp" alt="Week 12 sustaining and sharing" loading="lazy">
+        </section>
+        <section class="slide-closing" id="closing">
+          <h2>Carry it into the fall</h2>
+          <p class="lead">You leave with: a Claude Project, an Artifact, a deployed Pages site, a playful tool, an AI policy, and a <code>CLAUDE.md</code>. That&#x27;s a curriculum, not a tour.</p>
+          <ul class="links"><li><a href="../../../weeks/week-11.html">Workshop 6 page</a></li>
+<li><a href="../../../weeks/week-12.html">Week 12 (async): Sustaining and Sharing</a></li>
+<li><a href="https://tedunderwood.com/2026/02/08/the-marionette-theater-of-ai/">Reading: Underwood, <em>Marionette Theater of AI</em></a></li>
+<li><a href="https://blog.fsck.com/2025/10/09/superpowers/">Reading: Vincent, <em>Superpowers</em></a></li>
+<li><a href="https://docs.anthropic.com/en/docs/build-with-claude/mcp">Anthropic: Intro to MCP</a></li></ul>
+        </section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    center: false,
+    width: 1280,
+    height: 800,
+    margin: 0.04,
+    transition: 'fade',
+    controlsTutorial: false
+  });
+</script>
+</body>
+</html>

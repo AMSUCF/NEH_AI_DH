@@ -1,0 +1,291 @@
+{
+  "week": "w05",
+  "title": "Workshop 3 — AI for Visual Analysis",
+  "slides": [
+    {
+      "id": "cover",
+      "layout": "cover",
+      "title": "Workshop 3",
+      "subtitle": "AI for Visual Analysis",
+      "meta": "Tuesday, June 10, 2026 · 10 AM – noon · CHDR",
+      "image": {
+        "src": "cover.webp",
+        "alt": "AI-generated portrait of a woman by a lake at sunset, with a partially-visible cyborg arm"
+      },
+      "media": [
+        {
+          "path": "ChatGPT Image Apr 28, 2026, 06_51_38 PM.png",
+          "as": "cover",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "two-paradigms",
+      "layout": "section",
+      "kicker": "Part 1",
+      "title": "Two paradigms in one session",
+      "lead": "Image *generation* (text-to-image) versus image *analysis* (image-to-text, alt-text, multi-image comparison). The workshop is about the second; the first is here because we cannot have an honest visual conversation without it.",
+      "media": []
+    },
+    {
+      "id": "multimodal-explainer",
+      "layout": "image-only",
+      "image": {
+        "src": "multimodal.webp",
+        "alt": "Multimodal AI explainer: text, image, audio, video, and sensor inputs pass through encoders into a fusion stage, producing text, image, and decision outputs."
+      },
+      "caption": "Multimodal AI in one diagram — every input type meets in a shared representation, then comes back out as any output type. *Generated with ChatGPT Images 2.0.*",
+      "media": [
+        {
+          "path": "multimodal.png",
+          "as": "multimodal",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "matrix-keywords",
+      "layout": "quote",
+      "quote": "matrix, code, hacking, cyberpunk, data, digital, futuristic, neon, digital art, high tech, virtual reality, cyberspace, glitch, technology, sci fi, computer, programming, dark, binary, encryption, AI, network, security",
+      "attribution": "OpenJourney + neuralframes — what the prompt-aesthetic *actually* asks for",
+      "image": {
+        "src": "matrix-keywords.webp",
+        "alt": "Cyberpunk-aesthetic generated image"
+      },
+      "media": [
+        {
+          "source": "AI_VisualCulture",
+          "file": "image12.jpeg",
+          "as": "matrix-keywords",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "paperclip",
+      "layout": "image-bullets",
+      "title": "The Paperclip Maximizer (and other thought experiments)",
+      "bullets": [
+        "[decisionproblem.com/paperclips](https://www.decisionproblem.com/paperclips/) — the playable form of an alignment thought experiment.",
+        "*Not* a prediction. A teaching tool for what optimisation without judgement looks like.",
+        "Useful pairing for any visual-AI conversation: what is the AI optimising *for*?"
+      ],
+      "image": {
+        "src": "paperclip.webp",
+        "alt": "Paperclip maximizer game"
+      },
+      "media": [
+        {
+          "source": "AI_WeekSix",
+          "file": "image7.png",
+          "as": "paperclip",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "sb-53",
+      "layout": "image-bullets",
+      "title": "Anthropic and SB-53",
+      "bullets": [
+        "California's SB-53: AI safety reporting and worker protections.",
+        "Anthropic publicly endorsed it; many AI companies did not.",
+        "When you teach AI policy, regulatory choices are part of the curriculum."
+      ],
+      "image": {
+        "src": "sb-53.webp",
+        "alt": "Anthropic SB-53 endorsement"
+      },
+      "media": [
+        {
+          "source": "AI_WeekSix",
+          "file": "image12.png",
+          "as": "sb-53",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "gan-history",
+      "layout": "image-bullets",
+      "title": "Where this came from: 2018 GANs",
+      "bullets": [
+        "GAN-generated faces, 2018: still uncanny, mostly monstrous.",
+        "Seven years later: photorealistic.",
+        "The shift was not in *kind* but in *scale* — same architecture, more compute, more scraped images."
+      ],
+      "image": {
+        "src": "gan-history.webp",
+        "alt": "2018 GAN-generated faces"
+      },
+      "media": [
+        {
+          "source": "AI_WeekSix",
+          "file": "image66.png",
+          "as": "gan-history",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "demo-section",
+      "layout": "section",
+      "kicker": "Part 2",
+      "title": "Live demo: archival comic covers",
+      "lead": "I upload a small set to Claude Sonnet. We walk: describe → alt-text → key features → comparative metadata → relational visualization as an Artifact.",
+      "media": []
+    },
+    {
+      "id": "demo-comics",
+      "layout": "demo-slot",
+      "title": "Image-to-text on archival comics",
+      "note": "Watch where the model invents detail that isn't in the image. That's the place a student must learn to push back.",
+      "media": []
+    },
+    {
+      "id": "exercise-image-to-text",
+      "layout": "exercise",
+      "title": "Image-to-text translation set",
+      "prompt": "Using your five-to-ten image set:",
+      "steps": [
+        "Upload all images to Claude Sonnet (single conversation).",
+        "Generate descriptive **alt-text** for each image, applying accessibility standards.",
+        "Build a metadata table: image, key features, period or context, observations.",
+        "Ask Claude to surface **three patterns** across the set.",
+        "Generate an **Artifact** that visualizes the set in a meaningful relationship.",
+        "Critique the alt-text. Where does Claude's vision fail or flatten?"
+      ],
+      "media": []
+    },
+    {
+      "id": "alt-text-as-draft",
+      "layout": "quote",
+      "quote": "AI-generated alt-text is a *draft.* It is faster than writing alt-text from scratch, and it is consistently worse than alt-text written by a human who knows the context.",
+      "attribution": "Pedagogical note for Workshop 3",
+      "media": []
+    },
+    {
+      "id": "exercise-make-it-more",
+      "layout": "exercise",
+      "title": "Exercise One: Make it More",
+      "prompt": "From the source-class deck — useful as a warm-up if you finish early:",
+      "steps": [
+        "Pick a word that you associate with your interests or professional goals.",
+        "Ask any text-to-image tool to generate an image of it: 'draw me a gamer,' 'draw me a lawyer.'",
+        "Ask it to make it 'more' [that thing]. Iterate four or five times.",
+        "Compare the trajectory. What stereotypes does the model reach for first? Last?"
+      ],
+      "media": []
+    },
+    {
+      "id": "exercise-make-it-you",
+      "layout": "exercise",
+      "title": "Exercise Two: Make it You",
+      "prompt": "A second warm-up from the source class:",
+      "steps": [
+        "Ask a text-to-image tool to draw *you*, based on a sentence about your work.",
+        "Note what it gets right, what it invents, what it whitens / flattens.",
+        "This is the same system we just used to write alt-text. The biases ride along."
+      ],
+      "media": []
+    },
+    {
+      "id": "wapo-bias",
+      "layout": "image-bullets",
+      "title": "AI image bias, in one *Washington Post* interactive",
+      "bullets": [
+        "*[wapo.com/.../ai-generated-images-bias-racism-sexism-stereotypes](https://www.washingtonpost.com/technology/interactive/2023/ai-generated-images-bias-racism-sexism-stereotypes/)*",
+        "What the model produces for 'a CEO,' 'a janitor,' 'a beautiful person.'",
+        "Pair with Crawford & Paglen's *Excavating AI* for the structural account."
+      ],
+      "image": {
+        "src": "wapo-bias.webp",
+        "alt": "WaPo interactive on AI image bias"
+      },
+      "media": [
+        {
+          "source": "AI_VisualCulture",
+          "file": "image37.png",
+          "as": "wapo-bias",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "exercise-three",
+      "layout": "exercise",
+      "title": "Exercise Three: alt-text in the wild",
+      "prompt": "If your discipline involves images, take this back to your teaching:",
+      "steps": [
+        "Pick a corpus of images you'd give a student to work with — archival, art-history, scientific.",
+        "Generate alt-text with Claude for the whole set.",
+        "Have students *correct* the AI's alt-text rather than write theirs from scratch.",
+        "The pedagogical move: students learn to write alt-text by editing a flawed draft."
+      ],
+      "media": []
+    },
+    {
+      "id": "critical-reflection",
+      "layout": "quote",
+      "quote": "Datasets aren't simply raw materials to feed algorithms, but are political interventions. As such, much of the discussion around 'bias' in AI systems misses the mark: there is no 'neutral,' 'natural,' or 'apolitical' vantage point that training data can be built upon.",
+      "attribution": "Crawford & Paglen, *Excavating AI*",
+      "media": []
+    },
+    {
+      "id": "discussion",
+      "layout": "section",
+      "kicker": "Part 5",
+      "title": "Discussion",
+      "lead": "Where does this fit in your teaching? An accessibility tool? A scaffolded close-reading exercise? An archival metadata workflow? All three?",
+      "media": []
+    },
+    {
+      "id": "looking-ahead",
+      "layout": "image-bullets",
+      "title": "Looking ahead",
+      "bullets": [
+        "**Workshop 4 (Week 7):** GitHub, Code Web, your first deployed site. Bring a CV or syllabus.",
+        "**Async Week 6:** *Visual AI in the Wild* — image generation, copyright, AI in the news.",
+        "Save your Artifact URL from today; we'll iterate on it later."
+      ],
+      "image": {
+        "src": "looking-ahead.webp",
+        "alt": "Looking ahead from Workshop 3"
+      },
+      "media": [
+        {
+          "source": "AI_VisualCulture",
+          "file": "image38.png",
+          "as": "looking-ahead",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "layout": "closing",
+      "title": "Carry it forward",
+      "lead": "AI vision can be a real accessibility tool *or* a fluent way to flatten archives into stereotype. The difference is the human in the loop.",
+      "links": [
+        {
+          "label": "Workshop 3 page",
+          "url": "/weeks/week-05.html"
+        },
+        {
+          "label": "Week 6 (async): Visual AI in the Wild",
+          "url": "/weeks/week-06.html"
+        },
+        {
+          "label": "Reading: Crawford & Paglen, *Excavating AI*",
+          "url": "https://excavating.ai/"
+        },
+        {
+          "label": "Reading: Demsky, *My Month with Midjourney*",
+          "url": "https://electronicbookreview.com/publications/my-month-with-midjourney/"
+        }
+      ],
+      "media": []
+    }
+  ]
+}

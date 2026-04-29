@@ -6,7 +6,7 @@ theme: "Distant reading reinforcement"
 starts: 2026-06-01
 ---
 
-A reinforcement week. Workshop 2 introduced a workflow; this week is for repetition and comparison so the workflow becomes habit. Pick the depth that fits your time — there is no in-person session and no required deliverable. ENG 6813 students continue with their *Signature Assignment Draft* discussion (see [the parallel module](../../InterdisciplinaryTeaching-main/InterdisciplinaryTeaching-main/weeks/week-04.md)).
+A reinforcement week. Workshop 2 introduced a workflow; this week is for repetition and comparison so the workflow becomes habit. Pick the depth that fits your time — there is no in-person session and no required deliverable.
 
 <div class="async-callout" markdown="1">
 **Asynchronous deep-dive.** Pick one option from each menu below, or skip — Workshop 3 (June 10) shifts to visual analysis and does not require completion of these.
@@ -31,5 +31,4 @@ If you do nothing else this week, **assemble five to ten images you might want t
 
 ## Cross-references
 
-- Companion ENG 6813 module: [Week 4](../../InterdisciplinaryTeaching-main/InterdisciplinaryTeaching-main/weeks/week-04.md) (Signature Assignment Draft).
 - Source materials: `HumanitiesAI/weekfour.md`, `weekfourteen.md`; `DistantCodingUMKC` Example 2.
