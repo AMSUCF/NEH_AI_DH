@@ -58,9 +58,15 @@ VIDEO_MAX_BYTES = 10 * 1024 * 1024
 def optimize_image(src: Path, dst: Path) -> None:
     dst.parent.mkdir(parents=True, exist_ok=True)
     with Image.open(src) as im:
-        if im.mode in ("RGBA", "LA", "P"):
-            im = im.convert("RGBA")
-        else:
+        # Flatten alpha onto a white background, then save as RGB. WebP-lossy
+        # with kept alpha (VP8X) has produced files some browsers refuse to
+        # decode in this pipeline; flattening to RGB sidesteps that.
+        if im.mode in ("RGBA", "LA"):
+            bg = Image.new("RGB", im.size, (255, 255, 255))
+            alpha = im.convert("RGBA").split()[-1]
+            bg.paste(im, mask=alpha)
+            im = bg
+        elif im.mode != "RGB":
             im = im.convert("RGB")
         if im.width > IMAGE_MAX_WIDTH:
             new_h = round(im.height * (IMAGE_MAX_WIDTH / im.width))

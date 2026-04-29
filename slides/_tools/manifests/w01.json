@@ -25,27 +25,21 @@
       "layout": "section",
       "kicker": "Part 1",
       "title": "ELIZA and the ELIZA effect",
-      "lead": "Before we touch a tool, we look back. The conversation we're having about AI in 2026 has a 60-year-old prologue — and the prologue has the answers.",
+      "lead": "Modern chatbots owe a strange debt to a much simpler chatbot launched in 1966...",
       "media": []
     },
     {
       "id": "eliza-1966",
-      "layout": "image-bullets",
-      "title": "ELIZA, 1966",
-      "bullets": [
-        "Joseph **Weizenbaum** at MIT, 1964–66.",
-        "About 200 lines of code. Pattern-matches your sentence and reflects it back.",
-        "Best-known script: **DOCTOR** — a parody of Rogerian (\"person-centered\") therapy.",
-        "Try [the modern web ELIZA](https://www.masswerk.at/eliza/) for ten minutes. Notice where it breaks."
-      ],
+      "layout": "image-only",
       "image": {
-        "src": "eliza.webp",
-        "alt": "Screenshot of a modern web ELIZA conversation"
+        "src": "eliza-1966.webp",
+        "alt": "Excerpt of a recreated ELIZA / DOCTOR conversation, in the spirit of Joseph Weizenbaum's 1966 program"
       },
+      "caption": "ELIZA, 1966 — Joseph Weizenbaum, MIT. *[\"ELIZA — A Computer Program for the Study of Natural Language Communication Between Man and Machine\" (CACM, 1966) →](https://dl.acm.org/doi/10.1145/365153.365168)*",
       "media": [
         {
-          "path": "eliza.png",
-          "as": "eliza",
+          "path": "elizachat.jpg",
+          "as": "eliza-1966",
           "kind": "image"
         }
       ]
@@ -82,12 +76,12 @@
       "id": "exercise-try-eliza",
       "layout": "exercise",
       "title": "Try ELIZA",
-      "prompt": "Five minutes — open it up and notice what your brain does:",
+      "prompt": "Five minutes — open it up and notice what your brain does. We're less likely to anthropomorphise than ELIZA's 1966 audience, because we've already met more sophisticated chatbots — but try to imagine what it would be like to talk to a system like this for the first time.",
       "steps": [
         "Open [E.L.I.Z.A. Talking](https://www.masswerk.at/eliza/) (Norbert Landsteiner's web port).",
         "Type as if you're talking to a therapist. Use whatever's actually on your mind.",
         "Notice the pattern: ELIZA reflects your nouns, asks open questions, occasionally trips.",
-        "Catch yourself anthropomorphising. **That's the ELIZA effect.** It's still the strongest force in the room when we use ChatGPT."
+        "Catch yourself anthropomorphising — even faintly. **That residue is the ELIZA effect.** It's still the strongest force in the room when we use ChatGPT."
       ],
       "media": []
     },
@@ -96,7 +90,61 @@
       "layout": "section",
       "kicker": "Part 2",
       "title": "AI, LLMs, and how they work",
-      "lead": "What an LLM actually is — in plain language. Then what sits on top of it: reasoning layers, RLHF, and the choices that turn a base model into Claude, ChatGPT, or Gemini.",
+      "lead": "We've come a long way from ELIZA, which didn't have any of the elements we consider to be a part of modern AI. Current chatbots are mostly powered by LLMs: Large Language Models.",
+      "media": []
+    },
+    {
+      "id": "llm-info",
+      "layout": "image-only",
+      "image": {
+        "src": "llm-info.webp",
+        "alt": "Hand-drawn-style infographic showing the AI → Machine Learning → Deep Learning → LLMs hierarchy. Tagline: 'When the news says AI did X, almost always: an LLM did X.'"
+      },
+      "media": [
+        {
+          "path": "llminfo.png",
+          "as": "llm-info",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "llm-breakdown",
+      "layout": "image-only",
+      "image": {
+        "src": "llm-breakdown.webp",
+        "alt": "Detailed LLM explainer infographic: training data → tokenization → transformer model → train to predict next token → generate text. Plus key points and use cases."
+      },
+      "media": [
+        {
+          "path": "llmbreakdown.png",
+          "as": "llm-breakdown",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "willison-llm",
+      "layout": "quote",
+      "quote": [
+        "An LLM is a machine learning model that can complete a sentence of text. Give the model the phrase \"the cat sat on the \" and it will (almost certainly) suggest \"mat\" as the next word in the sentence.",
+        "As these models get larger and train on increasing amounts of data, they can complete more complex sentences — like \"a python function to download a file from a URL is `def download_file(url):` \".",
+        "LLMs don't actually work directly with words — they work with **tokens**. A sequence of text is converted into a sequence of integer tokens, so \"the cat sat on the \" becomes `[3086, 9059, 10139, 402, 290, 220]`. This is worth understanding because LLM providers charge based on the number of tokens processed, and are limited in how many tokens they can consider at a time."
+      ],
+      "attribution": "Simon Willison, *[How Coding Agents Work](https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/)*",
+      "media": []
+    },
+    {
+      "id": "exercise-tokenizer",
+      "layout": "exercise",
+      "title": "What's a token?",
+      "prompt": "Two minutes — take Willison's example off the page:",
+      "steps": [
+        "Open the [OpenAI Tokenizer](https://platform.openai.com/tokenizer) in a new tab.",
+        "Paste a sentence you'd actually type into Claude or ChatGPT.",
+        "Note the **token count** and which 'words' the tokenizer splits into multiple pieces.",
+        "Try the same sentence in another language, with a typo, or stuffed with your discipline's jargon. Watch what changes."
+      ],
       "media": []
     },
     {
@@ -130,67 +178,6 @@
       "media": []
     },
     {
-      "id": "ai-vs-ml-vs-llm",
-      "layout": "image-bullets",
-      "title": "AI is a field. Deep learning is one method. LLMs are one application.",
-      "bullets": [
-        "**AI** — the broad goal of machines that act intelligently.",
-        "**Machine learning** — the subfield where systems learn patterns from data.",
-        "**Deep learning** — one ML approach using many-layered neural networks.",
-        "**LLMs** — a particular use of deep-learning transformers, trained to predict tokens.",
-        "When the news says \"AI did X,\" almost always: an LLM did X."
-      ],
-      "image": {
-        "src": "ml-paradigms.webp",
-        "alt": "Symbolic vs subsymbolic AI diagram"
-      },
-      "media": [
-        {
-          "source": "AI_Week_Three",
-          "file": "image13.png",
-          "as": "ml-paradigms",
-          "kind": "image"
-        }
-      ]
-    },
-    {
-      "id": "language-model-basics",
-      "layout": "image-bullets",
-      "title": "Language model, plain version",
-      "bullets": [
-        "A language model assigns probabilities to sequences of tokens.",
-        "*Large* language models do this with billions of parameters.",
-        "**Pretraining** is the long, expensive step (weeks or months on GPU clusters).",
-        "**Inference** is what happens when you type a prompt.",
-        "Everything else — RLHF, system prompts, tools — sits **on top** of the pretrained model."
-      ],
-      "media": []
-    },
-    {
-      "id": "willison-llm",
-      "layout": "quote",
-      "quote": [
-        "An LLM is a machine learning model that can complete a sentence of text. Give the model the phrase \"the cat sat on the \" and it will (almost certainly) suggest \"mat\" as the next word in the sentence.",
-        "As these models get larger and train on increasing amounts of data, they can complete more complex sentences — like \"a python function to download a file from a URL is `def download_file(url):` \".",
-        "LLMs don't actually work directly with words — they work with **tokens**. A sequence of text is converted into a sequence of integer tokens, so \"the cat sat on the \" becomes `[3086, 9059, 10139, 402, 290, 220]`. This is worth understanding because LLM providers charge based on the number of tokens processed, and are limited in how many tokens they can consider at a time."
-      ],
-      "attribution": "Simon Willison, *[How Coding Agents Work](https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/)*",
-      "media": []
-    },
-    {
-      "id": "exercise-tokenizer",
-      "layout": "exercise",
-      "title": "Try tokenizing a sentence",
-      "prompt": "Two minutes — take Willison's point off the page:",
-      "steps": [
-        "Open the [OpenAI Tokenizer](https://platform.openai.com/tokenizer) in a new tab.",
-        "Paste a sentence you'd actually type into Claude or ChatGPT.",
-        "Note the **token count** and which 'words' the tokenizer splits into multiple pieces.",
-        "Try the same sentence in another language, with a typo, or stuffed with your discipline's jargon. Watch what changes."
-      ],
-      "media": []
-    },
-    {
       "id": "reasoning-layers",
       "layout": "image-bullets",
       "title": "What sits on top of the base model",
@@ -218,7 +205,7 @@
         "**[June 11, 2020](https://techcrunch.com/2020/06/11/openai-makes-an-all-purpose-api-for-its-text-based-ai-capabilities/):** OpenAI releases the GPT-3 API in private beta. Developers could already prompt the model behind a waiting list.",
         "**[June 29, 2021](https://github.blog/news-insights/product-news/introducing-github-copilot-ai-pair-programmer/):** GitHub Copilot enters technical preview — built on OpenAI Codex, an OpenAI model descended from GPT-3.",
         "**[November 18, 2021](https://venturebeat.com/ai/openai-makes-gpt-3-generally-available-through-its-api/):** the GPT-3 API drops the waitlist; it's now open to any developer.",
-        "Faculty and students mostly didn't know any of this was happening."
+        "Working with these tools required code literacy, so the impact was primarily in the digital humanities: in fields like electronic literature, we were fine-tuning models for poetic and playful text, but not thinking about AI as a serious author...yet."
       ],
       "caption": "Sources: [TechCrunch](https://techcrunch.com/2020/06/11/openai-makes-an-all-purpose-api-for-its-text-based-ai-capabilities/), [GitHub Blog](https://github.blog/news-insights/product-news/introducing-github-copilot-ai-pair-programmer/), [VentureBeat](https://venturebeat.com/ai/openai-makes-gpt-3-generally-available-through-its-api/).",
       "media": []
@@ -238,13 +225,13 @@
     },
     {
       "id": "interface-was-the-event",
-      "layout": "quote",
-      "quote": [
-        "The chatbot was the wrapping. The model was already there.",
-        "What changed on November 30, 2022 wasn't a leap in capability — it was a leap in **access**. Anyone with a browser and an email address could talk to a system that had previously lived behind an API key, a credit card, and a developer account.",
-        "Every higher-ed conversation about generative AI is a conversation about that access. The crisis isn't that the model exists. It's that the model became *visible to everyone at once*."
+      "layout": "image-bullets",
+      "title": "The chatbot was the wrapping. The model was already there.",
+      "bullets": [
+        "What changed on November 30, 2022 wasn't a leap in capability — it was a leap in **access**.",
+        "Anyone with a browser and an email address could now talk to a system that had previously lived behind an API key, a credit card, and a developer account.",
+        "Every higher-ed conversation about generative AI is a conversation about that access. The crisis isn't that the model exists — it's that the model became *visible to everyone at once*."
       ],
-      "attribution": "Workshop framing — what the ChatGPT moment was actually about",
       "media": []
     },
     {
@@ -290,13 +277,34 @@
       ],
       "image": {
         "src": "agent-vocab.webp",
-        "alt": "Agent vocabulary illustration"
+        "alt": "Screenshot of OpenClaw, an agentic AI tool: 'The AI that actually does things — clears your inbox, sends emails, manages your calendar, checks you in for flights.'"
       },
       "media": [
         {
-          "source": "AI_WeekThirteen",
-          "file": "image7.png",
+          "path": "openclaw.png",
           "as": "agent-vocab",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "einstein-companion",
+      "layout": "image-bullets",
+      "title": "Einstein.AI: \"Has his own computer\"",
+      "bullets": [
+        "An agentic harness aimed straight at undergraduates: logs into Canvas for you, watches lecture videos, reads & writes essays, participates in discussions, works while you sleep.",
+        "*\"Einstein isn't a chatbot. He has a full virtual computer — he can browse the web, watch videos, read PDFs, and interact with any site just like you would.\"*",
+        "This is the higher-ed crisis the Chronicle headline is pointing at — not that the chatbot writes the paper, but that the agent does the *whole assignment loop*.",
+        "[companion.ai/einstein →](https://companion.ai/einstein)"
+      ],
+      "image": {
+        "src": "einstein-companion.webp",
+        "alt": "Screenshot of the Einstein.AI 'How it works' page: Einstein has a full virtual computer with a browser, logs into Canvas, watches lectures, reads and writes essays, participates in discussions."
+      },
+      "media": [
+        {
+          "path": "einstein.png",
+          "as": "einstein-companion",
           "kind": "image"
         }
       ]
@@ -307,13 +315,13 @@
       "title": "The LLM is now the substrate, not the product",
       "bullets": [
         "**2022:** the chatbot *is* the product (ChatGPT).",
-        "**2026:** the chatbot is one interface among many. Cursor, Claude Code, Copilot, MCP-connected research tools, agent platforms.",
-        "Same family of models underneath. Different *wrappers* — and the wrapping is where pedagogical choices live now.",
-        "Everything else in this series — Projects, Artifacts, Code Web, CLI — is a wrapper choice."
+        "**2026:** the chatbot is one interface among many. The model lives inside a **harness** that wraps it in tools, memory, planning, and access.",
+        "**Coding harnesses** — Cursor, Claude Code (Web + CLI), GitHub Copilot, OpenAI Codex — wrap the model in a repository, file edits, terminal commands, deployments.",
+        "**General agentic harnesses** — Cowork, OpenClaw, Einstein, MCP-connected research tools — wrap the model in calendars, inboxes, browsers, learning management systems.",
+        "Same family of models underneath. The harness is where pedagogical choices live now. Everything in this series — Projects, Artifacts, Code Web, CLI — is a harness choice."
       ],
       "media": []
     },
-
     {
       "id": "section-chatbot-tour",
       "layout": "section",
@@ -353,7 +361,6 @@
       ],
       "media": []
     },
-
     {
       "id": "exercise-build-eliza",
       "layout": "exercise",

@@ -162,20 +162,12 @@
 <section class="slide-section" id="section-history">
   <p class="kicker">Part 1</p>
   <h2>ELIZA and the ELIZA effect</h2>
-  <p class="lead">Before we touch a tool, we look back. The conversation we&#x27;re having about AI in 2026 has a 60-year-old prologue — and the prologue has the answers.</p>
+  <p class="lead">Modern chatbots owe a strange debt to a much simpler chatbot launched in 1966...</p>
 </section>
-        <section class="slide-image-bullets" id="eliza-1966">
-          <div class="bullets-text">
-
-            <h2>ELIZA, 1966</h2>
-            <ul><li>Joseph <strong>Weizenbaum</strong> at MIT, 1964–66.</li>
-<li>About 200 lines of code. Pattern-matches your sentence and reflects it back.</li>
-<li>Best-known script: <strong>DOCTOR</strong> — a parody of Rogerian (&quot;person-centered&quot;) therapy.</li>
-<li>Try <a href="https://www.masswerk.at/eliza/">the modern web ELIZA</a> for ten minutes. Notice where it breaks.</li></ul>
-
-          </div>
-          <img src="../../../assets/slides/w01/eliza.webp" alt="Screenshot of a modern web ELIZA conversation" loading="lazy">
-        </section>
+<section class="slide-image-only" id="eliza-1966">
+  <img src="../../../assets/slides/w01/eliza-1966.webp" alt="Excerpt of a recreated ELIZA / DOCTOR conversation, in the spirit of Joseph Weizenbaum&#x27;s 1966 program" loading="lazy">
+  <p class="caption">ELIZA, 1966 — Joseph Weizenbaum, MIT. <em><a href="https://dl.acm.org/doi/10.1145/365153.365168">&quot;ELIZA — A Computer Program for the Study of Natural Language Communication Between Man and Machine&quot; (CACM, 1966) →</a></em></p>
+</section>
 <section class="slide-quote no-image" id="eliza-effect">
 
   <div class="quote-text">
@@ -204,17 +196,41 @@
         <section class="slide-exercise" id="exercise-try-eliza">
           <p class="kicker">Exercise</p>
           <h2>Try ELIZA</h2>
-          <p class="prompt">Five minutes — open it up and notice what your brain does:</p>
+          <p class="prompt">Five minutes — open it up and notice what your brain does. We&#x27;re less likely to anthropomorphise than ELIZA&#x27;s 1966 audience, because we&#x27;ve already met more sophisticated chatbots — but try to imagine what it would be like to talk to a system like this for the first time.</p>
           <ol><li>Open <a href="https://www.masswerk.at/eliza/">E.L.I.Z.A. Talking</a> (Norbert Landsteiner&#x27;s web port).</li>
 <li>Type as if you&#x27;re talking to a therapist. Use whatever&#x27;s actually on your mind.</li>
 <li>Notice the pattern: ELIZA reflects your nouns, asks open questions, occasionally trips.</li>
-<li>Catch yourself anthropomorphising. <strong>That&#x27;s the ELIZA effect.</strong> It&#x27;s still the strongest force in the room when we use ChatGPT.</li></ol>
+<li>Catch yourself anthropomorphising — even faintly. <strong>That residue is the ELIZA effect.</strong> It&#x27;s still the strongest force in the room when we use ChatGPT.</li></ol>
         </section>
 <section class="slide-section" id="section-llms">
   <p class="kicker">Part 2</p>
   <h2>AI, LLMs, and how they work</h2>
-  <p class="lead">What an LLM actually is — in plain language. Then what sits on top of it: reasoning layers, RLHF, and the choices that turn a base model into Claude, ChatGPT, or Gemini.</p>
+  <p class="lead">We&#x27;ve come a long way from ELIZA, which didn&#x27;t have any of the elements we consider to be a part of modern AI. Current chatbots are mostly powered by LLMs: Large Language Models.</p>
 </section>
+<section class="slide-image-only" id="llm-info">
+  <img src="../../../assets/slides/w01/llm-info.webp" alt="Hand-drawn-style infographic showing the AI → Machine Learning → Deep Learning → LLMs hierarchy. Tagline: &#x27;When the news says AI did X, almost always: an LLM did X.&#x27;" loading="lazy">
+
+</section>
+<section class="slide-image-only" id="llm-breakdown">
+  <img src="../../../assets/slides/w01/llm-breakdown.webp" alt="Detailed LLM explainer infographic: training data → tokenization → transformer model → train to predict next token → generate text. Plus key points and use cases." loading="lazy">
+
+</section>
+<section class="slide-quote no-image long-quote" id="willison-llm">
+
+  <div class="quote-text">
+    <blockquote><p>An LLM is a machine learning model that can complete a sentence of text. Give the model the phrase &quot;the cat sat on the &quot; and it will (almost certainly) suggest &quot;mat&quot; as the next word in the sentence.</p><p>As these models get larger and train on increasing amounts of data, they can complete more complex sentences — like &quot;a python function to download a file from a URL is <code>def download_file(url):</code> &quot;.</p><p>LLMs don&#x27;t actually work directly with words — they work with <strong>tokens</strong>. A sequence of text is converted into a sequence of integer tokens, so &quot;the cat sat on the &quot; becomes <code>[3086, 9059, 10139, 402, 290, 220]</code>. This is worth understanding because LLM providers charge based on the number of tokens processed, and are limited in how many tokens they can consider at a time.</p></blockquote>
+    <p class="attribution">— Simon Willison, <em><a href="https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/">How Coding Agents Work</a></em></p>
+  </div>
+</section>
+        <section class="slide-exercise" id="exercise-tokenizer">
+          <p class="kicker">Exercise</p>
+          <h2>What&#x27;s a token?</h2>
+          <p class="prompt">Two minutes — take Willison&#x27;s example off the page:</p>
+          <ol><li>Open the <a href="https://platform.openai.com/tokenizer">OpenAI Tokenizer</a> in a new tab.</li>
+<li>Paste a sentence you&#x27;d actually type into Claude or ChatGPT.</li>
+<li>Note the <strong>token count</strong> and which &#x27;words&#x27; the tokenizer splits into multiple pieces.</li>
+<li>Try the same sentence in another language, with a typo, or stuffed with your discipline&#x27;s jargon. Watch what changes.</li></ol>
+        </section>
         <section class="slide-image-bullets" id="what-is-genai">
           <div class="bullets-text">
 
@@ -234,48 +250,6 @@
     <p class="attribution">— Emily Bender &amp; Alex Hanna, <em>The AI Con</em></p>
   </div>
 </section>
-        <section class="slide-image-bullets" id="ai-vs-ml-vs-llm">
-          <div class="bullets-text">
-
-            <h2>AI is a field. Deep learning is one method. LLMs are one application.</h2>
-            <ul><li><strong>AI</strong> — the broad goal of machines that act intelligently.</li>
-<li><strong>Machine learning</strong> — the subfield where systems learn patterns from data.</li>
-<li><strong>Deep learning</strong> — one ML approach using many-layered neural networks.</li>
-<li><strong>LLMs</strong> — a particular use of deep-learning transformers, trained to predict tokens.</li>
-<li>When the news says &quot;AI did X,&quot; almost always: an LLM did X.</li></ul>
-
-          </div>
-          <img src="../../../assets/slides/w01/ml-paradigms.webp" alt="Symbolic vs subsymbolic AI diagram" loading="lazy">
-        </section>
-        <section class="slide-image-bullets no-image" id="language-model-basics">
-          <div class="bullets-text">
-
-            <h2>Language model, plain version</h2>
-            <ul><li>A language model assigns probabilities to sequences of tokens.</li>
-<li><em>Large</em> language models do this with billions of parameters.</li>
-<li><strong>Pretraining</strong> is the long, expensive step (weeks or months on GPU clusters).</li>
-<li><strong>Inference</strong> is what happens when you type a prompt.</li>
-<li>Everything else — RLHF, system prompts, tools — sits <strong>on top</strong> of the pretrained model.</li></ul>
-
-          </div>
-
-        </section>
-<section class="slide-quote no-image long-quote" id="willison-llm">
-
-  <div class="quote-text">
-    <blockquote><p>An LLM is a machine learning model that can complete a sentence of text. Give the model the phrase &quot;the cat sat on the &quot; and it will (almost certainly) suggest &quot;mat&quot; as the next word in the sentence.</p><p>As these models get larger and train on increasing amounts of data, they can complete more complex sentences — like &quot;a python function to download a file from a URL is <code>def download_file(url):</code> &quot;.</p><p>LLMs don&#x27;t actually work directly with words — they work with <strong>tokens</strong>. A sequence of text is converted into a sequence of integer tokens, so &quot;the cat sat on the &quot; becomes <code>[3086, 9059, 10139, 402, 290, 220]</code>. This is worth understanding because LLM providers charge based on the number of tokens processed, and are limited in how many tokens they can consider at a time.</p></blockquote>
-    <p class="attribution">— Simon Willison, <em><a href="https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/">How Coding Agents Work</a></em></p>
-  </div>
-</section>
-        <section class="slide-exercise" id="exercise-tokenizer">
-          <p class="kicker">Exercise</p>
-          <h2>Try tokenizing a sentence</h2>
-          <p class="prompt">Two minutes — take Willison&#x27;s point off the page:</p>
-          <ol><li>Open the <a href="https://platform.openai.com/tokenizer">OpenAI Tokenizer</a> in a new tab.</li>
-<li>Paste a sentence you&#x27;d actually type into Claude or ChatGPT.</li>
-<li>Note the <strong>token count</strong> and which &#x27;words&#x27; the tokenizer splits into multiple pieces.</li>
-<li>Try the same sentence in another language, with a typo, or stuffed with your discipline&#x27;s jargon. Watch what changes.</li></ol>
-        </section>
         <section class="slide-image-bullets no-image" id="reasoning-layers">
           <div class="bullets-text">
 
@@ -300,7 +274,7 @@
             <ul><li><strong><a href="https://techcrunch.com/2020/06/11/openai-makes-an-all-purpose-api-for-its-text-based-ai-capabilities/">June 11, 2020</a>:</strong> OpenAI releases the GPT-3 API in private beta. Developers could already prompt the model behind a waiting list.</li>
 <li><strong><a href="https://github.blog/news-insights/product-news/introducing-github-copilot-ai-pair-programmer/">June 29, 2021</a>:</strong> GitHub Copilot enters technical preview — built on OpenAI Codex, an OpenAI model descended from GPT-3.</li>
 <li><strong><a href="https://venturebeat.com/ai/openai-makes-gpt-3-generally-available-through-its-api/">November 18, 2021</a>:</strong> the GPT-3 API drops the waitlist; it&#x27;s now open to any developer.</li>
-<li>Faculty and students mostly didn&#x27;t know any of this was happening.</li></ul>
+<li>Working with these tools required code literacy, so the impact was primarily in the digital humanities: in fields like electronic literature, we were fine-tuning models for poetic and playful text, but not thinking about AI as a serious author...yet.</li></ul>
             <p class="caption">Sources: <a href="https://techcrunch.com/2020/06/11/openai-makes-an-all-purpose-api-for-its-text-based-ai-capabilities/">TechCrunch</a>, <a href="https://github.blog/news-insights/product-news/introducing-github-copilot-ai-pair-programmer/">GitHub Blog</a>, <a href="https://venturebeat.com/ai/openai-makes-gpt-3-generally-available-through-its-api/">VentureBeat</a>.</p>
           </div>
 
@@ -317,13 +291,17 @@
           </div>
 
         </section>
-<section class="slide-quote no-image long-quote" id="interface-was-the-event">
+        <section class="slide-image-bullets no-image" id="interface-was-the-event">
+          <div class="bullets-text">
 
-  <div class="quote-text">
-    <blockquote><p>The chatbot was the wrapping. The model was already there.</p><p>What changed on November 30, 2022 wasn&#x27;t a leap in capability — it was a leap in <strong>access</strong>. Anyone with a browser and an email address could talk to a system that had previously lived behind an API key, a credit card, and a developer account.</p><p>Every higher-ed conversation about generative AI is a conversation about that access. The crisis isn&#x27;t that the model exists. It&#x27;s that the model became <em>visible to everyone at once</em>.</p></blockquote>
-    <p class="attribution">— Workshop framing — what the ChatGPT moment was actually about</p>
-  </div>
-</section>
+            <h2>The chatbot was the wrapping. The model was already there.</h2>
+            <ul><li>What changed on November 30, 2022 wasn&#x27;t a leap in capability — it was a leap in <strong>access</strong>.</li>
+<li>Anyone with a browser and an email address could now talk to a system that had previously lived behind an API key, a credit card, and a developer account.</li>
+<li>Every higher-ed conversation about generative AI is a conversation about that access. The crisis isn&#x27;t that the model exists — it&#x27;s that the model became <em>visible to everyone at once</em>.</li></ul>
+
+          </div>
+
+        </section>
 <section class="slide-section" id="section-where">
   <p class="kicker">Part 4</p>
   <h2>Where this leaves us — and where it&#x27;s going</h2>
@@ -350,16 +328,29 @@
 <li>An <em>agent</em> is the loop these compose into. The vocabulary is doing a lot of work — but the foundation is still the LLM we just described.</li></ul>
 
           </div>
-          <img src="../../../assets/slides/w01/agent-vocab.webp" alt="Agent vocabulary illustration" loading="lazy">
+          <img src="../../../assets/slides/w01/agent-vocab.webp" alt="Screenshot of OpenClaw, an agentic AI tool: &#x27;The AI that actually does things — clears your inbox, sends emails, manages your calendar, checks you in for flights.&#x27;" loading="lazy">
+        </section>
+        <section class="slide-image-bullets" id="einstein-companion">
+          <div class="bullets-text">
+
+            <h2>Einstein.AI: &quot;Has his own computer&quot;</h2>
+            <ul><li>An agentic harness aimed straight at undergraduates: logs into Canvas for you, watches lecture videos, reads &amp; writes essays, participates in discussions, works while you sleep.</li>
+<li><em>&quot;Einstein isn&#x27;t a chatbot. He has a full virtual computer — he can browse the web, watch videos, read PDFs, and interact with any site just like you would.&quot;</em></li>
+<li>This is the higher-ed crisis the Chronicle headline is pointing at — not that the chatbot writes the paper, but that the agent does the <em>whole assignment loop</em>.</li>
+<li><a href="https://companion.ai/einstein">companion.ai/einstein →</a></li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w01/einstein-companion.webp" alt="Screenshot of the Einstein.AI &#x27;How it works&#x27; page: Einstein has a full virtual computer with a browser, logs into Canvas, watches lectures, reads and writes essays, participates in discussions." loading="lazy">
         </section>
         <section class="slide-image-bullets no-image" id="llm-as-substrate">
           <div class="bullets-text">
 
             <h2>The LLM is now the substrate, not the product</h2>
             <ul><li><strong>2022:</strong> the chatbot <em>is</em> the product (ChatGPT).</li>
-<li><strong>2026:</strong> the chatbot is one interface among many. Cursor, Claude Code, Copilot, MCP-connected research tools, agent platforms.</li>
-<li>Same family of models underneath. Different <em>wrappers</em> — and the wrapping is where pedagogical choices live now.</li>
-<li>Everything else in this series — Projects, Artifacts, Code Web, CLI — is a wrapper choice.</li></ul>
+<li><strong>2026:</strong> the chatbot is one interface among many. The model lives inside a <strong>harness</strong> that wraps it in tools, memory, planning, and access.</li>
+<li><strong>Coding harnesses</strong> — Cursor, Claude Code (Web + CLI), GitHub Copilot, OpenAI Codex — wrap the model in a repository, file edits, terminal commands, deployments.</li>
+<li><strong>General agentic harnesses</strong> — Cowork, OpenClaw, Einstein, MCP-connected research tools — wrap the model in calendars, inboxes, browsers, learning management systems.</li>
+<li>Same family of models underneath. The harness is where pedagogical choices live now. Everything in this series — Projects, Artifacts, Code Web, CLI — is a harness choice.</li></ul>
 
           </div>
 
