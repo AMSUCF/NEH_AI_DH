@@ -31,21 +31,21 @@ This workshop series is being offered at UCF to a cohort of **Digital Humanities
 
 ## What We Are Building
 
-The series unfolds across three arcs:
+The series unfolds across four arcs:
 
-1. **Stage 1 — Text** *(Weeks 1–4)*. We start with what an LLM actually is — tracing its history through the way the web, digital culture, and networked communication built up the digitized record of human expression that now fuels LLMs and multimodal models. We look at how **reasoning layers** and human feedback (RLHF and related training) sit on top of the base model to shape its efficacy, and what that means for the higher-ed conversation about plagiarism, expertise, and reading. We use **Claude Projects** to upload a small corpus and explore it.
-2. **Stage 2 — Visual** *(Weeks 5–6)*. We move to **Claude Artifacts** for image-to-text translation, alt-text generation, archival metadata, and critical reflection on AI-generated imagery already circulating in our communities. This stage foregrounds **bias** in vision models and training data, and the unresolved **copyright** questions around image generation and reuse.
-3. **Stage 3 — Code** *(Weeks 7–10)*. We use **Claude Code Web** to build small interactive tools — an ePortfolio, a recommender, a humanities-centered teaching site. Because most participants will not have used them before, we introduce **GitHub** and **GitHub Pages** from scratch, and deploy our projects there. We address accessibility, Universal Design for Learning, AI policy, and copyright.
-4. **Stage 4 — Agentic Futures** *(Weeks 11–12)*. The final session offers a brief tour of **Cowork** and the **Claude CLI**, with attention to the emerging agentic landscape and the sustainability of what we have built. The closing async week is reserved for sharing, reflection, and planning what to carry into your fall classroom.
+1. **Stage 1 — Text** *(Weeks 1–4)*. We start with what an LLM actually is — through the historical line from ELIZA in 1966 to the ChatGPT moment in 2022 to today's "frontier" or "foundation" models. We look at how **reasoning layers** and human feedback (RLHF) sit on top of the base model, and at the higher-ed conversation that has shifted from chatbot-cheating to *agentic* questions. We use **Claude Projects** and **Claude Skills** to work with text, including discipline-specific corpora.
+2. **Stage 2 — Visual and Multimodal** *(Weeks 5–6)*. We use **Claude Projects + Artifacts** for image analysis, alt-text generation, archival metadata, and critical reflection on AI-generated imagery — and we look beyond Claude at multimodal tools like **Google Gemini Nano Banana**, **OpenAI Images 2.0**, **Claude Design** for slides, and voice interfaces. This stage foregrounds **copyright**, **bias**, and the comparative-tool eye humanists need.
+3. **Stage 3 — Code** *(Weeks 7–10)*. We use **Claude Code Web** to build small interactive tools — an ePortfolio, a dataset visualization, a course-concept game, an interactive worksheet, a public-scholarship one-pager. We introduce **GitHub** and **GitHub Pages** from scratch, address agentic workflows including *planning mode*, and draft **discipline-specific AI policies** through a UDL lens.
+4. **Stage 4 — Agentic Futures** *(Weeks 11–12)*. The final live session is a **demo tour** of local agentic powertools — Cowork, the Claude CLI, MCP, the Superpowers workflow — with attention to UCF policy on local installation and the consequences for our disciplines and our students' careers. The closing async week is reserved for **fall course planning** and sharing back to the open community.
 
 ## Tool Stages
 
 | Stage | Weeks | Tool | What it changes |
 |-------|-------|------|-----------------|
-| 1 | W1–W4 | Claude Projects | Persistent context, file uploads, text analysis |
-| 2 | W5–W6 | Claude Artifacts | Visual analysis, shareable interactive outputs |
-| 3 | W7–W10 | Claude Code Web | Multi-file projects, GitHub Pages deployment |
-| 4 | W11–W12 | Cowork + Claude CLI (tour only) | Agentic workflows, terminal-native AI |
+| 1 | W1–W4 | Claude Projects + Skills | Persistent context, file uploads, text analysis, custom instruction sets |
+| 2 | W5–W6 | Claude Artifacts + multimodal AI | Visual analysis, infographic generation, slides, voice interfaces |
+| 3 | W7–W10 | Claude Code Web | Multi-file projects, planning mode, GitHub Pages deployment |
+| 4 | W11–W12 | Cowork + Claude CLI (tour only) | Agentic workflows, MCP, terminal-native AI |
 
 ## Schedule
 

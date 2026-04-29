@@ -1,16 +1,30 @@
 ---
 week: 12
-title: "Sustaining and Sharing (Asynchronous)"
+title: "Course Proposal / Course Update (Asynchronous)"
 kind: async
-theme: "Sustainability, sharing, final reflection"
+theme: "Planning fall, with AI assistance that doesn't replace your labor"
 starts: 2026-07-27
+summary: |
+  This week's focus is on finishing out your planning for fall's course proposal or course update: the exercises will include some suggestions of how you might use tools like the Claude Code CLI or Cowork to assist with that work without replacing your own pedagogical intention or labor.
 ---
 
-The closing week. There is no in-person session and no required deliverable for the workshop series itself. This week is about consolidating what you built, sharing one piece of it back to a public community, and naming what you are carrying into the fall.
+The closing week. There is no in-person session and no required deliverable for the workshop series itself.
 
 <div class="async-callout" markdown="1">
-**Asynchronous closing.** Optional. The "Standard" exercise below — share-back to Humanities Commons or a public repo — is the most generative single use of this week if you have only a few hours.
+**Asynchronous closing.** Optional, with one strong recommendation: pick the **Standard** exercise (course-proposal or syllabus revision) if you have only a few hours this week. That's the use of this week with the longest tail.
 </div>
+
+## The Frame for This Week
+
+The series ends not with a flourish but with a course proposal — yours. Most of you came in with a syllabus that needed updating, a course you wanted to propose, or a unit you wanted to redesign. This week is for finishing that work, with whatever AI assistance is *useful* to you and *not replacing* the pedagogical labor you actually want to do.
+
+A useful sorting question, before you open Claude this week:
+
+- **Where do I want help?** (Drafting boilerplate. Generating examples. Sanity-checking learning outcomes against actual readings. Building a small rubric. Drafting a single assignment description in three discipline-appropriate registers.)
+- **Where do I *not* want help?** (The course's argument. The choice of texts. The thing that makes this course mine rather than someone else's.)
+- **Where would help quietly *replace* the work?** (Anything where the AI's draft is competent enough that you stop noticing what you would have written.)
+
+That third category is the one to watch.
 
 ## Reading Menu
 
@@ -21,12 +35,28 @@ The closing week. There is no in-person session and no required deliverable for 
 ## Exercise Menu
 
 - <span class="tag tag-light">Light</span> **Final reflection (500 words, ~30 min).** What did you build across the series, what surprised you, and what will you carry into your fall classroom? Save it somewhere you will reread in October. *Source pattern: `HumanitiesAI/finalreflection.md`.*
-- <span class="tag tag-standard">Standard</span> **Share-back to a public community (~90 min).** Take one artifact from the series — a syllabus revision, a teaching tool, a corpus, a policy, a `CLAUDE.md` — and post it to [Humanities Commons](https://hcommons.org/), a public GitHub repo with a clear README, or your home institution's repository. The point is that another teacher could pick it up and use it. The NEH project is committed to building a *learning community*; this is the contribution that makes that community real.
-- <span class="tag tag-deep">Deep</span> **Try one CLI or Cowork session on your own (~3+ hr).** Install [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) and run one full Brainstorm → Spec → Plan → Implementation cycle on a small DH project of your choice. Document what differs from your Code Web experience. This is the only deep-dive exercise that asks you to install something — skip it without guilt if it does not fit.
+- <span class="tag tag-standard">Standard</span> **Course proposal / syllabus revision with Claude Projects (~2–3 hr).** This is the headline exercise of the week. Open a fresh Claude Project. Upload: your existing syllabus (if revising) or a CFP and your draft proposal (if proposing); the AI policy you drafted in W9; one of the artifacts you built across the series; and your `CLAUDE.md` from W11. Then iterate on the proposal or syllabus inside the Project, with Claude as a critical reader. Specifically:
+  1. Ask Claude to identify three places your stated learning outcomes don't match the actual assignments. Decide which ones are real misalignments and which are Claude misreading.
+  2. Ask Claude to suggest one assignment that would teach the same outcome with the AI policy you drafted.
+  3. Ask Claude to draft a 250-word public-facing summary of the course for your department's website. Edit it heavily before you save it.
+
+  Save the conversation and the final document. The conversation is part of the deliverable — it documents the iteration.
+
+- <span class="tag tag-deep">Deep</span> **One CLI or Cowork session on a personal machine (~3+ hr, optional).** If you have a personal machine you can use and want to try it, install [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) and run one full Brainstorm → Spec → Plan → Implementation cycle on a small DH project of your choice — could be the course-site for fall. Document what differs from your Code Web experience. This is the only deep-dive exercise that asks you to install something — skip it without guilt if it does not fit your setup or institutional context.
+
+## A Few Sentences About Sharing
+
+The NEH learning community continues beyond this twelve-week series. Workshop recordings, materials, and contributed artifacts will remain open at this site. Future cohorts will run during subsequent academic terms. **If you would like to contribute** a session, an exercise, a reading, or a syllabus revision back to the community, three options:
+
+- Post to [Humanities Commons](https://hcommons.org/) and link from your CV.
+- Open a public GitHub repo with a clear README and tag it for discoverability.
+- Reach out to Dr. Salter directly and we'll add it to the project's reading-and-exercise menus for the next cohort.
+
+The point of an open project is that other teachers can pick it up and use it. That's how the *learning community* in the project's title becomes real.
 
 ## A Note for Returning Participants
 
-The NEH learning community continues beyond this twelve-week series. Workshop recordings, materials, and contributed artifacts will remain open at [the project site] (URL TBA). Future cohorts will run during subsequent academic terms. If you would like to contribute a session, an exercise, a reading, or a syllabus revision back to the community, please reach out to Dr. Salter directly.
+If you're coming back to these materials weeks or months from now: the readings are evergreen, the exercises are still doable, and the tools are likely renamed but recognizable. The pedagogical framework — sobriety, iteration, attribution, agency, refusal — is the part that won't go stale. Anchor your fall planning there.
 
 ## Acknowledgements
 
@@ -34,4 +64,4 @@ This material is based upon work supported by the **National Endowment for the H
 
 ## Cross-references
 
-- Source materials: `HumanitiesAI/finalreflection.md`; `dhsi.md`; `CriticalMaking2026/exercises/reflection.md`.
+- Source materials: `HumanitiesAI/finalreflection.md`; `HumanitiesAI/weektwelve.md` (planning mode for full project); `DHSI_DH_AI_2026/dhsi-2026-course-packet.md` (skill-building, final tool deployment); `CriticalMaking2026/exercises/reflection.md`.

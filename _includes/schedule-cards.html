@@ -23,13 +23,17 @@ the same coral / cobalt / mustard / plum rotation as the home-page grid.
     {%- assign label = "Async" -%}
     {%- assign deck_url = nil -%}
   {%- endif %}
-  {%- assign opener = w.content
-        | strip_html
-        | strip_newlines
-        | split: ". "
-        | first
-        | append: "."
-  -%}
+  {%- if w.summary -%}
+    {%- assign opener = w.summary | strip -%}
+  {%- else -%}
+    {%- assign opener = w.content
+          | strip_html
+          | strip_newlines
+          | split: ". "
+          | first
+          | append: "."
+    -%}
+  {%- endif -%}
   <li class="schedule-card {{ card_class }}" id="w{{ w.week }}">
     <header class="schedule-card-head">
       <span class="schedule-num">W{{ w.week }}</span>

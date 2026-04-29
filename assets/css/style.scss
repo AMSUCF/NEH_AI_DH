@@ -424,6 +424,19 @@ a:hover, a:focus {
   .week-block-link { min-height: 0; padding: 0.85rem 1rem 1rem; }
 }
 
+/* ===== Page summary (lede paragraph rendered from front-matter `summary:`) ===== */
+.page-summary {
+  font-family: var(--display);
+  font-variation-settings: "opsz" 16, "wdth" 100, "wght" 500;
+  font-size: clamp(1.15rem, 1.6vw, 1.35rem);
+  line-height: 1.45;
+  color: var(--ink);
+  max-width: 64ch;
+  margin: 0.5rem 0 1.75rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--coral);
+}
+
 /* ===== Detailed schedule cards (schedule.md) ===== */
 .schedule-list {
   list-style: none;

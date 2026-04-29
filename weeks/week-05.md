@@ -2,8 +2,10 @@
 week: 5
 title: "Workshop 3: AI for Visual Analysis"
 kind: workshop
-theme: "Visual analysis with Claude Artifacts"
+theme: "Visual analysis with Claude Projects + Artifacts"
 starts: 2026-06-08
+summary: |
+  Image generation (and multimodal AI more broadly) is among the most contested forms of AI usage, raising questions of copyright and ethics that we'll address in this week's discussions. Our exercises will focus on image analysis and the ways AI is reshaping how we work with visual culture broadly, with pragmatic tasks such as alt-text and metadata alongside image analysis. We'll use both Claude Projects and Claude Artifacts in this week's exercises.
 workshop:
   title: "Workshop 3: AI for Visual Analysis"
   date: 2026-06-10
@@ -11,7 +13,7 @@ workshop:
   location: CHDR
 ---
 
-We move from text to image. **Claude Artifacts** are now our primary tool: not because Artifacts are visual (they are HTML, after all), but because pairing Claude's multimodal vision with the Artifact publishing flow makes visual analysis genuinely shareable. By the end of the session, every participant will have an Artifact gallery from their own image set with alt-text, structured metadata, and at least one comparative reading.
+By the end of the session, every participant will have an Artifact gallery from their own image set with alt-text, structured metadata, and at least one comparative reading.
 
 <div class="workshop-callout" markdown="1">
 **NEH Workshop 3 — Tuesday, June 10, 10 AM – noon, CHDR**
@@ -29,41 +31,53 @@ Streamed and recorded. Open to UCF faculty, graduate students, and the broader N
 
 ## Pre-Workshop Reading
 
-- Demsky, Ian. ["My Month with Midjourney."](https://electronicbookreview.com/publications/my-month-with-midjourney/) *Electronic Book Review*, April 2, 2023. (~25 min) The most useful single piece on iteration as method in image generation.
-- Jebb, Louis. ["On Process: Refik Anadol Seeks to Demystify AI Art."](https://www.theartnewspaper.com/2024/04/05/on-process-refik-anadol-seeks-to-demystify-ai-art-by-showing-how-it-is-put-together) *The Art Newspaper*, April 5, 2024. (~10 min) For thinking about AI vision at archive scale.
 - Crawford, Kate, and Trevor Paglen. ["Excavating AI."](https://excavating.ai/) (~30 min) The single best critical introduction to what training datasets look like under the hood.
+- Demsky, Ian. ["My Month with Midjourney."](https://electronicbookreview.com/publications/my-month-with-midjourney/) *Electronic Book Review*, April 2, 2023. (~25 min) The most useful single piece on iteration as method in image generation.
+- Coverage of the copyright fights: pick one — [*Andersen v. Stability AI*](https://www.courtlistener.com/docket/66732129/andersen-v-stability-ai-ltd/), [*New York Times v. OpenAI*](https://www.nytimes.com/2023/12/27/business/media/new-york-times-open-ai-microsoft-lawsuit.html), or [Getty Images v. Stability AI](https://www.theguardian.com/technology/2025/nov/04/getty-images-loses-most-copyright-claims-against-stability-ai-in-uk-court).
 
 Optional:
 
 - Mitchell, *Artificial Intelligence*, Part II: Looking and Seeing.
+- Jebb, Louis. ["On Process: Refik Anadol."](https://www.theartnewspaper.com/2024/04/05/on-process-refik-anadol-seeks-to-demystify-ai-art-by-showing-how-it-is-put-together) *The Art Newspaper*, April 2024.
 
 ## Session Outline (120 minutes)
 
-1. **Two paradigms in one session (~15 min).** Image *generation* (text-to-image) versus image *analysis* (image-to-text, alt-text, multi-image comparison). The workshop is about the second; the first is referenced because we cannot have an honest visual conversation without it.
-2. **Live demo: archival comic covers (~25 min).** I upload a small set of comic covers (or another archival set) to Claude Sonnet. We walk through: describe → alt-text → key features → comparative metadata → relational visualization as an Artifact.
-3. **Hands-on: your image set (~50 min).** Each participant uploads their five-to-ten image set. Sequence:
-   - Generate alt-text for each image. Save it.
-   - Build a metadata table.
-   - Ask Claude to identify three patterns across the set.
-   - Generate a comparative-description Artifact.
-4. **Critical reflection (~20 min).** What did Claude *see* that you did not? What did it miss? Where does its visual reading reproduce the biases discussed in Crawford & Paglen?
-5. **Discussion (~10 min).** Where does this fit in your teaching? An accessibility tool? A scaffolded close-reading exercise? An archival metadata workflow?
+1. **Two paradigms in one session.** Image *generation* (text-to-image) versus image *analysis* (image-to-text, alt-text, multi-image comparison). The workshop is about both, but we lead with the analytical work because that's where the pedagogical leverage is.
+2. **The copyright and ethics conversation.** Where the lawsuits stand, what training data was scraped, what we can and can't responsibly generate or analyze. The Crawford & Paglen reading is the structural critique; the lawsuits are the live news.
+3. **Live demo: archival comic covers in two tools.** I upload a small set to Claude Sonnet two ways — first to a **Project** (for batch metadata work across many files, with persistent context) and then to a fresh **Artifact** conversation (for the publishable visualization). We walk: describe → alt-text → key features → comparative metadata → relational visualization as an Artifact.
+4. **Hands-on: your image set.** Each participant uploads their five-to-ten image set:
+   - In a **Project** — generate alt-text for each image, build a metadata table, ask Claude for three patterns across the set.
+   - In an **Artifact** — generate a comparative-description gallery (a grid, a typology, a timeline) you can share by URL.
+5. **Critical reflection.** What did Claude *see* that you did not? What did it miss? Where does its visual reading reproduce the biases discussed in Crawford & Paglen? What's it doing with images of people, in particular?
+6. **Discussion: where this fits in your teaching.** An accessibility tool? A scaffolded close-reading exercise? An archival metadata workflow? A copyright trap? All of the above?
 
 ## Core Exercise
 
-**Image-to-text translation set.** Using your image set:
+**Image-to-text translation set, two tools.** Using your image set:
 
-1. Upload all images to Claude Sonnet (single conversation; multi-file upload supported by your Pro subscription).
-2. Generate descriptive alt-text for each image, applying accessibility standards.
+**Part A — In a Claude Project (the batch work):**
+
+1. Create a fresh Project. Upload all images.
+2. Generate descriptive alt-text for each, applying accessibility standards.
 3. Build a metadata table covering: image, key features, period or context, observations.
 4. Ask Claude to surface three patterns across the set.
-5. Generate an **Artifact** that visualizes the set in a meaningful relationship — a grid, a comparative table, a typology.
-6. Critique the alt-text and the patterns. Where does Claude's vision fail or flatten?
+
+**Part B — In a Claude Artifact (the shareable output):**
+
+5. Open a new conversation; ask Claude to build an Artifact that visualizes the set in a meaningful relationship — a grid, a comparative table, a typology.
+6. Iterate on the Artifact: change the layout, add captions from your alt-text, fix what's flat.
+7. Publish it. Save the URL.
+
+**Part C — The critique:**
+
+8. Where does Claude's vision fail or flatten? Where did the Project handle scale better than the Artifact, or vice versa? What would you tell a student to watch for?
 
 ## Pedagogical Note
 
 For accessibility-minded readers: AI-generated alt-text is *a draft.* It is faster than writing alt-text from scratch, and it is consistently worse than alt-text written by a human who knows the context. Use it as scaffolding for students learning to write alt-text, not as a finished artifact. The same applies to metadata: AI accelerates a draft; human curation is the work.
 
+For the copyright conversation: there is no current legal answer, only a moving target. The honest pedagogical move is to teach students to ask the question — what was this trained on, what gives us the right to use this image, who is harmed if we get it wrong — not to give them a stable answer.
+
 ## Cross-references
 
-- Source materials: `HumanitiesAI/weeksix.md` (image-to-text translation); `DistantCodingUMKC` Example 3 (butterflies); `CriticalMaking2026/exercises/four_maps.md` (visual ideation).
+- Source materials: `HumanitiesAI/weeksix.md` (image-to-text translation); `CriticalMaking2026/exercises/four_maps.md` (visual ideation), `CriticalMaking2026/exercises/one_selfie.md` (filters, beautification, bias).
