@@ -60,11 +60,17 @@ Pick a poetic form — haiku, sonnet, ghazal, blackout, cento. Iterate ten times
 
 **Discord post:** the Artifact URL and one observation about how the conversation history shaped each draft.
 
-### 5. Three-models comparison
+### 5. Multi-chatbot comparison
 
-Run the same teaching question through Claude Opus, Claude Sonnet, and Claude Haiku within one Project. Track what shifts: depth, hedging, hallucination rate, time, formatting defaults.
+Pick a more complex task you'd actually want help with — a research question for your work, a piece of poetry or other creative writing, an assignment you'd give a class, a syllabus paragraph. Run it through **two or three** of the free / institutional chatbots:
 
-**Discord post:** which model you'd reach for first, and for what — a one-paragraph back-of-envelope take, no formal memo required. The cohort's takes together become the model-selection guide.
+- [UCF Copilot](https://cdl.ucf.edu/faculty-multimedia-center-ai-tools/) (Microsoft, OpenAI under the hood, UCF-data framing on top)
+- [ChatGPT free](https://chat.openai.com/)
+- [Gemini free](https://gemini.google.com/)
+
+Notice what each tool *lets you control* (model selection, custom instructions, file upload, web search, voice) and what it *doesn't* (defaults you can't override, refusals, formatting it imposes, what it does with your data).
+
+**Discord post:** which tool you'd reach for, for what kind of task — and one specific thing each tool wouldn't let you adjust that you wanted to.
 
 ## What to Carry Into Workshop 2
 
