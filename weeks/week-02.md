@@ -52,7 +52,7 @@ In Claude, open **Customize → Add a skill or connector**. Investigate the menu
 
 Use **Upload file** to give Claude a real document of your own — your past syllabus for this course, your notes on what you want to teach, an outline of an assignment you'd like to redesign, or a piece of writing you want feedback on. Then ask Claude to research what other instructors have done in similar classes with generative and agentic AI: examples, frameworks, places it would push you to think harder. Iterate on the question; don't take the first answer.
 
-**Discord post:** what Claude surfaced that you hadn't considered, and one place its research felt thin.
+**Discord post:** what (if anything) Claude surfaced that was useful, and where its research felt thin or wrong. Don't reverse-engineer a "win" — the negative finding is also data.
 
 ### 4. Iterate a poem in an Artifact
 

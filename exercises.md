@@ -23,7 +23,7 @@ Every workshop has one core exercise; every async week offers a deep-dive menu a
 
 1. **Tour the settings, set your defaults.** Walk every panel; set defaults that fit your work; switch models on the same prompt; try voice mode if your account has it. Discord-post what surprised you.
 2. **Add a skill or connector.** **Customize → Add a skill or connector**: investigate the menu (skill-creator, document/slide builders, spreadsheet, Google Drive / Gmail / Notion connectors). Try one on a real task. Discord-post what changed.
-3. **Upload a document and research.** Use **Upload file** to give Claude your past syllabus, teaching notes, or assignment outline. Ask it to research what others have done in similar classes with generative and agentic AI; iterate. Discord-post what surfaced and what felt thin.
+3. **Upload a document and research.** Use **Upload file** to give Claude your past syllabus, teaching notes, or assignment outline. Ask it to research what others have done in similar classes with generative and agentic AI; iterate. Discord-post what (if anything) Claude surfaced that was useful, and where it felt thin or wrong.
 4. **Iterate a poem in an Artifact.** Pick a form, iterate ten times, publish as an Artifact. Discord-post the URL and one observation about how the history shaped each draft. *Source: [HumanitiesAI/weektwo](https://anastasiasalter.net/HumanitiesAI/weektwo.html).*
 5. **Multi-chatbot comparison.** Run a complex task (research / poetry / a syllabus paragraph) through two or three of UCF Copilot, ChatGPT free, Gemini free. Notice what each lets you control vs. doesn't (defaults, refusals, formatting, data handling). Discord-post what you noticed — what's different in the interfaces and the controls?
 
