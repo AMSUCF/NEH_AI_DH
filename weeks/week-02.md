@@ -70,7 +70,7 @@ Pick a more complex task you'd actually want help with — a research question f
 
 Notice what each tool *lets you control* (model selection, custom instructions, file upload, web search, voice) and what it *doesn't* (defaults you can't override, refusals, formatting it imposes, what it does with your data).
 
-**Discord post:** which tool you'd reach for, for what kind of task — and one specific thing each tool wouldn't let you adjust that you wanted to.
+**Discord post:** what you noticed — what's different in the interfaces and the controls? Where did one tool give you something the others didn't? Where did one refuse what another offered?
 
 ## What to Carry Into Workshop 2
 
