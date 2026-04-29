@@ -9,19 +9,19 @@ summary: |
 ---
 
 <div class="async-callout" markdown="1">
-**Asynchronous deep-dive.** No required reading or exercise — pick what fits your time. Workshop 2 (May 27) shifts to text analysis with Claude Projects and assumes you have a working Claude account; everything else here is enrichment.
+**Asynchronous deep-dive.** Five specific tasks this week, designed to build interface fluency before Workshop 2. **Share each one back in the cohort Discord as you finish it** — the exchange across the cohort is half the curriculum this week.
 </div>
 
-## What to Try in Claude This Week
+## Recommended Viewing
 
-Spend at least an hour clicking around. The interface is the curriculum this week. Specifically:
+Melanie Mitchell — *The past, present, and uncertain future of AI* — pairs directly with the Deep reading below, and is the single best one-sitting talk this series can point to.
 
-- **Settings → Profile.** Set personal preferences (writing style, response length, what to call you). Notice that this is *system-prompt territory* — Claude reads these on every conversation.
-- **Settings → Capabilities.** Toggle Artifacts, web search, code interpreter on and off. Note which ones you use.
-- **Model selector.** Switch between Opus, Sonnet, and Haiku on the same prompt. Notice the trade-offs (depth vs. speed vs. cost).
-- **Projects.** Create one. Upload a single document. Notice that subsequent chats inside the Project see that file.
-- **Voice mode** (if available). Try it once. Notice what it does well and where it breaks.
-- **Conversation history.** Find a conversation from a week ago and continue it. Notice what the model remembers and what it has to be re-told.
+<figure class="video-embed">
+  <div class="video-embed-frame">
+    <iframe src="https://www.youtube.com/embed/xdTOrk9jOp0" title="The past, present, and uncertain future of AI with Melanie Mitchell" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <figcaption><a href="https://www.youtube.com/watch?v=xdTOrk9jOp0">The past, present, and uncertain future of AI</a> — Melanie Mitchell</figcaption>
+</figure>
 
 ## Reading Menu
 
@@ -32,11 +32,39 @@ Spend at least an hour clicking around. The interface is the curriculum this wee
 - <span class="tag tag-standard">Standard</span> Emerson, Lori. ["Interfaced."](https://loriemerson.net/2020/02/07/interfaced/) From *Further Reading*. Interface is not transparent; reading this changes how you see the chat window.
 - <span class="tag tag-deep">Deep</span> Mitchell, Melanie. *Artificial Intelligence: A Guide for Thinking Humans*, Part I. The clearest non-technical explanation of how these systems work.
 
-## Exercise Menu
+## Five Tasks This Week
 
-- <span class="tag tag-light">Light</span> **Settings tour + reflection (~30 min).** Walk through every settings panel in Claude. Set the defaults that make sense for your work. Write a one-paragraph reflection: *what surprised you about what's adjustable, and what you wish were?* Bring it to W3 discussion.
-- <span class="tag tag-standard">Standard</span> **Iterate a poem in an Artifact (~90 min).** Pick a poetic form — haiku, sonnet, ghazal, blackout, cento. Iterate ten times in Claude Sonnet. Publish the final as a Claude Artifact. Notice how the conversation history shapes each draft. *Source: adapted from [HumanitiesAI/weektwo](https://anastasiasalter.net/HumanitiesAI/weektwo.html).*
-- <span class="tag tag-deep">Deep</span> **Three-models comparison (~3 hr).** Run the same teaching question through Claude Opus, Claude Sonnet, and Claude Haiku within one Project. Track depth, hedging, hallucination rate, and time. Write a one-page "model selection" memo for yourself. Useful as a reference for the rest of the series.
+The interface is the curriculum this week. Each task lands in the cohort Discord — your post is the deliverable.
+
+### 1. Tour the settings, set your defaults
+
+Walk through every settings panel in Claude. Set the defaults that make sense for *your* work — writing style, response length, what to call you, capability toggles (Artifacts, web search, code interpreter), conversation-history retention. Try voice mode once if your account has it. Switch the model selector between Opus, Sonnet, and Haiku on the same prompt and notice the trade-offs.
+
+**Discord post:** what surprised you about what's adjustable, and what you wish were? Drop one screenshot if useful.
+
+### 2. Add a skill or connector
+
+In Claude, open **Customize → Add a skill or connector**. Investigate the menu — Anthropic's official skills (skill-creator, document and slide builders, spreadsheet skill, the others), and the connectors to outside services (Google Drive, Gmail, Notion, your library catalog if it's listed). Pick one that looks useful for *your* work and try it on a real task you'd otherwise do by hand.
+
+**Discord post:** which skill or connector you tried, what it changed about Claude's defaults, and what you'd build on top of it.
+
+### 3. Upload a document and research
+
+Use **Upload file** to give Claude a real document of your own — your past syllabus for this course, your notes on what you want to teach, an outline of an assignment you'd like to redesign, or a piece of writing you want feedback on. Then ask Claude to research what other instructors have done in similar classes with generative and agentic AI: examples, frameworks, places it would push you to think harder. Iterate on the question; don't take the first answer.
+
+**Discord post:** what Claude surfaced that you hadn't considered, and one place its research felt thin.
+
+### 4. Iterate a poem in an Artifact
+
+Pick a poetic form — haiku, sonnet, ghazal, blackout, cento. Iterate ten times in Claude Sonnet on a topic that matters to you. Publish the final as a Claude Artifact and copy the share URL. *Source: adapted from [HumanitiesAI/weektwo](https://anastasiasalter.net/HumanitiesAI/weektwo.html).*
+
+**Discord post:** the Artifact URL and one observation about how the conversation history shaped each draft.
+
+### 5. Three-models comparison
+
+Run the same teaching question through Claude Opus, Claude Sonnet, and Claude Haiku within one Project. Track what shifts: depth, hedging, hallucination rate, time, formatting defaults.
+
+**Discord post:** which model you'd reach for first, and for what — a one-paragraph back-of-envelope take, no formal memo required. The cohort's takes together become the model-selection guide.
 
 ## What to Carry Into Workshop 2
 
