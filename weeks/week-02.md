@@ -9,7 +9,7 @@ summary: |
 ---
 
 <div class="async-callout" markdown="1">
-**Asynchronous deep-dive.** Five specific tasks this week, designed to build interface fluency before Workshop 2. **Share each one back in the cohort Discord as you finish it** — the exchange across the cohort is half the curriculum this week.
+**Asynchronous expectations.** Read all three **Light** readings, and complete at least one of the five tasks below. Doing more is welcome — and the cohort Discord is where the exchange lives. **Share each task back in Discord as you finish it.**
 </div>
 
 ## Recommended Viewing
@@ -32,9 +32,9 @@ Melanie Mitchell — *The past, present, and uncertain future of AI* — pairs d
 - <span class="tag tag-standard">Standard</span> Emerson, Lori. ["Interfaced."](https://loriemerson.net/2020/02/07/interfaced/) From *Further Reading*. Interface is not transparent; reading this changes how you see the chat window.
 - <span class="tag tag-deep">Deep</span> Mitchell, Melanie. *Artificial Intelligence: A Guide for Thinking Humans*, Part I. The clearest non-technical explanation of how these systems work.
 
-## Five Tasks This Week
+## Five Tasks This Week (Pick At Least One)
 
-The interface is the curriculum this week. Each task lands in the cohort Discord — your post is the deliverable.
+The interface is the curriculum this week. Pick at least one task; pick more if you have the time. Each task lands in the cohort Discord — your post is the deliverable.
 
 ### 1. Tour the settings, set your defaults
 
