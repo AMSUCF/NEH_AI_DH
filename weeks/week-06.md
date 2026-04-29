@@ -8,7 +8,7 @@ starts: 2026-06-15
 
 This week takes the visual work outside the classroom. AI-generated images are everywhere — in your social feeds, in commercial advertising, in the patterns being sold on Etsy, in a Netflix episode you may have watched. Pick a community you spend time in and look hard.
 
-There is no in-person meeting. ENG 6813 students continue with their *AI Exercise Design* discussion (see [the parallel module](../../InterdisciplinaryTeaching-main/InterdisciplinaryTeaching-main/weeks/week-06.md)).
+There is no in-person meeting.
 
 <div class="async-callout" markdown="1">
 **Asynchronous deep-dive.** Light week by design — Workshop 4 (June 24) starts the heavier shift to Claude Code Web. Use this week to look at the visual environment around you, and rest if you need it.
@@ -41,5 +41,4 @@ Workshop 4 (June 24) is the first session in **Stage 3** — Claude Code Web. To
 
 ## Cross-references
 
-- Companion ENG 6813 module: [Week 6](../../InterdisciplinaryTeaching-main/InterdisciplinaryTeaching-main/weeks/week-06.md) (AI Exercise Design discussion).
 - Source materials: `HumanitiesAI/weekfive.md`, `weekseven.md`, `weekeight.md`.

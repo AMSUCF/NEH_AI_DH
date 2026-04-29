@@ -16,7 +16,9 @@ The closing workshop is a tour, not a tutorial. We look at what is just beyond C
 <div class="workshop-callout" markdown="1">
 **NEH Workshop 6 — Tuesday, July 22, 10 AM – noon, CHDR**
 
-Streamed and recorded. The *Teaching Statement* for ENG 6813 is due Sunday, July 26 — Workshop 6 is the last in-person session, so we will reserve time for teaching-statement Q&A.
+Streamed and recorded. Open to UCF faculty, graduate students, and the broader NEH learning community. This is the last in-person session of the series, so we will reserve time for closing Q&A.
+
+[Open the slide deck →]({{ '/slides/web/w11/' | relative_url }}){:.btn}
 </div>
 
 ## What to Bring
@@ -43,7 +45,7 @@ Optional, for those who want the deeper picture:
 3. **Claude CLI tour (~25 min).** Claude in the terminal. Slash commands, `/init`, `/plan`, `CLAUDE.md` for context engineering, the Superpowers workflow (Brainstorm → Spec → Plan → Implementation → Review). I demo on a small humanities project; you watch.
 4. **MCP, briefly (~15 min).** What MCP is — "USB-C for AI" — and one example: connecting Claude to a Zotero library so research and writing share a context. Why this matters for the next academic year.
 5. **Writing exercise: your `CLAUDE.md` (~30 min).** Draft a `CLAUDE.md` document — a context file an agent could read to understand your research domain, your typical workflows, your preferences, and your boundaries. No installation required; we just write the markdown. Templates and examples on screen.
-6. **Open Q&A and teaching-statement support (~20 min).** Last in-person session; the *Teaching Statement* is due in four days. Use the room.
+6. **Open Q&A and closing (~20 min).** Last in-person session of the series. Bring whatever questions about agentic tools, your `CLAUDE.md`, or what to carry into the fall you have not had a chance to ask yet.
 
 ## Core Exercise
 
@@ -67,5 +69,4 @@ The agentic horizon is real but it is also still half-hype. Take what is useful 
 
 ## Cross-references
 
-- Companion ENG 6813 module: [Week 11](../../InterdisciplinaryTeaching-main/InterdisciplinaryTeaching-main/weeks/week-11.md) (Sharing, Sustaining, and Best Practices; Teaching Statement due).
 - Source materials: `DistantCodingUMKC/index.md` (Days 2–4 — CLI, MCP, skills, Superpowers); `HumanitiesAI/weekthirteen.md` (local models), `weekfourteen.md` (Code Web for distant reading), `weekfifteen.md` (skills, subagents, fine-tuning); `dhsi.md` (DHSI framing).

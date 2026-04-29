@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Workshop 4 — Web and Interactive Applications</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css" id="reveal-theme">
+<link rel="stylesheet" href="../../../assets/css/style.css">
+<style>
+:root {
+  --slide-pad: clamp(1.25rem, 3vw, 3rem);
+}
+.reveal {
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  color: var(--ink, #141414);
+  background: var(--bone, #faf6ec);
+}
+.reveal .slides { text-align: left; }
+.reveal .slides section {
+  padding: var(--slide-pad);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+.reveal h1, .reveal h2, .reveal h3 {
+  font-family: 'Bricolage Grotesque', 'Inter', serif;
+  color: var(--ink, #141414);
+  text-transform: none;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5em;
+  line-height: 1.05;
+}
+.reveal h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); }
+.reveal h2 { font-size: clamp(2rem, 5vw, 3.4rem); }
+.reveal h3 { font-size: clamp(1.4rem, 3.5vw, 2rem); }
+.reveal p, .reveal li { font-size: clamp(1.1rem, 2.4vw, 1.6rem); line-height: 1.4; }
+.reveal a { color: var(--cobalt, #1545c4); }
+.reveal code { font-family: 'JetBrains Mono', 'Courier New', monospace; background: rgba(0,0,0,0.06); padding: 0.05em 0.25em; border-radius: 3px; font-size: 0.9em; }
+.reveal blockquote { border-left: 4px solid var(--coral, #ff5a4e); padding: 0.25em 0 0.25em 1rem; margin: 0; font-size: clamp(1.2rem, 2.8vw, 1.9rem); font-style: normal; line-height: 1.35; width: auto; box-shadow: none; }
+.reveal .kicker { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--coral, #ff5a4e); margin: 0 0 0.5rem; }
+.reveal .attribution { font-size: 1rem; color: var(--muted, #5a5a5a); margin-top: 0.5rem; }
+.reveal .caption { font-size: 1rem; color: var(--muted, #5a5a5a); margin-top: 0.75rem; }
+.reveal .lead { font-size: clamp(1.2rem, 2.6vw, 1.8rem); color: var(--muted, #5a5a5a); }
+
+.reveal img, .reveal video { max-width: 100%; max-height: 60vh; object-fit: contain; border-radius: 6px; }
+
+/* Cover */
+.reveal .slide-cover { background: var(--ink, #141414); color: var(--bone, #faf6ec); position: relative; overflow: hidden; }
+.reveal .slide-cover img { position: absolute; inset: 0; width: 100%; height: 100%; max-height: none; object-fit: cover; opacity: 0.35; border-radius: 0; }
+.reveal .slide-cover .cover-text { position: relative; z-index: 1; }
+.reveal .slide-cover h1 { color: var(--bone, #faf6ec); }
+.reveal .slide-cover .subtitle { font-family: 'Bricolage Grotesque', serif; font-size: clamp(1.4rem, 3vw, 2rem); color: var(--mustard, #e8b53a); margin: 0.5rem 0 1.5rem; }
+.reveal .slide-cover .cover-meta { font-family: 'JetBrains Mono', monospace; font-size: 1rem; color: var(--bone, #faf6ec); opacity: 0.85; }
+
+/* Section divider */
+.reveal .slide-section { background: var(--coral, #ff5a4e); color: var(--ink, #141414); }
+.reveal .slide-section h2 { font-size: clamp(2.5rem, 7vw, 5rem); }
+.reveal .slide-section .kicker { color: var(--ink, #141414); }
+.reveal .slide-section .lead { color: var(--ink, #141414); max-width: 60ch; }
+
+/* Image-bullets */
+.reveal .slide-image-bullets { display: grid !important; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+.reveal .slide-image-bullets.no-image { display: block !important; max-width: 70ch; margin-left: auto !important; margin-right: auto !important; }
+.reveal .slide-image-bullets img { max-height: 75vh; }
+.reveal .slide-image-bullets ul { list-style: none; padding: 0; margin: 0; }
+.reveal .slide-image-bullets li { padding-left: 1.5em; position: relative; margin-bottom: 0.7rem; }
+.reveal .slide-image-bullets li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 0.7em; height: 0.7em; background: var(--coral, #ff5a4e); border-radius: 2px; transform: rotate(45deg); }
+@media (max-width: 800px) { .reveal .slide-image-bullets { grid-template-columns: 1fr; } }
+
+/* Image-only */
+.reveal .slide-image-only { align-items: center; text-align: center; }
+.reveal .slide-image-only img { max-height: 80vh; }
+
+/* Quote */
+.reveal .slide-quote { display: grid !important; grid-template-columns: 1fr 1.4fr; gap: 2rem; align-items: center; background: var(--bone, #faf6ec); }
+.reveal .slide-quote.no-image { display: block !important; max-width: 60ch; margin-left: auto !important; margin-right: auto !important; }
+.reveal .slide-quote.no-image blockquote { font-size: clamp(1.6rem, 3.4vw, 2.4rem); }
+.reveal .slide-quote img { max-height: 70vh; }
+@media (max-width: 800px) { .reveal .slide-quote { grid-template-columns: 1fr; } }
+
+/* Video */
+.reveal .slide-video video { width: 100%; max-height: 65vh; }
+
+/* Demo slot */
+.reveal .slide-demo-slot { background: var(--mustard, #e8b53a); color: var(--ink, #141414); }
+.reveal .slide-demo-slot .kicker { color: var(--ink, #141414); }
+
+/* Exercise */
+.reveal .slide-exercise { background: var(--sage, #7a8f4a); color: var(--ink, #141414); }
+.reveal .slide-exercise .kicker { color: var(--ink, #141414); }
+.reveal .slide-exercise ol { counter-reset: ex; padding-left: 0; list-style: none; }
+.reveal .slide-exercise ol li { counter-increment: ex; padding-left: 2.5em; position: relative; margin-bottom: 0.7rem; }
+.reveal .slide-exercise ol li::before { content: counter(ex); position: absolute; left: 0; top: 0; font-family: 'Bricolage Grotesque', serif; font-weight: 700; font-size: 1.4em; color: var(--ink, #141414); }
+.reveal .slide-exercise .prompt { font-style: italic; max-width: 60ch; }
+
+/* Two-col */
+.reveal .slide-two-col .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+@media (max-width: 800px) { .reveal .slide-two-col .cols { grid-template-columns: 1fr; } }
+
+/* Closing */
+.reveal .slide-closing { background: var(--plum, #5d2e5f); color: var(--bone, #faf6ec); }
+.reveal .slide-closing h2 { color: var(--bone, #faf6ec); }
+.reveal .slide-closing a { color: var(--mustard, #e8b53a); }
+.reveal .slide-closing .lead { color: var(--bone, #faf6ec); opacity: 0.9; }
+.reveal .slide-closing .links { list-style: none; padding: 0; }
+.reveal .slide-closing .links li { margin-bottom: 0.5rem; }
+
+/* Progress bar / controls in coral */
+.reveal .progress { color: var(--coral, #ff5a4e); }
+.reveal .controls { color: var(--coral, #ff5a4e); }
+
+/* Back-to-workshop link, fixed top-right of every deck */
+.deck-back {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: var(--bone, #faf6ec);
+  color: var(--ink, #141414);
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid var(--ink, #141414);
+  box-shadow: 2px 2px 0 var(--ink, #141414);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.deck-back:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--ink, #141414);
+  background: var(--coral, #ff5a4e);
+}
+.deck-back:active {
+  transform: translate(1px, 1px);
+  box-shadow: 0 0 0 var(--ink, #141414);
+}
+@media print { .deck-back { display: none; } }
+</style>
+</head>
+<body>
+<a class="deck-back" href="../../../weeks/week-07.html" title="Back to workshop page">← Workshop</a>
+<div class="reveal">
+<div class="slides">
+<section class="slide-cover" id="cover">
+  <img src="../../../assets/slides/w07/cover.webp" alt="procedural art &amp; play title" loading="lazy">
+  <div class="cover-text">
+    <h1>Workshop 4</h1>
+    <p class="subtitle">Web and Interactive Applications</p>
+    <p class="cover-meta">Tuesday, June 24, 2026 · 10 AM – noon · CHDR</p>
+  </div>
+</section>
+<section class="slide-section" id="github-section">
+  <p class="kicker">Part 1</p>
+  <h2>GitHub and GitHub Pages, from scratch</h2>
+  <p class="lead">Walk through, together: what a <em>repository</em> is, what a <em>commit</em> is in plain language, what <em>main</em> means, and what GitHub Pages does.</p>
+</section>
+        <section class="slide-image-bullets" id="what-is-github">
+          <div class="bullets-text">
+
+            <h2>What GitHub is — and what it isn&#x27;t</h2>
+            <ul><li><strong>A repository:</strong> a folder of files with a complete history.</li>
+<li><strong>A commit:</strong> a saved version. You&#x27;ll make many.</li>
+<li><strong>Main:</strong> the canonical line of work; everything else is a branch off it.</li>
+<li>Owned by <em>you</em> (or by Microsoft, technically) — <strong>not by Claude.</strong></li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w07/github-basics.webp" alt="GitHub repository diagram" loading="lazy">
+        </section>
+        <section class="slide-image-bullets" id="github-pages">
+          <div class="bullets-text">
+
+            <h2>GitHub Pages</h2>
+            <ul><li>Free public web hosting from any repository.</li>
+<li>URL pattern: <code>https://&lt;username&gt;.github.io/&lt;repo&gt;/</code></li>
+<li>Static only — but for a CV, syllabus, or playful tool, that&#x27;s plenty.</li>
+<li>Settings → Pages → choose a branch → wait two minutes → you have a site.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w07/github-pages.webp" alt="GitHub Pages settings" loading="lazy">
+        </section>
+<section class="slide-section" id="artifact-to-codeweb">
+  <p class="kicker">Part 2</p>
+  <h2>From Artifact to Code Web</h2>
+  <p class="lead">What persists, what changes. Why a real GitHub repository matters even for a one-page site.</p>
+</section>
+<section class="slide-two-col" id="two-tools">
+  <h2>Two tools, two purposes</h2>
+  <div class="cols">
+    <div class="col"><h3>Claude Artifacts</h3>Quick. Disposable. Lives inside a Claude conversation. Great for a one-shot demo or in-class build.</div>
+    <div class="col"><h3>Claude Code Web</h3>Persistent. Multi-file. Writes to a real GitHub repository. Designed for the thing you&#x27;ll keep iterating on.</div>
+  </div>
+</section>
+        <section class="slide-image-bullets" id="agentic-claude-finance">
+          <div class="bullets-text">
+
+            <h2>Where this is heading: agentic Code Web</h2>
+            <ul><li>Claude AI now ships in finance, sales, and infra workflows — full repo access.</li>
+<li>Same primitives we&#x27;ll use today: read files, edit files, run commands, deploy.</li>
+<li>What we do for an ePortfolio scales to course tools, archive interfaces, recommender sites.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w07/agentic-finance.webp" alt="Anthropic Claude in finance" loading="lazy">
+        </section>
+<section class="slide-demo-slot" id="demo-cv-eportfolio">
+  <p class="kicker">Live demo</p>
+  <h2>Live demo: CV → ePortfolio</h2>
+  <p>Same tool, same prompt structure, deployed to a real GitHub Pages URL inside the demo block. Watch the iteration: palette, sections, typo. This is the workflow you&#x27;ll do in 50 minutes.</p>
+</section>
+        <section class="slide-image-bullets" id="what-pages-can-do">
+          <div class="bullets-text">
+
+            <h2>What we&#x27;ll have built by lunch</h2>
+            <ul><li>A live URL pointed at a single-page website you wrote.</li>
+<li>Version history of every change you and Claude made.</li>
+<li>A README that documents your AI use — the attribution is part of the work.</li>
+<li><strong>No code written from scratch.</strong> That&#x27;s the point — and it&#x27;s also a literacy.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w07/what-built.webp" alt="Built site illustration" loading="lazy">
+        </section>
+        <section class="slide-exercise" id="exercise-cv">
+          <p class="kicker">Exercise</p>
+          <h2>CV → ePortfolio (deployed)</h2>
+          <p class="prompt">Adapted from <code>DistantCodingUMKC</code> and <code>HumanitiesAI/weekeleven</code>:</p>
+          <ol><li>From your GitHub home, click <strong>New</strong> → name it (<code>my-eportfolio</code>) → set <strong>Public</strong> → check <strong>Add a README</strong>.</li>
+<li>From the repo page, <strong>Add file → Upload files</strong> → drag your CV / syllabus / description → <strong>Commit changes</strong>.</li>
+<li>Open <a href="https://claude.ai/code">Claude Code Web</a> → authorize GitHub → select the repo.</li>
+<li>Prompt: <em>&quot;This repo has my [CV/syllabus]. Read it, then build a fun-but-professional single-page site appropriate to the work it represents. Put files in <code>/site</code>. Make it deploy-ready for Pages.&quot;</em></li>
+<li>Iterate. Color, layout, sections. The conversation <em>is</em> the workflow.</li>
+<li><strong>Settings → Pages →</strong> branch <code>main</code>, folder <code>/site</code> (or <code>/(root)</code>) → wait two minutes → save your URL.</li></ol>
+        </section>
+        <section class="slide-image-bullets" id="javascript-lite">
+          <div class="bullets-text">
+
+            <h2>What&#x27;s actually under the hood</h2>
+            <ul><li><a href="https://www.geeksforgeeks.org/javascript/variables-datatypes-javascript/">geeksforgeeks.org/javascript/variables-datatypes-javascript</a> — the level of detail you need to <em>read</em> the code Claude writes.</li>
+<li>You don&#x27;t have to write it. You do have to recognize it.</li>
+<li>If something looks off, ask Claude to explain. The explanation is the literacy lesson.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w07/js-variables.webp" alt="JavaScript variables intro" loading="lazy">
+        </section>
+        <section class="slide-image-bullets" id="atlas-comet">
+          <div class="bullets-text">
+
+            <h2>Where Code Web sits in the agentic landscape</h2>
+            <ul><li>OpenAI ships <strong>Atlas</strong> (browser-as-AI), Comet automates tasks in your browser.</li>
+<li>Claude Code Web is the <em>humanities</em> member of the family — it commits, deploys, attributes.</li>
+<li>Choose the tool whose <em>primitives</em> match your discipline&#x27;s labor.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w07/atlas-comet.webp" alt="OpenAI Atlas / Comet articles" loading="lazy">
+        </section>
+<section class="slide-quote no-image" id="vibe-coding-honest">
+
+  <div class="quote-text">
+    <blockquote>I just made a website without writing any code. The honest answer is: yes — and also you wrote prose, you made design decisions, you reviewed the output, you committed changes. That is a literacy, even if it isn&#x27;t the literacy you grew up calling &#x27;programming.&#x27;</blockquote>
+    <p class="attribution">— From the Workshop 4 pedagogical note</p>
+  </div>
+</section>
+        <section class="slide-image-bullets" id="claude-code-masses">
+          <div class="bullets-text">
+
+            <h2>And then there&#x27;s the CLI</h2>
+            <ul><li><a href="https://www.techradar.com/pro/claude-code-comes-to-the-masses-and-its-a-game-cha">techradar.com</a>: &#x27;Claude Code comes to the masses.&#x27;</li>
+<li>Code Web is the entry. The CLI is the deeper version — we <em>tour</em> it in Workshop 6.</li>
+<li>You don&#x27;t need it today. But know it&#x27;s the same family of tool.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w07/claude-code-cli.webp" alt="Claude Code in the terminal" loading="lazy">
+        </section>
+        <section class="slide-image-bullets" id="game-companies">
+          <div class="bullets-text">
+
+            <h2>How fast this is moving</h2>
+            <ul><li>Over half of Japanese game companies use AI in development (October 2025).</li>
+<li>NPR: AI code productivity claims under scrutiny — but the use is real.</li>
+<li>When <em>your</em> students enter the field in two years, this is the floor.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w07/game-companies.webp" alt="Game-company AI adoption" loading="lazy">
+        </section>
+        <section class="slide-image-bullets" id="scaffold-students">
+          <div class="bullets-text">
+
+            <h2>If you assign this in a course</h2>
+            <ul><li>Require <strong>three iteration cycles</strong> documented in the conversation history.</li>
+<li>Require a <strong>reflection on one design decision</strong> the student overrode.</li>
+<li>Require <strong>AI-use attribution</strong> in the README.</li>
+<li>Grade the iteration. Grade the override. Grade the attribution.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w07/scaffold-codeweb.webp" alt="Scaffolding AI assignments" loading="lazy">
+        </section>
+<section class="slide-section" id="discussion">
+  <p class="kicker">Part 5</p>
+  <h2>Discussion: assignment design</h2>
+  <p class="lead">Bring the assignment you&#x27;re worried about. Or the one you&#x27;ve been wanting to redesign. Open Q&amp;A on how Code Web fits in your fall.</p>
+</section>
+        <section class="slide-image-bullets" id="wrap">
+          <div class="bullets-text">
+
+            <h2>What broke today? What surprised you?</h2>
+            <ul><li>Save your Pages URL — Workshop 5 iterates on it for accessibility and play.</li>
+<li><strong>Async Week 8:</strong> <em>Rebuilding a Handout</em> — converting a static handout into an interactive site.</li>
+<li>If something broke at deploy time: GitHub Pages settings → check branch + folder → wait <em>full</em> two minutes.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w07/wrap.webp" alt="Workshop 4 wrap" loading="lazy">
+        </section>
+        <section class="slide-closing" id="closing">
+          <h2>Your URL is yours</h2>
+          <p class="lead">That URL stays live as long as the repo exists. You own the work, the version history, and the attribution.</p>
+          <ul class="links"><li><a href="../../../weeks/week-07.html">Workshop 4 page</a></li>
+<li><a href="../../../weeks/week-08.html">Week 8 (async): Rebuilding a Handout</a></li>
+<li><a href="https://www.cambridge.org/core/journals/pmla/article/command-lines-for-the-humanities/097F959E6971063D05B085E698354BA2">Reading: Martin, <em>Command Lines for the Humanities</em></a></li>
+<li><a href="https://wizardzines.com/zines/wizard/">Zine: Evans, <em>So You Want to Be a Wizard</em></a></li></ul>
+        </section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    center: false,
+    width: 1280,
+    height: 800,
+    margin: 0.04,
+    transition: 'fade',
+    controlsTutorial: false
+  });
+</script>
+</body>
+</html>

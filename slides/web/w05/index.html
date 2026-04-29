@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Workshop 3 — AI for Visual Analysis</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css" id="reveal-theme">
+<link rel="stylesheet" href="../../../assets/css/style.css">
+<style>
+:root {
+  --slide-pad: clamp(1.25rem, 3vw, 3rem);
+}
+.reveal {
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  color: var(--ink, #141414);
+  background: var(--bone, #faf6ec);
+}
+.reveal .slides { text-align: left; }
+.reveal .slides section {
+  padding: var(--slide-pad);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+.reveal h1, .reveal h2, .reveal h3 {
+  font-family: 'Bricolage Grotesque', 'Inter', serif;
+  color: var(--ink, #141414);
+  text-transform: none;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5em;
+  line-height: 1.05;
+}
+.reveal h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); }
+.reveal h2 { font-size: clamp(2rem, 5vw, 3.4rem); }
+.reveal h3 { font-size: clamp(1.4rem, 3.5vw, 2rem); }
+.reveal p, .reveal li { font-size: clamp(1.1rem, 2.4vw, 1.6rem); line-height: 1.4; }
+.reveal a { color: var(--cobalt, #1545c4); }
+.reveal code { font-family: 'JetBrains Mono', 'Courier New', monospace; background: rgba(0,0,0,0.06); padding: 0.05em 0.25em; border-radius: 3px; font-size: 0.9em; }
+.reveal blockquote { border-left: 4px solid var(--coral, #ff5a4e); padding: 0.25em 0 0.25em 1rem; margin: 0; font-size: clamp(1.2rem, 2.8vw, 1.9rem); font-style: normal; line-height: 1.35; width: auto; box-shadow: none; }
+.reveal .kicker { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--coral, #ff5a4e); margin: 0 0 0.5rem; }
+.reveal .attribution { font-size: 1rem; color: var(--muted, #5a5a5a); margin-top: 0.5rem; }
+.reveal .caption { font-size: 1rem; color: var(--muted, #5a5a5a); margin-top: 0.75rem; }
+.reveal .lead { font-size: clamp(1.2rem, 2.6vw, 1.8rem); color: var(--muted, #5a5a5a); }
+
+.reveal img, .reveal video { max-width: 100%; max-height: 60vh; object-fit: contain; border-radius: 6px; }
+
+/* Cover */
+.reveal .slide-cover { background: var(--ink, #141414); color: var(--bone, #faf6ec); position: relative; overflow: hidden; }
+.reveal .slide-cover img { position: absolute; inset: 0; width: 100%; height: 100%; max-height: none; object-fit: cover; opacity: 0.35; border-radius: 0; }
+.reveal .slide-cover .cover-text { position: relative; z-index: 1; }
+.reveal .slide-cover h1 { color: var(--bone, #faf6ec); }
+.reveal .slide-cover .subtitle { font-family: 'Bricolage Grotesque', serif; font-size: clamp(1.4rem, 3vw, 2rem); color: var(--mustard, #e8b53a); margin: 0.5rem 0 1.5rem; }
+.reveal .slide-cover .cover-meta { font-family: 'JetBrains Mono', monospace; font-size: 1rem; color: var(--bone, #faf6ec); opacity: 0.85; }
+
+/* Section divider */
+.reveal .slide-section { background: var(--coral, #ff5a4e); color: var(--ink, #141414); }
+.reveal .slide-section h2 { font-size: clamp(2.5rem, 7vw, 5rem); }
+.reveal .slide-section .kicker { color: var(--ink, #141414); }
+.reveal .slide-section .lead { color: var(--ink, #141414); max-width: 60ch; }
+
+/* Image-bullets */
+.reveal .slide-image-bullets { display: grid !important; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+.reveal .slide-image-bullets.no-image { display: block !important; max-width: 70ch; margin-left: auto !important; margin-right: auto !important; }
+.reveal .slide-image-bullets img { max-height: 75vh; }
+.reveal .slide-image-bullets ul { list-style: none; padding: 0; margin: 0; }
+.reveal .slide-image-bullets li { padding-left: 1.5em; position: relative; margin-bottom: 0.7rem; }
+.reveal .slide-image-bullets li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 0.7em; height: 0.7em; background: var(--coral, #ff5a4e); border-radius: 2px; transform: rotate(45deg); }
+@media (max-width: 800px) { .reveal .slide-image-bullets { grid-template-columns: 1fr; } }
+
+/* Image-only */
+.reveal .slide-image-only { align-items: center; text-align: center; }
+.reveal .slide-image-only img { max-height: 80vh; }
+
+/* Quote */
+.reveal .slide-quote { display: grid !important; grid-template-columns: 1fr 1.4fr; gap: 2rem; align-items: center; background: var(--bone, #faf6ec); }
+.reveal .slide-quote.no-image { display: block !important; max-width: 60ch; margin-left: auto !important; margin-right: auto !important; }
+.reveal .slide-quote.no-image blockquote { font-size: clamp(1.6rem, 3.4vw, 2.4rem); }
+.reveal .slide-quote img { max-height: 70vh; }
+@media (max-width: 800px) { .reveal .slide-quote { grid-template-columns: 1fr; } }
+
+/* Video */
+.reveal .slide-video video { width: 100%; max-height: 65vh; }
+
+/* Demo slot */
+.reveal .slide-demo-slot { background: var(--mustard, #e8b53a); color: var(--ink, #141414); }
+.reveal .slide-demo-slot .kicker { color: var(--ink, #141414); }
+
+/* Exercise */
+.reveal .slide-exercise { background: var(--sage, #7a8f4a); color: var(--ink, #141414); }
+.reveal .slide-exercise .kicker { color: var(--ink, #141414); }
+.reveal .slide-exercise ol { counter-reset: ex; padding-left: 0; list-style: none; }
+.reveal .slide-exercise ol li { counter-increment: ex; padding-left: 2.5em; position: relative; margin-bottom: 0.7rem; }
+.reveal .slide-exercise ol li::before { content: counter(ex); position: absolute; left: 0; top: 0; font-family: 'Bricolage Grotesque', serif; font-weight: 700; font-size: 1.4em; color: var(--ink, #141414); }
+.reveal .slide-exercise .prompt { font-style: italic; max-width: 60ch; }
+
+/* Two-col */
+.reveal .slide-two-col .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+@media (max-width: 800px) { .reveal .slide-two-col .cols { grid-template-columns: 1fr; } }
+
+/* Closing */
+.reveal .slide-closing { background: var(--plum, #5d2e5f); color: var(--bone, #faf6ec); }
+.reveal .slide-closing h2 { color: var(--bone, #faf6ec); }
+.reveal .slide-closing a { color: var(--mustard, #e8b53a); }
+.reveal .slide-closing .lead { color: var(--bone, #faf6ec); opacity: 0.9; }
+.reveal .slide-closing .links { list-style: none; padding: 0; }
+.reveal .slide-closing .links li { margin-bottom: 0.5rem; }
+
+/* Progress bar / controls in coral */
+.reveal .progress { color: var(--coral, #ff5a4e); }
+.reveal .controls { color: var(--coral, #ff5a4e); }
+
+/* Back-to-workshop link, fixed top-right of every deck */
+.deck-back {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: var(--bone, #faf6ec);
+  color: var(--ink, #141414);
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid var(--ink, #141414);
+  box-shadow: 2px 2px 0 var(--ink, #141414);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.deck-back:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--ink, #141414);
+  background: var(--coral, #ff5a4e);
+}
+.deck-back:active {
+  transform: translate(1px, 1px);
+  box-shadow: 0 0 0 var(--ink, #141414);
+}
+@media print { .deck-back { display: none; } }
+</style>
+</head>
+<body>
+<a class="deck-back" href="../../../weeks/week-05.html" title="Back to workshop page">← Workshop</a>
+<div class="reveal">
+<div class="slides">
+<section class="slide-cover" id="cover">
+  <img src="../../../assets/slides/w05/cover.webp" alt="AI-generated portrait of a woman by a lake at sunset, with a partially-visible cyborg arm" loading="lazy">
+  <div class="cover-text">
+    <h1>Workshop 3</h1>
+    <p class="subtitle">AI for Visual Analysis</p>
+    <p class="cover-meta">Tuesday, June 10, 2026 · 10 AM – noon · CHDR</p>
+  </div>
+</section>
+<section class="slide-section" id="two-paradigms">
+  <p class="kicker">Part 1</p>
+  <h2>Two paradigms in one session</h2>
+  <p class="lead">Image <em>generation</em> (text-to-image) versus image <em>analysis</em> (image-to-text, alt-text, multi-image comparison). The workshop is about the second; the first is here because we cannot have an honest visual conversation without it.</p>
+</section>
+<section class="slide-image-only" id="multimodal-explainer">
+  <img src="../../../assets/slides/w05/multimodal.webp" alt="Multimodal AI explainer: text, image, audio, video, and sensor inputs pass through encoders into a fusion stage, producing text, image, and decision outputs." loading="lazy">
+  <p class="caption">Multimodal AI in one diagram — every input type meets in a shared representation, then comes back out as any output type. <em>Generated with ChatGPT Images 2.0.</em></p>
+</section>
+<section class="slide-quote" id="matrix-keywords">
+  <img src="../../../assets/slides/w05/matrix-keywords.webp" alt="Cyberpunk-aesthetic generated image" loading="lazy">
+  <div class="quote-text">
+    <blockquote>matrix, code, hacking, cyberpunk, data, digital, futuristic, neon, digital art, high tech, virtual reality, cyberspace, glitch, technology, sci fi, computer, programming, dark, binary, encryption, AI, network, security</blockquote>
+    <p class="attribution">— OpenJourney + neuralframes — what the prompt-aesthetic <em>actually</em> asks for</p>
+  </div>
+</section>
+        <section class="slide-image-bullets" id="paperclip">
+          <div class="bullets-text">
+
+            <h2>The Paperclip Maximizer (and other thought experiments)</h2>
+            <ul><li><a href="https://www.decisionproblem.com/paperclips/">decisionproblem.com/paperclips</a> — the playable form of an alignment thought experiment.</li>
+<li><em>Not</em> a prediction. A teaching tool for what optimisation without judgement looks like.</li>
+<li>Useful pairing for any visual-AI conversation: what is the AI optimising <em>for</em>?</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w05/paperclip.webp" alt="Paperclip maximizer game" loading="lazy">
+        </section>
+        <section class="slide-image-bullets" id="sb-53">
+          <div class="bullets-text">
+
+            <h2>Anthropic and SB-53</h2>
+            <ul><li>California&#x27;s SB-53: AI safety reporting and worker protections.</li>
+<li>Anthropic publicly endorsed it; many AI companies did not.</li>
+<li>When you teach AI policy, regulatory choices are part of the curriculum.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w05/sb-53.webp" alt="Anthropic SB-53 endorsement" loading="lazy">
+        </section>
+        <section class="slide-image-bullets" id="gan-history">
+          <div class="bullets-text">
+
+            <h2>Where this came from: 2018 GANs</h2>
+            <ul><li>GAN-generated faces, 2018: still uncanny, mostly monstrous.</li>
+<li>Seven years later: photorealistic.</li>
+<li>The shift was not in <em>kind</em> but in <em>scale</em> — same architecture, more compute, more scraped images.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w05/gan-history.webp" alt="2018 GAN-generated faces" loading="lazy">
+        </section>
+<section class="slide-section" id="demo-section">
+  <p class="kicker">Part 2</p>
+  <h2>Live demo: archival comic covers</h2>
+  <p class="lead">I upload a small set to Claude Sonnet. We walk: describe → alt-text → key features → comparative metadata → relational visualization as an Artifact.</p>
+</section>
+<section class="slide-demo-slot" id="demo-comics">
+  <p class="kicker">Live demo</p>
+  <h2>Image-to-text on archival comics</h2>
+  <p>Watch where the model invents detail that isn&#x27;t in the image. That&#x27;s the place a student must learn to push back.</p>
+</section>
+        <section class="slide-exercise" id="exercise-image-to-text">
+          <p class="kicker">Exercise</p>
+          <h2>Image-to-text translation set</h2>
+          <p class="prompt">Using your five-to-ten image set:</p>
+          <ol><li>Upload all images to Claude Sonnet (single conversation).</li>
+<li>Generate descriptive <strong>alt-text</strong> for each image, applying accessibility standards.</li>
+<li>Build a metadata table: image, key features, period or context, observations.</li>
+<li>Ask Claude to surface <strong>three patterns</strong> across the set.</li>
+<li>Generate an <strong>Artifact</strong> that visualizes the set in a meaningful relationship.</li>
+<li>Critique the alt-text. Where does Claude&#x27;s vision fail or flatten?</li></ol>
+        </section>
+<section class="slide-quote no-image" id="alt-text-as-draft">
+
+  <div class="quote-text">
+    <blockquote>AI-generated alt-text is a <em>draft.</em> It is faster than writing alt-text from scratch, and it is consistently worse than alt-text written by a human who knows the context.</blockquote>
+    <p class="attribution">— Pedagogical note for Workshop 3</p>
+  </div>
+</section>
+        <section class="slide-exercise" id="exercise-make-it-more">
+          <p class="kicker">Exercise</p>
+          <h2>Exercise One: Make it More</h2>
+          <p class="prompt">From the source-class deck — useful as a warm-up if you finish early:</p>
+          <ol><li>Pick a word that you associate with your interests or professional goals.</li>
+<li>Ask any text-to-image tool to generate an image of it: &#x27;draw me a gamer,&#x27; &#x27;draw me a lawyer.&#x27;</li>
+<li>Ask it to make it &#x27;more&#x27; [that thing]. Iterate four or five times.</li>
+<li>Compare the trajectory. What stereotypes does the model reach for first? Last?</li></ol>
+        </section>
+        <section class="slide-exercise" id="exercise-make-it-you">
+          <p class="kicker">Exercise</p>
+          <h2>Exercise Two: Make it You</h2>
+          <p class="prompt">A second warm-up from the source class:</p>
+          <ol><li>Ask a text-to-image tool to draw <em>you</em>, based on a sentence about your work.</li>
+<li>Note what it gets right, what it invents, what it whitens / flattens.</li>
+<li>This is the same system we just used to write alt-text. The biases ride along.</li></ol>
+        </section>
+        <section class="slide-image-bullets" id="wapo-bias">
+          <div class="bullets-text">
+
+            <h2>AI image bias, in one <em>Washington Post</em> interactive</h2>
+            <ul><li><em><a href="https://www.washingtonpost.com/technology/interactive/2023/ai-generated-images-bias-racism-sexism-stereotypes/">wapo.com/.../ai-generated-images-bias-racism-sexism-stereotypes</a></em></li>
+<li>What the model produces for &#x27;a CEO,&#x27; &#x27;a janitor,&#x27; &#x27;a beautiful person.&#x27;</li>
+<li>Pair with Crawford &amp; Paglen&#x27;s <em>Excavating AI</em> for the structural account.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w05/wapo-bias.webp" alt="WaPo interactive on AI image bias" loading="lazy">
+        </section>
+        <section class="slide-exercise" id="exercise-three">
+          <p class="kicker">Exercise</p>
+          <h2>Exercise Three: alt-text in the wild</h2>
+          <p class="prompt">If your discipline involves images, take this back to your teaching:</p>
+          <ol><li>Pick a corpus of images you&#x27;d give a student to work with — archival, art-history, scientific.</li>
+<li>Generate alt-text with Claude for the whole set.</li>
+<li>Have students <em>correct</em> the AI&#x27;s alt-text rather than write theirs from scratch.</li>
+<li>The pedagogical move: students learn to write alt-text by editing a flawed draft.</li></ol>
+        </section>
+<section class="slide-quote no-image" id="critical-reflection">
+
+  <div class="quote-text">
+    <blockquote>Datasets aren&#x27;t simply raw materials to feed algorithms, but are political interventions. As such, much of the discussion around &#x27;bias&#x27; in AI systems misses the mark: there is no &#x27;neutral,&#x27; &#x27;natural,&#x27; or &#x27;apolitical&#x27; vantage point that training data can be built upon.</blockquote>
+    <p class="attribution">— Crawford &amp; Paglen, <em>Excavating AI</em></p>
+  </div>
+</section>
+<section class="slide-section" id="discussion">
+  <p class="kicker">Part 5</p>
+  <h2>Discussion</h2>
+  <p class="lead">Where does this fit in your teaching? An accessibility tool? A scaffolded close-reading exercise? An archival metadata workflow? All three?</p>
+</section>
+        <section class="slide-image-bullets" id="looking-ahead">
+          <div class="bullets-text">
+
+            <h2>Looking ahead</h2>
+            <ul><li><strong>Workshop 4 (Week 7):</strong> GitHub, Code Web, your first deployed site. Bring a CV or syllabus.</li>
+<li><strong>Async Week 6:</strong> <em>Visual AI in the Wild</em> — image generation, copyright, AI in the news.</li>
+<li>Save your Artifact URL from today; we&#x27;ll iterate on it later.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w05/looking-ahead.webp" alt="Looking ahead from Workshop 3" loading="lazy">
+        </section>
+        <section class="slide-closing" id="closing">
+          <h2>Carry it forward</h2>
+          <p class="lead">AI vision can be a real accessibility tool <em>or</em> a fluent way to flatten archives into stereotype. The difference is the human in the loop.</p>
+          <ul class="links"><li><a href="../../../weeks/week-05.html">Workshop 3 page</a></li>
+<li><a href="../../../weeks/week-06.html">Week 6 (async): Visual AI in the Wild</a></li>
+<li><a href="https://excavating.ai/">Reading: Crawford &amp; Paglen, <em>Excavating AI</em></a></li>
+<li><a href="https://electronicbookreview.com/publications/my-month-with-midjourney/">Reading: Demsky, <em>My Month with Midjourney</em></a></li></ul>
+        </section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    center: false,
+    width: 1280,
+    height: 800,
+    margin: 0.04,
+    transition: 'fade',
+    controlsTutorial: false
+  });
+</script>
+</body>
+</html>

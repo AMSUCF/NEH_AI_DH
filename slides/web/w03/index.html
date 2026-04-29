@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Workshop 2 — AI for Textual Analysis</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css" id="reveal-theme">
+<link rel="stylesheet" href="../../../assets/css/style.css">
+<style>
+:root {
+  --slide-pad: clamp(1.25rem, 3vw, 3rem);
+}
+.reveal {
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  color: var(--ink, #141414);
+  background: var(--bone, #faf6ec);
+}
+.reveal .slides { text-align: left; }
+.reveal .slides section {
+  padding: var(--slide-pad);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+.reveal h1, .reveal h2, .reveal h3 {
+  font-family: 'Bricolage Grotesque', 'Inter', serif;
+  color: var(--ink, #141414);
+  text-transform: none;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5em;
+  line-height: 1.05;
+}
+.reveal h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); }
+.reveal h2 { font-size: clamp(2rem, 5vw, 3.4rem); }
+.reveal h3 { font-size: clamp(1.4rem, 3.5vw, 2rem); }
+.reveal p, .reveal li { font-size: clamp(1.1rem, 2.4vw, 1.6rem); line-height: 1.4; }
+.reveal a { color: var(--cobalt, #1545c4); }
+.reveal code { font-family: 'JetBrains Mono', 'Courier New', monospace; background: rgba(0,0,0,0.06); padding: 0.05em 0.25em; border-radius: 3px; font-size: 0.9em; }
+.reveal blockquote { border-left: 4px solid var(--coral, #ff5a4e); padding: 0.25em 0 0.25em 1rem; margin: 0; font-size: clamp(1.2rem, 2.8vw, 1.9rem); font-style: normal; line-height: 1.35; width: auto; box-shadow: none; }
+.reveal .kicker { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--coral, #ff5a4e); margin: 0 0 0.5rem; }
+.reveal .attribution { font-size: 1rem; color: var(--muted, #5a5a5a); margin-top: 0.5rem; }
+.reveal .caption { font-size: 1rem; color: var(--muted, #5a5a5a); margin-top: 0.75rem; }
+.reveal .lead { font-size: clamp(1.2rem, 2.6vw, 1.8rem); color: var(--muted, #5a5a5a); }
+
+.reveal img, .reveal video { max-width: 100%; max-height: 60vh; object-fit: contain; border-radius: 6px; }
+
+/* Cover */
+.reveal .slide-cover { background: var(--ink, #141414); color: var(--bone, #faf6ec); position: relative; overflow: hidden; }
+.reveal .slide-cover img { position: absolute; inset: 0; width: 100%; height: 100%; max-height: none; object-fit: cover; opacity: 0.35; border-radius: 0; }
+.reveal .slide-cover .cover-text { position: relative; z-index: 1; }
+.reveal .slide-cover h1 { color: var(--bone, #faf6ec); }
+.reveal .slide-cover .subtitle { font-family: 'Bricolage Grotesque', serif; font-size: clamp(1.4rem, 3vw, 2rem); color: var(--mustard, #e8b53a); margin: 0.5rem 0 1.5rem; }
+.reveal .slide-cover .cover-meta { font-family: 'JetBrains Mono', monospace; font-size: 1rem; color: var(--bone, #faf6ec); opacity: 0.85; }
+
+/* Section divider */
+.reveal .slide-section { background: var(--coral, #ff5a4e); color: var(--ink, #141414); }
+.reveal .slide-section h2 { font-size: clamp(2.5rem, 7vw, 5rem); }
+.reveal .slide-section .kicker { color: var(--ink, #141414); }
+.reveal .slide-section .lead { color: var(--ink, #141414); max-width: 60ch; }
+
+/* Image-bullets */
+.reveal .slide-image-bullets { display: grid !important; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+.reveal .slide-image-bullets.no-image { display: block !important; max-width: 70ch; margin-left: auto !important; margin-right: auto !important; }
+.reveal .slide-image-bullets img { max-height: 75vh; }
+.reveal .slide-image-bullets ul { list-style: none; padding: 0; margin: 0; }
+.reveal .slide-image-bullets li { padding-left: 1.5em; position: relative; margin-bottom: 0.7rem; }
+.reveal .slide-image-bullets li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 0.7em; height: 0.7em; background: var(--coral, #ff5a4e); border-radius: 2px; transform: rotate(45deg); }
+@media (max-width: 800px) { .reveal .slide-image-bullets { grid-template-columns: 1fr; } }
+
+/* Image-only */
+.reveal .slide-image-only { align-items: center; text-align: center; }
+.reveal .slide-image-only img { max-height: 80vh; }
+
+/* Quote */
+.reveal .slide-quote { display: grid !important; grid-template-columns: 1fr 1.4fr; gap: 2rem; align-items: center; background: var(--bone, #faf6ec); }
+.reveal .slide-quote.no-image { display: block !important; max-width: 60ch; margin-left: auto !important; margin-right: auto !important; }
+.reveal .slide-quote.no-image blockquote { font-size: clamp(1.6rem, 3.4vw, 2.4rem); }
+.reveal .slide-quote img { max-height: 70vh; }
+@media (max-width: 800px) { .reveal .slide-quote { grid-template-columns: 1fr; } }
+
+/* Video */
+.reveal .slide-video video { width: 100%; max-height: 65vh; }
+
+/* Demo slot */
+.reveal .slide-demo-slot { background: var(--mustard, #e8b53a); color: var(--ink, #141414); }
+.reveal .slide-demo-slot .kicker { color: var(--ink, #141414); }
+
+/* Exercise */
+.reveal .slide-exercise { background: var(--sage, #7a8f4a); color: var(--ink, #141414); }
+.reveal .slide-exercise .kicker { color: var(--ink, #141414); }
+.reveal .slide-exercise ol { counter-reset: ex; padding-left: 0; list-style: none; }
+.reveal .slide-exercise ol li { counter-increment: ex; padding-left: 2.5em; position: relative; margin-bottom: 0.7rem; }
+.reveal .slide-exercise ol li::before { content: counter(ex); position: absolute; left: 0; top: 0; font-family: 'Bricolage Grotesque', serif; font-weight: 700; font-size: 1.4em; color: var(--ink, #141414); }
+.reveal .slide-exercise .prompt { font-style: italic; max-width: 60ch; }
+
+/* Two-col */
+.reveal .slide-two-col .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+@media (max-width: 800px) { .reveal .slide-two-col .cols { grid-template-columns: 1fr; } }
+
+/* Closing */
+.reveal .slide-closing { background: var(--plum, #5d2e5f); color: var(--bone, #faf6ec); }
+.reveal .slide-closing h2 { color: var(--bone, #faf6ec); }
+.reveal .slide-closing a { color: var(--mustard, #e8b53a); }
+.reveal .slide-closing .lead { color: var(--bone, #faf6ec); opacity: 0.9; }
+.reveal .slide-closing .links { list-style: none; padding: 0; }
+.reveal .slide-closing .links li { margin-bottom: 0.5rem; }
+
+/* Progress bar / controls in coral */
+.reveal .progress { color: var(--coral, #ff5a4e); }
+.reveal .controls { color: var(--coral, #ff5a4e); }
+
+/* Back-to-workshop link, fixed top-right of every deck */
+.deck-back {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: var(--bone, #faf6ec);
+  color: var(--ink, #141414);
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid var(--ink, #141414);
+  box-shadow: 2px 2px 0 var(--ink, #141414);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.deck-back:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--ink, #141414);
+  background: var(--coral, #ff5a4e);
+}
+.deck-back:active {
+  transform: translate(1px, 1px);
+  box-shadow: 0 0 0 var(--ink, #141414);
+}
+@media print { .deck-back { display: none; } }
+</style>
+</head>
+<body>
+<a class="deck-back" href="../../../weeks/week-03.html" title="Back to workshop page">← Workshop</a>
+<div class="reveal">
+<div class="slides">
+<section class="slide-cover" id="cover">
+  <img src="../../../assets/slides/w03/cover.webp" alt="Source-class title slide for Textual — Reading" loading="lazy">
+  <div class="cover-text">
+    <h1>Workshop 2</h1>
+    <p class="subtitle">AI for Textual Analysis</p>
+    <p class="cover-meta">Tuesday, May 27, 2026 · 10 AM – noon · CHDR</p>
+  </div>
+</section>
+<section class="slide-section" id="distant-reading">
+  <p class="kicker">Part 1</p>
+  <h2>What &quot;distant reading&quot; has meant</h2>
+  <p class="lead">Moretti, Underwood, the Voyant tradition. What Claude Projects adds: persistent context across multi-turn conversation, multi-file uploads, native handling of mixed formats.</p>
+</section>
+        <section class="slide-image-bullets" id="moretti-underwood">
+          <div class="bullets-text">
+
+            <h2>Two genealogies, one method</h2>
+            <ul><li><strong>Moretti, 2000s:</strong> the literary system at scale — what a single book hides, a thousand reveal.</li>
+<li><strong>Underwood, 2010s–:</strong> stylometrics, character networks, century-long trends.</li>
+<li><strong>Voyant, classroom:</strong> word counts and concordances democratized to the seminar room.</li>
+<li>Claude Projects: multi-text, multi-format, multi-turn — humanities-scale, not big-data scale.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w03/distant-reading.webp" alt="Distant-reading-tradition illustration" loading="lazy">
+        </section>
+<section class="slide-section" id="ai-in-the-wild">
+  <p class="kicker">Field check</p>
+  <h2>Where AI is reading text right now</h2>
+  <p class="lead">Three quick scenes from professional reading practices already on the move.</p>
+</section>
+        <section class="slide-image-bullets" id="legal-billable">
+          <div class="bullets-text">
+
+            <h2>Killing the billable hour</h2>
+            <ul><li>Eudia and other legal-tech startups pitching AI as the end of the billable hour.</li>
+<li>Reuters: AI is now an LA law student.</li>
+<li>When a profession decides &#x27;reading&#x27; is automatable, what gets lost?</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w03/legal-billable.webp" alt="Legal-tech AI article" loading="lazy">
+        </section>
+        <section class="slide-image-bullets" id="medical-advice">
+          <div class="bullets-text">
+
+            <h2>Reading the doctor&#x27;s notes</h2>
+            <ul><li>Rolling Stone: AI chatbot medical-advice study.</li>
+<li>Patients reading test results with Claude before they call the office.</li>
+<li>What does it mean for our students that <em>every</em> domain now uses an LLM intermediary?</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w03/medical-advice.webp" alt="Medical AI advice article" loading="lazy">
+        </section>
+        <section class="slide-image-bullets" id="student-cheating">
+          <div class="bullets-text">
+
+            <h2>The cheating frame is the wrong frame</h2>
+            <ul><li>Futurism: students openly use ChatGPT for homework.</li>
+<li>OpenAI tracks the use as growth, not failure.</li>
+<li>Our problem isn&#x27;t enforcement. Our problem is teaching reading as a <em>practice</em> students can do <em>with</em> the tool.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w03/student-cheating.webp" alt="Cheating-with-AI article" loading="lazy">
+        </section>
+<section class="slide-section" id="labor-section">
+  <p class="kicker">Before the demo</p>
+  <h2>Whose reading paid for this?</h2>
+  <p class="lead">Distant reading at this scale was always built on hidden labor. With LLMs, the labor moved — but didn&#x27;t vanish.</p>
+</section>
+<section class="slide-quote" id="kenyan-labor">
+  <img src="../../../assets/slides/w03/kenyan-labor.webp" alt="Hidden-labor article context" loading="lazy">
+  <div class="quote-text">
+    <blockquote>Time reported that OpenAI had subcontracted Kenyan workers making less than two dollars a day to filter out gore, hate speech, child sexual abuse material, and pornographic images from ChatGPT and OpenAI&#x27;s image-generation tool.</blockquote>
+    <p class="attribution">— Bender &amp; Hanna, on the labor that made the chatbot polite</p>
+  </div>
+</section>
+        <section class="slide-image-bullets" id="anthropic-settlement">
+          <div class="bullets-text">
+
+            <h2>The training set is also a legal record</h2>
+            <ul><li>August 2025: authors celebrate a historic settlement in the Anthropic class action.</li>
+<li>The training corpus is the legal exhibit.</li>
+<li>Where does <em>your</em> writing sit inside that record?</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w03/anthropic-settlement.webp" alt="Anthropic settlement article" loading="lazy">
+        </section>
+<section class="slide-section" id="claude-projects">
+  <p class="kicker">Part 2</p>
+  <h2>Live demo: Claude Projects</h2>
+  <p class="lead">A small corpus I have not opened before. We walk: preprocessing → bag-of-words → key phrases → comparative passages → thematic network.</p>
+</section>
+<section class="slide-demo-slot" id="demo-corpus">
+  <p class="kicker">Live demo</p>
+  <h2>A corpus I haven&#x27;t opened</h2>
+  <p>Watch the iteration. Notice when I push back, ask Claude to reconsider, point out a mistake. The iteration is the humanities work.</p>
+</section>
+        <section class="slide-exercise" id="exercise-corpus">
+          <p class="kicker">Exercise</p>
+          <h2>Distant reading with Claude Projects</h2>
+          <p class="prompt">Using the three-to-five-text corpus you brought:</p>
+          <ol><li>Create a fresh Project. Upload all texts.</li>
+<li>Run the sequence: stopword filter → bag-of-words → key phrases → character or theme network → comparative read.</li>
+<li>Ask Claude for an <strong>Artifact</strong> that visualizes one finding (a frequency chart, a network, a comparative table).</li>
+<li>Critique what you see. Compare to what close reading would surface.</li>
+<li><strong>Document at least one place Claude got it wrong.</strong> That&#x27;s the deliverable.</li></ol>
+        </section>
+<section class="slide-quote no-image" id="iteration-is-the-work">
+
+  <div class="quote-text">
+    <blockquote>The point of this exercise is not the visualization. The point is the iteration. Notice when you have to push back, refine, ask Claude to reconsider. That iteration is the actual humanities work — and it is teachable.</blockquote>
+    <p class="attribution">— Pedagogical note for Workshop 2</p>
+  </div>
+</section>
+        <section class="slide-image-bullets" id="artifact-summary">
+          <div class="bullets-text">
+
+            <h2>End in an Artifact</h2>
+            <ul><li>Word cloud, frequency chart, network diagram, comparative table.</li>
+<li>Artifacts are <em>small interactive web pages</em> — Claude can build one in a single turn.</li>
+<li>They&#x27;re shareable to a class, a colleague, a Twitter thread.</li>
+<li>Save the URL — we revisit Artifacts in Workshop 3.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w03/artifact-summary.webp" alt="Artifact-style visualization" loading="lazy">
+        </section>
+        <section class="slide-image-bullets" id="where-claude-fails">
+          <div class="bullets-text">
+
+            <h2>Where Claude <em>will</em> fail</h2>
+            <ul><li>Confabulating quotes that aren&#x27;t in the source.</li>
+<li>Smoothing genre or period differences into a fake consensus.</li>
+<li>Quietly losing files when the conversation grows.</li>
+<li><strong>Your job in this exercise is to find one of these.</strong></li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w03/claude-fails.webp" alt="Critique-the-AI illustration" loading="lazy">
+        </section>
+        <section class="slide-image-bullets" id="scaffold-iteration">
+          <div class="bullets-text">
+
+            <h2>Scaffolding for students</h2>
+            <ul><li>Require <em>three prompts</em> documented before the result they used.</li>
+<li>Require an annotated screenshot of one bad answer.</li>
+<li>Require a one-paragraph reflection: <em>what did close reading catch that this missed?</em></li>
+<li>Grade the iteration, not the artifact.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w03/scaffold-iteration.webp" alt="Pedagogical scaffolding" loading="lazy">
+        </section>
+<section class="slide-section" id="discussion">
+  <p class="kicker">Part 5</p>
+  <h2>Discussion</h2>
+  <p class="lead">Where did Claude help? Where did it hallucinate? What would a student need to know before they used this for an assignment in your course?</p>
+</section>
+        <section class="slide-image-bullets" id="wrap">
+          <div class="bullets-text">
+
+            <h2>Bring forward to Workshop 3</h2>
+            <ul><li>Save your Project. We&#x27;ll add images to it next time.</li>
+<li>Save the <em>bad</em> Claude answer you found — it&#x27;s a teaching artifact.</li>
+<li>Workshop 3 (Week 5): we move from text to image. Bring 5–10 images you have rights to use.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w03/bring-forward.webp" alt="Looking ahead to Workshop 3" loading="lazy">
+        </section>
+        <section class="slide-closing" id="closing">
+          <h2>Carry it forward</h2>
+          <p class="lead">The Project you built today is yours. Add to it across the semester; it&#x27;s the closest thing this workshop offers to a portable workspace.</p>
+          <ul class="links"><li><a href="../../../weeks/week-03.html">Workshop 2 page</a></li>
+<li><a href="../../../weeks/week-04.html">Week 4 (async): Distant Reading</a></li>
+<li><a href="https://tedunderwood.com/2025/07/02/a-more-interesting-upside-of-ai/">Reading: Underwood, <em>More Interesting Upside of AI</em></a></li>
+<li><a href="https://digitalpedagogy.hcommons.org/keyword/Text-Analysis/">Reading: Houston, <em>Text Analysis</em> (DH Pedagogy)</a></li></ul>
+        </section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    center: false,
+    width: 1280,
+    height: 800,
+    margin: 0.04,
+    transition: 'fade',
+    controlsTutorial: false
+  });
+</script>
+</body>
+</html>

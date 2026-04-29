@@ -465,6 +465,33 @@ a:hover, a:focus {
   }
 }
 
+/* ===== Slide-deck link — sits inside workshop-callout ===== */
+.workshop-callout a.btn,
+a.deck-link {
+  display: inline-block;
+  margin-top: 0.6rem;
+  padding: 0.45rem 0.95rem;
+  background: var(--coral);
+  color: var(--ink);
+  font-family: var(--display);
+  font-variation-settings: "opsz" 14, "wdth" 100, "wght" 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border: 2px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--ink);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.workshop-callout a.btn:hover,
+a.deck-link:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--ink);
+}
+.workshop-callout a.btn:active,
+a.deck-link:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 var(--ink);
+}
+
 /* ===== Async callout — calmer, non-animated counterpart ===== */
 .async-callout {
   position: relative;

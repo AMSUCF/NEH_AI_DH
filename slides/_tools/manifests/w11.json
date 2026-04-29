@@ -1,0 +1,298 @@
+{
+  "week": "w11",
+  "title": "Workshop 6 — Agentic Futures, Curricular Sustainability",
+  "slides": [
+    {
+      "id": "cover",
+      "layout": "cover",
+      "title": "Workshop 6",
+      "subtitle": "Agentic Futures, Curricular Sustainability",
+      "meta": "Tuesday, July 22, 2026 · 10 AM – noon · CHDR · last in-person session",
+      "image": {
+        "src": "cover.webp",
+        "alt": "Local Futures title slide"
+      },
+      "media": [
+        {
+          "source": "AI_WeekThirteen",
+          "file": "image1.png",
+          "as": "cover",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "tour-not-tutorial",
+      "layout": "section",
+      "kicker": "Framing",
+      "title": "A tour, not a tutorial",
+      "lead": "We look at what is just beyond Code Web — Cowork, the Claude CLI, MCP, the Superpowers workflow — so you leave with a map. The hands-on portion is a *writing* exercise.",
+      "media": []
+    },
+    {
+      "id": "what-is-an-agent",
+      "layout": "image-bullets",
+      "title": "What is an agent?",
+      "bullets": [
+        "**Tool use:** the model can call functions you give it (search, file edit, run command).",
+        "**Planning:** the model decides what to do next, in what order.",
+        "**Subagents:** the model can spawn helper instances of itself.",
+        "An *agent* is the loop these compose into. The vocabulary is doing a lot of work."
+      ],
+      "image": {
+        "src": "agent-vocab.webp",
+        "alt": "Agent vocabulary diagram"
+      },
+      "media": [
+        {
+          "source": "AI_WeekThirteen",
+          "file": "image7.png",
+          "as": "agent-vocab",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "cowork-section",
+      "layout": "section",
+      "kicker": "Part 2",
+      "title": "Cowork tour",
+      "lead": "Live walkthrough of a Cowork session — Claude working alongside you in real time on a shared problem. We use one of *your* W7 or W9 artifacts as the working surface.",
+      "media": []
+    },
+    {
+      "id": "demo-cowork",
+      "layout": "demo-slot",
+      "title": "Cowork on your ePortfolio or playful tool",
+      "note": "What changes when the conversation is collaborative rather than turn-taking. Bring a question that's been nagging at your site.",
+      "media": []
+    },
+    {
+      "id": "cli-section",
+      "layout": "section",
+      "kicker": "Part 3",
+      "title": "Claude CLI tour",
+      "lead": "Claude in the terminal. Slash commands, `/init`, `/plan`, `CLAUDE.md` for context engineering, the Superpowers workflow.",
+      "media": []
+    },
+    {
+      "id": "demo-cli",
+      "layout": "demo-slot",
+      "title": "Claude CLI on a small humanities project",
+      "note": "Brainstorm → Spec → Plan → Implementation → Review. You watch. You don't install.",
+      "media": []
+    },
+    {
+      "id": "superpowers",
+      "layout": "image-bullets",
+      "title": "Superpowers as a discipline",
+      "bullets": [
+        "**Brainstorm:** explore intent before any code.",
+        "**Spec:** write the design as a checked-in artifact.",
+        "**Plan:** decompose into reviewable steps.",
+        "**Implementation:** test-driven, gated by review checkpoints.",
+        "**Review:** verification before completion claims."
+      ],
+      "image": {
+        "src": "superpowers.webp",
+        "alt": "Superpowers workflow"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Fifteen",
+          "file": "image9.png",
+          "as": "superpowers",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "mcp-section",
+      "layout": "section",
+      "kicker": "Part 4",
+      "title": "MCP, briefly",
+      "lead": "Model Context Protocol — 'USB-C for AI.' One example: connecting Claude to a Zotero library so research and writing share a context.",
+      "media": []
+    },
+    {
+      "id": "mcp-zotero",
+      "layout": "image-bullets",
+      "title": "Why MCP matters for the next academic year",
+      "bullets": [
+        "Connect Claude to a tool *you already use* (Zotero, Google Drive, your library catalog).",
+        "Now your AI workflow shares the same context as your research.",
+        "Each MCP integration is a *humanities choice*: which of your tools deserves to be in the loop?"
+      ],
+      "image": {
+        "src": "mcp-zotero.webp",
+        "alt": "MCP Zotero integration concept"
+      },
+      "media": [
+        {
+          "source": "AI_WeekThirteen",
+          "file": "image27.png",
+          "as": "mcp-zotero",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "labor-frame",
+      "layout": "section",
+      "kicker": "Reality check",
+      "title": "Revisiting text — and labor",
+      "lead": "Before we write a `CLAUDE.md`, the labor question. The Underwood essay you read frames it; this is the practitioner's version.",
+      "media": []
+    },
+    {
+      "id": "altman-jobs",
+      "layout": "image-bullets",
+      "title": "Altman: 'jobs that aren't real work'",
+      "bullets": [
+        "[tomshardware.com](https://www.tomshardware.com/tech-industry/sam-altman-says-ai-could-eliminate-jobs-that-arent-real-work): the CEO's framing of which jobs disappear.",
+        "Whose work is 'not real'? Look at the verbs.",
+        "Most of what humanists do is on his list."
+      ],
+      "image": {
+        "src": "altman-jobs.webp",
+        "alt": "Altman jobs article"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Fourteen",
+          "file": "image9.png",
+          "as": "altman-jobs",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "graeber-empty-room",
+      "layout": "quote",
+      "quote": "The point of bullshit jobs isn't that the work is hard or the workers are lazy. It's that the work is *meaningless*, and the worker knows it. AI is being marketed as the cure. It is at least as likely to be a more efficient producer.",
+      "attribution": "Echoing David Graeber's *I Had to Guard an Empty Room*",
+      "image": {
+        "src": "graeber.webp",
+        "alt": "Graeber empty-room article"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Fourteen",
+          "file": "image11.jpeg",
+          "as": "graeber",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "claudemd-section",
+      "layout": "section",
+      "kicker": "Part 5",
+      "title": "Write your `CLAUDE.md`",
+      "lead": "A context file an agent could read to understand your work. Whether or not you ever install the CLI, this document is a deliverable in its own right.",
+      "media": []
+    },
+    {
+      "id": "exercise-claudemd",
+      "layout": "exercise",
+      "title": "Your `CLAUDE.md` in 30 minutes",
+      "prompt": "Cover at minimum:",
+      "steps": [
+        "**Who you are and what you do.** One paragraph.",
+        "**Your domain.** Disciplines, methods, topics, key conversations.",
+        "**Your typical workflows.** What you tend to ask AI for; what you do *not* want it to do.",
+        "**Your preferences.** Citation style, voice, audience defaults.",
+        "**Your boundaries.** What you will not delegate. What requires your hand."
+      ],
+      "media": []
+    },
+    {
+      "id": "stay-skeptical",
+      "layout": "quote",
+      "quote": "The most important sentence in any conversation about agentic AI is: *what would I have to give up to use this?* The answer is rarely zero.",
+      "attribution": "Pedagogical note for Workshop 6",
+      "media": []
+    },
+    {
+      "id": "closing-thoughts",
+      "layout": "image-bullets",
+      "title": "Closing thoughts from the source class",
+      "bullets": [
+        "We started in May with ELIZA. We end in July with `CLAUDE.md`.",
+        "The through-line: refuse to gesture vaguely. Name the labor. Name the choice.",
+        "Take what is useful. Stay skeptical of the rest."
+      ],
+      "image": {
+        "src": "closing-thoughts.webp",
+        "alt": "Closing thoughts illustration"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Fifteen",
+          "file": "image1.png",
+          "as": "closing-thoughts",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "qa-section",
+      "layout": "section",
+      "kicker": "Part 6",
+      "title": "Open Q&A",
+      "lead": "Last in-person session of the series. Bring whatever questions you haven't had a chance to ask — about agentic tools, your `CLAUDE.md`, or what to carry into the fall.",
+      "media": []
+    },
+    {
+      "id": "what-comes-next",
+      "layout": "image-bullets",
+      "title": "What comes next (Week 12, async)",
+      "bullets": [
+        "**Sustaining and Sharing.** Reflect, share-back to the public community.",
+        "Optional: try the CLI or Cowork on your own.",
+        "Materials stay open after the series ends — bring them into your fall syllabus."
+      ],
+      "image": {
+        "src": "what-next.webp",
+        "alt": "Week 12 sustaining and sharing"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Fifteen",
+          "file": "image38.png",
+          "as": "what-next",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "layout": "closing",
+      "title": "Carry it into the fall",
+      "lead": "You leave with: a Claude Project, an Artifact, a deployed Pages site, a playful tool, an AI policy, and a `CLAUDE.md`. That's a curriculum, not a tour.",
+      "links": [
+        {
+          "label": "Workshop 6 page",
+          "url": "/weeks/week-11.html"
+        },
+        {
+          "label": "Week 12 (async): Sustaining and Sharing",
+          "url": "/weeks/week-12.html"
+        },
+        {
+          "label": "Reading: Underwood, *Marionette Theater of AI*",
+          "url": "https://tedunderwood.com/2026/02/08/the-marionette-theater-of-ai/"
+        },
+        {
+          "label": "Reading: Vincent, *Superpowers*",
+          "url": "https://blog.fsck.com/2025/10/09/superpowers/"
+        },
+        {
+          "label": "Anthropic: Intro to MCP",
+          "url": "https://docs.anthropic.com/en/docs/build-with-claude/mcp"
+        }
+      ],
+      "media": []
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "week": "w01",
+  "title": "Workshop 1 — Introducing AI for DH Pedagogy",
+  "slides": [
+    {
+      "id": "cover",
+      "layout": "cover",
+      "title": "Workshop 1",
+      "subtitle": "Introducing AI for DH Pedagogy",
+      "meta": "Tuesday, May 13, 2026 · 10 AM – noon · CHDR",
+      "image": {
+        "src": "cover.webp",
+        "alt": "HAL 9000 — the on-screen AI we've been arguing with for fifty years"
+      },
+      "media": [
+        {
+          "path": "hal.jpg",
+          "as": "cover",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "framing",
+      "layout": "image-bullets",
+      "kicker": "Part 1",
+      "title": "The existential crisis framing",
+      "bullets": [
+        "Plagiarism panics, an AI-detector arms race, faculty caught between adoption pressure and pedagogical challenges.",
+        "*\"A new app offers to do students' work for them. Professors aren't ready.\"*"
+      ],
+      "image": {
+        "src": "agentic-ai-chronicle.webp",
+        "alt": "Chronicle of Higher Education article header: Will Agentic AI Break Higher Education? A new app offers to do students' work for them. Professors aren't ready."
+      },
+      "caption": "[*The Chronicle of Higher Education* — \"Will Agentic AI Break Higher Education?\"](https://www.chronicle.com/article/will-agentic-ai-break-higher-education)",
+      "media": [
+        {
+          "path": "Screenshot 2026-04-28 184542.png",
+          "as": "agentic-ai-chronicle",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "what-is-genai",
+      "layout": "image-bullets",
+      "title": "What is generative AI?",
+      "bullets": [
+        "Per the **MLA-CCCC task force**: 'computer systems that can produce, or generate, various forms of traditionally human expression — language, images, video, music.'",
+        "Today we're focused on the *language* part. We touch the others in later workshops.",
+        "Transformer architecture + a vast scraped training corpus + reasoning layers on top.",
+        "[MLA-CCCC working paper →](https://aiandwriting.hcommons.org/working-paper-1/)"
+      ],
+      "image": {
+        "src": "what-is-genai.webp",
+        "alt": "Definitional slide: What is generative AI?"
+      },
+      "media": [
+        {
+          "source": "AI_VisualCulture",
+          "file": "image11.png",
+          "as": "what-is-genai",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "marketing-term",
+      "layout": "quote",
+      "quote": "\"AI\" is a marketing term. It doesn't refer to a coherent set of technologies. Instead, the phrase is deployed when the people building or selling a particular set of technologies will profit from getting others to believe that their technology is similar to humans.",
+      "attribution": "Emily Bender & Alex Hanna, *The AI Con*",
+      "media": []
+    },
+    {
+      "id": "rosy-scenarios",
+      "layout": "image-bullets",
+      "title": "Hype cuts both ways",
+      "bullets": [
+        "**Rosy scenarios:** AI 'companions' will take notes, replace ad copy, free us from menial work.",
+        "**Worst-case scenarios:** Asimov-violating robots; 'superintelligent' takeover.",
+        "Both stories sell the same product — they just sell it differently."
+      ],
+      "media": []
+    },
+    {
+      "id": "self-destructive",
+      "layout": "image-bullets",
+      "title": "What's actually happening, August 2025",
+      "bullets": [
+        "Sam Altman warns some users are 'using AI in self-destructive ways.'",
+        "ChatGPT-5 'struggled with spelling and geography.'",
+        "The discourse is stuck — but our students are already inside it."
+      ],
+      "image": {
+        "src": "altman-warning.webp",
+        "alt": "Article screenshot: Altman warning"
+      },
+      "media": [
+        {
+          "source": "AI_Week_One",
+          "file": "image59.png",
+          "as": "altman-warning",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "where-it-came-from",
+      "layout": "section",
+      "kicker": "Part 2",
+      "title": "Where the LLM came from",
+      "lead": "The web, digital culture, and networked communication produced a digitized record of human expression at unprecedented scale. That record is the training data.",
+      "media": []
+    },
+    {
+      "id": "ml-vs-deep-learning",
+      "layout": "image-bullets",
+      "title": "AI is a field. Deep learning is one method.",
+      "bullets": [
+        "AI = the broad goal of machines with intelligence.",
+        "Machine learning = a subfield where machines learn from data.",
+        "Deep learning = one ML approach among many.",
+        "LLMs are a particular use of deep learning, *not* the whole field."
+      ],
+      "image": {
+        "src": "ml-paradigms.webp",
+        "alt": "Symbolic vs subsymbolic AI diagram"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Three",
+          "file": "image13.png",
+          "as": "ml-paradigms",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "turing",
+      "layout": "quote",
+      "quote": "The question, 'Can machines think?' should be replaced by 'are there imaginable digital computers which would do well in the imitation game?'",
+      "attribution": "Alan Turing, 1950",
+      "media": []
+    },
+    {
+      "id": "luddites",
+      "layout": "quote",
+      "quote": "Luddites were not against technology. They were against technologies of *control and coercion*, and concerned about the loss of jobs, health, and community.",
+      "attribution": "Industrial-revolution echoes in 2025",
+      "image": {
+        "src": "luddites.webp",
+        "alt": "Industrial-revolution illustration"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Three",
+          "file": "image22.png",
+          "as": "luddites",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "what-an-llm-is",
+      "layout": "section",
+      "kicker": "Part 3",
+      "title": "What an LLM actually is",
+      "lead": "Parameters, training, inference, in plain language. Then reasoning layers and human feedback. Then the Opus / Sonnet / Haiku family as a concrete example.",
+      "media": []
+    },
+    {
+      "id": "language-model-basics",
+      "layout": "image-bullets",
+      "title": "Language model, plain version",
+      "bullets": [
+        "A language model assigns probabilities to sequences of tokens.",
+        "*Large* language models do this with billions of parameters.",
+        "Pretraining is the long, expensive step. Inference is what happens when you type.",
+        "Everything else — RLHF, system prompts, tools — sits **on top** of the pretrained model."
+      ],
+      "media": []
+    },
+    {
+      "id": "willison-llm",
+      "layout": "quote",
+      "quote": [
+        "An LLM is a machine learning model that can complete a sentence of text. Give the model the phrase \"the cat sat on the \" and it will (almost certainly) suggest \"mat\" as the next word in the sentence.",
+        "As these models get larger and train on increasing amounts of data, they can complete more complex sentences — like \"a python function to download a file from a URL is `def download_file(url):` \".",
+        "LLMs don't actually work directly with words — they work with **tokens**. A sequence of text is converted into a sequence of integer tokens, so \"the cat sat on the \" becomes `[3086, 9059, 10139, 402, 290, 220]`. This is worth understanding because LLM providers charge based on the number of tokens processed, and are limited in how many tokens they can consider at a time."
+      ],
+      "attribution": "Simon Willison, *[How Coding Agents Work](https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/)*",
+      "media": []
+    },
+    {
+      "id": "exercise-tokenizer",
+      "layout": "exercise",
+      "title": "Try tokenizing a sentence",
+      "prompt": "Two minutes — take Willison's point off the page:",
+      "steps": [
+        "Open the [OpenAI Tokenizer](https://platform.openai.com/tokenizer) in a new tab.",
+        "Paste a sentence you'd actually type into Claude or ChatGPT.",
+        "Note the **token count** and which 'words' the tokenizer splits into multiple pieces.",
+        "Try the same sentence in another language, with a typo, or stuffed with your discipline's jargon. Watch what changes."
+      ],
+      "media": []
+    },
+    {
+      "id": "neural-net-training",
+      "layout": "quote",
+      "quote": "A neural net is 'trained' by giving it some (usually random) initial set of weights on the connections between perceptrons, then adjusting them.",
+      "attribution": "Mitchell, *Artificial Intelligence: A Guide for Thinking Humans*",
+      "media": []
+    },
+    {
+      "id": "racter-history",
+      "layout": "image-bullets",
+      "title": "We've been here before",
+      "bullets": [
+        "RACTER (1984): the first 'book by a computer' — actually mostly its programmers.",
+        "Atari's *The Policeman's Beard Is Half Constructed.*",
+        "Every wave of generative text has been sold the same way: as authorship.",
+        "Every wave produced the same critical question: who is doing the labor?"
+      ],
+      "image": {
+        "src": "racter.webp",
+        "alt": "RACTER and Atari archives screenshot"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Two",
+          "file": "image47.png",
+          "as": "racter",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "intelligence-as-rank",
+      "layout": "quote",
+      "quote": "General intelligence is not something that can be measured, but the force of such a promise has been used to justify racial, gender, and class inequality for more than a century.",
+      "attribution": "Bender & Hanna, on 'humanlike intelligence' framing",
+      "media": []
+    },
+    {
+      "id": "eliza",
+      "layout": "image-bullets",
+      "title": "ELIZA, 1966",
+      "bullets": [
+        "Weizenbaum's chatbot, posing as a Rogerian therapist.",
+        "Computer scientists used it to celebrate replacing human labor.",
+        "Weizenbaum spent the rest of his life as a critic of AI hype.",
+        "Minsky founded MIT's AI Lab and took Pentagon funding unhindered.",
+        "The two roads from 1966 are still the two roads."
+      ],
+      "media": []
+    },
+    {
+      "id": "weizenbaum-purpose",
+      "layout": "quote",
+      "quote": "We are trying to do the same thing Weizenbaum tried to do: educate people about how these systems work, dispel the notion that they are thinking machines with a semblance of human understanding, and provide a model of how to think about them instead.",
+      "attribution": "Bender & Hanna, *The AI Con*, on the through-line from 1966 to now",
+      "media": []
+    },
+    {
+      "id": "from-chatbot-to-project",
+      "layout": "section",
+      "kicker": "Part 4",
+      "title": "From chatbot to Project",
+      "lead": "UCF Copilot is a single-shot chatbot — useful, fast, forgetful. A Claude Project wraps the same kind of model in persistent context and file handling. That's the gentle entry.",
+      "media": []
+    },
+    {
+      "id": "claude-pro",
+      "layout": "image-bullets",
+      "title": "What you brought today",
+      "bullets": [
+        "A laptop with a paid Claude Pro subscription (about $60 for three months).",
+        "One document — a syllabus, a paper, a short reading.",
+        "Curiosity about what your version of UCF Copilot has been doing for you, and where it stops."
+      ],
+      "image": {
+        "src": "claude-pro.webp",
+        "alt": "Claude Pro subscription page"
+      },
+      "media": [
+        {
+          "source": "AI_Week_One",
+          "file": "image29.png",
+          "as": "claude-pro",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "demo-copilot-vs-project",
+      "layout": "demo-slot",
+      "title": "UCF Copilot vs. Claude with a Project",
+      "note": "Same prompt. Same document. Two tools. Watch what persistent context changes.",
+      "media": []
+    },
+    {
+      "id": "exercise-three-conversations",
+      "layout": "exercise",
+      "title": "Three Conversations",
+      "prompt": "Take one prompt — something you'd actually use in your teaching or research — and run it three ways:",
+      "steps": [
+        "**[ELIZA](https://www.masswerk.at/eliza/)** — yes, really. Spend at least ten minutes; notice where it breaks.",
+        "**[UCF Copilot](https://cdl.ucf.edu/faculty-multimedia-center-ai-tools/)** — run the same prompt cold.",
+        "**A Claude Project** with one document uploaded as context — run it again.",
+        "Document what differs. Save screenshots. Bring the comparison back to the group."
+      ],
+      "media": []
+    },
+    {
+      "id": "closing",
+      "layout": "closing",
+      "title": "Three things to leave with",
+      "lead": "After today you should be able to explain to a colleague: where this thing was trained, what a chatbot does, what persistent context adds, and why you'd pick one tool over another for an assignment.",
+      "links": [
+        {
+          "label": "Workshop 1 page",
+          "url": "/weeks/week-01.html"
+        },
+        {
+          "label": "Week 2 (async): LLM Fundamentals",
+          "url": "/weeks/week-02.html"
+        },
+        {
+          "label": "Reading: Berry on ELIZA",
+          "url": "https://ojs.weizenbaum-institut.de/index.php/wjds/article/view/106"
+        },
+        {
+          "label": "Reading: Kirschenbaum, *Textpocalypse*",
+          "url": "https://www.theatlantic.com/technology/archive/2023/03/ai-chatgpt-writing-language-models/673318/"
+        }
+      ],
+      "media": []
+    }
+  ]
+}

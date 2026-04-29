@@ -1,0 +1,337 @@
+{
+  "week": "w07",
+  "title": "Workshop 4 — Web and Interactive Applications",
+  "slides": [
+    {
+      "id": "cover",
+      "layout": "cover",
+      "title": "Workshop 4",
+      "subtitle": "Web and Interactive Applications",
+      "meta": "Tuesday, June 24, 2026 · 10 AM – noon · CHDR",
+      "image": {
+        "src": "cover.webp",
+        "alt": "procedural art & play title"
+      },
+      "media": [
+        {
+          "source": "AI_WeekEleven",
+          "file": "image2.png",
+          "as": "cover",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "github-section",
+      "layout": "section",
+      "kicker": "Part 1",
+      "title": "GitHub and GitHub Pages, from scratch",
+      "lead": "Walk through, together: what a *repository* is, what a *commit* is in plain language, what *main* means, and what GitHub Pages does.",
+      "media": []
+    },
+    {
+      "id": "what-is-github",
+      "layout": "image-bullets",
+      "title": "What GitHub is — and what it isn't",
+      "bullets": [
+        "**A repository:** a folder of files with a complete history.",
+        "**A commit:** a saved version. You'll make many.",
+        "**Main:** the canonical line of work; everything else is a branch off it.",
+        "Owned by *you* (or by Microsoft, technically) — **not by Claude.**"
+      ],
+      "image": {
+        "src": "github-basics.webp",
+        "alt": "GitHub repository diagram"
+      },
+      "media": [
+        {
+          "source": "AI_WeekEleven",
+          "file": "image9.jpeg",
+          "as": "github-basics",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "github-pages",
+      "layout": "image-bullets",
+      "title": "GitHub Pages",
+      "bullets": [
+        "Free public web hosting from any repository.",
+        "URL pattern: `https://<username>.github.io/<repo>/`",
+        "Static only — but for a CV, syllabus, or playful tool, that's plenty.",
+        "Settings → Pages → choose a branch → wait two minutes → you have a site."
+      ],
+      "image": {
+        "src": "github-pages.webp",
+        "alt": "GitHub Pages settings"
+      },
+      "media": [
+        {
+          "source": "AI_WeekEleven",
+          "file": "image12.png",
+          "as": "github-pages",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "artifact-to-codeweb",
+      "layout": "section",
+      "kicker": "Part 2",
+      "title": "From Artifact to Code Web",
+      "lead": "What persists, what changes. Why a real GitHub repository matters even for a one-page site.",
+      "media": []
+    },
+    {
+      "id": "two-tools",
+      "layout": "two-col",
+      "title": "Two tools, two purposes",
+      "left_title": "Claude Artifacts",
+      "left": "Quick. Disposable. Lives inside a Claude conversation. Great for a one-shot demo or in-class build.",
+      "right_title": "Claude Code Web",
+      "right": "Persistent. Multi-file. Writes to a real GitHub repository. Designed for the thing you'll keep iterating on.",
+      "media": []
+    },
+    {
+      "id": "agentic-claude-finance",
+      "layout": "image-bullets",
+      "title": "Where this is heading: agentic Code Web",
+      "bullets": [
+        "Claude AI now ships in finance, sales, and infra workflows — full repo access.",
+        "Same primitives we'll use today: read files, edit files, run commands, deploy.",
+        "What we do for an ePortfolio scales to course tools, archive interfaces, recommender sites."
+      ],
+      "image": {
+        "src": "agentic-finance.webp",
+        "alt": "Anthropic Claude in finance"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Twelve",
+          "file": "image24.png",
+          "as": "agentic-finance",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "demo-cv-eportfolio",
+      "layout": "demo-slot",
+      "title": "Live demo: CV → ePortfolio",
+      "note": "Same tool, same prompt structure, deployed to a real GitHub Pages URL inside the demo block. Watch the iteration: palette, sections, typo. This is the workflow you'll do in 50 minutes.",
+      "media": []
+    },
+    {
+      "id": "what-pages-can-do",
+      "layout": "image-bullets",
+      "title": "What we'll have built by lunch",
+      "bullets": [
+        "A live URL pointed at a single-page website you wrote.",
+        "Version history of every change you and Claude made.",
+        "A README that documents your AI use — the attribution is part of the work.",
+        "**No code written from scratch.** That's the point — and it's also a literacy."
+      ],
+      "image": {
+        "src": "what-built.webp",
+        "alt": "Built site illustration"
+      },
+      "media": [
+        {
+          "source": "AI_WeekEleven",
+          "file": "image16.png",
+          "as": "what-built",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "exercise-cv",
+      "layout": "exercise",
+      "title": "CV → ePortfolio (deployed)",
+      "prompt": "Adapted from `DistantCodingUMKC` and `HumanitiesAI/weekeleven`:",
+      "steps": [
+        "From your GitHub home, click **New** → name it (`my-eportfolio`) → set **Public** → check **Add a README**.",
+        "From the repo page, **Add file → Upload files** → drag your CV / syllabus / description → **Commit changes**.",
+        "Open [Claude Code Web](https://claude.ai/code) → authorize GitHub → select the repo.",
+        "Prompt: *\"This repo has my [CV/syllabus]. Read it, then build a fun-but-professional single-page site appropriate to the work it represents. Put files in `/site`. Make it deploy-ready for Pages.\"*",
+        "Iterate. Color, layout, sections. The conversation *is* the workflow.",
+        "**Settings → Pages →** branch `main`, folder `/site` (or `/(root)`) → wait two minutes → save your URL."
+      ],
+      "media": []
+    },
+    {
+      "id": "javascript-lite",
+      "layout": "image-bullets",
+      "title": "What's actually under the hood",
+      "bullets": [
+        "[geeksforgeeks.org/javascript/variables-datatypes-javascript](https://www.geeksforgeeks.org/javascript/variables-datatypes-javascript/) — the level of detail you need to *read* the code Claude writes.",
+        "You don't have to write it. You do have to recognize it.",
+        "If something looks off, ask Claude to explain. The explanation is the literacy lesson."
+      ],
+      "image": {
+        "src": "js-variables.webp",
+        "alt": "JavaScript variables intro"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Twelve",
+          "file": "image6.png",
+          "as": "js-variables",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "atlas-comet",
+      "layout": "image-bullets",
+      "title": "Where Code Web sits in the agentic landscape",
+      "bullets": [
+        "OpenAI ships **Atlas** (browser-as-AI), Comet automates tasks in your browser.",
+        "Claude Code Web is the *humanities* member of the family — it commits, deploys, attributes.",
+        "Choose the tool whose *primitives* match your discipline's labor."
+      ],
+      "image": {
+        "src": "atlas-comet.webp",
+        "alt": "OpenAI Atlas / Comet articles"
+      },
+      "media": [
+        {
+          "source": "AI_WeekEleven",
+          "file": "image24.png",
+          "as": "atlas-comet",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "vibe-coding-honest",
+      "layout": "quote",
+      "quote": "I just made a website without writing any code. The honest answer is: yes — and also you wrote prose, you made design decisions, you reviewed the output, you committed changes. That is a literacy, even if it isn't the literacy you grew up calling 'programming.'",
+      "attribution": "From the Workshop 4 pedagogical note",
+      "media": []
+    },
+    {
+      "id": "claude-code-masses",
+      "layout": "image-bullets",
+      "title": "And then there's the CLI",
+      "bullets": [
+        "[techradar.com](https://www.techradar.com/pro/claude-code-comes-to-the-masses-and-its-a-game-cha): 'Claude Code comes to the masses.'",
+        "Code Web is the entry. The CLI is the deeper version — we *tour* it in Workshop 6.",
+        "You don't need it today. But know it's the same family of tool."
+      ],
+      "image": {
+        "src": "claude-code-cli.webp",
+        "alt": "Claude Code in the terminal"
+      },
+      "media": [
+        {
+          "source": "AI_WeekEleven",
+          "file": "image53.png",
+          "as": "claude-code-cli",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "game-companies",
+      "layout": "image-bullets",
+      "title": "How fast this is moving",
+      "bullets": [
+        "Over half of Japanese game companies use AI in development (October 2025).",
+        "NPR: AI code productivity claims under scrutiny — but the use is real.",
+        "When *your* students enter the field in two years, this is the floor."
+      ],
+      "image": {
+        "src": "game-companies.webp",
+        "alt": "Game-company AI adoption"
+      },
+      "media": [
+        {
+          "source": "AI_WeekEleven",
+          "file": "image49.png",
+          "as": "game-companies",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "scaffold-students",
+      "layout": "image-bullets",
+      "title": "If you assign this in a course",
+      "bullets": [
+        "Require **three iteration cycles** documented in the conversation history.",
+        "Require a **reflection on one design decision** the student overrode.",
+        "Require **AI-use attribution** in the README.",
+        "Grade the iteration. Grade the override. Grade the attribution."
+      ],
+      "image": {
+        "src": "scaffold-codeweb.webp",
+        "alt": "Scaffolding AI assignments"
+      },
+      "media": [
+        {
+          "source": "AI_WeekEleven",
+          "file": "image30.png",
+          "as": "scaffold-codeweb",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "discussion",
+      "layout": "section",
+      "kicker": "Part 5",
+      "title": "Discussion: assignment design",
+      "lead": "Bring the assignment you're worried about. Or the one you've been wanting to redesign. Open Q&A on how Code Web fits in your fall.",
+      "media": []
+    },
+    {
+      "id": "wrap",
+      "layout": "image-bullets",
+      "title": "What broke today? What surprised you?",
+      "bullets": [
+        "Save your Pages URL — Workshop 5 iterates on it for accessibility and play.",
+        "**Async Week 8:** *Rebuilding a Handout* — converting a static handout into an interactive site.",
+        "If something broke at deploy time: GitHub Pages settings → check branch + folder → wait *full* two minutes."
+      ],
+      "image": {
+        "src": "wrap.webp",
+        "alt": "Workshop 4 wrap"
+      },
+      "media": [
+        {
+          "source": "AI_WeekEleven",
+          "file": "image38.png",
+          "as": "wrap",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "layout": "closing",
+      "title": "Your URL is yours",
+      "lead": "That URL stays live as long as the repo exists. You own the work, the version history, and the attribution.",
+      "links": [
+        {
+          "label": "Workshop 4 page",
+          "url": "/weeks/week-07.html"
+        },
+        {
+          "label": "Week 8 (async): Rebuilding a Handout",
+          "url": "/weeks/week-08.html"
+        },
+        {
+          "label": "Reading: Martin, *Command Lines for the Humanities*",
+          "url": "https://www.cambridge.org/core/journals/pmla/article/command-lines-for-the-humanities/097F959E6971063D05B085E698354BA2"
+        },
+        {
+          "label": "Zine: Evans, *So You Want to Be a Wizard*",
+          "url": "https://wizardzines.com/zines/wizard/"
+        }
+      ],
+      "media": []
+    }
+  ]
+}

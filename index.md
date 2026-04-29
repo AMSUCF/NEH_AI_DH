@@ -6,10 +6,9 @@ title: NEH DH+AI Workshop Series
 - **Project:** *Building a Digital Humanities Generative AI Learning Community*
 - **Funder:** National Endowment for the Humanities
 - **Host:** Center for Humanities and Digital Research (CHDR), University of Central Florida
-- **Lead:** Dr. Anastasia Salter (anastasia at ucf.edu)
+- **Leads:** Dr. Anastasia Salter (anastasia at ucf.edu) and Dr. Mel Stanfill
 - **Term:** Summer C 2026 (May 12 – August 1)
 - **Workshops:** Six biweekly Tuesdays, 10 AM – noon at CHDR (streamed and recorded)
-- **Companion course:** ENG 6813 *Interdisciplinary Teaching* (Salter & Stanfill); workshop materials are identical for grad students enrolled in that seminar
 
 ## Contents
 
@@ -24,21 +23,19 @@ title: NEH DH+AI Workshop Series
 
 ## Who This Is For
 
-This workshop series is designed for **faculty and graduate students across humanities disciplines** who want to think rigorously and practically about generative AI in their teaching and research. We assume:
+This workshop series is being offered at UCF to a cohort of **Digital Humanities AI Fellows**, and is being made openly available to **faculty and graduate students across humanities disciplines** who are interested in thinking both pragmatically and critically about generative and agentic AI in their teaching and research. We assume:
 
 - No coding background. We will read code, but you will not be asked to write it from scratch — that is the point of the tools we are using.
 - Mixed technical comfort. Some participants have never used Claude. Others have written about it. Both are welcome.
 - A working interest in pedagogy. The series is anchored in higher-ed practice: how AI changes (or fails to change) what we ask students to do, how we read with them, and what counts as scholarly work.
 
-If you are enrolled in ENG 6813 *Interdisciplinary Teaching*, the workshops align directly with your weekly modules. Workshop attendance is optional; recordings and asynchronous materials are equivalent.
-
 ## What We Are Building
 
 The series unfolds across three arcs:
 
-1. **Stage 1 — Text** *(Weeks 1–4)*. We start with what an LLM actually is, why "harnessed" tools like Claude Projects work differently from a generic chatbot, and how this matters for the higher-ed conversation about plagiarism, expertise, and reading. We use **Claude Projects** to upload a small corpus and explore it.
-2. **Stage 2 — Visual** *(Weeks 5–6)*. We move to **Claude Artifacts** for image-to-text translation, alt-text generation, archival metadata, and critical reflection on AI-generated imagery already circulating in our communities.
-3. **Stage 3 — Code** *(Weeks 7–10)*. We use **Claude Code Web** to build small interactive tools — an ePortfolio, a recommender, a humanities-centered teaching site — and deploy them to GitHub Pages. We address accessibility, Universal Design for Learning, AI policy, and copyright.
+1. **Stage 1 — Text** *(Weeks 1–4)*. We start with what an LLM actually is — tracing its history through the way the web, digital culture, and networked communication built up the digitized record of human expression that now fuels LLMs and multimodal models. We look at how **reasoning layers** and human feedback (RLHF and related training) sit on top of the base model to shape its efficacy, and what that means for the higher-ed conversation about plagiarism, expertise, and reading. We use **Claude Projects** to upload a small corpus and explore it.
+2. **Stage 2 — Visual** *(Weeks 5–6)*. We move to **Claude Artifacts** for image-to-text translation, alt-text generation, archival metadata, and critical reflection on AI-generated imagery already circulating in our communities. This stage foregrounds **bias** in vision models and training data, and the unresolved **copyright** questions around image generation and reuse.
+3. **Stage 3 — Code** *(Weeks 7–10)*. We use **Claude Code Web** to build small interactive tools — an ePortfolio, a recommender, a humanities-centered teaching site. Because most participants will not have used them before, we introduce **GitHub** and **GitHub Pages** from scratch, and deploy our projects there. We address accessibility, Universal Design for Learning, AI policy, and copyright.
 4. **Stage 4 — Agentic Futures** *(Weeks 11–12)*. The final session offers a brief tour of **Cowork** and the **Claude CLI**, with attention to the emerging agentic landscape and the sustainability of what we have built. The closing async week is reserved for sharing, reflection, and planning what to carry into your fall classroom.
 
 ## Tool Stages
@@ -62,7 +59,6 @@ The off-weeks (2, 4, 6, 8, 10, 12) are designed to **reinforce** what the worksh
 
 - **Reading menu** — three to five curated readings tagged <span class="tag tag-light">Light</span> (a single short piece, ~20 minutes), <span class="tag tag-standard">Standard</span> (a chapter or longer essay, ~60 minutes), or <span class="tag tag-deep">Deep</span> (a book section or multi-piece arc, ~3 hours). Pick what fits your schedule. Nobody is "behind."
 - **Exercise menu** — two to three optional exercises at varying time commitments (~30 min, ~90 min, ~3 hours).
-- **A note for ENG 6813 students** — what (if anything) maps to your weekly discussion.
 
 The full curated list is available on the [Readings](readings.md) page; the full exercise menu is available on the [Exercises](exercises.md) page.
 

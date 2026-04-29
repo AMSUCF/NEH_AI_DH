@@ -6,10 +6,10 @@ theme: "Code Web reinforcement: rebuild a static handout"
 starts: 2026-06-29
 ---
 
-A reinforcement week for Code Web. The *Signature Assignment* for ENG 6813 is due Sunday, July 5, so this week is intentionally light on new content — pick the depth you have time for. There is no in-person session and no required deliverable. Save deeper Code Web work for the next workshop on July 8.
+A reinforcement week for Code Web. This week is intentionally light on new content — pick the depth you have time for. There is no in-person session and no required deliverable. Save deeper Code Web work for the next workshop on July 8.
 
 <div class="async-callout" markdown="1">
-**Asynchronous deep-dive.** Light by design. ENG 6813 students: focus on the Signature Assignment due July 5. Use the exercises here as a way to prototype something for that deliverable if it helps.
+**Asynchronous deep-dive.** Light by design. Use the exercises here to consolidate what Workshop 4 introduced, or to prototype something you want to bring back to your own teaching.
 </div>
 
 ## Reading Menu
@@ -41,5 +41,4 @@ If you hit something that breaks — a build error, a deploy failure — paste t
 
 ## Cross-references
 
-- Companion ENG 6813 module: [Week 8](../../InterdisciplinaryTeaching-main/InterdisciplinaryTeaching-main/weeks/week-08.md) (Signature Assignment due July 5).
 - Source materials: `HumanitiesAI/weekeleven.md`, `weeknine.md`; `DistantCoding/transcript.md`.

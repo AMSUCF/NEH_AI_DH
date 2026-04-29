@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Workshop 5 — Playful Approaches and Creative Code</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css" id="reveal-theme">
+<link rel="stylesheet" href="../../../assets/css/style.css">
+<style>
+:root {
+  --slide-pad: clamp(1.25rem, 3vw, 3rem);
+}
+.reveal {
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  color: var(--ink, #141414);
+  background: var(--bone, #faf6ec);
+}
+.reveal .slides { text-align: left; }
+.reveal .slides section {
+  padding: var(--slide-pad);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+.reveal h1, .reveal h2, .reveal h3 {
+  font-family: 'Bricolage Grotesque', 'Inter', serif;
+  color: var(--ink, #141414);
+  text-transform: none;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5em;
+  line-height: 1.05;
+}
+.reveal h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); }
+.reveal h2 { font-size: clamp(2rem, 5vw, 3.4rem); }
+.reveal h3 { font-size: clamp(1.4rem, 3.5vw, 2rem); }
+.reveal p, .reveal li { font-size: clamp(1.1rem, 2.4vw, 1.6rem); line-height: 1.4; }
+.reveal a { color: var(--cobalt, #1545c4); }
+.reveal code { font-family: 'JetBrains Mono', 'Courier New', monospace; background: rgba(0,0,0,0.06); padding: 0.05em 0.25em; border-radius: 3px; font-size: 0.9em; }
+.reveal blockquote { border-left: 4px solid var(--coral, #ff5a4e); padding: 0.25em 0 0.25em 1rem; margin: 0; font-size: clamp(1.2rem, 2.8vw, 1.9rem); font-style: normal; line-height: 1.35; width: auto; box-shadow: none; }
+.reveal .kicker { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--coral, #ff5a4e); margin: 0 0 0.5rem; }
+.reveal .attribution { font-size: 1rem; color: var(--muted, #5a5a5a); margin-top: 0.5rem; }
+.reveal .caption { font-size: 1rem; color: var(--muted, #5a5a5a); margin-top: 0.75rem; }
+.reveal .lead { font-size: clamp(1.2rem, 2.6vw, 1.8rem); color: var(--muted, #5a5a5a); }
+
+.reveal img, .reveal video { max-width: 100%; max-height: 60vh; object-fit: contain; border-radius: 6px; }
+
+/* Cover */
+.reveal .slide-cover { background: var(--ink, #141414); color: var(--bone, #faf6ec); position: relative; overflow: hidden; }
+.reveal .slide-cover img { position: absolute; inset: 0; width: 100%; height: 100%; max-height: none; object-fit: cover; opacity: 0.35; border-radius: 0; }
+.reveal .slide-cover .cover-text { position: relative; z-index: 1; }
+.reveal .slide-cover h1 { color: var(--bone, #faf6ec); }
+.reveal .slide-cover .subtitle { font-family: 'Bricolage Grotesque', serif; font-size: clamp(1.4rem, 3vw, 2rem); color: var(--mustard, #e8b53a); margin: 0.5rem 0 1.5rem; }
+.reveal .slide-cover .cover-meta { font-family: 'JetBrains Mono', monospace; font-size: 1rem; color: var(--bone, #faf6ec); opacity: 0.85; }
+
+/* Section divider */
+.reveal .slide-section { background: var(--coral, #ff5a4e); color: var(--ink, #141414); }
+.reveal .slide-section h2 { font-size: clamp(2.5rem, 7vw, 5rem); }
+.reveal .slide-section .kicker { color: var(--ink, #141414); }
+.reveal .slide-section .lead { color: var(--ink, #141414); max-width: 60ch; }
+
+/* Image-bullets */
+.reveal .slide-image-bullets { display: grid !important; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+.reveal .slide-image-bullets.no-image { display: block !important; max-width: 70ch; margin-left: auto !important; margin-right: auto !important; }
+.reveal .slide-image-bullets img { max-height: 75vh; }
+.reveal .slide-image-bullets ul { list-style: none; padding: 0; margin: 0; }
+.reveal .slide-image-bullets li { padding-left: 1.5em; position: relative; margin-bottom: 0.7rem; }
+.reveal .slide-image-bullets li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 0.7em; height: 0.7em; background: var(--coral, #ff5a4e); border-radius: 2px; transform: rotate(45deg); }
+@media (max-width: 800px) { .reveal .slide-image-bullets { grid-template-columns: 1fr; } }
+
+/* Image-only */
+.reveal .slide-image-only { align-items: center; text-align: center; }
+.reveal .slide-image-only img { max-height: 80vh; }
+
+/* Quote */
+.reveal .slide-quote { display: grid !important; grid-template-columns: 1fr 1.4fr; gap: 2rem; align-items: center; background: var(--bone, #faf6ec); }
+.reveal .slide-quote.no-image { display: block !important; max-width: 60ch; margin-left: auto !important; margin-right: auto !important; }
+.reveal .slide-quote.no-image blockquote { font-size: clamp(1.6rem, 3.4vw, 2.4rem); }
+.reveal .slide-quote img { max-height: 70vh; }
+@media (max-width: 800px) { .reveal .slide-quote { grid-template-columns: 1fr; } }
+
+/* Video */
+.reveal .slide-video video { width: 100%; max-height: 65vh; }
+
+/* Demo slot */
+.reveal .slide-demo-slot { background: var(--mustard, #e8b53a); color: var(--ink, #141414); }
+.reveal .slide-demo-slot .kicker { color: var(--ink, #141414); }
+
+/* Exercise */
+.reveal .slide-exercise { background: var(--sage, #7a8f4a); color: var(--ink, #141414); }
+.reveal .slide-exercise .kicker { color: var(--ink, #141414); }
+.reveal .slide-exercise ol { counter-reset: ex; padding-left: 0; list-style: none; }
+.reveal .slide-exercise ol li { counter-increment: ex; padding-left: 2.5em; position: relative; margin-bottom: 0.7rem; }
+.reveal .slide-exercise ol li::before { content: counter(ex); position: absolute; left: 0; top: 0; font-family: 'Bricolage Grotesque', serif; font-weight: 700; font-size: 1.4em; color: var(--ink, #141414); }
+.reveal .slide-exercise .prompt { font-style: italic; max-width: 60ch; }
+
+/* Two-col */
+.reveal .slide-two-col .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+@media (max-width: 800px) { .reveal .slide-two-col .cols { grid-template-columns: 1fr; } }
+
+/* Closing */
+.reveal .slide-closing { background: var(--plum, #5d2e5f); color: var(--bone, #faf6ec); }
+.reveal .slide-closing h2 { color: var(--bone, #faf6ec); }
+.reveal .slide-closing a { color: var(--mustard, #e8b53a); }
+.reveal .slide-closing .lead { color: var(--bone, #faf6ec); opacity: 0.9; }
+.reveal .slide-closing .links { list-style: none; padding: 0; }
+.reveal .slide-closing .links li { margin-bottom: 0.5rem; }
+
+/* Progress bar / controls in coral */
+.reveal .progress { color: var(--coral, #ff5a4e); }
+.reveal .controls { color: var(--coral, #ff5a4e); }
+
+/* Back-to-workshop link, fixed top-right of every deck */
+.deck-back {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: var(--bone, #faf6ec);
+  color: var(--ink, #141414);
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid var(--ink, #141414);
+  box-shadow: 2px 2px 0 var(--ink, #141414);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.deck-back:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--ink, #141414);
+  background: var(--coral, #ff5a4e);
+}
+.deck-back:active {
+  transform: translate(1px, 1px);
+  box-shadow: 0 0 0 var(--ink, #141414);
+}
+@media print { .deck-back { display: none; } }
+</style>
+</head>
+<body>
+<a class="deck-back" href="../../../weeks/week-09.html" title="Back to workshop page">← Workshop</a>
+<div class="reveal">
+<div class="slides">
+<section class="slide-cover" id="cover">
+  <img src="../../../assets/slides/w09/cover.webp" alt="Procedural — Code and Rules" loading="lazy">
+  <div class="cover-text">
+    <h1>Workshop 5</h1>
+    <p class="subtitle">Playful Approaches, Creative Code, AI Policy</p>
+    <p class="cover-meta">Tuesday, July 8, 2026 · 10 AM – noon · CHDR</p>
+  </div>
+</section>
+<section class="slide-section" id="why-playful">
+  <p class="kicker">Part 1</p>
+  <h2>Why playful</h2>
+  <p class="lead">Refik Anadol does it. Mark Sample does it. Allison Parrish does it. Play makes the labor of iteration visible and survivable.</p>
+</section>
+        <section class="slide-image-bullets" id="road-so-far">
+          <div class="bullets-text">
+
+            <h2>The road so far</h2>
+            <ul><li><strong>Textual</strong> (Workshops 1–2): close reading at corpus scale with Projects.</li>
+<li><strong>Visual</strong> (Workshop 3): image-to-text and alt-text with Artifacts.</li>
+<li><strong>Procedural</strong> (Workshop 4 → today): you&#x27;re now building things that <em>run.</em></li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w09/road-so-far.webp" alt="The road so far overview" loading="lazy">
+        </section>
+        <section class="slide-image-bullets" id="what-were-building">
+          <div class="bullets-text">
+
+            <h2>What we&#x27;re building toward</h2>
+            <ul><li>Small. Strange. Made for <em>one course</em> or <em>one corpus</em>.</li>
+<li>Not an app. Not a startup. A pedagogical artifact.</li>
+<li>Survives because it&#x27;s specific. Travels because it&#x27;s open.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w09/building-toward.webp" alt="What we are building toward" loading="lazy">
+        </section>
+<section class="slide-demo-slot" id="demo-memorial">
+  <p class="kicker">Live demo</p>
+  <h2>Live build: a memorial Artifact</h2>
+  <p>I build something small and a little strange — a memorial, a generator, a recommender for an obscure corpus. Watch how the dataset shapes the design.</p>
+</section>
+        <section class="slide-image-bullets" id="examples-tools">
+          <div class="bullets-text">
+
+            <h2>Pick one (or invent your own)</h2>
+            <ul><li>A <strong>clickable timeline</strong> for a course unit.</li>
+<li>A <strong>recommender</strong> that takes a few inputs and returns a curated suggestion.</li>
+<li>A <strong>quiz / knowledge-check</strong> that <em>explains</em> rather than grades.</li>
+<li>A <strong>generator</strong> — Markov mash-up of public-domain text, a centosizer, a found-poetry tool.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w09/tool-examples.webp" alt="Examples of playful tools" loading="lazy">
+        </section>
+        <section class="slide-exercise" id="exercise-build-tool">
+          <p class="kicker">Exercise</p>
+          <h2>Build your tool</h2>
+          <p class="prompt">Use Claude Code Web. Deploy via GitHub Pages.</p>
+          <ol><li>Pick a topic or dataset <em>you brought today.</em></li>
+<li>Choose one of the four shapes above (or invent yours).</li>
+<li>Prompt Claude with: <em>what it is, who it&#x27;s for, what&#x27;s strange about it.</em></li>
+<li>Iterate three times. Each iteration: one specific design decision documented in the conversation.</li>
+<li>Deploy to Pages. Save the URL — you&#x27;ll share it in the discussion.</li></ol>
+        </section>
+        <section class="slide-image-bullets" id="wapo-bias-recall">
+          <div class="bullets-text">
+
+            <h2>Stay alert: bias travels with the model</h2>
+            <ul><li><em><a href="https://www.washingtonpost.com/technology/interactive/2023/ai-generated-images-bias-racism-sexism-stereotypes/">wapo.com/.../ai-generated-images-bias</a></em> — the same biases ride into your generator.</li>
+<li>Your dataset is a counterweight. Choose it deliberately.</li>
+<li>If you&#x27;re building a recommender, <em>whose voices are recommendable?</em></li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w09/wapo-bias-recall.webp" alt="WaPo bias article" loading="lazy">
+        </section>
+<section class="slide-section" id="policy-section">
+  <p class="kicker">Part 4</p>
+  <h2>AI policy drafting</h2>
+  <p class="lead">Pivot to the syllabus question. Working in pairs, draft (or revise) a one-page course AI policy.</p>
+</section>
+        <section class="slide-image-bullets" id="policy-axes">
+          <div class="bullets-text">
+
+            <h2>What a policy has to address</h2>
+            <ul><li><strong>Copyright &amp; attribution.</strong> What gets cited, what gets refused.</li>
+<li><strong>Accessibility.</strong> Including AI as a tool <em>for</em> accessibility, not just a problem.</li>
+<li><strong>Equity of access.</strong> Who pays for Pro? Are alternatives provided?</li>
+<li><strong>Labor.</strong> Whose labor is being replaced or extended?</li>
+<li><strong>UDL.</strong> Multiple means of engagement, representation, action/expression.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w09/policy-axes.webp" alt="Five axes of AI policy" loading="lazy">
+        </section>
+<section class="slide-quote no-image" id="invitation-not-fence">
+
+  <div class="quote-text">
+    <blockquote>The most common mistake in AI policies is treating them as a fence. The students who most need clear AI guidance are the ones least likely to ask. A policy framed as <em>invitation</em> (here is when AI use is welcome, here is how to attribute it, here is what to do if you are unsure) reaches those students. A policy framed as <em>prohibition</em> drives them underground.</blockquote>
+    <p class="attribution">— Pedagogical note for Workshop 5</p>
+  </div>
+</section>
+        <section class="slide-image-bullets" id="udl-frame">
+          <div class="bullets-text">
+
+            <h2>UDL as the frame</h2>
+            <ul><li><strong>Engagement:</strong> AI can help students enter material in their own way.</li>
+<li><strong>Representation:</strong> AI can re-present the same content in alt-text, plain language, captions.</li>
+<li><strong>Action/expression:</strong> AI can scaffold the <em>output</em> — a draft, a summary, a frame.</li>
+<li>Universal Design for Learning is <em>not</em> a permission slip. It&#x27;s a structure.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w09/udl-frame.webp" alt="UDL principles applied to AI" loading="lazy">
+        </section>
+        <section class="slide-exercise" id="exercise-policy">
+          <p class="kicker">Exercise</p>
+          <h2>Draft your AI policy</h2>
+          <p class="prompt">One page. Bring it to the discussion at minute 105.</p>
+          <ol><li>Pick a course you teach (or plan to teach).</li>
+<li>Address the five axes above (copyright, accessibility, equity, labor, UDL).</li>
+<li>Frame at least one paragraph as <em>invitation</em>: when is AI use welcome?</li>
+<li>Include attribution language: <em>how</em> should students cite AI use?</li>
+<li>Include a question: <em>what should a student do if they&#x27;re unsure?</em></li></ol>
+        </section>
+<section class="slide-quote no-image" id="noble-anchor">
+
+  <div class="quote-text">
+    <blockquote>Algorithms aren&#x27;t neutral. They reflect the people who build them, the data that train them, and the contexts they&#x27;re deployed in.</blockquote>
+    <p class="attribution">— Safiya Umoja Noble, <em>My Robot Teacher</em> podcast</p>
+  </div>
+</section>
+        <section class="slide-image-bullets" id="design-justice">
+          <div class="bullets-text">
+
+            <h2>Design Justice as the higher bar</h2>
+            <ul><li>Costanza-Chock: design <em>with</em>, not <em>for</em>, the communities most affected.</li>
+<li>Apply that to your course AI policy: <em>whose feedback shaped it?</em></li>
+<li>If only the syllabus drafter signed off, you&#x27;re not done.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w09/design-justice.webp" alt="Design Justice book" loading="lazy">
+        </section>
+<section class="slide-section" id="discussion-policies">
+  <p class="kicker">Part 5</p>
+  <h2>Read each other&#x27;s policies</h2>
+  <p class="lead">Trade with the person next to you. Read for the <em>invitations.</em> Read for the <em>enforcement spots that hide in the language.</em> Read for what&#x27;s missing.</p>
+</section>
+        <section class="slide-image-bullets" id="mla-statement">
+          <div class="bullets-text">
+
+            <h2>Where the discipline is, January 2026</h2>
+            <ul><li><strong>MLA Executive Council</strong> statement on educational technologies &amp; AI agents.</li>
+<li>Most direct disciplinary statement on AI policy in humanities classrooms.</li>
+<li>Worth reading <em>before</em> you finalize your own policy.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w09/mla-statement.webp" alt="MLA statement" loading="lazy">
+        </section>
+        <section class="slide-image-bullets" id="looking-ahead">
+          <div class="bullets-text">
+
+            <h2>Looking ahead</h2>
+            <ul><li><strong>Async Week 10:</strong> <em>UDL and AI Policy</em> — refine the draft you wrote today.</li>
+<li><strong>Workshop 6 (Week 11):</strong> the agentic horizon — Cowork, Claude CLI, MCP, Superpowers. Tour, not tutorial.</li>
+<li>Bring all three artifacts (ePortfolio, playful tool, AI policy) to Workshop 6.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w09/looking-ahead.webp" alt="Looking ahead from Workshop 5" loading="lazy">
+        </section>
+        <section class="slide-closing" id="closing">
+          <h2>Small is good</h2>
+          <p class="lead">Delight, weirdness, and clarity over scale. The tool you built today doesn&#x27;t have to scale. It has to belong to your students.</p>
+          <ul class="links"><li><a href="../../../weeks/week-09.html">Workshop 5 page</a></li>
+<li><a href="../../../weeks/week-10.html">Week 10 (async): UDL and AI Policy</a></li>
+<li><a href="https://calearninglab.org/myrobotteacher/mrt6/">Reading: Noble, <em>Algorithms Aren&#x27;t Neutral</em></a></li>
+<li><a href="https://design-justice.pubpub.org/">Reading: Costanza-Chock, <em>Design Justice</em></a></li>
+<li><a href="https://news.mla.hcommons.org/2026/01/30/educational-technologies-and-ai-agents/">MLA statement on AI agents</a></li></ul>
+        </section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    center: false,
+    width: 1280,
+    height: 800,
+    margin: 0.04,
+    transition: 'fade',
+    controlsTutorial: false
+  });
+</script>
+</body>
+</html>

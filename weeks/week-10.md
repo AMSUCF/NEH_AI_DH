@@ -6,10 +6,10 @@ theme: "UDL and AI syllabus policy"
 starts: 2026-07-13
 ---
 
-A reinforcement week for the policy and accessibility threads from Workshop 5. ENG 6813's *Course Syllabus* deliverable is due Sunday, July 19 — so this week's exercises are oriented toward making your syllabus and your AI policy work together. There is no in-person meeting.
+A reinforcement week for the policy and accessibility threads from Workshop 5. This week's exercises are oriented toward making your syllabus and your AI policy work together. There is no in-person meeting.
 
 <div class="async-callout" markdown="1">
-**Asynchronous deep-dive.** ENG 6813 students: this week directly supports the Course Syllabus due July 19. The "Deep" exercise below maps to that deliverable and may be the most useful use of your time.
+**Asynchronous deep-dive.** Pick the depth that fits your time. The "Deep" exercise below — full syllabus integration — is the most consequential use of this week if you are revising for fall.
 </div>
 
 ## Reading Menu
@@ -24,7 +24,7 @@ A reinforcement week for the policy and accessibility threads from Workshop 5. E
 
 - <span class="tag tag-light">Light</span> **Policy A/B (~30 min).** Take an existing AI policy from a colleague's syllabus (or a sample from a public source). Use Claude in a Project to identify three UDL-aligned revisions. Document the before/after.
 - <span class="tag tag-standard">Standard</span> **Accessibility audit (~90 min).** Run the W7 ePortfolio site (or any class artifact you have on the web) through an accessibility checker like [WAVE](https://wave.webaim.org/) or [axe DevTools](https://www.deque.com/axe/). Use Claude Code Web to fix the top three issues. Push the changes; rerun the check.
-- <span class="tag tag-deep">Deep</span> **Full syllabus integration (~3+ hr).** Revise one full syllabus to integrate (a) an AI policy, (b) a signature assignment that uses AI critically, and (c) at least one AI-aware exercise. ENG 6813 students: this maps directly to the Course Syllabus deliverable. The CAST [UDL framework](https://udlguidelines.cast.org/) is the most useful single resource for this work.
+- <span class="tag tag-deep">Deep</span> **Full syllabus integration (~3+ hr).** Revise one full syllabus to integrate (a) an AI policy, (b) a signature assignment that uses AI critically, and (c) at least one AI-aware exercise. The CAST [UDL framework](https://udlguidelines.cast.org/) is the most useful single resource for this work.
 
 ## A Useful Frame
 
@@ -36,5 +36,4 @@ When drafting or revising an AI policy, three questions are worth holding open:
 
 ## Cross-references
 
-- Companion ENG 6813 module: [Week 10](../../InterdisciplinaryTeaching-main/InterdisciplinaryTeaching-main/weeks/week-10.md) (Course Syllabus due July 19).
-- Source materials: `InterdisciplinaryTeaching/weeks/week-09.md` policy prompt; `dhsi.md` resource list.
+- Source materials: `dhsi.md` resource list.

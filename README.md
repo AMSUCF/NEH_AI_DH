@@ -35,7 +35,7 @@ The site uses a custom modern-quilt theme — palette, typography, motion, and t
 
 ## Audience
 
-Primary: faculty across humanities disciplines participating in the NEH learning community, mixed technical comfort, no assumed coding background. Secondary: graduate students in the parallel ENG 6813 *Interdisciplinary Teaching* course who use the same materials inside their seminar.
+Faculty and graduate students across humanities disciplines, mixed technical comfort, no assumed coding background. The series is offered at UCF to a cohort of Digital Humanities AI Fellows and is openly available to anyone in the broader NEH learning community.
 
 ## Contact
 

@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Workshop 1 — Introducing AI for DH Pedagogy</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css" id="reveal-theme">
+<link rel="stylesheet" href="../../../assets/css/style.css">
+<style>
+:root {
+  --slide-pad: clamp(1.25rem, 3vw, 3rem);
+}
+.reveal {
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  color: var(--ink, #141414);
+  background: var(--bone, #faf6ec);
+}
+.reveal .slides { text-align: left; }
+.reveal .slides section {
+  padding: var(--slide-pad);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+.reveal h1, .reveal h2, .reveal h3 {
+  font-family: 'Bricolage Grotesque', 'Inter', serif;
+  color: var(--ink, #141414);
+  text-transform: none;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5em;
+  line-height: 1.05;
+}
+.reveal h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); }
+.reveal h2 { font-size: clamp(2rem, 5vw, 3.4rem); }
+.reveal h3 { font-size: clamp(1.4rem, 3.5vw, 2rem); }
+.reveal p, .reveal li { font-size: clamp(1.1rem, 2.4vw, 1.6rem); line-height: 1.4; }
+.reveal a { color: var(--cobalt, #1545c4); }
+.reveal code { font-family: 'JetBrains Mono', 'Courier New', monospace; background: rgba(0,0,0,0.06); padding: 0.05em 0.25em; border-radius: 3px; font-size: 0.9em; }
+.reveal blockquote { border-left: 4px solid var(--coral, #ff5a4e); padding: 0.25em 0 0.25em 1rem; margin: 0; font-size: clamp(1.2rem, 2.8vw, 1.9rem); font-style: normal; line-height: 1.35; width: auto; box-shadow: none; }
+.reveal .kicker { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--coral, #ff5a4e); margin: 0 0 0.5rem; }
+.reveal .attribution { font-size: 1rem; color: var(--muted, #5a5a5a); margin-top: 0.5rem; }
+.reveal .caption { font-size: 1rem; color: var(--muted, #5a5a5a); margin-top: 0.75rem; }
+.reveal .lead { font-size: clamp(1.2rem, 2.6vw, 1.8rem); color: var(--muted, #5a5a5a); }
+
+.reveal img, .reveal video { max-width: 100%; max-height: 60vh; object-fit: contain; border-radius: 6px; }
+
+/* Cover */
+.reveal .slide-cover { background: var(--ink, #141414); color: var(--bone, #faf6ec); position: relative; overflow: hidden; }
+.reveal .slide-cover img { position: absolute; inset: 0; width: 100%; height: 100%; max-height: none; object-fit: cover; opacity: 0.35; border-radius: 0; }
+.reveal .slide-cover .cover-text { position: relative; z-index: 1; }
+.reveal .slide-cover h1 { color: var(--bone, #faf6ec); }
+.reveal .slide-cover .subtitle { font-family: 'Bricolage Grotesque', serif; font-size: clamp(1.4rem, 3vw, 2rem); color: var(--mustard, #e8b53a); margin: 0.5rem 0 1.5rem; }
+.reveal .slide-cover .cover-meta { font-family: 'JetBrains Mono', monospace; font-size: 1rem; color: var(--bone, #faf6ec); opacity: 0.85; }
+
+/* Section divider */
+.reveal .slide-section { background: var(--coral, #ff5a4e); color: var(--ink, #141414); }
+.reveal .slide-section h2 { font-size: clamp(2.5rem, 7vw, 5rem); }
+.reveal .slide-section .kicker { color: var(--ink, #141414); }
+.reveal .slide-section .lead { color: var(--ink, #141414); max-width: 60ch; }
+
+/* Image-bullets */
+.reveal .slide-image-bullets { display: grid !important; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+.reveal .slide-image-bullets.no-image { display: block !important; max-width: 70ch; margin-left: auto !important; margin-right: auto !important; }
+.reveal .slide-image-bullets img { max-height: 75vh; }
+.reveal .slide-image-bullets ul { list-style: none; padding: 0; margin: 0; }
+.reveal .slide-image-bullets li { padding-left: 1.5em; position: relative; margin-bottom: 0.7rem; }
+.reveal .slide-image-bullets li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 0.7em; height: 0.7em; background: var(--coral, #ff5a4e); border-radius: 2px; transform: rotate(45deg); }
+@media (max-width: 800px) { .reveal .slide-image-bullets { grid-template-columns: 1fr; } }
+
+/* Image-only */
+.reveal .slide-image-only { align-items: center; text-align: center; }
+.reveal .slide-image-only img { max-height: 80vh; }
+
+/* Quote */
+.reveal .slide-quote { display: grid !important; grid-template-columns: 1fr 1.4fr; gap: 2rem; align-items: center; background: var(--bone, #faf6ec); }
+.reveal .slide-quote.no-image { display: block !important; max-width: 60ch; margin-left: auto !important; margin-right: auto !important; }
+.reveal .slide-quote.no-image blockquote { font-size: clamp(1.6rem, 3.4vw, 2.4rem); }
+.reveal .slide-quote blockquote p { margin: 0 0 0.7em; }
+.reveal .slide-quote blockquote p:last-child { margin-bottom: 0; }
+.reveal .slide-quote.long-quote.no-image { max-width: 70ch; }
+.reveal .slide-quote.long-quote blockquote { font-size: clamp(1rem, 1.9vw, 1.3rem); line-height: 1.45; }
+.reveal .slide-quote.long-quote blockquote code { font-size: 0.95em; }
+.reveal .slide-quote img { max-height: 70vh; }
+@media (max-width: 800px) { .reveal .slide-quote { grid-template-columns: 1fr; } }
+
+/* Video */
+.reveal .slide-video video { width: 100%; max-height: 65vh; }
+
+/* Demo slot */
+.reveal .slide-demo-slot { background: var(--mustard, #e8b53a); color: var(--ink, #141414); }
+.reveal .slide-demo-slot .kicker { color: var(--ink, #141414); }
+
+/* Exercise */
+.reveal .slide-exercise { background: var(--sage, #7a8f4a); color: var(--ink, #141414); }
+.reveal .slide-exercise .kicker { color: var(--ink, #141414); }
+.reveal .slide-exercise ol { counter-reset: ex; padding-left: 0; list-style: none; }
+.reveal .slide-exercise ol li { counter-increment: ex; padding-left: 2.5em; position: relative; margin-bottom: 0.7rem; }
+.reveal .slide-exercise ol li::before { content: counter(ex); position: absolute; left: 0; top: 0; font-family: 'Bricolage Grotesque', serif; font-weight: 700; font-size: 1.4em; color: var(--ink, #141414); }
+.reveal .slide-exercise .prompt { font-style: italic; max-width: 60ch; }
+
+/* Two-col */
+.reveal .slide-two-col .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+@media (max-width: 800px) { .reveal .slide-two-col .cols { grid-template-columns: 1fr; } }
+
+/* Closing */
+.reveal .slide-closing { background: var(--plum, #5d2e5f); color: var(--bone, #faf6ec); }
+.reveal .slide-closing h2 { color: var(--bone, #faf6ec); }
+.reveal .slide-closing a { color: var(--mustard, #e8b53a); }
+.reveal .slide-closing .lead { color: var(--bone, #faf6ec); opacity: 0.9; }
+.reveal .slide-closing .links { list-style: none; padding: 0; }
+.reveal .slide-closing .links li { margin-bottom: 0.5rem; }
+
+/* Progress bar / controls in coral */
+.reveal .progress { color: var(--coral, #ff5a4e); }
+.reveal .controls { color: var(--coral, #ff5a4e); }
+
+/* Back-to-workshop link, fixed top-right of every deck */
+.deck-back {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: var(--bone, #faf6ec);
+  color: var(--ink, #141414);
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid var(--ink, #141414);
+  box-shadow: 2px 2px 0 var(--ink, #141414);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.deck-back:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--ink, #141414);
+  background: var(--coral, #ff5a4e);
+}
+.deck-back:active {
+  transform: translate(1px, 1px);
+  box-shadow: 0 0 0 var(--ink, #141414);
+}
+@media print { .deck-back { display: none; } }
+</style>
+</head>
+<body>
+<a class="deck-back" href="../../../weeks/week-01.html" title="Back to workshop page">← Workshop</a>
+<div class="reveal">
+<div class="slides">
+<section class="slide-cover" id="cover">
+  <img src="../../../assets/slides/w01/cover.webp" alt="HAL 9000 — the on-screen AI we&#x27;ve been arguing with for fifty years" loading="lazy">
+  <div class="cover-text">
+    <h1>Workshop 1</h1>
+    <p class="subtitle">Introducing AI for DH Pedagogy</p>
+    <p class="cover-meta">Tuesday, May 13, 2026 · 10 AM – noon · CHDR</p>
+  </div>
+</section>
+        <section class="slide-image-bullets" id="framing">
+          <div class="bullets-text">
+            <p class="kicker">Part 1</p>
+            <h2>The existential crisis framing</h2>
+            <ul><li>Plagiarism panics, an AI-detector arms race, faculty caught between adoption pressure and pedagogical challenges.</li>
+<li><em>&quot;A new app offers to do students&#x27; work for them. Professors aren&#x27;t ready.&quot;</em></li></ul>
+            <p class="caption"><a href="https://www.chronicle.com/article/will-agentic-ai-break-higher-education"><em>The Chronicle of Higher Education</em> — &quot;Will Agentic AI Break Higher Education?&quot;</a></p>
+          </div>
+          <img src="../../../assets/slides/w01/agentic-ai-chronicle.webp" alt="Chronicle of Higher Education article header: Will Agentic AI Break Higher Education? A new app offers to do students&#x27; work for them. Professors aren&#x27;t ready." loading="lazy">
+        </section>
+        <section class="slide-image-bullets" id="what-is-genai">
+          <div class="bullets-text">
+
+            <h2>What is generative AI?</h2>
+            <ul><li>Per the <strong>MLA-CCCC task force</strong>: &#x27;computer systems that can produce, or generate, various forms of traditionally human expression — language, images, video, music.&#x27;</li>
+<li>Today we&#x27;re focused on the <em>language</em> part. We touch the others in later workshops.</li>
+<li>Transformer architecture + a vast scraped training corpus + reasoning layers on top.</li>
+<li><a href="https://aiandwriting.hcommons.org/working-paper-1/">MLA-CCCC working paper →</a></li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w01/what-is-genai.webp" alt="Definitional slide: What is generative AI?" loading="lazy">
+        </section>
+<section class="slide-quote no-image" id="marketing-term">
+
+  <div class="quote-text">
+    <blockquote>&quot;AI&quot; is a marketing term. It doesn&#x27;t refer to a coherent set of technologies. Instead, the phrase is deployed when the people building or selling a particular set of technologies will profit from getting others to believe that their technology is similar to humans.</blockquote>
+    <p class="attribution">— Emily Bender &amp; Alex Hanna, <em>The AI Con</em></p>
+  </div>
+</section>
+        <section class="slide-image-bullets no-image" id="rosy-scenarios">
+          <div class="bullets-text">
+
+            <h2>Hype cuts both ways</h2>
+            <ul><li><strong>Rosy scenarios:</strong> AI &#x27;companions&#x27; will take notes, replace ad copy, free us from menial work.</li>
+<li><strong>Worst-case scenarios:</strong> Asimov-violating robots; &#x27;superintelligent&#x27; takeover.</li>
+<li>Both stories sell the same product — they just sell it differently.</li></ul>
+
+          </div>
+
+        </section>
+        <section class="slide-image-bullets" id="self-destructive">
+          <div class="bullets-text">
+
+            <h2>What&#x27;s actually happening, August 2025</h2>
+            <ul><li>Sam Altman warns some users are &#x27;using AI in self-destructive ways.&#x27;</li>
+<li>ChatGPT-5 &#x27;struggled with spelling and geography.&#x27;</li>
+<li>The discourse is stuck — but our students are already inside it.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w01/altman-warning.webp" alt="Article screenshot: Altman warning" loading="lazy">
+        </section>
+<section class="slide-section" id="where-it-came-from">
+  <p class="kicker">Part 2</p>
+  <h2>Where the LLM came from</h2>
+  <p class="lead">The web, digital culture, and networked communication produced a digitized record of human expression at unprecedented scale. That record is the training data.</p>
+</section>
+        <section class="slide-image-bullets" id="ml-vs-deep-learning">
+          <div class="bullets-text">
+
+            <h2>AI is a field. Deep learning is one method.</h2>
+            <ul><li>AI = the broad goal of machines with intelligence.</li>
+<li>Machine learning = a subfield where machines learn from data.</li>
+<li>Deep learning = one ML approach among many.</li>
+<li>LLMs are a particular use of deep learning, <em>not</em> the whole field.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w01/ml-paradigms.webp" alt="Symbolic vs subsymbolic AI diagram" loading="lazy">
+        </section>
+<section class="slide-quote no-image" id="turing">
+
+  <div class="quote-text">
+    <blockquote>The question, &#x27;Can machines think?&#x27; should be replaced by &#x27;are there imaginable digital computers which would do well in the imitation game?&#x27;</blockquote>
+    <p class="attribution">— Alan Turing, 1950</p>
+  </div>
+</section>
+<section class="slide-quote" id="luddites">
+  <img src="../../../assets/slides/w01/luddites.webp" alt="Industrial-revolution illustration" loading="lazy">
+  <div class="quote-text">
+    <blockquote>Luddites were not against technology. They were against technologies of <em>control and coercion</em>, and concerned about the loss of jobs, health, and community.</blockquote>
+    <p class="attribution">— Industrial-revolution echoes in 2025</p>
+  </div>
+</section>
+<section class="slide-section" id="what-an-llm-is">
+  <p class="kicker">Part 3</p>
+  <h2>What an LLM actually is</h2>
+  <p class="lead">Parameters, training, inference, in plain language. Then reasoning layers and human feedback. Then the Opus / Sonnet / Haiku family as a concrete example.</p>
+</section>
+        <section class="slide-image-bullets no-image" id="language-model-basics">
+          <div class="bullets-text">
+
+            <h2>Language model, plain version</h2>
+            <ul><li>A language model assigns probabilities to sequences of tokens.</li>
+<li><em>Large</em> language models do this with billions of parameters.</li>
+<li>Pretraining is the long, expensive step. Inference is what happens when you type.</li>
+<li>Everything else — RLHF, system prompts, tools — sits <strong>on top</strong> of the pretrained model.</li></ul>
+
+          </div>
+
+        </section>
+<section class="slide-quote no-image long-quote" id="willison-llm">
+
+  <div class="quote-text">
+    <blockquote><p>An LLM is a machine learning model that can complete a sentence of text. Give the model the phrase &quot;the cat sat on the &quot; and it will (almost certainly) suggest &quot;mat&quot; as the next word in the sentence.</p><p>As these models get larger and train on increasing amounts of data, they can complete more complex sentences — like &quot;a python function to download a file from a URL is <code>def download_file(url):</code> &quot;.</p><p>LLMs don&#x27;t actually work directly with words — they work with <strong>tokens</strong>. A sequence of text is converted into a sequence of integer tokens, so &quot;the cat sat on the &quot; becomes <code>[3086, 9059, 10139, 402, 290, 220]</code>. This is worth understanding because LLM providers charge based on the number of tokens processed, and are limited in how many tokens they can consider at a time.</p></blockquote>
+    <p class="attribution">— Simon Willison, <em><a href="https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/">How Coding Agents Work</a></em></p>
+  </div>
+</section>
+        <section class="slide-exercise" id="exercise-tokenizer">
+          <p class="kicker">Exercise</p>
+          <h2>Try tokenizing a sentence</h2>
+          <p class="prompt">Two minutes — take Willison&#x27;s point off the page:</p>
+          <ol><li>Open the <a href="https://platform.openai.com/tokenizer">OpenAI Tokenizer</a> in a new tab.</li>
+<li>Paste a sentence you&#x27;d actually type into Claude or ChatGPT.</li>
+<li>Note the <strong>token count</strong> and which &#x27;words&#x27; the tokenizer splits into multiple pieces.</li>
+<li>Try the same sentence in another language, with a typo, or stuffed with your discipline&#x27;s jargon. Watch what changes.</li></ol>
+        </section>
+<section class="slide-quote no-image" id="neural-net-training">
+
+  <div class="quote-text">
+    <blockquote>A neural net is &#x27;trained&#x27; by giving it some (usually random) initial set of weights on the connections between perceptrons, then adjusting them.</blockquote>
+    <p class="attribution">— Mitchell, <em>Artificial Intelligence: A Guide for Thinking Humans</em></p>
+  </div>
+</section>
+        <section class="slide-image-bullets" id="racter-history">
+          <div class="bullets-text">
+
+            <h2>We&#x27;ve been here before</h2>
+            <ul><li>RACTER (1984): the first &#x27;book by a computer&#x27; — actually mostly its programmers.</li>
+<li>Atari&#x27;s <em>The Policeman&#x27;s Beard Is Half Constructed.</em></li>
+<li>Every wave of generative text has been sold the same way: as authorship.</li>
+<li>Every wave produced the same critical question: who is doing the labor?</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w01/racter.webp" alt="RACTER and Atari archives screenshot" loading="lazy">
+        </section>
+<section class="slide-quote no-image" id="intelligence-as-rank">
+
+  <div class="quote-text">
+    <blockquote>General intelligence is not something that can be measured, but the force of such a promise has been used to justify racial, gender, and class inequality for more than a century.</blockquote>
+    <p class="attribution">— Bender &amp; Hanna, on &#x27;humanlike intelligence&#x27; framing</p>
+  </div>
+</section>
+        <section class="slide-image-bullets no-image" id="eliza">
+          <div class="bullets-text">
+
+            <h2>ELIZA, 1966</h2>
+            <ul><li>Weizenbaum&#x27;s chatbot, posing as a Rogerian therapist.</li>
+<li>Computer scientists used it to celebrate replacing human labor.</li>
+<li>Weizenbaum spent the rest of his life as a critic of AI hype.</li>
+<li>Minsky founded MIT&#x27;s AI Lab and took Pentagon funding unhindered.</li>
+<li>The two roads from 1966 are still the two roads.</li></ul>
+
+          </div>
+
+        </section>
+<section class="slide-quote no-image" id="weizenbaum-purpose">
+
+  <div class="quote-text">
+    <blockquote>We are trying to do the same thing Weizenbaum tried to do: educate people about how these systems work, dispel the notion that they are thinking machines with a semblance of human understanding, and provide a model of how to think about them instead.</blockquote>
+    <p class="attribution">— Bender &amp; Hanna, <em>The AI Con</em>, on the through-line from 1966 to now</p>
+  </div>
+</section>
+<section class="slide-section" id="from-chatbot-to-project">
+  <p class="kicker">Part 4</p>
+  <h2>From chatbot to Project</h2>
+  <p class="lead">UCF Copilot is a single-shot chatbot — useful, fast, forgetful. A Claude Project wraps the same kind of model in persistent context and file handling. That&#x27;s the gentle entry.</p>
+</section>
+        <section class="slide-image-bullets" id="claude-pro">
+          <div class="bullets-text">
+
+            <h2>What you brought today</h2>
+            <ul><li>A laptop with a paid Claude Pro subscription (about $60 for three months).</li>
+<li>One document — a syllabus, a paper, a short reading.</li>
+<li>Curiosity about what your version of UCF Copilot has been doing for you, and where it stops.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w01/claude-pro.webp" alt="Claude Pro subscription page" loading="lazy">
+        </section>
+<section class="slide-demo-slot" id="demo-copilot-vs-project">
+  <p class="kicker">Live demo</p>
+  <h2>UCF Copilot vs. Claude with a Project</h2>
+  <p>Same prompt. Same document. Two tools. Watch what persistent context changes.</p>
+</section>
+        <section class="slide-exercise" id="exercise-three-conversations">
+          <p class="kicker">Exercise</p>
+          <h2>Three Conversations</h2>
+          <p class="prompt">Take one prompt — something you&#x27;d actually use in your teaching or research — and run it three ways:</p>
+          <ol><li><strong><a href="https://www.masswerk.at/eliza/">ELIZA</a></strong> — yes, really. Spend at least ten minutes; notice where it breaks.</li>
+<li><strong><a href="https://cdl.ucf.edu/faculty-multimedia-center-ai-tools/">UCF Copilot</a></strong> — run the same prompt cold.</li>
+<li><strong>A Claude Project</strong> with one document uploaded as context — run it again.</li>
+<li>Document what differs. Save screenshots. Bring the comparison back to the group.</li></ol>
+        </section>
+        <section class="slide-closing" id="closing">
+          <h2>Three things to leave with</h2>
+          <p class="lead">After today you should be able to explain to a colleague: where this thing was trained, what a chatbot does, what persistent context adds, and why you&#x27;d pick one tool over another for an assignment.</p>
+          <ul class="links"><li><a href="../../../weeks/week-01.html">Workshop 1 page</a></li>
+<li><a href="../../../weeks/week-02.html">Week 2 (async): LLM Fundamentals</a></li>
+<li><a href="https://ojs.weizenbaum-institut.de/index.php/wjds/article/view/106">Reading: Berry on ELIZA</a></li>
+<li><a href="https://www.theatlantic.com/technology/archive/2023/03/ai-chatgpt-writing-language-models/673318/">Reading: Kirschenbaum, <em>Textpocalypse</em></a></li></ul>
+        </section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    center: false,
+    width: 1280,
+    height: 800,
+    margin: 0.04,
+    transition: 'fade',
+    controlsTutorial: false
+  });
+</script>
+</body>
+</html>

@@ -75,13 +75,13 @@ Every workshop has one core exercise; every async week offers a deep-dive menu a
 - *Build* — a small interactive tool: a timeline, a recommender, a quiz, a generator, a memorial. Prioritize delight over scale.
 - *Draft* — a one-page course AI policy that addresses copyright, attribution, accessibility, and labor. Frame it through Universal Design for Learning.
 
-*Source: `HumanitiesAI/weeknine.md` + `HumanitiesAI/weektwelve.md` + ENG 6813 [Week 9](../InterdisciplinaryTeaching-main/InterdisciplinaryTeaching-main/weeks/week-09.md) prompt.*
+*Source: `HumanitiesAI/weeknine.md` + `HumanitiesAI/weektwelve.md`.*
 
 ### Week 10 (async) — UDL and AI policy
 
 - <span class="tag tag-light">Light</span> **Policy A/B.** Take an existing AI policy from a colleague's syllabus. Use Claude in a Project to identify three UDL-aligned revisions. Document them.
 - <span class="tag tag-standard">Standard</span> **Accessibility audit.** Run the W7 site (or any class artifact) through an accessibility checker. Use Claude Code Web to fix the top three issues.
-- <span class="tag tag-deep">Deep</span> **Full syllabus integration.** Revise one full syllabus to integrate AI policy, signature assignment, and at least one AI-aware exercise. (ENG 6813 students: this maps to your Course Syllabus deliverable due July 19.)
+- <span class="tag tag-deep">Deep</span> **Full syllabus integration.** Revise one full syllabus to integrate AI policy, signature assignment, and at least one AI-aware exercise.
 
 ---
 

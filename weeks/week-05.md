@@ -16,7 +16,9 @@ We move from text to image. **Claude Artifacts** are now our primary tool: not b
 <div class="workshop-callout" markdown="1">
 **NEH Workshop 3 — Tuesday, June 10, 10 AM – noon, CHDR**
 
-Streamed and recorded. ENG 6813 students who attend extend the workshop discussion; those who do not complete the asynchronous version of this week's exercise.
+Streamed and recorded. Open to UCF faculty, graduate students, and the broader NEH learning community.
+
+[Open the slide deck →]({{ '/slides/web/w05/' | relative_url }}){:.btn}
 </div>
 
 ## What to Bring
@@ -58,13 +60,10 @@ Optional:
 5. Generate an **Artifact** that visualizes the set in a meaningful relationship — a grid, a comparative table, a typology.
 6. Critique the alt-text and the patterns. Where does Claude's vision fail or flatten?
 
-ENG 6813 students share the Artifact link, screenshots, and a paragraph of reflection in the workshop discussion.
-
 ## Pedagogical Note
 
 For accessibility-minded readers: AI-generated alt-text is *a draft.* It is faster than writing alt-text from scratch, and it is consistently worse than alt-text written by a human who knows the context. Use it as scaffolding for students learning to write alt-text, not as a finished artifact. The same applies to metadata: AI accelerates a draft; human curation is the work.
 
 ## Cross-references
 
-- Companion ENG 6813 module: [Week 5](../../InterdisciplinaryTeaching-main/InterdisciplinaryTeaching-main/weeks/week-05.md)
 - Source materials: `HumanitiesAI/weeksix.md` (image-to-text translation); `DistantCodingUMKC` Example 3 (butterflies); `CriticalMaking2026/exercises/four_maps.md` (visual ideation).

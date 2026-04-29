@@ -6,7 +6,7 @@ theme: "LLM fundamentals reinforcement"
 starts: 2026-05-18
 ---
 
-Workshop 1 cleared the field; this week reinforces the conceptual ground without a live session. Pick one reading and one exercise from the menu below — or do all three if you want to go deeper. There is no in-person meeting and no required deliverable. ENG 6813 students continue with their *Course Design Plan* discussion (see [the parallel module](../../InterdisciplinaryTeaching-main/InterdisciplinaryTeaching-main/weeks/week-02.md)).
+Workshop 1 cleared the field; this week reinforces the conceptual ground without a live session. Pick one reading and one exercise from the menu below — or do all three if you want to go deeper. There is no in-person meeting and no required deliverable.
 
 <div class="async-callout" markdown="1">
 **Asynchronous deep-dive.** No required reading or exercise — pick what fits your time. Workshop 2 (May 27) builds on this content but does not assume you read everything here.
@@ -33,5 +33,4 @@ If you do nothing else this week, **assemble three to five short texts you might
 
 ## Cross-references
 
-- Companion ENG 6813 module: [Week 2](../../InterdisciplinaryTeaching-main/InterdisciplinaryTeaching-main/weeks/week-02.md) (Course Design Plan discussion).
 - Source materials: `HumanitiesAI/weektwo.md`; `dhsi.md` agentic-coding overview readings.

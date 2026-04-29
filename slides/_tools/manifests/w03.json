@@ -1,0 +1,338 @@
+{
+  "week": "w03",
+  "title": "Workshop 2 — AI for Textual Analysis",
+  "slides": [
+    {
+      "id": "cover",
+      "layout": "cover",
+      "title": "Workshop 2",
+      "subtitle": "AI for Textual Analysis",
+      "meta": "Tuesday, May 27, 2026 · 10 AM – noon · CHDR",
+      "image": {
+        "src": "cover.webp",
+        "alt": "Source-class title slide for Textual — Reading"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Four",
+          "file": "image1.jpeg",
+          "as": "cover",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "distant-reading",
+      "layout": "section",
+      "kicker": "Part 1",
+      "title": "What \"distant reading\" has meant",
+      "lead": "Moretti, Underwood, the Voyant tradition. What Claude Projects adds: persistent context across multi-turn conversation, multi-file uploads, native handling of mixed formats.",
+      "media": []
+    },
+    {
+      "id": "moretti-underwood",
+      "layout": "image-bullets",
+      "title": "Two genealogies, one method",
+      "bullets": [
+        "**Moretti, 2000s:** the literary system at scale — what a single book hides, a thousand reveal.",
+        "**Underwood, 2010s–:** stylometrics, character networks, century-long trends.",
+        "**Voyant, classroom:** word counts and concordances democratized to the seminar room.",
+        "Claude Projects: multi-text, multi-format, multi-turn — humanities-scale, not big-data scale."
+      ],
+      "image": {
+        "src": "distant-reading.webp",
+        "alt": "Distant-reading-tradition illustration"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Four",
+          "file": "image9.png",
+          "as": "distant-reading",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "ai-in-the-wild",
+      "layout": "section",
+      "kicker": "Field check",
+      "title": "Where AI is reading text right now",
+      "lead": "Three quick scenes from professional reading practices already on the move.",
+      "media": []
+    },
+    {
+      "id": "legal-billable",
+      "layout": "image-bullets",
+      "title": "Killing the billable hour",
+      "bullets": [
+        "Eudia and other legal-tech startups pitching AI as the end of the billable hour.",
+        "Reuters: AI is now an LA law student.",
+        "When a profession decides 'reading' is automatable, what gets lost?"
+      ],
+      "image": {
+        "src": "legal-billable.webp",
+        "alt": "Legal-tech AI article"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Four",
+          "file": "image11.png",
+          "as": "legal-billable",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "medical-advice",
+      "layout": "image-bullets",
+      "title": "Reading the doctor's notes",
+      "bullets": [
+        "Rolling Stone: AI chatbot medical-advice study.",
+        "Patients reading test results with Claude before they call the office.",
+        "What does it mean for our students that *every* domain now uses an LLM intermediary?"
+      ],
+      "image": {
+        "src": "medical-advice.webp",
+        "alt": "Medical AI advice article"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Four",
+          "file": "image23.png",
+          "as": "medical-advice",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "student-cheating",
+      "layout": "image-bullets",
+      "title": "The cheating frame is the wrong frame",
+      "bullets": [
+        "Futurism: students openly use ChatGPT for homework.",
+        "OpenAI tracks the use as growth, not failure.",
+        "Our problem isn't enforcement. Our problem is teaching reading as a *practice* students can do *with* the tool."
+      ],
+      "image": {
+        "src": "student-cheating.webp",
+        "alt": "Cheating-with-AI article"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Four",
+          "file": "image52.png",
+          "as": "student-cheating",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "labor-section",
+      "layout": "section",
+      "kicker": "Before the demo",
+      "title": "Whose reading paid for this?",
+      "lead": "Distant reading at this scale was always built on hidden labor. With LLMs, the labor moved — but didn't vanish.",
+      "media": []
+    },
+    {
+      "id": "kenyan-labor",
+      "layout": "quote",
+      "quote": "Time reported that OpenAI had subcontracted Kenyan workers making less than two dollars a day to filter out gore, hate speech, child sexual abuse material, and pornographic images from ChatGPT and OpenAI's image-generation tool.",
+      "attribution": "Bender & Hanna, on the labor that made the chatbot polite",
+      "image": {
+        "src": "kenyan-labor.webp",
+        "alt": "Hidden-labor article context"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Three",
+          "file": "image24.jpeg",
+          "as": "kenyan-labor",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "anthropic-settlement",
+      "layout": "image-bullets",
+      "title": "The training set is also a legal record",
+      "bullets": [
+        "August 2025: authors celebrate a historic settlement in the Anthropic class action.",
+        "The training corpus is the legal exhibit.",
+        "Where does *your* writing sit inside that record?"
+      ],
+      "image": {
+        "src": "anthropic-settlement.webp",
+        "alt": "Anthropic settlement article"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Three",
+          "file": "image28.png",
+          "as": "anthropic-settlement",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "claude-projects",
+      "layout": "section",
+      "kicker": "Part 2",
+      "title": "Live demo: Claude Projects",
+      "lead": "A small corpus I have not opened before. We walk: preprocessing → bag-of-words → key phrases → comparative passages → thematic network.",
+      "media": []
+    },
+    {
+      "id": "demo-corpus",
+      "layout": "demo-slot",
+      "title": "A corpus I haven't opened",
+      "note": "Watch the iteration. Notice when I push back, ask Claude to reconsider, point out a mistake. The iteration is the humanities work.",
+      "media": []
+    },
+    {
+      "id": "exercise-corpus",
+      "layout": "exercise",
+      "title": "Distant reading with Claude Projects",
+      "prompt": "Using the three-to-five-text corpus you brought:",
+      "steps": [
+        "Create a fresh Project. Upload all texts.",
+        "Run the sequence: stopword filter → bag-of-words → key phrases → character or theme network → comparative read.",
+        "Ask Claude for an **Artifact** that visualizes one finding (a frequency chart, a network, a comparative table).",
+        "Critique what you see. Compare to what close reading would surface.",
+        "**Document at least one place Claude got it wrong.** That's the deliverable."
+      ],
+      "media": []
+    },
+    {
+      "id": "iteration-is-the-work",
+      "layout": "quote",
+      "quote": "The point of this exercise is not the visualization. The point is the iteration. Notice when you have to push back, refine, ask Claude to reconsider. That iteration is the actual humanities work — and it is teachable.",
+      "attribution": "Pedagogical note for Workshop 2",
+      "media": []
+    },
+    {
+      "id": "artifact-summary",
+      "layout": "image-bullets",
+      "title": "End in an Artifact",
+      "bullets": [
+        "Word cloud, frequency chart, network diagram, comparative table.",
+        "Artifacts are *small interactive web pages* — Claude can build one in a single turn.",
+        "They're shareable to a class, a colleague, a Twitter thread.",
+        "Save the URL — we revisit Artifacts in Workshop 3."
+      ],
+      "image": {
+        "src": "artifact-summary.webp",
+        "alt": "Artifact-style visualization"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Four",
+          "file": "image15.png",
+          "as": "artifact-summary",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "where-claude-fails",
+      "layout": "image-bullets",
+      "title": "Where Claude *will* fail",
+      "bullets": [
+        "Confabulating quotes that aren't in the source.",
+        "Smoothing genre or period differences into a fake consensus.",
+        "Quietly losing files when the conversation grows.",
+        "**Your job in this exercise is to find one of these.**"
+      ],
+      "image": {
+        "src": "claude-fails.webp",
+        "alt": "Critique-the-AI illustration"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Four",
+          "file": "image19.png",
+          "as": "claude-fails",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "scaffold-iteration",
+      "layout": "image-bullets",
+      "title": "Scaffolding for students",
+      "bullets": [
+        "Require *three prompts* documented before the result they used.",
+        "Require an annotated screenshot of one bad answer.",
+        "Require a one-paragraph reflection: *what did close reading catch that this missed?*",
+        "Grade the iteration, not the artifact."
+      ],
+      "image": {
+        "src": "scaffold-iteration.webp",
+        "alt": "Pedagogical scaffolding"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Four",
+          "file": "image38.png",
+          "as": "scaffold-iteration",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "discussion",
+      "layout": "section",
+      "kicker": "Part 5",
+      "title": "Discussion",
+      "lead": "Where did Claude help? Where did it hallucinate? What would a student need to know before they used this for an assignment in your course?",
+      "media": []
+    },
+    {
+      "id": "wrap",
+      "layout": "image-bullets",
+      "title": "Bring forward to Workshop 3",
+      "bullets": [
+        "Save your Project. We'll add images to it next time.",
+        "Save the *bad* Claude answer you found — it's a teaching artifact.",
+        "Workshop 3 (Week 5): we move from text to image. Bring 5–10 images you have rights to use."
+      ],
+      "image": {
+        "src": "bring-forward.webp",
+        "alt": "Looking ahead to Workshop 3"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Four",
+          "file": "image34.png",
+          "as": "bring-forward",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "layout": "closing",
+      "title": "Carry it forward",
+      "lead": "The Project you built today is yours. Add to it across the semester; it's the closest thing this workshop offers to a portable workspace.",
+      "links": [
+        {
+          "label": "Workshop 2 page",
+          "url": "/weeks/week-03.html"
+        },
+        {
+          "label": "Week 4 (async): Distant Reading",
+          "url": "/weeks/week-04.html"
+        },
+        {
+          "label": "Reading: Underwood, *More Interesting Upside of AI*",
+          "url": "https://tedunderwood.com/2025/07/02/a-more-interesting-upside-of-ai/"
+        },
+        {
+          "label": "Reading: Houston, *Text Analysis* (DH Pedagogy)",
+          "url": "https://digitalpedagogy.hcommons.org/keyword/Text-Analysis/"
+        }
+      ],
+      "media": []
+    }
+  ]
+}

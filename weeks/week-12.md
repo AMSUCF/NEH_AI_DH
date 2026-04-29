@@ -6,17 +6,16 @@ theme: "Sustainability, sharing, final reflection"
 starts: 2026-07-27
 ---
 
-The closing week. There is no in-person session and no required deliverable for the workshop series itself. ENG 6813 students complete the *Final Portfolio and Reflection* (due August 1). For everyone, this week is about consolidating what you built, sharing one piece of it back to a public community, and naming what you are carrying into the fall.
+The closing week. There is no in-person session and no required deliverable for the workshop series itself. This week is about consolidating what you built, sharing one piece of it back to a public community, and naming what you are carrying into the fall.
 
 <div class="async-callout" markdown="1">
-**Asynchronous closing.** Optional. ENG 6813 students: focus on the Final Portfolio. The "Standard" exercise below — share-back to Humanities Commons or a public repo — is also useful as a portfolio artifact.
+**Asynchronous closing.** Optional. The "Standard" exercise below — share-back to Humanities Commons or a public repo — is the most generative single use of this week if you have only a few hours.
 </div>
 
 ## Reading Menu
 
 - <span class="tag tag-light">Light</span> Mollick, Ethan. ["On Holding Back the Strange AI Tide."](https://www.oneusefulthing.org/p/on-holding-back-the-strange-ai-tide) *One Useful Thing.* (~25 min) A grounded final note on what is and is not under our control.
 - <span class="tag tag-light">Light</span> Cohen, Dan. ["The Reboot of Digital Humanities Now."](https://newsletter.dancohen.org/archive/the-reboot-of-digital-humanities-now) *Humane Ingenuity.* (~15 min) On the renewed relevance of DH infrastructure for AI-era work.
-- <span class="tag tag-standard">Standard</span> Salter, Anastasia, and Mel Stanfill. *Final Portfolio* prompt, ENG 6813 [Week 12](../../InterdisciplinaryTeaching-main/InterdisciplinaryTeaching-main/weeks/week-12.md). Useful framing even for non-enrolled participants — what *would* a portfolio of this work look like for you?
 - <span class="tag tag-deep">Deep</span> Johnson, Emily K., and Anastasia Salter. *[Critical Making in the Age of AI](https://www.fulcrum.org/concern/monographs/zc77ss95p).* Open access. Read the chapter most relevant to your discipline as a closing frame.
 
 ## Exercise Menu
@@ -31,9 +30,8 @@ The NEH learning community continues beyond this twelve-week series. Workshop re
 
 ## Acknowledgements
 
-This material is based upon work supported by the **National Endowment for the Humanities**. Any views, findings, conclusions, or recommendations expressed do not necessarily reflect those of the NEH. Thanks to the participants of this cohort, the ENG 6813 students who built the parallel pedagogy work, the Center for Humanities and Digital Research at UCF, and the broader DH community whose readings and exercises are stitched throughout this series.
+This material is based upon work supported by the **National Endowment for the Humanities**. Any views, findings, conclusions, or recommendations expressed do not necessarily reflect those of the NEH. Thanks to the participants of this cohort, the Center for Humanities and Digital Research at UCF, and the broader DH community whose readings and exercises are stitched throughout this series.
 
 ## Cross-references
 
-- Companion ENG 6813 module: [Week 12](../../InterdisciplinaryTeaching-main/InterdisciplinaryTeaching-main/weeks/week-12.md) (Final Portfolio due August 1).
 - Source materials: `HumanitiesAI/finalreflection.md`; `dhsi.md`; `CriticalMaking2026/exercises/reflection.md`.
