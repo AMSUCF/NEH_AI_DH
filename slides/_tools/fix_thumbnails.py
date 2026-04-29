@@ -121,6 +121,12 @@ def fix_manifest(manifest_path: Path, apply: bool) -> tuple[int, int]:
             if m.get("kind", "image") != "image":
                 new_media.append(m)
                 continue
+            # Entries with `path` come from outside the extracted decks (e.g.
+            # hal.jpg dropped in the repo root). They aren't speaker thumbnails
+            # to fix — leave them untouched.
+            if "path" in m or "source" not in m:
+                new_media.append(m)
+                continue
             deck = m["source"]
             old_file = m["file"]
             old_path = media_dir_for(deck) / old_file

@@ -9,6 +9,7 @@
     </div>
     <nav class="site-nav" aria-label="Main navigation">
       <a href="{{ '/' | relative_url }}" class="nav-link{% if page.url == '/' %} is-active{% endif %}">Overview</a>
+      <a href="{{ '/schedule.html' | relative_url }}" class="nav-link{% if page.url contains 'schedule' %} is-active{% endif %}">Schedule</a>
       <a href="{{ '/readings.html' | relative_url }}" class="nav-link{% if page.url contains 'readings' %} is-active{% endif %}">Readings</a>
       <a href="{{ '/exercises.html' | relative_url }}" class="nav-link{% if page.url contains 'exercises' %} is-active{% endif %}">Exercises</a>
     </nav>
