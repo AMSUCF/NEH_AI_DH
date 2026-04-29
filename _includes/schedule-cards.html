@@ -1,0 +1,56 @@
+{%- comment -%}
+Detailed week-by-week schedule cards. Pulls every page with a `week:` field
+and renders an opener paragraph, key meta, and links. Workshop weeks use
+the same coral / cobalt / mustard / plum rotation as the home-page grid.
+{%- endcomment -%}
+{% assign weekpages = site.pages | where_exp:"p","p.week" | sort:"week" %}
+{%- assign workshop_colors = "coral,cobalt,mustard,plum" | split: "," -%}
+{%- assign workshop_seen = 0 -%}
+<ol class="schedule-list" aria-label="Detailed twelve-week schedule">
+{% for w in weekpages %}
+  {%- if w.kind == "workshop" -%}
+    {%- assign color_idx = workshop_seen | modulo: 4 -%}
+    {%- assign color = workshop_colors[color_idx] -%}
+    {%- assign workshop_seen = workshop_seen | plus: 1 -%}
+    {%- assign card_class = "is-workshop is-color-" | append: color -%}
+    {%- assign label = "Workshop" -%}
+    {%- assign deck_url = "/slides/web/w" | append: w.week | append: "/" -%}
+    {%- if w.week < 10 -%}
+      {%- assign deck_url = "/slides/web/w0" | append: w.week | append: "/" -%}
+    {%- endif -%}
+  {%- else -%}
+    {%- assign card_class = "is-async" -%}
+    {%- assign label = "Async" -%}
+    {%- assign deck_url = nil -%}
+  {%- endif %}
+  {%- assign opener = w.content
+        | strip_html
+        | strip_newlines
+        | split: ". "
+        | first
+        | append: "."
+  -%}
+  <li class="schedule-card {{ card_class }}" id="w{{ w.week }}">
+    <header class="schedule-card-head">
+      <span class="schedule-num">W{{ w.week }}</span>
+      <span class="schedule-kind">{{ label }}</span>
+      {% if w.workshop.date %}
+        <span class="schedule-date">{{ w.workshop.date | date: "%a %b %-d" }}</span>
+      {% else %}
+        <span class="schedule-date">starts {{ w.starts | date: "%b %-d" }}</span>
+      {% endif %}
+    </header>
+    <h3 class="schedule-title">
+      <a href="{{ w.url | relative_url }}">{{ w.title }}</a>
+    </h3>
+    {% if w.theme %}<p class="schedule-theme">{{ w.theme }}</p>{% endif %}
+    <p class="schedule-opener">{{ opener }}</p>
+    <p class="schedule-actions">
+      <a class="schedule-link" href="{{ w.url | relative_url }}">Full week page →</a>
+      {% if deck_url %}
+        <a class="schedule-link schedule-link-deck" href="{{ deck_url | relative_url }}">Slide deck →</a>
+      {% endif %}
+    </p>
+  </li>
+{% endfor %}
+</ol>

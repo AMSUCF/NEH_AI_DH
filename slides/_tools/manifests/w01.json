@@ -13,10 +13,13 @@
         "alt": "HAL 9000 — the on-screen AI we've been arguing with for fifty years"
       },
       "media": [
-        {"path": "hal.jpg", "as": "cover", "kind": "image"}
+        {
+          "path": "hal.jpg",
+          "as": "cover",
+          "kind": "image"
+        }
       ]
     },
-
     {
       "id": "section-history",
       "layout": "section",
@@ -40,7 +43,11 @@
         "alt": "Screenshot of a modern web ELIZA conversation"
       },
       "media": [
-        {"path": "eliza.png", "as": "eliza", "kind": "image"}
+        {
+          "path": "eliza.png",
+          "as": "eliza",
+          "kind": "image"
+        }
       ]
     },
     {
@@ -62,13 +69,7 @@
         "**Marvin Minsky** (across the hall): founded the MIT AI Laboratory, took Pentagon funding unhindered, championed the dream.",
         "Both roads are still open in 2026. We are walking them at the same time."
       ],
-      "image": {
-        "src": "weizenbaum-purpose.webp",
-        "alt": "Portrait/contextual image about Weizenbaum and ELIZA"
-      },
-      "media": [
-        {"source": "AI_Week_One", "file": "image67.png", "as": "weizenbaum-purpose", "kind": "image"}
-      ]
+      "media": []
     },
     {
       "id": "bender-hanna-purpose",
@@ -90,7 +91,6 @@
       ],
       "media": []
     },
-
     {
       "id": "section-llms",
       "layout": "section",
@@ -114,7 +114,12 @@
         "alt": "Definitional slide: What is generative AI?"
       },
       "media": [
-        {"source": "AI_VisualCulture", "file": "image11.png", "as": "what-is-genai", "kind": "image"}
+        {
+          "source": "AI_VisualCulture",
+          "file": "image11.png",
+          "as": "what-is-genai",
+          "kind": "image"
+        }
       ]
     },
     {
@@ -140,7 +145,12 @@
         "alt": "Symbolic vs subsymbolic AI diagram"
       },
       "media": [
-        {"source": "AI_Week_Three", "file": "image13.png", "as": "ml-paradigms", "kind": "image"}
+        {
+          "source": "AI_Week_Three",
+          "file": "image13.png",
+          "as": "ml-paradigms",
+          "kind": "image"
+        }
       ]
     },
     {
@@ -192,7 +202,6 @@
       ],
       "media": []
     },
-
     {
       "id": "section-chatgpt",
       "layout": "section",
@@ -238,7 +247,6 @@
       "attribution": "Workshop framing — what the ChatGPT moment was actually about",
       "media": []
     },
-
     {
       "id": "section-where",
       "layout": "section",
@@ -263,7 +271,11 @@
       },
       "caption": "[*The Chronicle of Higher Education* — \"Will Agentic AI Break Higher Education?\"](https://www.chronicle.com/article/will-agentic-ai-break-higher-education)",
       "media": [
-        {"path": "Screenshot 2026-04-28 184542.png", "as": "agentic-ai-chronicle", "kind": "image"}
+        {
+          "path": "Screenshot 2026-04-28 184542.png",
+          "as": "agentic-ai-chronicle",
+          "kind": "image"
+        }
       ]
     },
     {
@@ -281,7 +293,12 @@
         "alt": "Agent vocabulary illustration"
       },
       "media": [
-        {"source": "AI_WeekThirteen", "file": "image8.png", "as": "agent-vocab", "kind": "image"}
+        {
+          "source": "AI_WeekThirteen",
+          "file": "image7.png",
+          "as": "agent-vocab",
+          "kind": "image"
+        }
       ]
     },
     {
@@ -310,19 +327,34 @@
       ],
       "media": []
     },
-
     {
       "id": "closing",
       "layout": "closing",
       "title": "Three things to leave with",
       "lead": "After today you should be able to explain to a colleague: where ELIZA started this, what an LLM actually is and what sits on top of it, why the ChatGPT *interface* was the event, and what \"agentic\" adds to the conversation.",
       "links": [
-        {"label": "Workshop 1 page", "url": "/weeks/week-01.html"},
-        {"label": "Week 2 (async): LLM Fundamentals", "url": "/weeks/week-02.html"},
-        {"label": "Reading: Berry on ELIZA", "url": "https://ojs.weizenbaum-institut.de/index.php/wjds/article/view/106"},
-        {"label": "Reading: Kirschenbaum, *Textpocalypse*", "url": "https://www.theatlantic.com/technology/archive/2023/03/ai-chatgpt-writing-language-models/673318/"},
-        {"label": "Willison, *How Coding Agents Work*", "url": "https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/"}
-      ]
+        {
+          "label": "Workshop 1 page",
+          "url": "/weeks/week-01.html"
+        },
+        {
+          "label": "Week 2 (async): LLM Fundamentals",
+          "url": "/weeks/week-02.html"
+        },
+        {
+          "label": "Reading: Berry on ELIZA",
+          "url": "https://ojs.weizenbaum-institut.de/index.php/wjds/article/view/106"
+        },
+        {
+          "label": "Reading: Kirschenbaum, *Textpocalypse*",
+          "url": "https://www.theatlantic.com/technology/archive/2023/03/ai-chatgpt-writing-language-models/673318/"
+        },
+        {
+          "label": "Willison, *How Coding Agents Work*",
+          "url": "https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/"
+        }
+      ],
+      "media": []
     }
   ]
 }
