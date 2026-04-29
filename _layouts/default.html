@@ -18,6 +18,9 @@
 
   <main id="main-content" class="content-wrap" tabindex="-1">
     <article class="page-content">
+      {%- if page.week and page.summary -%}
+        <p class="page-summary">{{ page.summary | strip | markdownify | strip_html | strip }}</p>
+      {%- endif -%}
       {{ content }}
     </article>
   </main>

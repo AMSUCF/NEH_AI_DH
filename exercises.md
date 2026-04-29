@@ -13,103 +13,108 @@ Every workshop has one core exercise; every async week offers a deep-dive menu a
 
 ## Stage 1 — Text (Weeks 1–4)
 
-### Workshop 1 (May 13) — Three Conversations
+### Workshop 1 (May 13) — Build our own ELIZA
 
-<span class="tag tag-light">Light</span> **Compare a chatbot to a harnessed Claude.** Take one prompt from your own teaching or research and run it three ways: (1) the historical [ELIZA](https://www.masswerk.at/eliza/) implementation; (2) [UCF's Copilot](https://cdl.ucf.edu/faculty-multimedia-center-ai-tools/) (a standard chatbot); (3) Claude Sonnet inside a fresh **Claude Project** with one PDF or DOCX uploaded. Note where context, persistence, and tool use change the answer.
+<span class="tag tag-standard">Standard</span> **Build a Claude Artifact in the spirit of Weizenbaum's 1966 ELIZA — together.** Group exercise. Open Claude, prompt it to construct a Rogerian-style chatbot Artifact. Style and tone are yours: a snarky librarian, a doom-prophet, a noir detective, a Rogerian therapist. Compare to the [masswerk web ELIZA](https://www.masswerk.at/eliza/). Notice where the ELIZA effect kicks in, sixty years on.
 
-*Source: adapted from `HumanitiesAI/weekone.md` (ELIZA exercise).*
+*Source: `HumanitiesAI/weekone.md` (Three Conversations).*
 
-### Week 2 (async) — LLM fundamentals deep-dive
+### Week 2 (async) — Claude interface deep-dive
 
-- <span class="tag tag-light">Light</span> **Iterate a poem in Claude.** Pick a form (haiku, sonnet, ghazal). Iterate ten times in Claude Sonnet, publish the final as a Claude Artifact. Reflect on how the interface shapes the writing. *Source: `HumanitiesAI/weektwo.md`.*
-- <span class="tag tag-standard">Standard</span> **Project for a syllabus review.** Upload your current course's syllabus to a Project. Ask Claude to identify outdated sources, flag accessibility issues, and suggest two AI-aware revisions. Save the resulting recommendations as a markdown doc.
-- <span class="tag tag-deep">Deep</span> **Three-models comparison.** Run the same teaching question through Claude Opus, Claude Sonnet, and Claude Haiku within one Project. Document what shifts: depth, hedging, hallucination rate, time. Write a one-page "model selection" memo for yourself.
+- <span class="tag tag-light">Light</span> **Settings tour + reflection.** Walk through every settings panel in Claude. Set defaults that fit your work. Write a paragraph about what surprised you and what you wish were adjustable.
+- <span class="tag tag-standard">Standard</span> **Iterate a poem in an Artifact.** Pick a form (haiku, sonnet, ghazal, blackout, cento). Iterate ten times in Claude Sonnet. Publish the final as a Claude Artifact. *Source: `HumanitiesAI/weektwo.md`.*
+- <span class="tag tag-deep">Deep</span> **Three-models comparison.** Run the same teaching question through Opus / Sonnet / Haiku in one Project. Track depth, hedging, hallucination rate, time. Write a one-page model-selection memo.
 
-### Workshop 2 (May 27) — Distant Reading with Projects + Artifacts
+### Workshop 2 (May 27) — Distant reading + copyright
 
-<span class="tag tag-standard">Standard</span> **Build a small corpus, read it across.** Bring three to five short texts in your discipline (chapters, articles, primary sources). Upload them to a Project, and prompt Claude through a sequence of distant-reading moves: stopword filter → bag-of-words → key phrases → character or theme network → comparative read. End with an Artifact that summarizes the patterns visually.
+<span class="tag tag-standard">Standard</span> **Build a small corpus, read it across.** Bring three to ten texts in your discipline. Upload to a Claude Project. Run the distant-reading sequence: stopword filter → bag-of-words → key phrases → character or theme network → comparative read. End with an Artifact summarizing the patterns. **Plus**: write one paragraph on the copyright status of your corpus.
 
-*Source: `HumanitiesAI/weekfour.md` and `DistantCodingUMKC` Example 2.*
+*Source: `HumanitiesAI/weekfour.md`; `CriticalMaking2026/exercises/eight_analysis.md`.*
 
-### Week 4 (async) — Distant reading menu
+### Week 4 (async) — Distant reading + Skills
 
 - <span class="tag tag-light">Light</span> **One Project Gutenberg book.** Pick a single text, run the basic distant-reading prompts in a Project, generate a word cloud and character network. *Source: `HumanitiesAI/weekfour.md`.*
-- <span class="tag tag-standard">Standard</span> **Compare Voyant to Projects.** Upload the same text to [Voyant Tools](https://voyant-tools.org/) and to a Claude Project. Run equivalent analyses and document what each surfaces, misses, and misreports.
-- <span class="tag tag-deep">Deep</span> **Preview Code Web for distant reading.** Connect Claude Code Web to a small GitHub repo of texts. Ask it to write a Python preprocessing script and a JSON output. Don't worry about understanding the code — focus on what the workflow makes visible. *Source: `HumanitiesAI/weekfourteen.md`.*
+- <span class="tag tag-standard">Standard</span> **Build your first Claude Skill.** Use the **skill-creator** skill to scaffold a citation-style, alt-text, lecture-note, or syllabus-drafting skill. Save and test on a fresh conversation. *Source: `HumanitiesAI/weekfifteen.md`.*
+- <span class="tag tag-deep">Deep</span> **Design an exercise for your students.** Adapt a workflow from W3 or W4 into a 60–90-minute classroom exercise. Write the prompt, scaffolding, deliverable, and rubric.
 
 ---
 
-## Stage 2 — Visual (Weeks 5–6)
+## Stage 2 — Visual and Multimodal (Weeks 5–6)
 
-### Workshop 3 (June 10) — Visual analysis with Artifacts
+### Workshop 3 (June 10) — Image analysis with Projects + Artifacts
 
-<span class="tag tag-standard">Standard</span> **Image-to-text translation set.** Bring five to ten images (archival, public-domain, your own teaching set, or a personal corpus). Upload to Claude. Generate alt-text for each, build a metadata table, and produce a comparative description. Publish the metadata table as an Artifact you can share with students.
+<span class="tag tag-standard">Standard</span> **Image-to-text translation set, two tools.** Five to ten images you have rights to use. **Part A** in a Project: alt-text, metadata table, three patterns across the set. **Part B** in an Artifact: a comparative gallery, grid, or typology. **Part C**: critique what each tool surfaced and missed.
 
-*Source: `HumanitiesAI/weeksix.md` and `DistantCodingUMKC` Example 3.*
+*Source: `HumanitiesAI/weeksix.md`; `CriticalMaking2026/exercises/four_maps.md`.*
 
-### Week 6 (async) — Visual AI in the wild
+### Week 6 (async) — Multimodal AI
 
-- <span class="tag tag-light">Light</span> **AI-detection scavenger hunt.** Pick a community you spend time in (a hobby forum, a subject area on Pinterest, an Instagram subculture). Find three images you suspect are AI-generated. Run them through Claude Sonnet for analysis. Reflect on what cues helped you spot (or miss) them. *Source: `HumanitiesAI/weekeight.md`.*
-- <span class="tag tag-standard">Standard</span> **Generate, then critique.** Use Claude (or Adobe Firefly, Midjourney, Gemini) to generate three images in your domain. Document the iteration. Critique the results through one of this stage's readings — Demsky, Jebb, or Crawford & Paglen. *Source: `HumanitiesAI/weekfive.md`.*
-- <span class="tag tag-deep">Deep</span> **Build a small visual archive Artifact.** Take a public-domain collection (Library of Congress, Internet Archive). Upload 15+ images to a Project. Generate accessible alt-text, build a thematic visualization, publish as an Artifact gallery.
+- <span class="tag tag-light">Light</span> **Infographic with Gemini Nano Banana or OpenAI Images 2.0.** Take a concept easier to *show* than *say*. Generate it in two different tools. Compare what each reaches for first.
+- <span class="tag tag-standard">Standard</span> **Slide deck with Claude Design.** Take notes from a lecture, paper abstract, or workshop. Prompt Claude to build a deck via the Design / Artifact slide-deck mode. Iterate three rounds. Compare to building it by hand.
+- <span class="tag tag-deep">Deep</span> **Build your own voice interface in an Artifact.** Web Speech API, prompt-driven. Compare to Claude's built-in voice mode.
 
 ---
 
 ## Stage 3 — Code Web (Weeks 7–10)
 
-### Workshop 4 (June 24) — From CV to ePortfolio
+### Workshop 4 (June 24) — Agentic AI + GitHub Pages, two paths
 
-<span class="tag tag-standard">Standard</span> **Build and deploy a one-page site.** Bring a CV, a syllabus, or a project description in `.docx` or `.pdf`. Open Claude Code Web, connect a fresh GitHub repo, prompt Claude to design and build a site appropriate to your field. Deploy to GitHub Pages.
+<span class="tag tag-standard">Standard</span> **Pick a path. Both deploy to GitHub Pages.**
+- *Path A — CV → ePortfolio.* Bring a CV / syllabus / project description. Claude Code Web reads it, builds a one-page site, deploys to Pages.
+- *Path B — Dataset → visualization.* Bring a CSV / JSON. Claude Code Web reads it, proposes three visualization approaches, deploys the chosen one.
 
-*Source: `DistantCodingUMKC` Example 1, augmented by `HumanitiesAI/weekeleven.md`.*
+*Source: `HumanitiesAI/weekeleven.md`; `CriticalMaking2026/exercises/ten_visualization.md`.*
 
-### Week 8 (async) — Rebuild a handout
+### Week 8 (async) — Multiple small projects
 
-- <span class="tag tag-light">Light</span> **Improve last week's site.** Iterate twice on the W7 ePortfolio: one accessibility pass (alt-text, contrast, heading structure), one content pass.
-- <span class="tag tag-standard">Standard</span> **Static handout → interactive page.** Take a paper handout you currently give students. Use Claude Code Web to convert it into a one-page interactive site (a clickable timeline, a quiz, a structured glossary).
-- <span class="tag tag-deep">Deep</span> **Recommender or Buzzfeed-style tool.** Build a JSON dataset relevant to your discipline (100 books, 50 films, 30 archives) plus a minimal interactive front end. *Source: `HumanitiesAI/weeknine.md`.*
+Pick two or three. Each is small. Each ends in a deployed URL.
 
-### Workshop 5 (July 8) — Playful, Accessible, Creative Code + AI Policy
+- <span class="tag tag-light">Light</span> **Polish the W7 site.** Two passes: accessibility (alt-text, contrast, headings) and content (any errors).
+- <span class="tag tag-standard">Standard</span> **Static handout → interactive page.** Convert a paper handout (glossary, timeline, bibliography) into a one-page interactive site.
+- <span class="tag tag-standard">Standard</span> **Recommender or "find your X" tool.** Build a JSON dataset (100 books / 50 films / 30 archives) plus a minimal interactive front end. *Source: `HumanitiesAI/weeknine.md`.*
+- <span class="tag tag-standard">Standard</span> **Public scholarship one-pager.** Summarize a piece of your scholarship for a non-specialist audience.
+- <span class="tag tag-standard">Standard</span> **Interactive worksheet for one assignment.** Walk a student through one of your assignments in an interactive page with localStorage save.
+- <span class="tag tag-light">Light</span> **Debug-with-Claude practice.** Deliberately break one of the above; fix it only by talking to Claude.
 
-<span class="tag tag-standard">Standard</span> **Build a playful teaching tool *and* draft a course AI policy.** Two halves:
-- *Build* — a small interactive tool: a timeline, a recommender, a quiz, a generator, a memorial. Prioritize delight over scale.
-- *Draft* — a one-page course AI policy that addresses copyright, attribution, accessibility, and labor. Frame it through Universal Design for Learning.
+### Workshop 5 (July 8) — Course games, planning mode, AI policy
 
-*Source: `HumanitiesAI/weeknine.md` + `HumanitiesAI/weektwelve.md`.*
+<span class="tag tag-standard">Standard</span> **Two halves, both required.**
+- *Build with planning mode* — a small game or playful tool around a concept from your course. Open with: *"Enter plan mode. Do not exit plan mode until I confirm the plan is ready."* Iterate the plan before letting Claude build.
+- *Draft a course AI policy* — one page, addressing copyright, attribution, accessibility, equity of access, labor, UDL, and the *agentic* question. Frame as invitation, not prohibition.
 
-### Week 10 (async) — UDL and AI policy
+*Source: `HumanitiesAI/weeknine.md`, `weektwelve.md`; `CriticalMaking2026/exercises/six_game.md`.*
 
-- <span class="tag tag-light">Light</span> **Policy A/B.** Take an existing AI policy from a colleague's syllabus. Use Claude in a Project to identify three UDL-aligned revisions. Document them.
-- <span class="tag tag-standard">Standard</span> **Accessibility audit.** Run the W7 site (or any class artifact) through an accessibility checker. Use Claude Code Web to fix the top three issues.
-- <span class="tag tag-deep">Deep</span> **Full syllabus integration.** Revise one full syllabus to integrate AI policy, signature assignment, and at least one AI-aware exercise.
+### Week 10 (async) — UDL + AI policy, by your discipline
+
+- <span class="tag tag-light">Light</span> **Policy A/B.** Use Claude in a Project to identify three UDL-aligned revisions to an existing AI policy.
+- <span class="tag tag-standard">Standard</span> **Accessibility audit + fix in Code Web.** Run W7 site through WAVE or axe DevTools. Use planning mode in Claude Code Web to fix the top three issues.
+- <span class="tag tag-deep">Deep</span> **Full syllabus integration.** Revise a syllabus to integrate AI policy, signature assignment, and at least one AI-aware exercise. Anchor in CAST UDL framework.
 
 ---
 
 ## Stage 4 — Agentic Futures (Weeks 11–12)
 
-### Workshop 6 (July 22) — Cowork + Claude CLI tour
+### Workshop 6 (July 22) — Demo + write your `CLAUDE.md`
 
-<span class="tag tag-light">Light</span> **Watch the demo, write a CLAUDE.md.** This session is mostly demo. Your hands-on portion: in a text editor, draft a `CLAUDE.md` that describes your research domain, your typical workflows, and your preferences. Don't install anything yet — just write the document.
+<span class="tag tag-light">Light</span> **Watch the demo, write a `CLAUDE.md`.** This session is mostly demo (Cowork, Claude CLI, MCP, Superpowers). Your hands-on portion: in a text editor, draft a `CLAUDE.md` describing your research domain, typical workflows, preferences, and boundaries. No installation required.
 
-*Source: `DistantCodingUMKC` Day 2 + `dhsi.md` context-engineering framing.*
+*Source: `DHSI_DH_AI_2026/dhsi-2026-course-packet.md` (context engineering).*
 
-### Week 12 (async) — Sustaining and sharing
+### Week 12 (async) — Course proposal / course update
 
-- <span class="tag tag-light">Light</span> **Final reflection (500 words).** What did you build, what surprised you, what will you carry into your fall classroom? *Source pattern: `HumanitiesAI/finalreflection.md`.*
-- <span class="tag tag-standard">Standard</span> **Share-back to Humanities Commons or a public repo.** Take one artifact from the series — a syllabus revision, a teaching tool, a corpus, a policy — and post it to [Humanities Commons](https://hcommons.org/) or a public GitHub repo with a README that another teacher could pick up.
-- <span class="tag tag-deep">Deep</span> **Try one CLI or Cowork session on your own.** Install [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) and run one full Brainstorm → Spec → Plan → Implementation cycle on a small DH project. Document the experience.
+- <span class="tag tag-light">Light</span> **Final reflection (500 words).** What did you build, what surprised you, what will you carry into fall? *Source pattern: `HumanitiesAI/finalreflection.md`.*
+- <span class="tag tag-standard">Standard</span> **Course proposal / syllabus revision in a Claude Project.** Upload syllabus / proposal + your AI policy + one artifact + your `CLAUDE.md`. Iterate as a critical-reader conversation. Specifically check learning-outcome alignment and draft a 250-word public-facing summary.
+- <span class="tag tag-deep">Deep</span> **One CLI or Cowork session on a personal machine.** Optional. Install [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code), run one Brainstorm → Spec → Plan → Implementation cycle on a small project (could be your fall course site).
 
 ---
 
-## Bring-along checklist
-
-For each in-person workshop, bring:
+## Bring-along checklist (workshop weeks)
 
 | Workshop | What to bring |
 |----------|----------------|
-| W1 (May 13) | A laptop. A syllabus or one paper to upload. |
-| W2 (May 27) | A small corpus (3–5 texts) in your discipline. |
-| W3 (June 10) | An image set (5–10 images you have rights to). |
-| W4 (June 24) | A CV or syllabus in `.docx`. A free GitHub account, ready. |
-| W5 (July 8) | A draft AI policy (even one paragraph). The W4 site URL. |
-| W6 (July 22) | A working laptop with admin access if you want to follow the optional CLI install. |
+| W1 (May 13) — Introducing AI | A laptop. A document, conversation, or short piece of writing for your first prompt. |
+| W3 (May 27) — Textual Analysis | A small corpus (3–10 texts) you have rights to use. |
+| W5 (June 10) — Visual Analysis | An image set (5–10 images you have rights to). |
+| W7 (June 24) — Web Applications | A CV / syllabus *or* a dataset (CSV / JSON). A free GitHub account. |
+| W9 (July 8) — Playful + Policy | A concept from your course. A draft AI policy paragraph. The W7 site URL. |
+| W11 (July 22) — Agentic Futures | All your artifacts (W7, W9, AI policy, Skill from W4). Optional: a personal laptop with admin access. |
