@@ -13,34 +13,91 @@
         "alt": "HAL 9000 — the on-screen AI we've been arguing with for fifty years"
       },
       "media": [
-        {
-          "path": "hal.jpg",
-          "as": "cover",
-          "kind": "image"
-        }
+        {"path": "hal.jpg", "as": "cover", "kind": "image"}
+      ]
+    },
+
+    {
+      "id": "section-history",
+      "layout": "section",
+      "kicker": "Part 1",
+      "title": "ELIZA and the ELIZA effect",
+      "lead": "Before we touch a tool, we look back. The conversation we're having about AI in 2026 has a 60-year-old prologue — and the prologue has the answers.",
+      "media": []
+    },
+    {
+      "id": "eliza-1966",
+      "layout": "image-bullets",
+      "title": "ELIZA, 1966",
+      "bullets": [
+        "Joseph **Weizenbaum** at MIT, 1964–66.",
+        "About 200 lines of code. Pattern-matches your sentence and reflects it back.",
+        "Best-known script: **DOCTOR** — a parody of Rogerian (\"person-centered\") therapy.",
+        "Try [the modern web ELIZA](https://www.masswerk.at/eliza/) for ten minutes. Notice where it breaks."
+      ],
+      "image": {
+        "src": "eliza.webp",
+        "alt": "Screenshot of a modern web ELIZA conversation"
+      },
+      "media": [
+        {"path": "eliza.png", "as": "eliza", "kind": "image"}
       ]
     },
     {
-      "id": "framing",
+      "id": "eliza-effect",
+      "layout": "quote",
+      "quote": [
+        "I was startled to see how quickly and how very deeply people conversing with DOCTOR became emotionally involved with the computer and how unequivocally they anthropomorphized it.",
+        "Once my secretary, who had watched me work on the program for many months and therefore surely knew it to be merely a computer program, started conversing with it. After only a few interchanges with it, she asked me to leave the room."
+      ],
+      "attribution": "Joseph Weizenbaum, *Computer Power and Human Reason* (1976) — the **ELIZA effect** named",
+      "media": []
+    },
+    {
+      "id": "two-roads",
       "layout": "image-bullets",
-      "kicker": "Part 1",
-      "title": "The existential crisis framing",
+      "title": "The two roads from 1966",
       "bullets": [
-        "Plagiarism panics, an AI-detector arms race, faculty caught between adoption pressure and pedagogical challenges.",
-        "*\"A new app offers to do students' work for them. Professors aren't ready.\"*"
+        "**Weizenbaum**: spent the rest of his life as a critic of AI hype. His worry wasn't that ELIZA was *too smart* — it was that humans were too willing to believe it was.",
+        "**Marvin Minsky** (across the hall): founded the MIT AI Laboratory, took Pentagon funding unhindered, championed the dream.",
+        "Both roads are still open in 2026. We are walking them at the same time."
       ],
       "image": {
-        "src": "agentic-ai-chronicle.webp",
-        "alt": "Chronicle of Higher Education article header: Will Agentic AI Break Higher Education? A new app offers to do students' work for them. Professors aren't ready."
+        "src": "weizenbaum-purpose.webp",
+        "alt": "Portrait/contextual image about Weizenbaum and ELIZA"
       },
-      "caption": "[*The Chronicle of Higher Education* — \"Will Agentic AI Break Higher Education?\"](https://www.chronicle.com/article/will-agentic-ai-break-higher-education)",
       "media": [
-        {
-          "path": "Screenshot 2026-04-28 184542.png",
-          "as": "agentic-ai-chronicle",
-          "kind": "image"
-        }
+        {"source": "AI_Week_One", "file": "image67.png", "as": "weizenbaum-purpose", "kind": "image"}
       ]
+    },
+    {
+      "id": "bender-hanna-purpose",
+      "layout": "quote",
+      "quote": "We are trying to do the same thing Weizenbaum tried to do: educate people about how these systems work, dispel the notion that they are thinking machines with a semblance of human understanding, and provide a model of how to think about them instead.",
+      "attribution": "Emily Bender & Alex Hanna, *The AI Con* (2025) — explicitly picking up Weizenbaum's thread",
+      "media": []
+    },
+    {
+      "id": "exercise-try-eliza",
+      "layout": "exercise",
+      "title": "Try ELIZA",
+      "prompt": "Five minutes — open it up and notice what your brain does:",
+      "steps": [
+        "Open [E.L.I.Z.A. Talking](https://www.masswerk.at/eliza/) (Norbert Landsteiner's web port).",
+        "Type as if you're talking to a therapist. Use whatever's actually on your mind.",
+        "Notice the pattern: ELIZA reflects your nouns, asks open questions, occasionally trips.",
+        "Catch yourself anthropomorphising. **That's the ELIZA effect.** It's still the strongest force in the room when we use ChatGPT."
+      ],
+      "media": []
+    },
+
+    {
+      "id": "section-llms",
+      "layout": "section",
+      "kicker": "Part 2",
+      "title": "AI, LLMs, and how they work",
+      "lead": "What an LLM actually is — in plain language. Then what sits on top of it: reasoning layers, RLHF, and the choices that turn a base model into Claude, ChatGPT, or Gemini.",
+      "media": []
     },
     {
       "id": "what-is-genai",
@@ -57,117 +114,34 @@
         "alt": "Definitional slide: What is generative AI?"
       },
       "media": [
-        {
-          "source": "AI_VisualCulture",
-          "file": "image11.png",
-          "as": "what-is-genai",
-          "kind": "image"
-        }
+        {"source": "AI_VisualCulture", "file": "image11.png", "as": "what-is-genai", "kind": "image"}
       ]
     },
     {
-      "id": "marketing-term",
+      "id": "ai-marketing-term",
       "layout": "quote",
       "quote": "\"AI\" is a marketing term. It doesn't refer to a coherent set of technologies. Instead, the phrase is deployed when the people building or selling a particular set of technologies will profit from getting others to believe that their technology is similar to humans.",
       "attribution": "Emily Bender & Alex Hanna, *The AI Con*",
       "media": []
     },
     {
-      "id": "rosy-scenarios",
+      "id": "ai-vs-ml-vs-llm",
       "layout": "image-bullets",
-      "title": "Hype cuts both ways",
+      "title": "AI is a field. Deep learning is one method. LLMs are one application.",
       "bullets": [
-        "**Rosy scenarios:** AI 'companions' will take notes, replace ad copy, free us from menial work.",
-        "**Worst-case scenarios:** Asimov-violating robots; 'superintelligent' takeover.",
-        "Both stories sell the same product — they just sell it differently."
-      ],
-      "media": []
-    },
-    {
-      "id": "self-destructive",
-      "layout": "image-bullets",
-      "title": "What's actually happening, August 2025",
-      "bullets": [
-        "Sam Altman warns some users are 'using AI in self-destructive ways.'",
-        "ChatGPT-5 'struggled with spelling and geography.'",
-        "The discourse is stuck — but our students are already inside it."
-      ],
-      "image": {
-        "src": "altman-warning.webp",
-        "alt": "Article screenshot: Altman warning"
-      },
-      "media": [
-        {
-          "source": "AI_Week_One",
-          "file": "image59.png",
-          "as": "altman-warning",
-          "kind": "image"
-        }
-      ]
-    },
-    {
-      "id": "where-it-came-from",
-      "layout": "section",
-      "kicker": "Part 2",
-      "title": "Where the LLM came from",
-      "lead": "The web, digital culture, and networked communication produced a digitized record of human expression at unprecedented scale. That record is the training data.",
-      "media": []
-    },
-    {
-      "id": "ml-vs-deep-learning",
-      "layout": "image-bullets",
-      "title": "AI is a field. Deep learning is one method.",
-      "bullets": [
-        "AI = the broad goal of machines with intelligence.",
-        "Machine learning = a subfield where machines learn from data.",
-        "Deep learning = one ML approach among many.",
-        "LLMs are a particular use of deep learning, *not* the whole field."
+        "**AI** — the broad goal of machines that act intelligently.",
+        "**Machine learning** — the subfield where systems learn patterns from data.",
+        "**Deep learning** — one ML approach using many-layered neural networks.",
+        "**LLMs** — a particular use of deep-learning transformers, trained to predict tokens.",
+        "When the news says \"AI did X,\" almost always: an LLM did X."
       ],
       "image": {
         "src": "ml-paradigms.webp",
         "alt": "Symbolic vs subsymbolic AI diagram"
       },
       "media": [
-        {
-          "source": "AI_Week_Three",
-          "file": "image13.png",
-          "as": "ml-paradigms",
-          "kind": "image"
-        }
+        {"source": "AI_Week_Three", "file": "image13.png", "as": "ml-paradigms", "kind": "image"}
       ]
-    },
-    {
-      "id": "turing",
-      "layout": "quote",
-      "quote": "The question, 'Can machines think?' should be replaced by 'are there imaginable digital computers which would do well in the imitation game?'",
-      "attribution": "Alan Turing, 1950",
-      "media": []
-    },
-    {
-      "id": "luddites",
-      "layout": "quote",
-      "quote": "Luddites were not against technology. They were against technologies of *control and coercion*, and concerned about the loss of jobs, health, and community.",
-      "attribution": "Industrial-revolution echoes in 2025",
-      "image": {
-        "src": "luddites.webp",
-        "alt": "Industrial-revolution illustration"
-      },
-      "media": [
-        {
-          "source": "AI_Week_Three",
-          "file": "image22.png",
-          "as": "luddites",
-          "kind": "image"
-        }
-      ]
-    },
-    {
-      "id": "what-an-llm-is",
-      "layout": "section",
-      "kicker": "Part 3",
-      "title": "What an LLM actually is",
-      "lead": "Parameters, training, inference, in plain language. Then reasoning layers and human feedback. Then the Opus / Sonnet / Haiku family as a concrete example.",
-      "media": []
     },
     {
       "id": "language-model-basics",
@@ -176,7 +150,8 @@
       "bullets": [
         "A language model assigns probabilities to sequences of tokens.",
         "*Large* language models do this with billions of parameters.",
-        "Pretraining is the long, expensive step. Inference is what happens when you type.",
+        "**Pretraining** is the long, expensive step (weeks or months on GPU clusters).",
+        "**Inference** is what happens when you type a prompt.",
         "Everything else — RLHF, system prompts, tools — sits **on top** of the pretrained model."
       ],
       "media": []
@@ -206,136 +181,148 @@
       "media": []
     },
     {
-      "id": "neural-net-training",
-      "layout": "quote",
-      "quote": "A neural net is 'trained' by giving it some (usually random) initial set of weights on the connections between perceptrons, then adjusting them.",
-      "attribution": "Mitchell, *Artificial Intelligence: A Guide for Thinking Humans*",
-      "media": []
-    },
-    {
-      "id": "racter-history",
+      "id": "reasoning-layers",
       "layout": "image-bullets",
-      "title": "We've been here before",
+      "title": "What sits on top of the base model",
       "bullets": [
-        "RACTER (1984): the first 'book by a computer' — actually mostly its programmers.",
-        "Atari's *The Policeman's Beard Is Half Constructed.*",
-        "Every wave of generative text has been sold the same way: as authorship.",
-        "Every wave produced the same critical question: who is doing the labor?"
-      ],
-      "image": {
-        "src": "racter.webp",
-        "alt": "RACTER and Atari archives screenshot"
-      },
-      "media": [
-        {
-          "source": "AI_Week_Two",
-          "file": "image47.png",
-          "as": "racter",
-          "kind": "image"
-        }
-      ]
-    },
-    {
-      "id": "intelligence-as-rank",
-      "layout": "quote",
-      "quote": "General intelligence is not something that can be measured, but the force of such a promise has been used to justify racial, gender, and class inequality for more than a century.",
-      "attribution": "Bender & Hanna, on 'humanlike intelligence' framing",
-      "media": []
-    },
-    {
-      "id": "eliza",
-      "layout": "image-bullets",
-      "title": "ELIZA, 1966",
-      "bullets": [
-        "Weizenbaum's chatbot, posing as a Rogerian therapist.",
-        "Computer scientists used it to celebrate replacing human labor.",
-        "Weizenbaum spent the rest of his life as a critic of AI hype.",
-        "Minsky founded MIT's AI Lab and took Pentagon funding unhindered.",
-        "The two roads from 1966 are still the two roads."
+        "**RLHF** (Reinforcement Learning from Human Feedback): humans rank model outputs; the model learns to prefer the ranked-good ones.",
+        "**System prompts**: invisible instructions that set tone, role, refusals.",
+        "**Tools**: web search, code execution, file access — the model decides when to call them.",
+        "The Opus / Sonnet / Haiku family is **the same family of base models** at different sizes — your choice trades depth for speed and cost."
       ],
       "media": []
     },
+
     {
-      "id": "weizenbaum-purpose",
-      "layout": "quote",
-      "quote": "We are trying to do the same thing Weizenbaum tried to do: educate people about how these systems work, dispel the notion that they are thinking machines with a semblance of human understanding, and provide a model of how to think about them instead.",
-      "attribution": "Bender & Hanna, *The AI Con*, on the through-line from 1966 to now",
+      "id": "section-chatgpt",
+      "layout": "section",
+      "kicker": "Part 3",
+      "title": "The ChatGPT moment",
+      "lead": "November 30, 2022. The technology wasn't new. The interface was. And the interface was the event.",
       "media": []
     },
     {
-      "id": "from-chatbot-to-project",
+      "id": "before-chatgpt",
+      "layout": "image-bullets",
+      "title": "Before ChatGPT, programmers already had this",
+      "bullets": [
+        "**[June 11, 2020](https://techcrunch.com/2020/06/11/openai-makes-an-all-purpose-api-for-its-text-based-ai-capabilities/):** OpenAI releases the GPT-3 API in private beta. Developers could already prompt the model behind a waiting list.",
+        "**[June 29, 2021](https://github.blog/news-insights/product-news/introducing-github-copilot-ai-pair-programmer/):** GitHub Copilot enters technical preview — built on OpenAI Codex, an OpenAI model descended from GPT-3.",
+        "**[November 18, 2021](https://venturebeat.com/ai/openai-makes-gpt-3-generally-available-through-its-api/):** the GPT-3 API drops the waitlist; it's now open to any developer.",
+        "Faculty and students mostly didn't know any of this was happening."
+      ],
+      "caption": "Sources: [TechCrunch](https://techcrunch.com/2020/06/11/openai-makes-an-all-purpose-api-for-its-text-based-ai-capabilities/), [GitHub Blog](https://github.blog/news-insights/product-news/introducing-github-copilot-ai-pair-programmer/), [VentureBeat](https://venturebeat.com/ai/openai-makes-gpt-3-generally-available-through-its-api/).",
+      "media": []
+    },
+    {
+      "id": "chatgpt-launch",
+      "layout": "image-bullets",
+      "title": "November 30, 2022",
+      "bullets": [
+        "OpenAI launches **[ChatGPT](https://openai.com/index/chatgpt/)** — a free web demo of a fine-tuned GPT-3.5 ([announcement post](https://openai.com/index/chatgpt/)).",
+        "**[1 million users in 5 days](https://x.com/sama/status/1599668808285028353).** (Sam Altman's announcement tweet, Dec 5, 2022.)",
+        "**[~100 million monthly active users by January 2023](https://www.reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01/)** — UBS analysts: \"In 20 years following the internet space, we cannot recall a faster ramp in a consumer internet app.\"",
+        "The *model* had been around for over two years. The *chat box* was the news."
+      ],
+      "caption": "Sources: [Sam Altman on X](https://x.com/sama/status/1599668808285028353), [Reuters / UBS analyst note](https://www.reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01/).",
+      "media": []
+    },
+    {
+      "id": "interface-was-the-event",
+      "layout": "quote",
+      "quote": [
+        "The chatbot was the wrapping. The model was already there.",
+        "What changed on November 30, 2022 wasn't a leap in capability — it was a leap in **access**. Anyone with a browser and an email address could talk to a system that had previously lived behind an API key, a credit card, and a developer account.",
+        "Every higher-ed conversation about generative AI is a conversation about that access. The crisis isn't that the model exists. It's that the model became *visible to everyone at once*."
+      ],
+      "attribution": "Workshop framing — what the ChatGPT moment was actually about",
+      "media": []
+    },
+
+    {
+      "id": "section-where",
       "layout": "section",
       "kicker": "Part 4",
-      "title": "From chatbot to Project",
-      "lead": "UCF Copilot is a single-shot chatbot — useful, fast, forgetful. A Claude Project wraps the same kind of model in persistent context and file handling. That's the gentle entry.",
+      "title": "Where this leaves us — and where it's going",
+      "lead": "The chatbot was the wrapping. Now the wrapping is shifting again — toward agents that *use* the LLM as a substrate, not as a product.",
       "media": []
     },
     {
-      "id": "claude-pro",
+      "id": "agentic-chronicle",
       "layout": "image-bullets",
-      "title": "What you brought today",
+      "kicker": "The conversation in 2026",
+      "title": "From plagiarism panic to agent panic",
       "bullets": [
-        "A laptop with a paid Claude Pro subscription (about $60 for three months).",
-        "One document — a syllabus, a paper, a short reading.",
-        "Curiosity about what your version of UCF Copilot has been doing for you, and where it stops."
+        "Plagiarism panics, AI-detector arms race, faculty caught between adoption pressure and pedagogical challenges.",
+        "*\"A new app offers to do students' work for them. Professors aren't ready.\"*",
+        "The conversation has shifted from *did the chatbot write this?* to *did the agent do the work?*"
       ],
       "image": {
-        "src": "claude-pro.webp",
-        "alt": "Claude Pro subscription page"
+        "src": "agentic-ai-chronicle.webp",
+        "alt": "Chronicle of Higher Education article header: Will Agentic AI Break Higher Education?"
       },
+      "caption": "[*The Chronicle of Higher Education* — \"Will Agentic AI Break Higher Education?\"](https://www.chronicle.com/article/will-agentic-ai-break-higher-education)",
       "media": [
-        {
-          "source": "AI_Week_One",
-          "file": "image29.png",
-          "as": "claude-pro",
-          "kind": "image"
-        }
+        {"path": "Screenshot 2026-04-28 184542.png", "as": "agentic-ai-chronicle", "kind": "image"}
       ]
     },
     {
-      "id": "demo-copilot-vs-project",
-      "layout": "demo-slot",
-      "title": "UCF Copilot vs. Claude with a Project",
-      "note": "Same prompt. Same document. Two tools. Watch what persistent context changes.",
-      "media": []
+      "id": "what-is-an-agent",
+      "layout": "image-bullets",
+      "title": "What is an agent?",
+      "bullets": [
+        "**Tool use:** the model can call functions you give it (web search, file edit, run command).",
+        "**Planning:** the model decides what to do next, in what order, and when to stop.",
+        "**Subagents:** the model can spawn helper instances of itself for sub-tasks.",
+        "An *agent* is the loop these compose into. The vocabulary is doing a lot of work — but the foundation is still the LLM we just described."
+      ],
+      "image": {
+        "src": "agent-vocab.webp",
+        "alt": "Agent vocabulary illustration"
+      },
+      "media": [
+        {"source": "AI_WeekThirteen", "file": "image8.png", "as": "agent-vocab", "kind": "image"}
+      ]
     },
     {
-      "id": "exercise-three-conversations",
-      "layout": "exercise",
-      "title": "Three Conversations",
-      "prompt": "Take one prompt — something you'd actually use in your teaching or research — and run it three ways:",
-      "steps": [
-        "**[ELIZA](https://www.masswerk.at/eliza/)** — yes, really. Spend at least ten minutes; notice where it breaks.",
-        "**[UCF Copilot](https://cdl.ucf.edu/faculty-multimedia-center-ai-tools/)** — run the same prompt cold.",
-        "**A Claude Project** with one document uploaded as context — run it again.",
-        "Document what differs. Save screenshots. Bring the comparison back to the group."
+      "id": "llm-as-substrate",
+      "layout": "image-bullets",
+      "title": "The LLM is now the substrate, not the product",
+      "bullets": [
+        "**2022:** the chatbot *is* the product (ChatGPT).",
+        "**2026:** the chatbot is one interface among many. Cursor, Claude Code, Copilot, MCP-connected research tools, agent platforms.",
+        "Same family of models underneath. Different *wrappers* — and the wrapping is where pedagogical choices live now.",
+        "Everything else in this series — Projects, Artifacts, Code Web, CLI — is a wrapper choice."
       ],
       "media": []
     },
+    {
+      "id": "exercise-build-eliza",
+      "layout": "exercise",
+      "title": "Build our own ELIZA — together, in Claude Artifacts",
+      "prompt": "We close where we opened. Same idea, sixty years later, with room for our own voice:",
+      "steps": [
+        "Open [Claude](https://claude.ai/) and start a new chat.",
+        "Prompt together: *\"Build a Claude Artifact: a chatbot **in the spirit of** Weizenbaum's 1966 ELIZA — pattern-match the user's input and reflect it back as questions. Style and tone are yours: a snarky librarian, a doom-prophet, a noir detective, a Rogerian therapist. Don't pretend to know more than the pattern.\"*",
+        "Open the Artifact in the side panel. Talk to it the way you talked to ELIZA earlier.",
+        "**Compare.** What does Claude do that pattern-matching can't? What does it do that pattern-matching *also* did? Where does the ELIZA effect kick in this time?",
+        "Save the Artifact URL — bring the comparison to next week's discussion."
+      ],
+      "media": []
+    },
+
     {
       "id": "closing",
       "layout": "closing",
       "title": "Three things to leave with",
-      "lead": "After today you should be able to explain to a colleague: where this thing was trained, what a chatbot does, what persistent context adds, and why you'd pick one tool over another for an assignment.",
+      "lead": "After today you should be able to explain to a colleague: where ELIZA started this, what an LLM actually is and what sits on top of it, why the ChatGPT *interface* was the event, and what \"agentic\" adds to the conversation.",
       "links": [
-        {
-          "label": "Workshop 1 page",
-          "url": "/weeks/week-01.html"
-        },
-        {
-          "label": "Week 2 (async): LLM Fundamentals",
-          "url": "/weeks/week-02.html"
-        },
-        {
-          "label": "Reading: Berry on ELIZA",
-          "url": "https://ojs.weizenbaum-institut.de/index.php/wjds/article/view/106"
-        },
-        {
-          "label": "Reading: Kirschenbaum, *Textpocalypse*",
-          "url": "https://www.theatlantic.com/technology/archive/2023/03/ai-chatgpt-writing-language-models/673318/"
-        }
-      ],
-      "media": []
+        {"label": "Workshop 1 page", "url": "/weeks/week-01.html"},
+        {"label": "Week 2 (async): LLM Fundamentals", "url": "/weeks/week-02.html"},
+        {"label": "Reading: Berry on ELIZA", "url": "https://ojs.weizenbaum-institut.de/index.php/wjds/article/view/106"},
+        {"label": "Reading: Kirschenbaum, *Textpocalypse*", "url": "https://www.theatlantic.com/technology/archive/2023/03/ai-chatgpt-writing-language-models/673318/"},
+        {"label": "Willison, *How Coding Agents Work*", "url": "https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/"}
+      ]
     }
   ]
 }
