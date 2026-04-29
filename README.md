@@ -35,7 +35,7 @@ The site uses a custom modern-quilt theme — palette, typography, motion, and t
 
 ## Audience
 
-Faculty and graduate students across humanities disciplines, mixed technical comfort, no assumed coding background. The series is offered at UCF to a cohort of Digital Humanities AI Fellows and is openly available to anyone in the broader NEH learning community.
+Faculty and graduate students across humanities disciplines, mixed technical comfort, no assumed coding background. The series is offered at UCF to a cohort of Digital Humanities AI Fellows and is openly available to anyone in the larger arts and humanities community.
 
 ## Contact
 

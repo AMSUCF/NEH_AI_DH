@@ -16,7 +16,7 @@ workshop:
 <div class="workshop-callout" markdown="1">
 **NEH Workshop 5 — Tuesday, July 8, 10 AM – noon, CHDR**
 
-Streamed and recorded. Open to UCF faculty, graduate students, and the broader NEH learning community.
+Streamed and recorded. Open to UCF faculty, graduate students, and the larger arts and humanities community.
 
 [Open the slide deck →]({{ '/slides/web/w09/' | relative_url }}){:.btn}
 </div>
@@ -79,4 +79,4 @@ The agentic shift specifically: a student saying "Claude wrote this paper" is on
 
 ## Cross-references
 
-- Source materials: `HumanitiesAI/weeknine.md` (recommender stages), `HumanitiesAI/weektwelve.md` (planning mode + agentic Code Web), `CriticalMaking2026/exercises/six_game.md` (Bitsy game design), `CriticalMaking2026/exercises/nine_generation.md`, `CriticalMaking2026/exercises/eleven_narrative.md`.
+- Source materials: [HumanitiesAI/weeknine](https://anastasiasalter.net/HumanitiesAI/weeknine.html) (recommender stages), [HumanitiesAI/weektwelve](https://anastasiasalter.net/HumanitiesAI/weektwelve.html) (planning mode + agentic Code Web), [CriticalMaking2026/exercises/six_game](https://anastasiasalter.net/CriticalMaking2026/exercises/six_game.html) (Bitsy game design), [CriticalMaking2026/exercises/nine_generation](https://anastasiasalter.net/CriticalMaking2026/exercises/nine_generation.html), [CriticalMaking2026/exercises/eleven_narrative](https://anastasiasalter.net/CriticalMaking2026/exercises/eleven_narrative.html).

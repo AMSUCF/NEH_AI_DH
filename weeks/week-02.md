@@ -35,7 +35,7 @@ Spend at least an hour clicking around. The interface is the curriculum this wee
 ## Exercise Menu
 
 - <span class="tag tag-light">Light</span> **Settings tour + reflection (~30 min).** Walk through every settings panel in Claude. Set the defaults that make sense for your work. Write a one-paragraph reflection: *what surprised you about what's adjustable, and what you wish were?* Bring it to W3 discussion.
-- <span class="tag tag-standard">Standard</span> **Iterate a poem in an Artifact (~90 min).** Pick a poetic form — haiku, sonnet, ghazal, blackout, cento. Iterate ten times in Claude Sonnet. Publish the final as a Claude Artifact. Notice how the conversation history shapes each draft. *Source: adapted from `HumanitiesAI/weektwo.md`.*
+- <span class="tag tag-standard">Standard</span> **Iterate a poem in an Artifact (~90 min).** Pick a poetic form — haiku, sonnet, ghazal, blackout, cento. Iterate ten times in Claude Sonnet. Publish the final as a Claude Artifact. Notice how the conversation history shapes each draft. *Source: adapted from [HumanitiesAI/weektwo](https://anastasiasalter.net/HumanitiesAI/weektwo.html).*
 - <span class="tag tag-deep">Deep</span> **Three-models comparison (~3 hr).** Run the same teaching question through Claude Opus, Claude Sonnet, and Claude Haiku within one Project. Track depth, hedging, hallucination rate, and time. Write a one-page "model selection" memo for yourself. Useful as a reference for the rest of the series.
 
 ## What to Carry Into Workshop 2
@@ -46,4 +46,4 @@ Also worth bringing: **the questions and frustrations you accumulated** while cl
 
 ## Cross-references
 
-- Source materials: `HumanitiesAI/weektwo.md` (interface and iteration as method).
+- Source materials: [HumanitiesAI/weektwo](https://anastasiasalter.net/HumanitiesAI/weektwo.html) (interface and iteration as method).

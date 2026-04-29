@@ -46,4 +46,4 @@ Three questions worth holding open as you work through the menu:
 
 ## Cross-references
 
-- Source materials: `CriticalMaking2026/index.md` (UDL + accessibility threading); CAST UDL Guidelines; your disciplinary association's current AI statement.
+- Source materials: [CriticalMaking2026/index](https://anastasiasalter.net/CriticalMaking2026/index.html) (UDL + accessibility threading); CAST UDL Guidelines; your disciplinary association's current AI statement.

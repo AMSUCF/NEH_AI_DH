@@ -16,7 +16,7 @@ workshop:
 <div class="workshop-callout" markdown="1">
 **NEH Workshop 2 — Tuesday, May 27, 10 AM – noon, CHDR**
 
-Streamed and recorded. Open to UCF faculty, graduate students, and the broader NEH learning community.
+Streamed and recorded. Open to UCF faculty, graduate students, and the larger arts and humanities community.
 
 [Open the slide deck →]({{ '/slides/web/w03/' | relative_url }}){:.btn}
 </div>
@@ -63,4 +63,4 @@ The point of this exercise is not the visualization. The point is the *iteration
 
 ## Cross-references
 
-- Source materials: `HumanitiesAI/weekfour.md` (distant reading exercise); `CriticalMaking2026/exercises/eight_analysis.md` (Voyant + analysis pipeline).
+- Source materials: [HumanitiesAI/weekfour](https://anastasiasalter.net/HumanitiesAI/weekfour.html) (distant reading exercise); [CriticalMaking2026/exercises/eight_analysis](https://anastasiasalter.net/CriticalMaking2026/exercises/eight_analysis.html) (Voyant + analysis pipeline).

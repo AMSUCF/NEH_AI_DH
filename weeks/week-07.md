@@ -18,7 +18,7 @@ By the end of the session, every participant will have a live URL to either a de
 <div class="workshop-callout" markdown="1">
 **NEH Workshop 4 — Tuesday, June 24, 10 AM – noon, CHDR**
 
-Streamed and recorded. Open to UCF faculty, graduate students, and the broader NEH learning community.
+Streamed and recorded. Open to UCF faculty, graduate students, and the larger arts and humanities community.
 
 [Open the slide deck →]({{ '/slides/web/w07/' | relative_url }}){:.btn}
 </div>
@@ -88,4 +88,4 @@ For your own teaching: this is a high-leverage assignment design, but it is also
 
 ## Cross-references
 
-- Source materials: `HumanitiesAI/weekeleven.md` (GitHub Pages deploy), `weekfour.md` (distant reading visualization with Claude Code), `CriticalMaking2026/exercises/ten_visualization.md` (P5.js + Claude Code prototyping).
+- Source materials: [HumanitiesAI/weekeleven](https://anastasiasalter.net/HumanitiesAI/weekeleven.html) (GitHub Pages deploy), [HumanitiesAI/weekfour](https://anastasiasalter.net/HumanitiesAI/weekfour.html) (distant reading visualization with Claude Code), [CriticalMaking2026/exercises/ten_visualization](https://anastasiasalter.net/CriticalMaking2026/exercises/ten_visualization.html) (P5.js + Claude Code prototyping).

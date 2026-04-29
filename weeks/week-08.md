@@ -46,13 +46,13 @@ Open your W7 ePortfolio or visualization in Claude Code Web. Two passes: (1) **a
 
 Pick a paper handout you currently give students — a glossary, a timeline of a movement or period, a list of resources, an annotated bibliography. Use Claude Code Web to convert it into a one-page interactive site (clickable timeline, filterable list, structured glossary). Deploy via GitHub Pages.
 
-*Source: adapted from `HumanitiesAI/weekeleven.md`.*
+*Source: adapted from [HumanitiesAI/weekeleven](https://anastasiasalter.net/HumanitiesAI/weekeleven.html).*
 
 ### C. Recommender or "find your X" tool (~2 hr)
 
 Build a JSON dataset relevant to your discipline (100 books, 50 films, 30 archives, 40 primary documents, 25 paintings) plus a minimal interactive front end that lets a user filter or rate the set and gets a recommendation back.
 
-*Source: `HumanitiesAI/weeknine.md`.*
+*Source: [HumanitiesAI/weeknine](https://anastasiasalter.net/HumanitiesAI/weeknine.html).*
 
 ### D. Public scholarship one-pager (~2 hr)
 
@@ -72,4 +72,4 @@ Bring a **dataset or topic** for a small interactive tool (a course concept you'
 
 ## Cross-references
 
-- Source materials: `HumanitiesAI/weekeleven.md` (GitHub Pages deploy), `weeknine.md` (recommender), `weektwelve.md` (agentic Code Web with planning mode).
+- Source materials: [HumanitiesAI/weekeleven](https://anastasiasalter.net/HumanitiesAI/weekeleven.html) (GitHub Pages deploy), [HumanitiesAI/weeknine](https://anastasiasalter.net/HumanitiesAI/weeknine.html) (recommender), [HumanitiesAI/weektwelve](https://anastasiasalter.net/HumanitiesAI/weektwelve.html) (agentic Code Web with planning mode).

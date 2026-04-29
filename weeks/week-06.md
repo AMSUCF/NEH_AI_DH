@@ -51,4 +51,4 @@ Workshop 4 (June 24) is the first session in **Stage 3** — Claude Code Web. To
 
 ## Cross-references
 
-- Source materials: `HumanitiesAI/weekseven.md` (Veo3 / Sora / Gemini multimodal comparison), `weekfive.md` (image generation iteration), `weekeight.md` (image detection in the wild).
+- Source materials: [HumanitiesAI/weekseven](https://anastasiasalter.net/HumanitiesAI/weekseven.html) (Veo3 / Sora / Gemini multimodal comparison), [HumanitiesAI/weekfive](https://anastasiasalter.net/HumanitiesAI/weekfive.html) (image generation iteration), [HumanitiesAI/weekeight](https://anastasiasalter.net/HumanitiesAI/weekeight.html) (image detection in the wild).

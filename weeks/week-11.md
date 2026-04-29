@@ -18,7 +18,7 @@ The hands-on portion is a writing exercise, not an installation: drafting a `CLA
 <div class="workshop-callout" markdown="1">
 **NEH Workshop 6 — Tuesday, July 22, 10 AM – noon, CHDR**
 
-Streamed and recorded. Open to UCF faculty, graduate students, and the broader NEH learning community. This is the last in-person session of the series, so we will reserve time for closing Q&A.
+Streamed and recorded. Open to UCF faculty, graduate students, and the larger arts and humanities community. This is the last in-person session of the series, so we will reserve time for closing Q&A.
 
 [Open the slide deck →]({{ '/slides/web/w11/' | relative_url }}){:.btn}
 </div>
@@ -74,7 +74,7 @@ Cover at minimum:
 
 Save the file. Whether or not you ever install the CLI, the document is a deliverable in its own right — useful as a teaching artifact, a research statement, and a self-clarifying exercise. If you do later install the CLI on a personal machine, this file goes at the root of your project directory and Claude reads it on every session.
 
-*Source: `DHSI_DH_AI_2026/dhsi-2026-course-packet.md` (context engineering); `HumanitiesAI/weekfifteen.md` (skills + agentic workflows).*
+*Source: [DHSI 2026 — dhsi-2026-course-packet](https://anastasiasalter.net/DHSI_DH_AI_2026/dhsi-2026-course-packet.html) (context engineering); [HumanitiesAI/weekfifteen](https://anastasiasalter.net/HumanitiesAI/weekfifteen.html) (skills + agentic workflows).*
 
 ## Pedagogical Note
 
@@ -84,4 +84,4 @@ For our students entering the workforce: the question isn't whether they'll enco
 
 ## Cross-references
 
-- Source materials: `DHSI_DH_AI_2026/dhsi-2026-course-packet.md` (Sessions 3–6: CLI, Ollama, MCP, Superpowers); `HumanitiesAI/weekthirteen.md` (local models), `HumanitiesAI/weekfifteen.md` (skills, subagents); `CriticalMaking2026/exercises/thirteen_tools.md` (Claude Code for tool-building).
+- Source materials: [DHSI 2026 — dhsi-2026-course-packet](https://anastasiasalter.net/DHSI_DH_AI_2026/dhsi-2026-course-packet.html) (Sessions 3–6: CLI, Ollama, MCP, Superpowers); [HumanitiesAI/weekthirteen](https://anastasiasalter.net/HumanitiesAI/weekthirteen.html) (local models), [HumanitiesAI/weekfifteen](https://anastasiasalter.net/HumanitiesAI/weekfifteen.html) (skills, subagents); [CriticalMaking2026/exercises/thirteen_tools](https://anastasiasalter.net/CriticalMaking2026/exercises/thirteen_tools.html) (Claude Code for tool-building).

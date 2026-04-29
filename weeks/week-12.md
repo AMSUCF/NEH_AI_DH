@@ -34,7 +34,7 @@ That third category is the one to watch.
 
 ## Exercise Menu
 
-- <span class="tag tag-light">Light</span> **Final reflection (500 words, ~30 min).** What did you build across the series, what surprised you, and what will you carry into your fall classroom? Save it somewhere you will reread in October. *Source pattern: `HumanitiesAI/finalreflection.md`.*
+- <span class="tag tag-light">Light</span> **Final reflection (500 words, ~30 min).** What did you build across the series, what surprised you, and what will you carry into your fall classroom? Save it somewhere you will reread in October. *Source pattern: [HumanitiesAI/finalreflection](https://anastasiasalter.net/HumanitiesAI/finalreflection.html).*
 - <span class="tag tag-standard">Standard</span> **Course proposal / syllabus revision with Claude Projects (~2–3 hr).** This is the headline exercise of the week. Open a fresh Claude Project. Upload: your existing syllabus (if revising) or a CFP and your draft proposal (if proposing); the AI policy you drafted in W9; one of the artifacts you built across the series; and your `CLAUDE.md` from W11. Then iterate on the proposal or syllabus inside the Project, with Claude as a critical reader. Specifically:
   1. Ask Claude to identify three places your stated learning outcomes don't match the actual assignments. Decide which ones are real misalignments and which are Claude misreading.
   2. Ask Claude to suggest one assignment that would teach the same outcome with the AI policy you drafted.
@@ -64,4 +64,4 @@ This material is based upon work supported by the **National Endowment for the H
 
 ## Cross-references
 
-- Source materials: `HumanitiesAI/finalreflection.md`; `HumanitiesAI/weektwelve.md` (planning mode for full project); `DHSI_DH_AI_2026/dhsi-2026-course-packet.md` (skill-building, final tool deployment); `CriticalMaking2026/exercises/reflection.md`.
+- Source materials: [HumanitiesAI/finalreflection](https://anastasiasalter.net/HumanitiesAI/finalreflection.html); [HumanitiesAI/weektwelve](https://anastasiasalter.net/HumanitiesAI/weektwelve.html) (planning mode for full project); [DHSI 2026 — dhsi-2026-course-packet](https://anastasiasalter.net/DHSI_DH_AI_2026/dhsi-2026-course-packet.html) (skill-building, final tool deployment); [CriticalMaking2026/exercises/reflection](https://anastasiasalter.net/CriticalMaking2026/exercises/reflection.html).

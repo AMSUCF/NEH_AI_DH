@@ -18,7 +18,7 @@ By the end of the session, every participant will have an Artifact gallery from 
 <div class="workshop-callout" markdown="1">
 **NEH Workshop 3 — Tuesday, June 10, 10 AM – noon, CHDR**
 
-Streamed and recorded. Open to UCF faculty, graduate students, and the broader NEH learning community.
+Streamed and recorded. Open to UCF faculty, graduate students, and the larger arts and humanities community.
 
 [Open the slide deck →]({{ '/slides/web/w05/' | relative_url }}){:.btn}
 </div>
@@ -80,4 +80,4 @@ For the copyright conversation: there is no current legal answer, only a moving 
 
 ## Cross-references
 
-- Source materials: `HumanitiesAI/weeksix.md` (image-to-text translation); `CriticalMaking2026/exercises/four_maps.md` (visual ideation), `CriticalMaking2026/exercises/one_selfie.md` (filters, beautification, bias).
+- Source materials: [HumanitiesAI/weeksix](https://anastasiasalter.net/HumanitiesAI/weeksix.html) (image-to-text translation); [CriticalMaking2026/exercises/four_maps](https://anastasiasalter.net/CriticalMaking2026/exercises/four_maps.html) (visual ideation), [CriticalMaking2026/exercises/one_selfie](https://anastasiasalter.net/CriticalMaking2026/exercises/one_selfie.html) (filters, beautification, bias).

@@ -18,7 +18,7 @@ By the end of the session, every participant will have a working Claude account 
 <div class="workshop-callout" markdown="1">
 **NEH Workshop 1 — Tuesday, May 13, 10 AM – noon, CHDR**
 
-Streamed and recorded. Open to UCF faculty, graduate students, and the broader NEH learning community.
+Streamed and recorded. Open to UCF faculty, graduate students, and the larger arts and humanities community.
 
 [Open the slide deck →]({{ '/slides/web/w01/' | relative_url }}){:.btn}
 </div>
@@ -53,8 +53,19 @@ The workshop is built in four acts. Slide deck linked above; this outline maps t
 
 The hands-on portion runs through the second half:
 
-5. **Setting up Claude.** Subscription confirmation. Settings tour (model selection, conversation history, custom instructions, voice mode if available, Artifacts toggle). Style preferences. Why these choices matter for the rest of the series.
-6. **Build our own ELIZA in a Claude Artifact (group exercise).** Prompt Claude together to construct a Rogerian-style chatbot Artifact in the spirit of Weizenbaum's 1966 original — but with stylistic latitude. Try it. Compare to the masswerk ELIZA. Observe where the ELIZA effect kicks in, sixty years on.
+5. **Chatbot tour: five conversations.** Same prompt, five tools, in this order:
+   1. **[Google Gemini](https://gemini.google.com/)** — free, fast, integrated with Google's ecosystem; the model many of our students already use.
+   2. **[DeepSeek](https://chat.deepseek.com/)** running locally through **[Ollama](https://ollama.com/)** — an open-weights model on a personal machine, no API call, no data leaving the room. The "what does *local* feel like" demo.
+   3. **[ChatGPT](https://chat.openai.com/)** — the chatbot that defined the genre, OpenAI's flagship.
+   4. **[UCF Copilot](https://cdl.ucf.edu/faculty-multimedia-center-ai-tools/)** — the institutional option most of you already have. Microsoft's wrapper around an OpenAI model, with UCF's data-privacy framing on top.
+   5. **[Claude](https://claude.ai/)** — Anthropic's flagship; the tool we use for the rest of the series.
+   We notice what each one does the same and what each one does differently with our prompt. The point is **comparative literacy**: you cannot recommend (or refuse) a tool you have not actually talked to.
+6. **Why Claude / why Anthropic.** Three honest reasons — not a marketing pitch:
+   - **Tool surface.** Projects + Artifacts + Code Web + CLI is currently the broadest set of *non-coder-accessible* tools across any provider. The conceptual framework transfers, but right now the build path is best on Claude.
+   - **Safety + interpretability research culture.** Anthropic publishes more on alignment and model behavior than its peers; for a humanities audience, that publication record is part of what we're choosing.
+   - **Disclosure.** I (Anastasia) have an ongoing collaboration with Anthropic. That's a reason to ask harder questions about my recommendations, not to assume them. The series is designed so the framework transfers if you choose a different tool — and I'll point at where it would.
+7. **Setting up Claude.** Subscription confirmation. Settings tour (model selection, conversation history, custom instructions, voice mode if available, Artifacts toggle). Style preferences. Why these choices matter for the rest of the series.
+8. **Build our own ELIZA in a Claude Artifact (group exercise).** Prompt Claude together to construct a Rogerian-style chatbot Artifact in the spirit of Weizenbaum's 1966 original — but with stylistic latitude. Try it. Compare to the masswerk ELIZA. Observe where the ELIZA effect kicks in, sixty years on.
 
 ## Core Exercise
 
@@ -73,12 +84,14 @@ A pocket survey of the major commercial "frontier" or "foundation" models as of 
 | Maker | Family | Used in this series |
 |---|---|---|
 | Anthropic | Claude (Opus, Sonnet, Haiku) | All workshops |
-| OpenAI | GPT (5, 4o), Sora | Referenced; W6 multimodal |
-| Google | Gemini (Pro, Flash, Nano Banana) | W6 multimodal |
+| OpenAI | GPT (5, 4o), Sora | **W1 chatbot tour** (ChatGPT); W6 multimodal (Images / Sora) |
+| Google | Gemini (Pro, Flash, Nano Banana) | **W1 chatbot tour** (Gemini); W6 multimodal (Nano Banana) |
+| DeepSeek (open weights) | DeepSeek V3 / R1 | **W1 chatbot tour** (local via Ollama); W11 local-models discussion |
+| Microsoft | Copilot (wraps OpenAI) | **W1 chatbot tour** (UCF Copilot) |
 | Meta | Llama (open weights) | W11 local-models discussion |
 | xAI / Mistral / others | Grok, Mistral | Referenced |
 
-We use Claude across the series for one practical reason: it is the model whose Projects, Artifacts, and Code Web tools currently make it easiest for non-coders to build something they can share. The conceptual framework transfers across providers.
+We use Claude across the series for one practical reason: it is the model whose Projects, Artifacts, and Code Web tools currently make it easiest for non-coders to build something they can share. The conceptual framework transfers across providers — and W1's chatbot tour is the moment we make that transfer-ability literal.
 
 ## Pedagogical Note
 
@@ -86,5 +99,5 @@ We do not begin with awe and we do not begin with despair. We begin with sobriet
 
 ## Cross-references
 
-- Source materials: `HumanitiesAI/weekone.md` (ELIZA exercise + Three Conversations), `HumanitiesAI/weektwo.md` (interfaces + Chamberlain).
+- Source materials: [HumanitiesAI/weekone](https://anastasiasalter.net/HumanitiesAI/weekone.html) (ELIZA exercise + Three Conversations), [HumanitiesAI/weektwo](https://anastasiasalter.net/HumanitiesAI/weektwo.html) (interfaces + Chamberlain).
 - Companion text: Johnson & Salter, *[Critical Making in the Age of AI](https://www.fulcrum.org/concern/monographs/zc77ss95p)* (open access).

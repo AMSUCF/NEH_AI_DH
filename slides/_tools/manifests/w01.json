@@ -313,6 +313,47 @@
       ],
       "media": []
     },
+
+    {
+      "id": "section-chatbot-tour",
+      "layout": "section",
+      "kicker": "Hands-on, Part 1",
+      "title": "Chatbot tour: five conversations",
+      "lead": "Same prompt, five tools, in this order. The point isn't to rank them — it's comparative literacy. You cannot recommend (or refuse) a tool you have not actually talked to.",
+      "media": []
+    },
+    {
+      "id": "chatbot-tour",
+      "layout": "image-bullets",
+      "title": "The five tools",
+      "bullets": [
+        "**[Gemini](https://gemini.google.com/)** — Google's free chatbot, integrated with the search and workspace stack the model many of our students already use.",
+        "**[DeepSeek](https://chat.deepseek.com/) running locally through [Ollama](https://ollama.com/)** — open-weights model on a personal machine. No API call, no data leaving the room. The *local* demo.",
+        "**[ChatGPT](https://chat.openai.com/)** — the chatbot that defined the genre.",
+        "**[UCF Copilot](https://cdl.ucf.edu/faculty-multimedia-center-ai-tools/)** — Microsoft's wrapper around an OpenAI model, with UCF's data-privacy framing layered on top.",
+        "**[Claude](https://claude.ai/)** — Anthropic's flagship; the tool we use for the rest of the series."
+      ],
+      "media": []
+    },
+    {
+      "id": "demo-chatbot-tour",
+      "layout": "demo-slot",
+      "title": "Same prompt, five tools",
+      "note": "We pick one prompt — something with humanities texture, like asking for a summary of a primary source you brought, or a teaching question you actually have — and run it through all five. Notice the verbs each tool reaches for, the hedges, the refusals, the formatting defaults."
+    },
+    {
+      "id": "why-claude",
+      "layout": "image-bullets",
+      "title": "Why Claude / why Anthropic",
+      "bullets": [
+        "**Tool surface.** Projects + Artifacts + Code Web + CLI is currently the broadest *non-coder-accessible* tool stack across providers. The framework transfers; the build path is best on Claude.",
+        "**Safety + interpretability research culture.** Anthropic publishes more on alignment and model behavior than its peers. For a humanities audience, the publication record is part of the choice.",
+        "**Disclosure.** I have an ongoing collaboration with Anthropic. That's a reason to ask harder questions about my recommendations, not to assume them.",
+        "The series is designed so the framework transfers — I'll point at where it would, week by week."
+      ],
+      "media": []
+    },
+
     {
       "id": "exercise-build-eliza",
       "layout": "exercise",
