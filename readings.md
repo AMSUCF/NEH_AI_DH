@@ -7,9 +7,12 @@ title: Readings
 
 Readings for the NEH workshop series, organized by stage. Each reading is tagged for time commitment so you can build a path that fits your schedule.
 
+- <span class="tag tag-required">Required</span> required this week (everything else is optional / pick-what-fits)
 - <span class="tag tag-light">Light</span> ~20 minutes; a short essay, blog post, or news piece
 - <span class="tag tag-standard">Standard</span> ~60 minutes; a longer essay, chapter, or substantial newsletter
 - <span class="tag tag-deep">Deep</span> ~3 hours or more; a book section, multi-essay arc, or full book
+
+A reading or exercise can carry both flags — for example, <span class="tag tag-required">Required</span> <span class="tag tag-light">Light</span> means a 20-minute piece you're expected to do this week.
 
 Books listed in the **Recommended Texts** section are referenced across multiple weeks. UCF affiliates have library access where noted; open-access alternatives are listed first.
 

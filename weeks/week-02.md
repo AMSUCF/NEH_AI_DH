@@ -25,9 +25,9 @@ Melanie Mitchell — *The past, present, and uncertain future of AI* — pairs d
 
 ## Reading Menu
 
-- <span class="tag tag-light">Light</span> Mollick, Ethan. ["Assigning AI: Seven Ways of Using AI in Class."](https://www.oneusefulthing.org/p/assigning-ai-seven-ways-of-using) *One Useful Thing.* If you skipped this last week, it is the single most useful 10-minute read for new adopters.
-- <span class="tag tag-light">Light</span> Willison, Simon. ["Not All AI-Assisted Programming is Vibe Coding (But Vibe Coding Rocks)."](https://simonwillison.net/2025/Mar/19/vibe-coding/) March 19, 2025. The piece that named the working vocabulary the rest of the series uses.
-- <span class="tag tag-light">Light</span> Anthropic. ["Use Projects to organize your work."](https://support.anthropic.com/en/articles/9519177-using-projects-on-claude-ai) Skim the help-center docs before W3.
+- <span class="tag tag-required">Required</span> <span class="tag tag-light">Light</span> Mollick, Ethan. ["Assigning AI: Seven Ways of Using AI in Class."](https://www.oneusefulthing.org/p/assigning-ai-seven-ways-of-using) *One Useful Thing.* If you skipped this last week, it is the single most useful 10-minute read for new adopters.
+- <span class="tag tag-required">Required</span> <span class="tag tag-light">Light</span> Willison, Simon. ["Not All AI-Assisted Programming is Vibe Coding (But Vibe Coding Rocks)."](https://simonwillison.net/2025/Mar/19/vibe-coding/) March 19, 2025. The piece that named the working vocabulary the rest of the series uses.
+- <span class="tag tag-required">Required</span> <span class="tag tag-light">Light</span> Anthropic. ["Use Projects to organize your work."](https://support.anthropic.com/en/articles/9519177-using-projects-on-claude-ai) Skim the help-center docs before W3.
 - <span class="tag tag-standard">Standard</span> Bender & Hanna, *The AI Con*, Chapter 1: An Introduction to AI Hype. The skeptical counterweight to the practitioner blogs.
 - <span class="tag tag-standard">Standard</span> Emerson, Lori. ["Interfaced."](https://loriemerson.net/2020/02/07/interfaced/) From *Further Reading*. Interface is not transparent; reading this changes how you see the chat window.
 - <span class="tag tag-deep">Deep</span> Mitchell, Melanie. *Artificial Intelligence: A Guide for Thinking Humans*, Part I. The clearest non-technical explanation of how these systems work.

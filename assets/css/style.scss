@@ -672,6 +672,7 @@ a.deck-link:active {
   color: var(--ink);
   white-space: nowrap;
 }
+.tag-required { background: var(--cobalt);  color: var(--bone); }
 .tag-light    { background: var(--sage);    color: var(--ink); }
 .tag-standard { background: var(--mustard); color: var(--ink); }
 .tag-deep     { background: var(--plum);    color: var(--bone); }
