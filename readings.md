@@ -32,16 +32,18 @@ These four anchor the series. You do not need to read them cover-to-cover — wo
 ### History, the ELIZA effect, what an LLM is
 
 - <span class="tag tag-light">Light</span> Berry, David M. ["The Limits of Computation: Joseph Weizenbaum and the ELIZA Chatbot."](https://ojs.weizenbaum-institut.de/index.php/wjds/article/view/106) *Weizenbaum Journal of the Digital Society* 3.3 (2023). The history piece W1 opens with.
-- <span class="tag tag-light">Light</span> Willison, Simon. *[How Coding Agents Work](https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/).* The plain-English introduction (LLMs, tokens, agents) used across W1, W7, and W11.
-- <span class="tag tag-light">Light</span> Mollick, Ethan. ["Assigning AI: Seven Ways of Using AI in Class."](https://www.oneusefulthing.org/p/assigning-ai-seven-ways-of-using) *One Useful Thing.*
+- <span class="tag tag-light">Light</span> Mollick, Ethan. ["A Guide to Which AI to Use in the Agentic Era."](https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the) *One Useful Thing*, February 18, 2026. The model / app / harness frame for choosing tools. (W1 pre-reading.)
+- <span class="tag tag-light">Light</span> Mollick, Ethan. ["Assigning AI: Seven Ways of Using AI in Class."](https://www.oneusefulthing.org/p/assigning-ai-seven-ways-of-using) *One Useful Thing.* (W1 pre-reading; required Light reading for W2.)
+- <span class="tag tag-light">Light</span> Willison, Simon. *[How Coding Agents Work](https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/).* The plain-English introduction to LLMs, tokens, and agents (W7 pre-reading).
 - <span class="tag tag-standard">Standard</span> Bender, Emily, and Alex Hanna. *The AI Con*, Chapter 1: An Introduction to AI Hype.
 - <span class="tag tag-standard">Standard</span> Mitchell, Melanie. *Artificial Intelligence: A Guide for Thinking Humans*, Part I: Background.
 - <span class="tag tag-standard">Standard</span> Emerson, Lori. ["Interfaced."](https://loriemerson.net/2020/02/07/interfaced/) In Matthew Rubery and Leah Price (eds.), *Further Reading*. Oxford Academic, 2020.
 
 ### Vibe coding, harnesses, agents — the working vocabulary
 
-- <span class="tag tag-light">Light</span> Willison, Simon. ["Not All AI-Assisted Programming is Vibe Coding (But Vibe Coding Rocks)."](https://simonwillison.net/2025/Mar/19/vibe-coding/) March 19, 2025.
+- <span class="tag tag-light">Light</span> Willison, Simon. ["Not All AI-Assisted Programming is Vibe Coding (But Vibe Coding Rocks)."](https://simonwillison.net/2025/Mar/19/vibe-coding/) March 19, 2025. (Required Light reading for W2.)
 - <span class="tag tag-light">Light</span> Mollick, Ethan. ["Claude Code and What Comes Next."](https://www.oneusefulthing.org/p/claude-code-and-what-comes-next) *One Useful Thing*, January 7, 2026.
+- <span class="tag tag-light">Light</span> Anthropic. ["Use Projects to organize your work."](https://support.anthropic.com/en/articles/9519177-using-projects-on-claude-ai) Help-center docs. (Required Light reading for W2.)
 - <span class="tag tag-light">Light</span> Anthropic. ["Introducing Skills."](https://www.anthropic.com/news/skills) The launch context for Claude Skills (used in W4).
 
 ### Text analysis, distant reading, and the copyright conversation

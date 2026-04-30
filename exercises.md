@@ -15,11 +15,11 @@ Every workshop has one core exercise; every async week offers a deep-dive menu a
 
 ### Workshop 1 (May 13) — Build our own ELIZA
 
-<span class="tag tag-standard">Standard</span> **Build a Claude Artifact in the spirit of Weizenbaum's 1966 ELIZA — together.** Group exercise. Open Claude, prompt it to construct a Rogerian-style chatbot Artifact. Style and tone are yours: a snarky librarian, a doom-prophet, a noir detective, a Rogerian therapist. Compare to the [masswerk web ELIZA](https://www.masswerk.at/eliza/). Notice where the ELIZA effect kicks in, sixty years on.
+<span class="tag tag-standard">Standard</span> **Build a Claude Artifact in the spirit of Weizenbaum's 1966 ELIZA — together.** Group exercise. Each person picks a style, tone, and subject of their own — something tied to your discipline, your teaching, or a corner of your life you'd be willing to talk to a chatbot about. The pattern is the constraint; the personality and the topic are yours. Open Claude and prompt it to build a pattern-matching Rogerian-style chatbot Artifact, then layer your style on top. Compare to the [masswerk web ELIZA](https://www.masswerk.at/eliza/) and notice where the ELIZA effect kicks in, sixty years on.
 
 *Source: [HumanitiesAI/weekone](https://anastasiasalter.net/HumanitiesAI/weekone.html) (Three Conversations).*
 
-### Week 2 (async) — Claude interface deep-dive (five tasks, share back in Discord)
+### Week 2 (async) — Claude interface deep-dive (read all three Light readings, complete at least one task; share each in Discord)
 
 1. **Tour the settings, set your defaults.** Walk every panel; set defaults that fit your work; switch models on the same prompt; try voice mode if your account has it. Discord-post what surprised you.
 2. **Add a skill or connector.** **Customize → Add a skill or connector**: investigate the menu (skill-creator, document/slide builders, spreadsheet, Google Drive / Gmail / Notion connectors). Try one on a real task. Discord-post what changed.
