@@ -274,7 +274,7 @@
         "**Tool use:** the model can call functions you give it (web search, file edit, run command).",
         "**Planning:** the model decides what to do next, in what order, and when to stop.",
         "**Subagents:** the model can spawn helper instances of itself for sub-tasks.",
-        "An *agent* is the loop these compose into. The vocabulary is doing a lot of work — but the foundation is still the LLM we just described."
+        "The vocabulary is doing a lot of work — but the foundation is still the LLM we just described."
       ],
       "image": {
         "src": "agent-vocab.webp",
