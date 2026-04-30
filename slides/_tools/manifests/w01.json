@@ -356,7 +356,6 @@
       "bullets": [
         "**Tool surface.** Projects + Artifacts + Code Web + CLI is currently the broadest *non-coder-accessible* tool stack across providers. The framework transfers; the build path is best on Claude.",
         "**Safety + interpretability research culture.** Anthropic publishes more on alignment and model behavior than its peers. For a humanities audience, the publication record is part of the choice.",
-        "**Disclosure.** I have an ongoing collaboration with Anthropic. That's a reason to ask harder questions about my recommendations, not to assume them.",
         "The series is designed so the framework transfers — I'll point at where it would, week by week."
       ],
       "media": []

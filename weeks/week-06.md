@@ -19,7 +19,7 @@ There is no in-person meeting.
 You don't need to use all of these. Pick what's most relevant to your work:
 
 - **[Google Gemini Nano Banana](https://gemini.google.com/)** — Google's image-generation and editing tool, available free on most Google accounts. Surprisingly strong at infographics and photoreal edits.
-- **[OpenAI Images / Sora](https://openai.com/sora/)** — generation across image and short video. Bundled with ChatGPT Plus.
+- **[OpenAI Images](https://openai.com/index/introducing-4o-image-generation/)** — image generation, bundled with ChatGPT Plus.
 - **[Claude Design](https://claude.ai/)** — Claude's slide and document layout mode (reach via the Artifacts toggle / "Design" affordance in the message composer). Generates editable PowerPoint-style decks, posters, and infographics from prompts.
 - **[Claude voice mode](https://claude.ai/)** (mobile and desktop) — voice in/out for Claude conversation. Useful as a comparative point.
 - **A voice interface you build in an Artifact** — using the Web Speech API; Claude can scaffold this in a single Artifact prompt.
@@ -51,4 +51,4 @@ Workshop 4 (June 24) is the first session in **Stage 3** — Claude Code Web. To
 
 ## Cross-references
 
-- Source materials: [HumanitiesAI/weekseven](https://anastasiasalter.net/HumanitiesAI/weekseven.html) (Veo3 / Sora / Gemini multimodal comparison), [HumanitiesAI/weekfive](https://anastasiasalter.net/HumanitiesAI/weekfive.html) (image generation iteration), [HumanitiesAI/weekeight](https://anastasiasalter.net/HumanitiesAI/weekeight.html) (image detection in the wild).
+- Source materials: [HumanitiesAI/weekseven](https://anastasiasalter.net/HumanitiesAI/weekseven.html) (Veo3 / Gemini multimodal comparison), [HumanitiesAI/weekfive](https://anastasiasalter.net/HumanitiesAI/weekfive.html) (image generation iteration), [HumanitiesAI/weekeight](https://anastasiasalter.net/HumanitiesAI/weekeight.html) (image detection in the wild).

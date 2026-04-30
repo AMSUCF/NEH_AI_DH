@@ -84,7 +84,7 @@ A pocket survey of the major commercial "frontier" or "foundation" models as of 
 | Maker | Family | Used in this series |
 |---|---|---|
 | Anthropic | Claude (Opus, Sonnet, Haiku) | All workshops |
-| OpenAI | GPT (5, 4o), Sora | **W1 chatbot tour** (ChatGPT); W6 multimodal (Images / Sora) |
+| OpenAI | GPT (5, 4o), Images | **W1 chatbot tour** (ChatGPT); W6 multimodal (OpenAI Images) |
 | Google | Gemini (Pro, Flash, Nano Banana) | **W1 chatbot tour** (Gemini); W6 multimodal (Nano Banana) |
 | DeepSeek (open weights) | DeepSeek V3 / R1 | **W1 chatbot tour** (local via Ollama); W11 local-models discussion |
 | Microsoft | Copilot (wraps OpenAI) | **W1 chatbot tour** (UCF Copilot) |
