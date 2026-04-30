@@ -270,6 +270,7 @@
       "layout": "image-bullets",
       "title": "What is an agent?",
       "bullets": [
+        "*\"An LLM agent runs tools in a loop to achieve a goal.\"* — Simon Willison, [*On the definition of \"agent\"*](https://simonwillison.net/2025/Sep/18/agents/)",
         "**Tool use:** the model can call functions you give it (web search, file edit, run command).",
         "**Planning:** the model decides what to do next, in what order, and when to stop.",
         "**Subagents:** the model can spawn helper instances of itself for sub-tasks.",
