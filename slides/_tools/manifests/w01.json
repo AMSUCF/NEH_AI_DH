@@ -289,6 +289,22 @@
       ]
     },
     {
+      "id": "ibm-1979",
+      "layout": "image-only",
+      "image": {
+        "src": "ibm-1979.webp",
+        "alt": "1979 IBM internal training slide: A COMPUTER CAN NEVER BE HELD ACCOUNTABLE / THEREFORE A COMPUTER MUST NEVER MAKE A MANAGEMENT DECISION."
+      },
+      "caption": "1979 IBM training slide, surfaced by Simon Willison: *[\"A computer can never be held accountable\" →](https://simonwillison.net/2025/Feb/3/a-computer-can-never-be-held-accountable/)* — the principle agents quietly violate every time they act on our behalf.",
+      "media": [
+        {
+          "path": "a-computer-can-never-be-held-accountable.jpg",
+          "as": "ibm-1979",
+          "kind": "image"
+        }
+      ]
+    },
+    {
       "id": "einstein-companion",
       "layout": "image-bullets",
       "title": "Einstein.AI: \"Has his own computer\"",
