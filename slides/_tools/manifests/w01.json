@@ -327,7 +327,7 @@
       "layout": "section",
       "kicker": "Hands-on, Part 1",
       "title": "Chatbot tour: five conversations",
-      "lead": "Same prompt, five tools, in this order. The point isn't to rank them — it's comparative literacy. You cannot recommend (or refuse) a tool you have not actually talked to.",
+      "lead": "Same prompt, five tools. We'll move back and forth between these throughout the workshop while prioritizing Claude — to build an understanding of the different tools available.",
       "media": []
     },
     {
@@ -338,7 +338,7 @@
         "**[Gemini](https://gemini.google.com/)** — Google's free chatbot, integrated with the search and workspace stack the model many of our students already use.",
         "**[DeepSeek](https://chat.deepseek.com/) running locally through [Ollama](https://ollama.com/)** — open-weights model on a personal machine. No API call, no data leaving the room. The *local* demo.",
         "**[ChatGPT](https://chat.openai.com/)** — the chatbot that defined the genre.",
-        "**[UCF Copilot](https://cdl.ucf.edu/faculty-multimedia-center-ai-tools/)** — Microsoft's wrapper around an OpenAI model, with UCF's data-privacy framing layered on top.",
+        "**[UCF Copilot](https://cdl.ucf.edu/faculty-multimedia-center-ai-tools/)** — Microsoft's wrapper around an OpenAI model, with UCF's data-privacy framing layered on top. **The only tool UCF currently supports or allows for use with restricted data.**",
         "**[Claude](https://claude.ai/)** — Anthropic's flagship; the tool we use for the rest of the series."
       ],
       "media": []

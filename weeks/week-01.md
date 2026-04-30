@@ -57,9 +57,9 @@ The hands-on portion runs through the second half:
    1. **[Google Gemini](https://gemini.google.com/)** — free, fast, integrated with Google's ecosystem; the model many of our students already use.
    2. **[DeepSeek](https://chat.deepseek.com/)** running locally through **[Ollama](https://ollama.com/)** — an open-weights model on a personal machine, no API call, no data leaving the room. The "what does *local* feel like" demo.
    3. **[ChatGPT](https://chat.openai.com/)** — the chatbot that defined the genre, OpenAI's flagship.
-   4. **[UCF Copilot](https://cdl.ucf.edu/faculty-multimedia-center-ai-tools/)** — the institutional option most of you already have. Microsoft's wrapper around an OpenAI model, with UCF's data-privacy framing on top.
+   4. **[UCF Copilot](https://cdl.ucf.edu/faculty-multimedia-center-ai-tools/)** — the institutional option most of you already have. Microsoft's wrapper around an OpenAI model, with UCF's data-privacy framing on top. **This is the only tool UCF currently supports or allows for use with restricted data.**
    5. **[Claude](https://claude.ai/)** — Anthropic's flagship; the tool we use for the rest of the series.
-   We notice what each one does the same and what each one does differently with our prompt. The point is **comparative literacy**: you cannot recommend (or refuse) a tool you have not actually talked to.
+   We will be moving back and forth between these throughout the workshop while prioritizing Claude, to build an understanding of the different tools available.
 6. **Why Claude / why Anthropic.**
    - **Tool surface.** Projects + Artifacts + Code Web + CLI is currently the broadest set of *non-coder-accessible* tools across any provider. The conceptual framework transfers, but right now the build path is best on Claude.
    - **Safety + interpretability research culture.** Anthropic publishes more on alignment and model behavior than its peers; for a humanities audience, that publication record is part of what we're choosing.
