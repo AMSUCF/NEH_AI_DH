@@ -36,7 +36,7 @@ Streamed and recorded. Open to UCF faculty, graduate students, and the larger ar
 On copyright (skim before the discussion):
 
 - Authors Guild et al. v. Anthropic settlement coverage: ["Authors celebrate historic settlement."](https://arstechnica.com/tech-policy/2025/08/authors-celebrate-historic-settlement-coming-soon-in-anthropic-class-action/) *Ars Technica*, August 2025. (~10 min)
-- *Bartz v. Anthropic*: brief background on the case and what it does and doesn't establish about training-data copyright.
+- *Bartz v. Anthropic* — NPR coverage of the September 2025 settlement: ["Anthropic settles authors' lawsuit over pirated chatbot training material."](https://www.npr.org/2025/09/05/g-s1-87367/anthropic-authors-settlement-pirated-chatbot-training-material) Brief background on the case and what it does and doesn't establish about training-data copyright.
 
 ## Session Outline (120 minutes)
 
