@@ -41,7 +41,7 @@ The answer this session offers: the *vocabulary* (agentic, MCP, skills, subagent
 
 ## Pre-Workshop Reading
 
-- Underwood, Ted. ["The Marionette Theater of AI."](https://tedunderwood.com/2026/02/08/the-marionette-theater-of-ai/) *The Stone and the Shell*, February 8, 2026. (~20 min) The most lucid recent essay on what agentic systems are doing to scholarly work.
+- Underwood, Ted. ["The Marionette Theater of AI."](https://tedunderwood.com/2026/02/08/the-marionette-theater-of-ai/) *The Stone and the Shell*, February 8, 2026. (~20 min) A lucid recent essay on what agentic systems are doing to scholarly work.
 - Cohen, Dan. ["AI and Libraries, Archives, and Museums, Loosely Coupled."](https://newsletter.dancohen.org) *Humane Ingenuity.* (~15 min) The DH-specific framing for MCP and connected tools.
 - Anthropic. ["Introduction to Model Context Protocol."](https://docs.anthropic.com/en/docs/build-with-claude/mcp) (~10 min) Skim — you do not need to install anything.
 

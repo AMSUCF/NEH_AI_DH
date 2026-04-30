@@ -31,8 +31,8 @@ Streamed and recorded. Open to UCF faculty, graduate students, and the larger ar
 
 ## Pre-Workshop Reading
 
-- Crawford, Kate, and Trevor Paglen. ["Excavating AI."](https://excavating.ai/) (~30 min) The single best critical introduction to what training datasets look like under the hood.
-- Demsky, Ian. ["My Month with Midjourney."](https://electronicbookreview.com/publications/my-month-with-midjourney/) *Electronic Book Review*, April 2, 2023. (~25 min) The most useful single piece on iteration as method in image generation.
+- Crawford, Kate, and Trevor Paglen. ["Excavating AI."](https://excavating.ai/) (~30 min) A useful critical introduction to what training datasets look like under the hood.
+- Demsky, Ian. ["My Month with Midjourney."](https://electronicbookreview.com/publications/my-month-with-midjourney/) *Electronic Book Review*, April 2, 2023. (~25 min) A useful piece on iteration as method in image generation.
 - Coverage of the copyright fights: pick one — [*Andersen v. Stability AI*](https://www.courtlistener.com/docket/66732129/andersen-v-stability-ai-ltd/), [*New York Times v. OpenAI*](https://www.nytimes.com/2023/12/27/business/media/new-york-times-open-ai-microsoft-lawsuit.html), or [Getty Images v. Stability AI](https://www.theguardian.com/technology/2025/nov/04/getty-images-loses-most-copyright-claims-against-stability-ai-in-uk-court).
 
 Optional:

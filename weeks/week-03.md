@@ -30,7 +30,7 @@ Streamed and recorded. Open to UCF faculty, graduate students, and the larger ar
 ## Pre-Workshop Reading
 
 - Houston, Natalie M. ["Text Analysis."](https://digitalpedagogy.hcommons.org/keyword/Text-Analysis/) *Digital Pedagogy in the Humanities.* (~20 min) Frames text analysis as a teachable practice.
-- Underwood, Ted. ["A More Interesting Upside of AI."](https://tedunderwood.com/2025/07/02/a-more-interesting-upside-of-ai/) *The Stone and the Shell*, July 2, 2025. (~15 min) The most useful single piece on what AI changes for distant reading.
+- Underwood, Ted. ["A More Interesting Upside of AI."](https://tedunderwood.com/2025/07/02/a-more-interesting-upside-of-ai/) *The Stone and the Shell*, July 2, 2025. (~15 min) A useful piece on what AI changes for distant reading.
 - Walsh, Melanie, and Maria Antoniak. ["The Goodreads 'Classics': A Computational Study of Readers, Amazon, and Crowdsourced Amateur Criticism."](https://post45.org/2021/04/the-goodreads-classics-a-computational-study-of-readers-amazon-and-crowdsourced-amateur-criticism/) *Post45*, 2021. (~25 min) A model of distant reading at scale, well-written for non-specialists.
 
 On copyright (skim before the discussion):

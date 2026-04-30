@@ -32,7 +32,7 @@ Streamed and recorded. Open to UCF faculty, graduate students, and the larger ar
 
 - Noble, Safiya Umoja, ["Algorithms Aren't Neutral: Safiya Noble on AI, Bias, and Building Public-Interest Technology."](https://calearninglab.org/myrobotteacher/mrt6/) *My Robot Teacher* podcast. (~30 min listen or transcript.) Required.
 - Costanza-Chock, Sasha. *[Design Justice](https://design-justice.pubpub.org/),* Introduction. (~25 min) Open access.
-- MLA Executive Council. ["Educational Technologies and AI Agents."](https://news.mla.hcommons.org/2026/01/30/educational-technologies-and-ai-agents/) *MLA News*, January 30, 2026. (~10 min) The most direct disciplinary statement on AI policy in humanities classrooms.
+- MLA Executive Council. ["Educational Technologies and AI Agents."](https://news.mla.hcommons.org/2026/01/30/educational-technologies-and-ai-agents/) *MLA News*, January 30, 2026. (~10 min) A direct disciplinary statement on AI policy in humanities classrooms.
 
 Optional:
 

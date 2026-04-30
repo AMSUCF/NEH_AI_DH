@@ -37,7 +37,7 @@ Three questions worth holding open as you work through the menu:
 
 - <span class="tag tag-light">Light</span> **Policy A/B (~30 min).** Take an existing AI policy from a colleague's syllabus (or a sample from a public source). Use Claude in a Project to identify three UDL-aligned revisions. Document the before/after.
 - <span class="tag tag-standard">Standard</span> **Accessibility audit + fix in Code Web (~90 min).** Run the W7 ePortfolio site (or any class artifact you have on the web) through an accessibility checker like [WAVE](https://wave.webaim.org/) or [axe DevTools](https://www.deque.com/axe/). Use Claude Code Web with planning mode to fix the top three issues. *Plan first; build second; check third.* Push the changes; rerun the check. The repetition is the point — Code Web literacy comes from doing this loop on real artifacts.
-- <span class="tag tag-deep">Deep</span> **Full syllabus integration (~3+ hr).** Revise one full syllabus to integrate (a) an AI policy adapted to your discipline, (b) a signature assignment that uses AI critically, and (c) at least one AI-aware exercise that builds on something we did across W1–W9. The CAST [UDL framework](https://udlguidelines.cast.org/) is the most useful single resource for this work.
+- <span class="tag tag-deep">Deep</span> **Full syllabus integration (~3+ hr).** Revise one full syllabus to integrate (a) an AI policy adapted to your discipline, (b) a signature assignment that uses AI critically, and (c) at least one AI-aware exercise that builds on something we did across W1–W9. The CAST [UDL framework](https://udlguidelines.cast.org/) is a useful resource for this work.
 
 ## What to Carry Into Workshop 6
 

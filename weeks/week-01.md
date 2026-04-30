@@ -35,7 +35,7 @@ Light prep before Wednesday so we can go deeper together:
 
 - Berry, David M. ["The Limits of Computation: Joseph Weizenbaum and the ELIZA Chatbot."](https://ojs.weizenbaum-institut.de/index.php/wjds/article/view/106) *Weizenbaum Journal of the Digital Society* 3.3 (2023). (~25 min) The history piece we open the session with.
 - Mollick, Ethan. ["A Guide to Which AI to Use in the Agentic Era."](https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the) *One Useful Thing*, February 18, 2026. (~15 min) The argument that choosing AI tools now means thinking in three layers — model, app, and harness — rather than just "which model is best."
-- Mollick, Ethan. ["Assigning AI: Seven Ways of Using AI in Class."](https://www.oneusefulthing.org/p/assigning-ai-seven-ways-of-using) *One Useful Thing.* (~10 min) The most useful 10-minute read in the series for new adopters.
+- Mollick, Ethan. ["Assigning AI: Seven Ways of Using AI in Class."](https://www.oneusefulthing.org/p/assigning-ai-seven-ways-of-using) *One Useful Thing.* (~10 min) A useful 10-minute read for new adopters.
 
 Optional, if you want to be a step ahead:
 
@@ -48,7 +48,7 @@ The workshop is built in four acts. Slide deck linked above; this outline maps t
 
 1. **ELIZA and the ELIZA effect.** Weizenbaum's 1966 chatbot, the secretary who asked him to leave the room, the two roads from MIT (Weizenbaum's lifelong critique vs. Minsky's AI Lab and Pentagon funding). We try the [masswerk.at web ELIZA](https://www.masswerk.at/eliza/) live and notice what our brains do.
 2. **AI, LLMs, and how they actually work.** AI as a field, ML as a subfield, deep learning as a method, LLMs as a particular use of deep-learning transformers. Tokens (try [the OpenAI Tokenizer](https://platform.openai.com/tokenizer)), pretraining vs. inference, RLHF and reasoning layers, the Opus / Sonnet / Haiku family.
-3. **The ChatGPT moment.** What already existed before November 30, 2022 — the GPT-3 API (June 2020), GitHub Copilot (June 2021). What the chatbot interface added: access. Why "the chatbot was the wrapping" is the most useful sentence to have in your back pocket.
+3. **The ChatGPT moment.** What already existed before November 30, 2022 — the GPT-3 API (June 2020), GitHub Copilot (June 2021). What the chatbot interface added: access. Why "the chatbot was the wrapping" is a useful sentence to have in your back pocket.
 4. **The current landscape and the agentic horizon.** A short survey of what people mean by "frontier" and "foundation" models — Claude (Anthropic), GPT-5 (OpenAI), Gemini (Google), Llama (Meta open weights). Where the conversation is shifting now: from *did the chatbot write this?* to *did the agent do the work?* Reading anchor: the Chronicle on agentic AI in higher ed.
 
 The hands-on portion runs through the second half:
@@ -97,7 +97,7 @@ We use Claude across the series for one practical reason: it is the model whose 
 
 ## Pedagogical Note
 
-We do not begin with awe and we do not begin with despair. We begin with sobriety. The students sitting in our courses this fall did not ask for this technology and many of them are anxious about it. The most useful thing we can do as instructors is to know where these systems came from, what an LLM actually is, what reasoning and human-feedback layers add on top, and refuse to gesture vaguely. After this session you should be able to explain to a colleague: *here is the ELIZA effect, here is what an LLM does, here is what changed on November 30, 2022, and here is what "agentic" means now.*
+We do not begin with awe and we do not begin with despair. We begin with sobriety. The students sitting in our courses this fall did not ask for this technology and many of them are anxious about it. One useful thing we can do as instructors is to know where these systems came from, what an LLM actually is, what reasoning and human-feedback layers add on top, and refuse to gesture vaguely. After this session you should be able to explain to a colleague: *here is the ELIZA effect, here is what an LLM does, here is what changed on November 30, 2022, and here is what "agentic" means now.*
 
 ## Cross-references
 

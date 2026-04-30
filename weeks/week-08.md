@@ -31,7 +31,7 @@ If you hit something that breaks — a build error, a deploy failure, a layout i
 
 - <span class="tag tag-light">Light</span> Farrell, Henry. ["After Software Eats the World, What Comes Out the Other End?"](https://www.programmablemutter.com/p/after-software-eats-the-world-what) October 3, 2024. (~25 min) Helpful framing for what you just did in W7.
 - <span class="tag tag-light">Light</span> Cohen, Dan. ["The Index and the Vector."](https://newsletter.dancohen.org) *Humane Ingenuity.* (~15 min) The DH-specific framing of what Code Web changes for archives and reference work.
-- <span class="tag tag-standard">Standard</span> Littman, *Code to Joy*, Chapters 2–3 (The What of Programming; Sequencing Commands). (~90 min) The most accessible introduction to programming concepts; a useful counterpoint to vibe-coding hype.
+- <span class="tag tag-standard">Standard</span> Littman, *Code to Joy*, Chapters 2–3 (The What of Programming; Sequencing Commands). (~90 min) An accessible introduction to programming concepts; a useful counterpoint to vibe-coding hype.
 - <span class="tag tag-standard">Standard</span> Willison, Simon. ["Beyond Vibe Coding."](https://simonwillison.net/2025/Sep/4/beyond-vibe-coding/) September 4, 2025. (~30 min) When the chat-driven model breaks down, and what to do.
 
 ## Exercise Menu — Pick Two or Three
