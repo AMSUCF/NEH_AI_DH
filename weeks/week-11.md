@@ -16,7 +16,7 @@ workshop:
 The hands-on portion is a writing exercise, not an installation: drafting a `CLAUDE.md` for your own work.
 
 <div class="workshop-callout" markdown="1">
-**NEH Workshop 6 — Tuesday, July 22, 10 AM – noon, CHDR**
+**NEH Workshop 6 — Wednesday, July 22, 10 AM – noon, CHDR**
 
 Streamed and recorded. Open to UCF faculty, graduate students, and the larger arts and humanities community. This is the last in-person session of the series, so we will reserve time for closing Q&A.
 

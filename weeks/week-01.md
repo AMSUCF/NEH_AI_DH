@@ -16,7 +16,7 @@ workshop:
 By the end of the session, every participant will have a working Claude account configured to their preferences and have built a small ELIZA-style chatbot together as a Claude Artifact.
 
 <div class="workshop-callout" markdown="1">
-**NEH Workshop 1 — Tuesday, May 13, 10 AM – noon, CHDR**
+**NEH Workshop 1 — Wednesday, May 13, 10 AM – noon, CHDR**
 
 Streamed and recorded. Open to UCF faculty, graduate students, and the larger arts and humanities community.
 
@@ -31,7 +31,7 @@ Streamed and recorded. Open to UCF faculty, graduate students, and the larger ar
 
 ## Pre-Workshop Reading
 
-Light prep before Tuesday so we can go deeper together:
+Light prep before Wednesday so we can go deeper together:
 
 - Berry, David M. ["The Limits of Computation: Joseph Weizenbaum and the ELIZA Chatbot."](https://ojs.weizenbaum-institut.de/index.php/wjds/article/view/106) *Weizenbaum Journal of the Digital Society* 3.3 (2023). (~25 min) The history piece we open the session with.
 - Mollick, Ethan. ["A Guide to Which AI to Use in the Agentic Era."](https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the) *One Useful Thing*, February 18, 2026. (~15 min) The argument that choosing AI tools now means thinking in three layers — model, app, and harness — rather than just "which model is best."

@@ -14,7 +14,7 @@ workshop:
 ---
 
 <div class="workshop-callout" markdown="1">
-**NEH Workshop 5 — Tuesday, July 8, 10 AM – noon, CHDR**
+**NEH Workshop 5 — Wednesday, July 8, 10 AM – noon, CHDR**
 
 Streamed and recorded. Open to UCF faculty, graduate students, and the larger arts and humanities community.
 

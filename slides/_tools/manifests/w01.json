@@ -7,7 +7,7 @@
       "layout": "cover",
       "title": "Workshop 1",
       "subtitle": "Introducing AI for DH Pedagogy",
-      "meta": "Tuesday, May 13, 2026 · 10 AM – noon · CHDR",
+      "meta": "Wednesday, May 13, 2026 · 10 AM – noon · CHDR",
       "image": {
         "src": "cover.webp",
         "alt": "HAL 9000 — the on-screen AI we've been arguing with for fifty years"
@@ -185,7 +185,7 @@
         "**RLHF** (Reinforcement Learning from Human Feedback): humans rank model outputs; the model learns to prefer the ranked-good ones.",
         "**System prompts**: invisible instructions that set tone, role, refusals.",
         "**Tools**: web search, code execution, file access — the model decides when to call them.",
-        "The Opus / Sonnet / Haiku family is **the same family of base models** at different sizes — your choice trades depth for speed and cost."
+        "**Claude has three models** that are regularly updated. **Opus** is the most expensive and also the most capable; **Sonnet** is in the middle; **Haiku** is the fastest, smallest, and cheapest. [Current model lineup →](https://platform.claude.com/docs/en/about-claude/models/overview)"
       ],
       "media": []
     },

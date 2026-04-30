@@ -8,7 +8,7 @@ title: NEH DH+AI Workshop Series
 - **Host:** Center for Humanities and Digital Research (CHDR), University of Central Florida
 - **Leads:** Dr. Anastasia Salter (anastasia at ucf.edu) and Dr. Mel Stanfill
 - **Term:** Summer C 2026 (May 12 – August 1)
-- **Workshops:** Six biweekly Tuesdays, 10 AM – noon at CHDR (streamed and recorded)
+- **Workshops:** Six biweekly Wednesdays, 10 AM – noon at CHDR (streamed and recorded)
 
 ## Contents
 
@@ -49,7 +49,7 @@ The series unfolds across four arcs:
 
 ## Schedule
 
-All workshops are at CHDR, 10 AM – noon, on Tuesdays. They are streamed and recorded; attendance is optional.
+All workshops are at CHDR, 10 AM – noon, on Wednesdays. They are streamed and recorded; attendance is optional.
 
 {% include weeks-grid.html %}
 

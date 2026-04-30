@@ -16,7 +16,7 @@ workshop:
 By the end of the session, every participant will have a live URL to either a deployed ePortfolio *or* a deployed dataset visualization, in their voice, in roughly 90 minutes.
 
 <div class="workshop-callout" markdown="1">
-**NEH Workshop 4 — Tuesday, June 24, 10 AM – noon, CHDR**
+**NEH Workshop 4 — Wednesday, June 24, 10 AM – noon, CHDR**
 
 Streamed and recorded. Open to UCF faculty, graduate students, and the larger arts and humanities community.
 

@@ -16,7 +16,7 @@ workshop:
 By the end of the session, every participant will have an Artifact gallery from their own image set with alt-text, structured metadata, and at least one comparative reading.
 
 <div class="workshop-callout" markdown="1">
-**NEH Workshop 3 — Tuesday, June 10, 10 AM – noon, CHDR**
+**NEH Workshop 3 — Wednesday, June 10, 10 AM – noon, CHDR**
 
 Streamed and recorded. Open to UCF faculty, graduate students, and the larger arts and humanities community.
 
