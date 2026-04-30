@@ -27,7 +27,7 @@ Streamed and recorded. Open to UCF faculty, graduate students, and the larger ar
 
 This is a demo-driven session because, for most of you, *installation isn't the move right now*. Specifically:
 
-- **UCF policy.** UCF does not currently allow faculty to install local agentic tools (Claude CLI, Ollama, MCP servers connected to local data) on university-owned computers without significant permissions review. The university's central IT and the College of Arts & Humanities are working through what an institutional path looks like; for now, the safer assumption is that local installation lives on your *personal* machine, on your own time.
+- **UCF policy.** UCF does not currently allow faculty to install local agentic tools (Claude CLI, Ollama, MCP servers connected to local data) on university-owned computers without significant permissions review. The university's central IT and the College of Arts & Humanities are working through what an institutional path looks like; for now, the safer assumption is that local installation lives on your *personal* machine, on your own time. The current institutional landscape is at [UCF AI Resources](https://aiforall.ucf.edu/resources/).
 - **Your students likely will install these.** Especially anyone going into industry roles, library/archive work, or research-adjacent careers. Knowing what these tools *do* — even without running them — is part of what they need from us.
 - **The pedagogical question is therefore: what do you teach people to recognize, even if you don't teach them to install?**
 
