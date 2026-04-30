@@ -57,7 +57,7 @@ The hands-on portion runs through the second half:
    1. **[Google Gemini](https://gemini.google.com/)** — free, fast, integrated with Google's ecosystem; the model many of our students already use.
    2. **[DeepSeek](https://chat.deepseek.com/)** running locally through **[Ollama](https://ollama.com/)** — an open-weights model on a personal machine, no API call, no data leaving the room. The "what does *local* feel like" demo.
    3. **[ChatGPT](https://chat.openai.com/)** — the chatbot that defined the genre, OpenAI's flagship.
-   4. **[UCF Copilot](https://cdl.ucf.edu/faculty-multimedia-center-ai-tools/)** — the institutional option most of you already have. Microsoft's wrapper around an OpenAI model, with UCF's data-privacy framing on top. **This is the only tool UCF currently supports or allows for use with restricted data.**
+   4. **[UCF Copilot](https://cdl.ucf.edu/faculty-multimedia-center-ai-tools/)** — the institutional option most of you already have. Microsoft's wrapper around an OpenAI model, with UCF's data-privacy framing on top. **This is the only tool UCF currently supports or allows for use with restricted data.** See [UCF AI Resources](https://aiforall.ucf.edu/resources/) for the current policy.
    5. **[Claude](https://claude.ai/)** — Anthropic's flagship; the tool we use for the rest of the series.
    We will be moving back and forth between these throughout the workshop while prioritizing Claude, to build an understanding of the different tools available.
 6. **Why Claude / why Anthropic.**
