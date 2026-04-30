@@ -53,13 +53,12 @@ On copyright (skim before the discussion):
 
 1. Create a fresh Project. Upload all texts.
 2. Run the analytical sequence: stopword filter → bag-of-words → key phrases → character or theme network → comparative read across the texts.
-3. Ask Claude to generate an **Artifact** that visualizes one finding (a word cloud, a frequency chart, a network diagram, a comparative table).
+3. Ask Claude to generate **Artifacts** that visualize the findings — word clouds, frequency charts, network diagrams, comparative tables, thematic timelines. **We will generate at least five different artifacts and iterate** on the prompts and choices in between.
 4. Critique what you see. Compare to what you would have noticed in close reading. Document at least one place Claude got it wrong.
-5. **Write one paragraph about the copyright status of your corpus.** *What did you upload, what gives you the right to upload it, and where would you draw the line?* This is the half of the assignment students often skip; do it for yourself first.
 
 ## Pedagogical Note
 
-The point of this exercise is not the visualization. The point is the *iteration.* Notice when you have to push back, refine, ask Claude to reconsider. That iteration is the actual humanities work — and it is teachable. When you bring this exercise into a course, scaffold the iteration explicitly: "show me three prompts you tried before you got the result you used." And scaffold the copyright reflection: "tell me what you uploaded and why you had the right to."
+The point of this exercise is not the visualization. The point is the *iteration.* Notice when you have to push back, refine, ask Claude to reconsider. That iteration is the actual humanities work — and it is teachable. When you bring this exercise into a course, scaffold the iteration explicitly: "show me three prompts you tried before you got the result you used."
 
 ## Cross-references
 
