@@ -34,7 +34,7 @@ Streamed and recorded. Open to UCF faculty, graduate students, and the larger ar
 Light prep before Tuesday so we can go deeper together:
 
 - Berry, David M. ["The Limits of Computation: Joseph Weizenbaum and the ELIZA Chatbot."](https://ojs.weizenbaum-institut.de/index.php/wjds/article/view/106) *Weizenbaum Journal of the Digital Society* 3.3 (2023). (~25 min) The history piece we open the session with.
-- Willison, Simon. *[How Coding Agents Work](https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/).* Read the introduction and the LLM-basics section. (~15 min) The plain-English explainer of what an LLM is and what tokens are.
+- Mollick, Ethan. ["A Guide to Which AI to Use in the Agentic Era."](https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the) *One Useful Thing*, February 18, 2026. (~15 min) The argument that choosing AI tools now means thinking in three layers — model, app, and harness — rather than just "which model is best."
 - Mollick, Ethan. ["Assigning AI: Seven Ways of Using AI in Class."](https://www.oneusefulthing.org/p/assigning-ai-seven-ways-of-using) *One Useful Thing.* (~10 min) The most useful 10-minute read in the series for new adopters.
 
 Optional, if you want to be a step ahead:
@@ -60,10 +60,10 @@ The hands-on portion runs through the second half:
    4. **[UCF Copilot](https://cdl.ucf.edu/faculty-multimedia-center-ai-tools/)** — the institutional option most of you already have. Microsoft's wrapper around an OpenAI model, with UCF's data-privacy framing on top.
    5. **[Claude](https://claude.ai/)** — Anthropic's flagship; the tool we use for the rest of the series.
    We notice what each one does the same and what each one does differently with our prompt. The point is **comparative literacy**: you cannot recommend (or refuse) a tool you have not actually talked to.
-6. **Why Claude / why Anthropic.** Three honest reasons — not a marketing pitch:
+6. **Why Claude / why Anthropic.**
    - **Tool surface.** Projects + Artifacts + Code Web + CLI is currently the broadest set of *non-coder-accessible* tools across any provider. The conceptual framework transfers, but right now the build path is best on Claude.
    - **Safety + interpretability research culture.** Anthropic publishes more on alignment and model behavior than its peers; for a humanities audience, that publication record is part of what we're choosing.
-   - **Disclosure.** I (Anastasia) have an ongoing collaboration with Anthropic. That's a reason to ask harder questions about my recommendations, not to assume them. The series is designed so the framework transfers if you choose a different tool — and I'll point at where it would.
+   - The series is designed so the framework transfers if you choose a different tool — and I'll point at where it would.
 7. **Setting up Claude.** Subscription confirmation. Settings tour (model selection, conversation history, custom instructions, voice mode if available, Artifacts toggle). Style preferences. Why these choices matter for the rest of the series.
 8. **Build our own ELIZA in a Claude Artifact (group exercise).** Prompt Claude together to construct a Rogerian-style chatbot Artifact in the spirit of Weizenbaum's 1966 original — but with stylistic latitude. Try it. Compare to the masswerk ELIZA. Observe where the ELIZA effect kicks in, sixty years on.
 
