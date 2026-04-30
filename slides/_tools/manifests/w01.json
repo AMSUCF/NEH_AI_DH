@@ -364,10 +364,10 @@
       "id": "exercise-build-eliza",
       "layout": "exercise",
       "title": "Build our own ELIZA — together, in Claude Artifacts",
-      "prompt": "We close where we opened. Same idea, sixty years later, with room for our own voice:",
+      "prompt": "Each person picks a style, tone, and subject based on your own interests — something tied to your discipline, your teaching, or a corner of your life you'd be willing to talk to a chatbot about. The pattern is the constraint; the personality and the topic are yours.",
       "steps": [
         "Open [Claude](https://claude.ai/) and start a new chat.",
-        "Prompt together: *\"Build a Claude Artifact: a chatbot **in the spirit of** Weizenbaum's 1966 ELIZA — pattern-match the user's input and reflect it back as questions. Style and tone are yours: a snarky librarian, a doom-prophet, a noir detective, a Rogerian therapist. Don't pretend to know more than the pattern.\"*",
+        "Prompt: *\"Build a Claude Artifact: a chatbot **in the spirit of** Weizenbaum's 1966 ELIZA — pattern-match the user's input and reflect it back as questions. Don't pretend to know more than the pattern.\"* Then add your own style, tone, and subject.",
         "Open the Artifact in the side panel. Talk to it the way you talked to ELIZA earlier.",
         "**Compare.** What does Claude do that pattern-matching can't? What does it do that pattern-matching *also* did? Where does the ELIZA effect kick in this time?",
         "Save the Artifact URL — bring the comparison to next week's discussion."

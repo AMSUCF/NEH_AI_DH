@@ -71,8 +71,10 @@ The hands-on portion runs through the second half:
 
 **Build our own ELIZA — together, in Claude Artifacts.** This is the workshop's closing exercise and the asynchronous equivalent for those who cannot attend.
 
+> *Pick a style, tone, and subject of your own based on your own interests* — something connected to your discipline, your teaching, or a corner of your life you'd be willing to talk to a chatbot about. The pattern is the constraint; the personality and the topic are yours.
+
 1. Open [Claude](https://claude.ai/) and start a new chat.
-2. Prompt: *"Build a Claude Artifact: a chatbot **in the spirit of** Weizenbaum's 1966 ELIZA — pattern-match the user's input and reflect it back as questions. Style and tone are yours: a snarky librarian, a doom-prophet, a noir detective, a Rogerian therapist. Don't pretend to know more than the pattern."*
+2. Prompt: *"Build a Claude Artifact: a chatbot **in the spirit of** Weizenbaum's 1966 ELIZA — pattern-match the user's input and reflect it back as questions. Don't pretend to know more than the pattern."* Then add your own style, tone, and subject.
 3. Open the Artifact in the side panel. Talk to it the way you talked to the masswerk ELIZA.
 4. **Compare.** What does Claude do that pattern-matching can't? What does it do that pattern-matching *also* did? Where does the ELIZA effect kick in this time?
 5. Save the Artifact URL — bring it to the W2 async discussion.
