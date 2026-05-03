@@ -1,6 +1,6 @@
 ---
 layout: default
-title: NEH DH+AI Workshop Series
+title: NEH AI+DH Workshop Series
 ---
 
 - **Project:** *Building a Digital Humanities Generative AI Learning Community*
