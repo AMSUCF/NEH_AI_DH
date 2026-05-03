@@ -1,3 +1,8 @@
+{%- comment -%}
+Last unlocked week. Weeks above this render as disabled "Coming soon" tiles
+with no link. Bump this number as new weeks are released.
+{%- endcomment -%}
+{%- assign last_open_week = 2 -%}
 {% assign weekpages = site.pages | where_exp:"p","p.week" | sort:"week" %}
 {%- assign workshop_colors = "coral,cobalt,mustard,plum" | split: "," -%}
 {%- assign workshop_seen = 0 -%}
@@ -12,14 +17,30 @@
   {%- else -%}
     {%- assign block_class = "is-async" -%}
     {%- assign label = "Async" -%}
+  {%- endif -%}
+  {%- if w.week > last_open_week -%}
+    {%- assign block_class = block_class | append: " is-locked" -%}
+    {%- assign locked = true -%}
+  {%- else -%}
+    {%- assign locked = false -%}
   {%- endif %}
   <li class="week-block {{ block_class }}">
+    {% if locked %}
+    <div class="week-block-link" aria-disabled="true">
+      <span class="week-num">W{{ w.week }}</span>
+      <span class="week-kind">{{ label }}</span>
+      <span class="week-theme">{{ w.theme }}</span>
+      {% if w.workshop.date %}<span class="week-date">{{ w.workshop.date | date: "%a %b %-d" }}</span>{% endif %}
+      <span class="week-soon">Coming soon</span>
+    </div>
+    {% else %}
     <a class="week-block-link" href="{{ w.url | relative_url }}">
       <span class="week-num">W{{ w.week }}</span>
       <span class="week-kind">{{ label }}</span>
       <span class="week-theme">{{ w.theme }}</span>
       {% if w.workshop.date %}<span class="week-date">{{ w.workshop.date | date: "%a %b %-d" }}</span>{% endif %}
     </a>
+    {% endif %}
   </li>
 {% endfor %}
 </ol>

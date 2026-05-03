@@ -2,7 +2,12 @@
 Detailed week-by-week schedule cards. Pulls every page with a `week:` field
 and renders an opener paragraph, key meta, and links. Workshop weeks use
 the same coral / cobalt / mustard / plum rotation as the home-page grid.
+
+Weeks above `last_open_week` render as locked "Coming soon" cards: title is
+plain text, week-page link and slide-deck link are suppressed. Bump the
+threshold as new weeks are released.
 {%- endcomment -%}
+{%- assign last_open_week = 2 -%}
 {% assign weekpages = site.pages | where_exp:"p","p.week" | sort:"week" %}
 {%- assign workshop_colors = "coral,cobalt,mustard,plum" | split: "," -%}
 {%- assign workshop_seen = 0 -%}
@@ -22,7 +27,13 @@ the same coral / cobalt / mustard / plum rotation as the home-page grid.
     {%- assign card_class = "is-async" -%}
     {%- assign label = "Async" -%}
     {%- assign deck_url = nil -%}
-  {%- endif %}
+  {%- endif -%}
+  {%- if w.week > last_open_week -%}
+    {%- assign card_class = card_class | append: " is-locked" -%}
+    {%- assign locked = true -%}
+  {%- else -%}
+    {%- assign locked = false -%}
+  {%- endif -%}
   {%- if w.summary -%}
     {%- assign opener = w.summary | strip -%}
   {%- else -%}
@@ -43,16 +54,28 @@ the same coral / cobalt / mustard / plum rotation as the home-page grid.
       {% else %}
         <span class="schedule-date">starts {{ w.starts | date: "%b %-d" }}</span>
       {% endif %}
+      {% if locked %}<span class="schedule-soon">Coming soon</span>{% endif %}
     </header>
     <h3 class="schedule-title">
-      <a href="{{ w.url | relative_url }}">{{ w.title }}</a>
+      {% if locked %}
+        {{ w.title }}
+      {% else %}
+        <a href="{{ w.url | relative_url }}">{{ w.title }}</a>
+      {% endif %}
     </h3>
     {% if w.theme %}<p class="schedule-theme">{{ w.theme }}</p>{% endif %}
     <p class="schedule-opener">{{ opener }}</p>
     <p class="schedule-actions">
-      <a class="schedule-link" href="{{ w.url | relative_url }}">Full week page →</a>
-      {% if deck_url %}
-        <a class="schedule-link schedule-link-deck" href="{{ deck_url | relative_url }}">Slide deck →</a>
+      {% if locked %}
+        <span class="schedule-link is-disabled" aria-disabled="true">Full week page (coming soon)</span>
+        {% if deck_url %}
+          <span class="schedule-link schedule-link-deck is-disabled" aria-disabled="true">Slide deck (coming soon)</span>
+        {% endif %}
+      {% else %}
+        <a class="schedule-link" href="{{ w.url | relative_url }}">Full week page →</a>
+        {% if deck_url %}
+          <a class="schedule-link schedule-link-deck" href="{{ deck_url | relative_url }}">Slide deck →</a>
+        {% endif %}
       {% endif %}
     </p>
   </li>

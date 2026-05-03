@@ -572,6 +572,58 @@ a:hover, a:focus {
   .schedule-num { font-size: 1.3rem; }
 }
 
+/* ===== Locked / "coming soon" states (weeks not yet released) ===== */
+
+/* Schedule cards: dim the body, mute the color rotation, make actions inert. */
+.schedule-card.is-locked {
+  opacity: 0.62;
+  background: var(--bone);
+  color: var(--ink);
+  box-shadow: none;
+  border-style: dashed;
+}
+.schedule-card.is-locked .schedule-theme,
+.schedule-card.is-locked .schedule-opener { color: var(--ink); }
+.schedule-soon {
+  margin-left: auto;
+  padding: 0.1rem 0.55rem;
+  border: 1.5px dashed currentColor;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.schedule-link.is-disabled {
+  cursor: not-allowed;
+  border-bottom-style: dashed;
+  opacity: 0.85;
+}
+.schedule-link.is-disabled:hover { background: transparent; }
+
+/* Weeks grid: same dim treatment, no hover lift, "Coming soon" badge in-flow. */
+.week-block.is-locked {
+  opacity: 0.6;
+  background: var(--bone) !important;
+  color: var(--ink) !important;
+}
+.week-block.is-locked:hover {
+  transform: none;
+  box-shadow: none;
+}
+.week-block.is-locked .week-block-link {
+  cursor: not-allowed;
+}
+.week-soon {
+  margin-top: 0.4rem;
+  align-self: flex-start;
+  padding: 0.1rem 0.5rem;
+  border: 1.25px dashed currentColor;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 /* ===== Workshop callout — animated stitched border ===== */
 .workshop-callout {
   position: relative;
