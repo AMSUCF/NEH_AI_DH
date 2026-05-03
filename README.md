@@ -1,4 +1,4 @@
-# NEH DH+AI Workshop Series
+# NEH AI+DH Workshop Series
 
 Course site for *Building a Digital Humanities Generative AI Learning Community*, a National Endowment for the Humanities-funded project at the University of Central Florida (Summer C 2026, May 12 – August 1).
 
