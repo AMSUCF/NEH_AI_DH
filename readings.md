@@ -135,4 +135,4 @@ The full reading lists for related courses are linked here for reference:
 
 - Salter. ENG 6806 *Humanities in the Age of AI* — see the [HumanitiesAI course site](https://amsucf.github.io/HumanitiesAI/).
 - Salter. ENG 6819 *Critical Making in Digital Humanities* — see the [CriticalMaking2026 course site](https://amsucf.github.io/CriticalMaking2026/).
-- Salter & Murray. *DH+AI 2026* — see the [DHSI 2026 course site](https://amsucf.github.io/DHSI_DH_AI_2026/).
+- Salter & Murray. *AI+DH 2026* — see the [DHSI 2026 course site](https://amsucf.github.io/DHSI_DH_AI_2026/).
