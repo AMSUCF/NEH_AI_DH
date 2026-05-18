@@ -74,7 +74,7 @@ Notice what each tool *lets you control* (model selection, custom instructions, 
 
 ## What to Carry Into Workshop 2
 
-If you do nothing else this week, **assemble three to ten short texts you might want to analyze during the workshop session** — chapters, articles, primary sources, student writing samples, anything you would assign or study. Bring them as plain text or PDFs. We will upload them to a fresh Project on May 27.
+If you do nothing else this week, **assemble three to ten short texts you might want to analyze during the workshop session** — chapters, articles, primary sources, or anything you would assign or study: we'll discuss copyright and fair use during the workshop. Bring them as plain text or PDFs. We will upload them to a fresh Project on May 27.
 
 Also worth bringing: **the questions and frustrations you accumulated** while clicking around. The point of this week is to get stuck enough to have something to ask.
 
