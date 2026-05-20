@@ -301,9 +301,9 @@
     {
       "id": "law-student",
       "layout": "image-bullets",
-      "title": "AI is now an LA law student",
+      "title": "AI is now an A+ law student",
       "bullets": [
-        "Reuters: AI is now an LA law student.",
+        "Reuters: AI is now an A+ law student.",
         "When the model takes the class, what does the credential certify?"
       ],
       "image": {
@@ -403,9 +403,7 @@
     },
     {
       "id": "kenyan-labor",
-      "layout": "quote",
-      "quote": "Time reported that OpenAI had subcontracted Kenyan workers making less than two dollars a day to filter out gore, hate speech, child sexual abuse material, and pornographic images from ChatGPT and OpenAI's image-generation tool.",
-      "attribution": "Bender & Hanna, on the labor that made the chatbot less toxic",
+      "layout": "image-only",
       "image": {
         "src": "time.webp",
         "alt": "TIME headline: 'OpenAI Used Kenyan Workers on Less Than $2 Per Hour to Make ChatGPT Less Toxic'"
