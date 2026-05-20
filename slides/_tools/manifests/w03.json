@@ -454,6 +454,13 @@
       "media": []
     },
     {
+      "id": "demo-skills",
+      "layout": "demo-slot",
+      "title": "A textual-analysis Skill",
+      "note": "I'll build a simple textual-analysis Skill live — a reusable instruction set Claude loads on demand. You'll build your own in the Week 4 async, using Anthropic's [Complete Guide to Building Skills for Claude](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf).",
+      "media": []
+    },
+    {
       "id": "exercise-corpus",
       "layout": "exercise",
       "title": "Distant reading with Claude Projects",
