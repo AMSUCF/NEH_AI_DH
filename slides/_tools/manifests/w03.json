@@ -111,6 +111,14 @@
       ]
     },
     {
+      "id": "luddite-lab",
+      "layout": "iframe",
+      "title": "Luddite Lab",
+      "url": "https://labor.dair-institute.org/",
+      "caption": "DAIR Institute: [labor.dair-institute.org](https://labor.dair-institute.org/)",
+      "media": []
+    },
+    {
       "id": "luddites",
       "layout": "quote",
       "quote": [
