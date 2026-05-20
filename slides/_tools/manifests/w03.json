@@ -224,11 +224,19 @@
     },
     {
       "id": "serpent-in-the-grove",
-      "layout": "iframe",
-      "title": "The Serpent in the Grove",
-      "url": "https://granta.com/the-serpent-in-the-grove/",
-      "caption": "Live page: [granta.com/the-serpent-in-the-grove](https://granta.com/the-serpent-in-the-grove/)",
-      "media": []
+      "layout": "image-only",
+      "image": {
+        "src": "granta-story.webp",
+        "alt": "Screenshot of the Granta story 'The Serpent in the Grove' by Jamir Nasir, introduced as the 2024 Commonwealth Short Story Prize winner amid suspicion the entry was AI-generated, followed by the opening of the story"
+      },
+      "caption": "\"The Serpent in the Grove,\" Jamir Nasir — [granta.com/the-serpent-in-the-grove](https://granta.com/the-serpent-in-the-grove/)",
+      "media": [
+        {
+          "path": "Granta_story.png",
+          "as": "granta-story",
+          "kind": "image"
+        }
+      ]
     },
     {
       "id": "distant-reading",
