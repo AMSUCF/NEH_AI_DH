@@ -443,8 +443,8 @@
       "id": "claude-projects",
       "layout": "section",
       "kicker": "Part 2",
-      "title": "Live demo: Claude Projects",
-      "lead": "A small corpus I have not opened before. We walk: preprocessing → bag-of-words → key phrases → comparative passages → thematic network.",
+      "title": "Live demos: Projects and Skills",
+      "lead": "First a corpus I haven't opened — preprocessing → bag-of-words → key phrases → comparative passages → thematic network — then a simple, reusable textual-analysis Skill.",
       "media": []
     },
     {
