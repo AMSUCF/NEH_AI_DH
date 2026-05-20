@@ -2,7 +2,7 @@
 Last unlocked week. Weeks above this render as disabled "Coming soon" tiles
 with no link. Bump this number as new weeks are released.
 {%- endcomment -%}
-{%- assign last_open_week = 2 -%}
+{%- assign last_open_week = 3 -%}
 {% assign weekpages = site.pages | where_exp:"p","p.week" | sort:"week" %}
 {%- assign workshop_colors = "coral,cobalt,mustard,plum" | split: "," -%}
 {%- assign workshop_seen = 0 -%}

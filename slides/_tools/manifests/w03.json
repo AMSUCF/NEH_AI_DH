@@ -22,6 +22,207 @@
       ]
     },
     {
+      "id": "ai-con-automation",
+      "layout": "quote",
+      "quote": [
+        "From the start of the industrial revolution, workers have had to contend with displacement via automation and have resisted it for just as long.",
+        "One of the hallmarks of the beginning of this age was the concomitant rise of innovative technologies advertised to make work easier and simpler, and to increase productivity.",
+        "Like modern AI boosters, those selling new technologies promised that they would usher in a rising tide that lifted up workers and business owners alike."
+      ],
+      "attribution": "*The AI Con*, p. 43",
+      "media": []
+    },
+    {
+      "id": "commencement-rage",
+      "layout": "image-only",
+      "image": {
+        "src": "commencement.webp",
+        "alt": "The Fine Print headline by Karl Bode, 'AI Rage Is Inextricably Fused With Justified Loathing Of The Extraction Class. Deal With It,' over a photo of a commencement speaker in academic regalia at a podium"
+      },
+      "caption": "Karl Bode, *The Fine Print*",
+      "media": [
+        {
+          "path": "commencement.png",
+          "as": "commencement",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "textpocalypse-1",
+      "layout": "image-only",
+      "image": {
+        "src": "textpocalypse-1.webp",
+        "alt": "The Atlantic headline 'Prepare for the Textpocalypse,' by Matthew Kirschenbaum, with an illustration of a meteor striking an open book"
+      },
+      "caption": "Matthew Kirschenbaum, *The Atlantic*: \"Prepare for the Textpocalypse\"",
+      "media": [
+        {
+          "path": "textpocalypse.png",
+          "as": "textpocalypse-1",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "textpocalypse-2",
+      "layout": "image-only",
+      "image": {
+        "src": "textpocalypse-2.webp",
+        "alt": "Excerpt from 'Prepare for the Textpocalypse' on AI-generated text, spam, and content moderation"
+      },
+      "media": [
+        {
+          "path": "textpocalypse2.png",
+          "as": "textpocalypse-2",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "textpocalypse-3",
+      "layout": "image-only",
+      "image": {
+        "src": "textpocalypse-3.webp",
+        "alt": "Excerpt from 'Prepare for the Textpocalypse' on workplace writing, lock-in, and the enshittification of text"
+      },
+      "media": [
+        {
+          "path": "textpocalypse3.png",
+          "as": "textpocalypse-3",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "looms",
+      "layout": "image-only",
+      "image": {
+        "src": "looms.webp",
+        "alt": "19th-century engraving of two workers smashing a power loom with a sledgehammer"
+      },
+      "caption": "Breaking the frames: a 19th-century image of Luddite machine-breaking",
+      "media": [
+        {
+          "path": "looms.jpg",
+          "as": "looms",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "luddites",
+      "layout": "quote",
+      "quote": [
+        "Luddites were not against technology.",
+        "Some Luddites, weavers in particular, were into technologies that helped evaluate the quality of their work — for instance, being able to count the number of threads per inch, such that they could fetch a higher price at the market.",
+        "They were instead against technologies of control and coercion, and concerned about the loss of jobs, health, and community."
+      ],
+      "attribution": "*The AI Con*, p. 45",
+      "media": []
+    },
+    {
+      "id": "fiesler-bluesky",
+      "layout": "embed",
+      "title": "The Luddites, reconsidered",
+      "embed_html": "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"at://did:plc:rrjvo5jwuateqep2i7ih5ckl/app.bsky.feed.post/3mm4y4rm7ws2x\" data-bluesky-cid=\"bafyreidqygmf5z3fwijbd5lyfpfd5rs6opevzskphoipxbedimhgsq4r7m\" data-bluesky-embed-color-mode=\"system\"><p lang=\"en\">I saw someone referring to the booing of commencement speakers talking about AI as a tantrum from students who don’t understand technology. That made me think that I bet machine breaking was also perceived as a tantrum. Anyway, here’s some thoughts about the Luddites.<br><br><a href=\"https://bsky.app/profile/did:plc:rrjvo5jwuateqep2i7ih5ckl/post/3mm4y4rm7ws2x?ref_src=embed\">[image or embed]</a></p>&mdash; Dr. Casey Fiesler (<a href=\"https://bsky.app/profile/did:plc:rrjvo5jwuateqep2i7ih5ckl?ref_src=embed\">@cfiesler.bsky.social</a>) <a href=\"https://bsky.app/profile/did:plc:rrjvo5jwuateqep2i7ih5ckl/post/3mm4y4rm7ws2x?ref_src=embed\">May 18, 2026 at 9:27 AM</a></blockquote><script async src=\"https://embed.bsky.app/static/embed.js\" charset=\"utf-8\"></script>",
+      "media": []
+    },
+    {
+      "id": "dead-web",
+      "layout": "image-only",
+      "image": {
+        "src": "dead-web.webp",
+        "alt": "The Economist headline 'AI is killing the web. Can anything save it?' with a tombstone reading 'The World Wide Web 1989–2025'"
+      },
+      "caption": "*The Economist*: \"[AI is killing the web. Can anything save it?](https://www.economist.com/business/2025/07/14/ai-is-killing-the-web-can-anything-save-it)\"",
+      "media": [
+        {
+          "path": "deadweb.png",
+          "as": "dead-web",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "ai-use",
+      "layout": "image-only",
+      "image": {
+        "src": "ai-use.webp",
+        "alt": "404 Media headline 'Your AI Use Is Breaking My Brain,' by Jason Koebler, over a photo of a decaying typewriter"
+      },
+      "caption": "[404 Media: \"Your AI Use Is Breaking My Brain\"](https://www.404media.co/your-ai-use-is-breaking-my-brain/)",
+      "media": [
+        {
+          "path": "aiuse.png",
+          "as": "ai-use",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "koebler-brain",
+      "layout": "quote",
+      "quote": [
+        "To browse the internet today, to consume any sort of content at all, is to be bombarded with AI of all sorts. People think things that are fake are real, things that are real are fake.",
+        "Much has been written about 'AI psychosis,' the nonspecific, nonscientific diagnosis given to people who have lost themselves to AI. Less has been said about the cognitive load of what other people's AI use is doing to the rest of us.",
+        "Our brains are now performing untold numbers of calculations per day: Is this AI? Do I care if it's AI? Why does this sound or look or read so weird? Does this person just write like this? Is this a person at all?"
+      ],
+      "attribution": "Jason Koebler, [*404 Media*](https://www.404media.co/your-ai-use-is-breaking-my-brain/)",
+      "media": []
+    },
+    {
+      "id": "enshittification",
+      "layout": "quote",
+      "quote": [
+        "In the early 2000s, replacing hand-curated indexes like Lycos and Yahoo! seemed like a large boon for those struggling to navigate the unstructured web.",
+        "But now Google Search itself structures the web, and not in a way that benefits the broader public: Google is first and foremost in the business of selling ads, not providing helpful access to information.",
+        "Google's advertising model has led to an inferior product — what author and technology critic Cory Doctorow has called 'enshittification.'"
+      ],
+      "attribution": "*The AI Con*, p. 51",
+      "media": []
+    },
+    {
+      "id": "googling-then-now",
+      "layout": "image-only",
+      "image": {
+        "src": "search.webp",
+        "alt": "Hand-drawn cartoon, 'Googling Stuff... Then vs Now': 'Then' returns one result, 'the thing you want'; 'Now' returns AI nonsense, three sponsored results, People Also Ask, and View Products"
+      },
+      "caption": "Amy Jacobson, via LinkedIn",
+      "media": [
+        {
+          "path": "search.png",
+          "as": "search",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "granta-prize",
+      "layout": "image-only",
+      "image": {
+        "src": "granta.webp",
+        "alt": "Text from Granta describing how a Commonwealth Short Story Prize winner was suspected of being AI-generated, and Claude's assessment that the story was 'almost certainly not produced unaided by a human'"
+      },
+      "caption": "Sigrid Rausing, Publisher of *Granta*",
+      "media": [
+        {
+          "path": "granta.png",
+          "as": "granta",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "serpent-in-the-grove",
+      "layout": "iframe",
+      "title": "The Serpent in the Grove",
+      "url": "https://granta.com/the-serpent-in-the-grove/",
+      "caption": "Live page: [granta.com/the-serpent-in-the-grove](https://granta.com/the-serpent-in-the-grove/)",
+      "media": []
+    },
+    {
       "id": "distant-reading",
       "layout": "section",
       "kicker": "Part 1",
@@ -32,22 +233,21 @@
     {
       "id": "moretti-underwood",
       "layout": "image-bullets",
-      "title": "Two genealogies, one method",
+      "title": "Distant reading: from Voyant to Claude",
       "bullets": [
         "**Moretti, 2000s:** the literary system at scale — what a single book hides, a thousand reveal.",
         "**Underwood, 2010s–:** stylometrics, character networks, century-long trends.",
         "**Voyant, classroom:** word counts and concordances democratized to the seminar room.",
-        "Claude Projects: multi-text, multi-format, multi-turn — humanities-scale, not big-data scale."
+        "**Claude Projects:** multi-text, multi-format, multi-turn — humanities-scale, not big-data scale."
       ],
       "image": {
-        "src": "distant-reading.webp",
-        "alt": "Distant-reading-tradition illustration"
+        "src": "voyant.webp",
+        "alt": "Voyant Tools dashboard showing a word cloud, reader pane, and term-frequency trends for a corpus of course materials"
       },
       "media": [
         {
-          "source": "AI_Week_Four",
-          "file": "image9.png",
-          "as": "distant-reading",
+          "path": "voyant.png",
+          "as": "voyant",
           "kind": "image"
         }
       ]
@@ -66,7 +266,7 @@
       "title": "Killing the billable hour",
       "bullets": [
         "Eudia and other legal-tech startups pitching AI as the end of the billable hour.",
-        "Reuters: AI is now an LA law student.",
+        "[NYT: A.I. hallucinations created errors in a court filing, top law firm says.](https://www.nytimes.com/2026/04/21/nyregion/sullivan-cromwell-ai-hallucination.html)",
         "When a profession decides 'reading' is automatable, what gets lost?"
       ],
       "image": {
@@ -78,6 +278,27 @@
           "source": "AI_Week_Four",
           "file": "image11.png",
           "as": "legal-billable",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "law-student",
+      "layout": "image-bullets",
+      "title": "AI is now an LA law student",
+      "bullets": [
+        "Reuters: AI is now an LA law student.",
+        "When the model takes the class, what does the credential certify?"
+      ],
+      "image": {
+        "src": "claude-fails.webp",
+        "alt": "Critique-the-AI illustration"
+      },
+      "media": [
+        {
+          "source": "AI_Week_Four",
+          "file": "image19.png",
+          "as": "claude-fails",
           "kind": "image"
         }
       ]
@@ -111,7 +332,7 @@
       "bullets": [
         "Futurism: students openly use ChatGPT for homework.",
         "OpenAI tracks the use as growth, not failure.",
-        "Our problem isn't enforcement. Our problem is teaching reading as a *practice* students can do *with* the tool."
+        "This type of usage for skipping the reading is more naive than distant reading: it puts trust in the model's interpretation."
       ],
       "image": {
         "src": "student-cheating.webp",
@@ -122,6 +343,36 @@
           "source": "AI_Week_Four",
           "file": "image52.png",
           "as": "student-cheating",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "handwriting",
+      "layout": "two-image",
+      "title": "Where AI earns its keep: handwriting",
+      "lead": "AI is more useful for approaching texts that offer challenges computation can resolve — for example, handwriting.",
+      "images": [
+        {
+          "src": "handwriting.webp",
+          "alt": "A handwritten 1799 letter from Charles Carroll of Carrollton",
+          "caption": "The manuscript: a 1799 letter"
+        },
+        {
+          "src": "gemini.webp",
+          "alt": "Gemini 3 Pro's typed transcription of the handwritten 1799 letter",
+          "caption": "Gemini 3 Pro's transcription"
+        }
+      ],
+      "media": [
+        {
+          "path": "handwriting.png",
+          "as": "handwriting",
+          "kind": "image"
+        },
+        {
+          "path": "gemini.png",
+          "as": "gemini",
           "kind": "image"
         }
       ]
@@ -138,16 +389,15 @@
       "id": "kenyan-labor",
       "layout": "quote",
       "quote": "Time reported that OpenAI had subcontracted Kenyan workers making less than two dollars a day to filter out gore, hate speech, child sexual abuse material, and pornographic images from ChatGPT and OpenAI's image-generation tool.",
-      "attribution": "Bender & Hanna, on the labor that made the chatbot polite",
+      "attribution": "Bender & Hanna, on the labor that made the chatbot less toxic",
       "image": {
-        "src": "kenyan-labor.webp",
-        "alt": "Hidden-labor article context"
+        "src": "time.webp",
+        "alt": "TIME headline: 'OpenAI Used Kenyan Workers on Less Than $2 Per Hour to Make ChatGPT Less Toxic'"
       },
       "media": [
         {
-          "source": "AI_Week_Three",
-          "file": "image24.jpeg",
-          "as": "kenyan-labor",
+          "path": "time.png",
+          "as": "time",
           "kind": "image"
         }
       ]
@@ -157,19 +407,18 @@
       "layout": "image-bullets",
       "title": "The training set is also a legal record",
       "bullets": [
-        "August 2025: authors celebrate a historic settlement in the Anthropic class action.",
+        "September 2025: authors settle for $1.5 billion in the first-of-its-kind Anthropic copyright suit.",
         "The training corpus is the legal exhibit.",
         "Where does *your* writing sit inside that record?"
       ],
       "image": {
-        "src": "anthropic-settlement.webp",
-        "alt": "Anthropic settlement article"
+        "src": "anthropic-npr.webp",
+        "alt": "NPR headline: 'Anthropic settles with authors in first-of-its-kind AI copyright infringement lawsuit,' with a phone showing the Anthropic logo"
       },
       "media": [
         {
-          "source": "AI_Week_Three",
-          "file": "image28.png",
-          "as": "anthropic-settlement",
+          "path": "anthropic-npr.png",
+          "as": "anthropic-npr",
           "kind": "image"
         }
       ]
@@ -186,7 +435,6 @@
       "id": "demo-corpus",
       "layout": "demo-slot",
       "title": "A corpus I haven't opened",
-      "note": "Watch the iteration. Notice when I push back, ask Claude to reconsider, point out a mistake. The iteration is the humanities work.",
       "media": []
     },
     {
@@ -199,85 +447,18 @@
         "Run the sequence: stopword filter → bag-of-words → key phrases → character or theme network → comparative read.",
         "Ask Claude for an **Artifact** that visualizes one finding (a frequency chart, a network, a comparative table).",
         "Critique what you see. Compare to what close reading would surface.",
-        "**Document at least one place Claude got it wrong.** That's the deliverable."
+        "**Document at least one place Claude got it wrong.** That's the deliverable.",
+        "**Then run the same corpus through NotebookLM** — note how the workflow and the visibility of the code differ."
       ],
       "media": []
     },
     {
-      "id": "iteration-is-the-work",
-      "layout": "quote",
-      "quote": "The point of this exercise is not the visualization. The point is the iteration. Notice when you have to push back, refine, ask Claude to reconsider. That iteration is the actual humanities work — and it is teachable.",
-      "attribution": "Pedagogical note for Workshop 2",
+      "id": "rettberg-podcast",
+      "layout": "embed",
+      "title": "What the Audio Overview is really doing",
+      "embed_html": "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"at://did:plc:zioa2zfpvlezm77m4alwk3sn/app.bsky.feed.post/3mmbc3rdbjs2s\" data-bluesky-cid=\"bafyreicdwtvnes4flwnodssfd6j3gtj2ukwrnuku77u4mde5j2l2fdcivm\" data-bluesky-embed-color-mode=\"system\"><p lang=\"en\">Here’s a video from the same podcast as linked in my previous post where you can hear the audio too. I love this because it really lays bare how LLMs fool us - but really they’re just slotting words into linguistic patterns that we’re familiar with. Genres like a podcast or LinkedIn post.<br><br><a href=\"https://bsky.app/profile/did:plc:zioa2zfpvlezm77m4alwk3sn/post/3mmbc3rdbjs2s?ref_src=embed\">[image or embed]</a></p>&mdash; Jill Walker Rettberg (<a href=\"https://bsky.app/profile/did:plc:zioa2zfpvlezm77m4alwk3sn?ref_src=embed\">@jilltxt.bsky.social</a>) <a href=\"https://bsky.app/profile/did:plc:zioa2zfpvlezm77m4alwk3sn/post/3mmbc3rdbjs2s?ref_src=embed\">May 20, 2026 at 2:36 AM</a></blockquote><script async src=\"https://embed.bsky.app/static/embed.js\" charset=\"utf-8\"></script>",
+      "caption": "Supplement to Rettberg, Jill Walker. 2026. \"AI-generated podcasts: Synthetic Intimacy and Cultural Mistranslation in Audio Overviews from Google's NotebookLM.\" *Media, Culture & Society*. [Dataset](https://dataverse.no/dataset.xhtml?persistentId=doi:10.18710/RNTF9H) · [doi:10.1177/01634437261452160](https://doi.org/10.1177/01634437261452160)",
       "media": []
-    },
-    {
-      "id": "artifact-summary",
-      "layout": "image-bullets",
-      "title": "End in an Artifact",
-      "bullets": [
-        "Word cloud, frequency chart, network diagram, comparative table.",
-        "Artifacts are *small interactive web pages* — Claude can build one in a single turn.",
-        "They're shareable to a class, a colleague, a Twitter thread.",
-        "Save the URL — we revisit Artifacts in Workshop 3."
-      ],
-      "image": {
-        "src": "artifact-summary.webp",
-        "alt": "Artifact-style visualization"
-      },
-      "media": [
-        {
-          "source": "AI_Week_Four",
-          "file": "image15.png",
-          "as": "artifact-summary",
-          "kind": "image"
-        }
-      ]
-    },
-    {
-      "id": "where-claude-fails",
-      "layout": "image-bullets",
-      "title": "Where Claude *will* fail",
-      "bullets": [
-        "Confabulating quotes that aren't in the source.",
-        "Smoothing genre or period differences into a fake consensus.",
-        "Quietly losing files when the conversation grows.",
-        "**Your job in this exercise is to find one of these.**"
-      ],
-      "image": {
-        "src": "claude-fails.webp",
-        "alt": "Critique-the-AI illustration"
-      },
-      "media": [
-        {
-          "source": "AI_Week_Four",
-          "file": "image19.png",
-          "as": "claude-fails",
-          "kind": "image"
-        }
-      ]
-    },
-    {
-      "id": "scaffold-iteration",
-      "layout": "image-bullets",
-      "title": "Scaffolding for students",
-      "bullets": [
-        "Require *three prompts* documented before the result they used.",
-        "Require an annotated screenshot of one bad answer.",
-        "Require a one-paragraph reflection: *what did close reading catch that this missed?*",
-        "Grade the iteration, not the artifact."
-      ],
-      "image": {
-        "src": "scaffold-iteration.webp",
-        "alt": "Pedagogical scaffolding"
-      },
-      "media": [
-        {
-          "source": "AI_Week_Four",
-          "file": "image38.png",
-          "as": "scaffold-iteration",
-          "kind": "image"
-        }
-      ]
     },
     {
       "id": "discussion",
@@ -296,24 +477,12 @@
         "Save the *bad* Claude answer you found — it's a teaching artifact.",
         "Workshop 3 (Week 5): we move from text to image. Bring 5–10 images you have rights to use."
       ],
-      "image": {
-        "src": "bring-forward.webp",
-        "alt": "Looking ahead to Workshop 3"
-      },
-      "media": [
-        {
-          "source": "AI_Week_Four",
-          "file": "image34.png",
-          "as": "bring-forward",
-          "kind": "image"
-        }
-      ]
+      "media": []
     },
     {
       "id": "closing",
       "layout": "closing",
       "title": "Carry it forward",
-      "lead": "The Project you built today is yours. Add to it across the semester; it's the closest thing this workshop offers to a portable workspace.",
       "links": [
         {
           "label": "Workshop 2 page",

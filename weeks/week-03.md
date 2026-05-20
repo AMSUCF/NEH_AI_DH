@@ -29,20 +29,20 @@ Streamed and recorded. Open to UCF faculty, graduate students, and the larger ar
 
 ## Pre-Workshop Reading
 
-- Houston, Natalie M. ["Text Analysis."](https://digitalpedagogy.hcommons.org/keyword/Text-Analysis/) *Digital Pedagogy in the Humanities.* (~20 min) Frames text analysis as a teachable practice.
-- Underwood, Ted. ["A More Interesting Upside of AI."](https://tedunderwood.com/2025/07/02/a-more-interesting-upside-of-ai/) *The Stone and the Shell*, July 2, 2025. (~15 min) A useful piece on what AI changes for distant reading.
-- Walsh, Melanie, and Maria Antoniak. ["The Goodreads 'Classics': A Computational Study of Readers, Amazon, and Crowdsourced Amateur Criticism."](https://post45.org/2021/04/the-goodreads-classics-a-computational-study-of-readers-amazon-and-crowdsourced-amateur-criticism/) *Post45*, 2021. (~25 min) A model of distant reading at scale, well-written for non-specialists.
+- Houston, Natalie M. ["Text Analysis."](https://digitalpedagogy.hcommons.org/keyword/Text-Analysis/) *Digital Pedagogy in the Humanities.* Frames text analysis as a teachable practice.
+- Underwood, Ted. ["A More Interesting Upside of AI."](https://tedunderwood.com/2025/07/02/a-more-interesting-upside-of-ai/) *The Stone and the Shell*, July 2, 2025. A useful piece on what AI changes for distant reading.
+- Walsh, Melanie, and Maria Antoniak. ["The Goodreads 'Classics': A Computational Study of Readers, Amazon, and Crowdsourced Amateur Criticism."](https://post45.org/2021/04/the-goodreads-classics-a-computational-study-of-readers-amazon-and-crowdsourced-amateur-criticism/) *Post45*, 2021. A model of distant reading at scale, well-written for non-specialists.
 
 On copyright (skim before the discussion):
 
-- Authors Guild et al. v. Anthropic settlement coverage: ["Authors celebrate historic settlement."](https://arstechnica.com/tech-policy/2025/08/authors-celebrate-historic-settlement-coming-soon-in-anthropic-class-action/) *Ars Technica*, August 2025. (~10 min)
-- *Bartz v. Anthropic* — NPR coverage of the September 2025 settlement: ["Anthropic settles authors' lawsuit over pirated chatbot training material."](https://www.npr.org/2025/09/05/g-s1-87367/anthropic-authors-settlement-pirated-chatbot-training-material) Brief background on the case and what it does and doesn't establish about training-data copyright.
+- Authors Guild et al. v. Anthropic settlement coverage: ["Authors celebrate historic settlement."](https://arstechnica.com/tech-policy/2025/08/authors-celebrate-historic-settlement-coming-soon-in-anthropic-class-action/) *Ars Technica*, August 2025.
+- *Bartz v. Anthropic* — NPR coverage of the September 2025 settlement: ["Anthropic settles authors' lawsuit over pirated chatbot training material."](https://www.npr.org/2025/09/05/g-s1-87367/anthropic-authors-settlement-pirated-chatbot-training-material) Brief background on the case and what it does and doesn't establish about training-data copyright. The full docket, including filings and orders, is on [CourtListener](https://www.courtlistener.com/docket/69058235/bartz-v-anthropic-pbc/).
 
 ## Session Outline (120 minutes)
 
-1. **Distant reading, three traditions.** Moretti's literary system at scale, Underwood's stylometrics, the Voyant classroom tradition. What Claude Projects adds: persistent context across multi-turn conversation, multi-file uploads, native handling of mixed formats, the ability to reason about *why* a pattern looks the way it does.
-2. **The copyright conversation.** What Anthropic's settlement does (compensation for authors whose books were ingested) and doesn't (it does not establish a precedent that bars training on scraped text). We will look at different types of fair and responsible use, contextualize the role of the UCF library, and think through classroom use cases. The discussion is part of the workshop, not a footnote.
-3. **Live demo: a corpus I have not opened before.** I bring a small set of texts, upload them to a fresh Project, and walk through a sequence: preprocessing → bag-of-words → key phrases → comparative passages → thematic network. We critique what Claude gets right and where it confabulates. The iteration is the visible part.
+1. **Distant reading, three traditions.** Moretti's literary system at scale, Underwood's stylometrics, the Voyant classroom tradition. What Claude Projects adds: persistent context across multi-turn conversation, multi-file uploads, native handling of mixed formats, the ability to think through the difference between computational text analysis and human reading.
+2. **The copyright conversation.** What Anthropic's settlement does (compensation for authors whose books were ingested) and doesn't (it does not establish a precedent that bars training on scraped text). We will look at different types of fair and responsible use, contextualize the role of the UCF library, and think through classroom use cases.
+3. **Live demo: a literary corpus.** I bring a small set of texts, upload them to a fresh Project, and walk through a sequence: preprocessing → bag-of-words → key phrases → comparative passages → thematic network. We critique what Claude gets right and where it confabulates.
 4. **Hands-on: your corpus (largest single block of the session).** Each participant uploads their corpus to a Project. Run the same sequence on your own materials. Roving help; pair where useful.
 5. **Building an Artifact summary.** End the analytical sequence by asking Claude to produce an Artifact — a small visual or interactive summary you can share with a colleague or a class.
 6. **Discussion.** Where did Claude help? Where did it hallucinate? What would a student need to know before they used this for an assignment? What did the copyright question feel like in practice?
@@ -55,10 +55,15 @@ On copyright (skim before the discussion):
 2. Run the analytical sequence: stopword filter → bag-of-words → key phrases → character or theme network → comparative read across the texts.
 3. Ask Claude to generate **Artifacts** that visualize the findings — word clouds, frequency charts, network diagrams, comparative tables, thematic timelines. **We will generate at least five different artifacts and iterate** on the prompts and choices in between.
 4. Critique what you see. Compare to what you would have noticed in close reading. Document at least one place Claude got it wrong.
+5. **Replicate the same process with [Google NotebookLM](https://notebooklm.google.com/), and note the differences in workflow and in the visibility of the computational work:**
+   - Create a new notebook and add the *same* texts as sources — NotebookLM accepts PDFs, `.txt`, `.docx`, EPUB, pasted text, and Google Drive or web links (up to 50 sources, 500,000 words each).
+   - Ask the same analytical questions in the chat. Notice that NotebookLM answers *only* from your uploaded sources and footnotes every claim with an inline citation back to the exact passage.
+   - Generate a Studio output — a Briefing Doc, Study Guide, Mind Map, or an Audio Overview — and set it beside the Artifact Claude produced.
+   - Compare. Claude shows its reasoning and its *code* (the analysis tool, editable Artifacts) and will range beyond your texts when it thinks it should; NotebookLM hides the computation entirely and stays strictly grounded in your sources. Which felt more transparent? Which felt more trustworthy, and for which question?
 
 ## Pedagogical Note
 
-The point of this exercise is not the visualization. The point is the *iteration.* Notice when you have to push back, refine, ask Claude to reconsider. That iteration is the actual humanities work — and it is teachable. When you bring this exercise into a course, scaffold the iteration explicitly: "show me three prompts you tried before you got the result you used."
+Distant reading and computational text analysis have limitations, but they also give us insight into larger patterns — and into how humans process texts. Students have likely heard elsewhere that AI is good for *summary*. Can these methods push back against that kind of usage, and bring students into more complex, thoughtful ways of working through a text?
 
 ## Cross-references
 

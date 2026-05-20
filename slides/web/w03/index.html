@@ -74,6 +74,27 @@
 .reveal .slide-image-only { align-items: center; text-align: center; }
 .reveal .slide-image-only img { max-height: 80vh; }
 
+/* Two-image (side by side) */
+.reveal .slide-two-image { align-items: center; }
+.reveal .slide-two-image h2 { text-align: center; }
+.reveal .slide-two-image .lead { text-align: center; max-width: 70ch; margin: 0 auto 1rem; }
+.reveal .slide-two-image .img-row { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; width: 100%; }
+.reveal .slide-two-image figure { margin: 0; text-align: center; }
+.reveal .slide-two-image img { max-height: 58vh; }
+.reveal .slide-two-image figcaption { font-size: 1rem; color: var(--muted, #5a5a5a); margin-top: 0.5rem; }
+@media (max-width: 800px) { .reveal .slide-two-image .img-row { grid-template-columns: 1fr; } }
+
+/* Embed (Bluesky / social post) */
+.reveal .slide-embed { align-items: center; text-align: center; }
+.reveal .slide-embed h2 { text-align: center; }
+.reveal .slide-embed .embed-wrap { width: 100%; max-width: 560px; max-height: 75vh; overflow-y: auto; margin: 0 auto; }
+.reveal .slide-embed .bluesky-embed { margin: 0 auto; }
+
+/* Iframe (live web page) */
+.reveal .slide-iframe { align-items: center; }
+.reveal .slide-iframe h2 { text-align: center; }
+.reveal .slide-iframe iframe { width: 100%; height: 70vh; border: 2px solid var(--ink, #141414); border-radius: 6px; background: #fff; }
+
 /* Quote */
 .reveal .slide-quote { display: grid !important; grid-template-columns: 1fr 1.4fr; gap: 2rem; align-items: center; background: var(--bone, #faf6ec); }
 .reveal .slide-quote.no-image { display: block !important; max-width: 60ch; margin-left: auto !important; margin-right: auto !important; }
@@ -159,6 +180,80 @@
     <p class="cover-meta">Wednesday, May 27, 2026 · 10 AM – noon · CHDR</p>
   </div>
 </section>
+<section class="slide-quote no-image long-quote" id="ai-con-automation">
+
+  <div class="quote-text">
+    <blockquote><p>From the start of the industrial revolution, workers have had to contend with displacement via automation and have resisted it for just as long.</p><p>One of the hallmarks of the beginning of this age was the concomitant rise of innovative technologies advertised to make work easier and simpler, and to increase productivity.</p><p>Like modern AI boosters, those selling new technologies promised that they would usher in a rising tide that lifted up workers and business owners alike.</p></blockquote>
+    <p class="attribution">— <em>The AI Con</em>, p. 43</p>
+  </div>
+</section>
+<section class="slide-image-only" id="commencement-rage">
+  <img src="../../../assets/slides/w03/commencement.webp" alt="The Fine Print headline by Karl Bode, &#x27;AI Rage Is Inextricably Fused With Justified Loathing Of The Extraction Class. Deal With It,&#x27; over a photo of a commencement speaker in academic regalia at a podium" loading="lazy">
+  <p class="caption">Karl Bode, <em>The Fine Print</em></p>
+</section>
+<section class="slide-image-only" id="textpocalypse-1">
+  <img src="../../../assets/slides/w03/textpocalypse-1.webp" alt="The Atlantic headline &#x27;Prepare for the Textpocalypse,&#x27; by Matthew Kirschenbaum, with an illustration of a meteor striking an open book" loading="lazy">
+  <p class="caption">Matthew Kirschenbaum, <em>The Atlantic</em>: &quot;Prepare for the Textpocalypse&quot;</p>
+</section>
+<section class="slide-image-only" id="textpocalypse-2">
+  <img src="../../../assets/slides/w03/textpocalypse-2.webp" alt="Excerpt from &#x27;Prepare for the Textpocalypse&#x27; on AI-generated text, spam, and content moderation" loading="lazy">
+
+</section>
+<section class="slide-image-only" id="textpocalypse-3">
+  <img src="../../../assets/slides/w03/textpocalypse-3.webp" alt="Excerpt from &#x27;Prepare for the Textpocalypse&#x27; on workplace writing, lock-in, and the enshittification of text" loading="lazy">
+
+</section>
+<section class="slide-image-only" id="looms">
+  <img src="../../../assets/slides/w03/looms.webp" alt="19th-century engraving of two workers smashing a power loom with a sledgehammer" loading="lazy">
+  <p class="caption">Breaking the frames: a 19th-century image of Luddite machine-breaking</p>
+</section>
+<section class="slide-quote no-image long-quote" id="luddites">
+
+  <div class="quote-text">
+    <blockquote><p>Luddites were not against technology.</p><p>Some Luddites, weavers in particular, were into technologies that helped evaluate the quality of their work — for instance, being able to count the number of threads per inch, such that they could fetch a higher price at the market.</p><p>They were instead against technologies of control and coercion, and concerned about the loss of jobs, health, and community.</p></blockquote>
+    <p class="attribution">— <em>The AI Con</em>, p. 45</p>
+  </div>
+</section>
+<section class="slide-embed" id="fiesler-bluesky">
+  <h2>The Luddites, reconsidered</h2>
+  <div class="embed-wrap"><blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:rrjvo5jwuateqep2i7ih5ckl/app.bsky.feed.post/3mm4y4rm7ws2x" data-bluesky-cid="bafyreidqygmf5z3fwijbd5lyfpfd5rs6opevzskphoipxbedimhgsq4r7m" data-bluesky-embed-color-mode="system"><p lang="en">I saw someone referring to the booing of commencement speakers talking about AI as a tantrum from students who don’t understand technology. That made me think that I bet machine breaking was also perceived as a tantrum. Anyway, here’s some thoughts about the Luddites.<br><br><a href="https://bsky.app/profile/did:plc:rrjvo5jwuateqep2i7ih5ckl/post/3mm4y4rm7ws2x?ref_src=embed">[image or embed]</a></p>&mdash; Dr. Casey Fiesler (<a href="https://bsky.app/profile/did:plc:rrjvo5jwuateqep2i7ih5ckl?ref_src=embed">@cfiesler.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:rrjvo5jwuateqep2i7ih5ckl/post/3mm4y4rm7ws2x?ref_src=embed">May 18, 2026 at 9:27 AM</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script></div>
+
+</section>
+<section class="slide-image-only" id="dead-web">
+  <img src="../../../assets/slides/w03/dead-web.webp" alt="The Economist headline &#x27;AI is killing the web. Can anything save it?&#x27; with a tombstone reading &#x27;The World Wide Web 1989–2025&#x27;" loading="lazy">
+  <p class="caption"><em>The Economist</em>: &quot;<a href="https://www.economist.com/business/2025/07/14/ai-is-killing-the-web-can-anything-save-it">AI is killing the web. Can anything save it?</a>&quot;</p>
+</section>
+<section class="slide-image-only" id="ai-use">
+  <img src="../../../assets/slides/w03/ai-use.webp" alt="404 Media headline &#x27;Your AI Use Is Breaking My Brain,&#x27; by Jason Koebler, over a photo of a decaying typewriter" loading="lazy">
+  <p class="caption"><a href="https://www.404media.co/your-ai-use-is-breaking-my-brain/">404 Media: &quot;Your AI Use Is Breaking My Brain&quot;</a></p>
+</section>
+<section class="slide-quote no-image long-quote" id="koebler-brain">
+
+  <div class="quote-text">
+    <blockquote><p>To browse the internet today, to consume any sort of content at all, is to be bombarded with AI of all sorts. People think things that are fake are real, things that are real are fake.</p><p>Much has been written about &#x27;AI psychosis,&#x27; the nonspecific, nonscientific diagnosis given to people who have lost themselves to AI. Less has been said about the cognitive load of what other people&#x27;s AI use is doing to the rest of us.</p><p>Our brains are now performing untold numbers of calculations per day: Is this AI? Do I care if it&#x27;s AI? Why does this sound or look or read so weird? Does this person just write like this? Is this a person at all?</p></blockquote>
+    <p class="attribution">— Jason Koebler, <a href="https://www.404media.co/your-ai-use-is-breaking-my-brain/"><em>404 Media</em></a></p>
+  </div>
+</section>
+<section class="slide-quote no-image long-quote" id="enshittification">
+
+  <div class="quote-text">
+    <blockquote><p>In the early 2000s, replacing hand-curated indexes like Lycos and Yahoo! seemed like a large boon for those struggling to navigate the unstructured web.</p><p>But now Google Search itself structures the web, and not in a way that benefits the broader public: Google is first and foremost in the business of selling ads, not providing helpful access to information.</p><p>Google&#x27;s advertising model has led to an inferior product — what author and technology critic Cory Doctorow has called &#x27;enshittification.&#x27;</p></blockquote>
+    <p class="attribution">— <em>The AI Con</em>, p. 51</p>
+  </div>
+</section>
+<section class="slide-image-only" id="googling-then-now">
+  <img src="../../../assets/slides/w03/search.webp" alt="Hand-drawn cartoon, &#x27;Googling Stuff... Then vs Now&#x27;: &#x27;Then&#x27; returns one result, &#x27;the thing you want&#x27;; &#x27;Now&#x27; returns AI nonsense, three sponsored results, People Also Ask, and View Products" loading="lazy">
+  <p class="caption">Amy Jacobson, via LinkedIn</p>
+</section>
+<section class="slide-image-only" id="granta-prize">
+  <img src="../../../assets/slides/w03/granta.webp" alt="Text from Granta describing how a Commonwealth Short Story Prize winner was suspected of being AI-generated, and Claude&#x27;s assessment that the story was &#x27;almost certainly not produced unaided by a human&#x27;" loading="lazy">
+  <p class="caption">Sigrid Rausing, Publisher of <em>Granta</em></p>
+</section>
+<section class="slide-iframe" id="serpent-in-the-grove">
+  <h2>The Serpent in the Grove</h2>
+  <iframe src="https://granta.com/the-serpent-in-the-grove/" title="The Serpent in the Grove" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <p class="caption">Live page: <a href="https://granta.com/the-serpent-in-the-grove/">granta.com/the-serpent-in-the-grove</a></p>
+</section>
 <section class="slide-section" id="distant-reading">
   <p class="kicker">Part 1</p>
   <h2>What &quot;distant reading&quot; has meant</h2>
@@ -167,14 +262,14 @@
         <section class="slide-image-bullets" id="moretti-underwood">
           <div class="bullets-text">
 
-            <h2>Two genealogies, one method</h2>
+            <h2>Distant reading: from Voyant to Claude</h2>
             <ul><li><strong>Moretti, 2000s:</strong> the literary system at scale — what a single book hides, a thousand reveal.</li>
 <li><strong>Underwood, 2010s–:</strong> stylometrics, character networks, century-long trends.</li>
 <li><strong>Voyant, classroom:</strong> word counts and concordances democratized to the seminar room.</li>
-<li>Claude Projects: multi-text, multi-format, multi-turn — humanities-scale, not big-data scale.</li></ul>
+<li><strong>Claude Projects:</strong> multi-text, multi-format, multi-turn — humanities-scale, not big-data scale.</li></ul>
 
           </div>
-          <img src="../../../assets/slides/w03/distant-reading.webp" alt="Distant-reading-tradition illustration" loading="lazy">
+          <img src="../../../assets/slides/w03/voyant.webp" alt="Voyant Tools dashboard showing a word cloud, reader pane, and term-frequency trends for a corpus of course materials" loading="lazy">
         </section>
 <section class="slide-section" id="ai-in-the-wild">
   <p class="kicker">Field check</p>
@@ -186,11 +281,21 @@
 
             <h2>Killing the billable hour</h2>
             <ul><li>Eudia and other legal-tech startups pitching AI as the end of the billable hour.</li>
-<li>Reuters: AI is now an LA law student.</li>
+<li><a href="https://www.nytimes.com/2026/04/21/nyregion/sullivan-cromwell-ai-hallucination.html">NYT: A.I. hallucinations created errors in a court filing, top law firm says.</a></li>
 <li>When a profession decides &#x27;reading&#x27; is automatable, what gets lost?</li></ul>
 
           </div>
           <img src="../../../assets/slides/w03/legal-billable.webp" alt="Legal-tech AI article" loading="lazy">
+        </section>
+        <section class="slide-image-bullets" id="law-student">
+          <div class="bullets-text">
+
+            <h2>AI is now an LA law student</h2>
+            <ul><li>Reuters: AI is now an LA law student.</li>
+<li>When the model takes the class, what does the credential certify?</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w03/claude-fails.webp" alt="Critique-the-AI illustration" loading="lazy">
         </section>
         <section class="slide-image-bullets" id="medical-advice">
           <div class="bullets-text">
@@ -209,10 +314,16 @@
             <h2>The cheating frame is the wrong frame</h2>
             <ul><li>Futurism: students openly use ChatGPT for homework.</li>
 <li>OpenAI tracks the use as growth, not failure.</li>
-<li>Our problem isn&#x27;t enforcement. Our problem is teaching reading as a <em>practice</em> students can do <em>with</em> the tool.</li></ul>
+<li>This type of usage for skipping the reading is more naive than distant reading: it puts trust in the model&#x27;s interpretation.</li></ul>
 
           </div>
           <img src="../../../assets/slides/w03/student-cheating.webp" alt="Cheating-with-AI article" loading="lazy">
+        </section>
+        <section class="slide-two-image" id="handwriting">
+          <h2>Where AI earns its keep: handwriting</h2>
+          <p class="lead">AI is more useful for approaching texts that offer challenges computation can resolve — for example, handwriting.</p>
+          <div class="img-row"><figure><img src="../../../assets/slides/w03/handwriting.webp" alt="A handwritten 1799 letter from Charles Carroll of Carrollton" loading="lazy"><figcaption>The manuscript: a 1799 letter</figcaption></figure>
+<figure><img src="../../../assets/slides/w03/gemini.webp" alt="Gemini 3 Pro&#x27;s typed transcription of the handwritten 1799 letter" loading="lazy"><figcaption>Gemini 3 Pro&#x27;s transcription</figcaption></figure></div>
         </section>
 <section class="slide-section" id="labor-section">
   <p class="kicker">Before the demo</p>
@@ -220,22 +331,22 @@
   <p class="lead">Distant reading at this scale was always built on hidden labor. With LLMs, the labor moved — but didn&#x27;t vanish.</p>
 </section>
 <section class="slide-quote" id="kenyan-labor">
-  <img src="../../../assets/slides/w03/kenyan-labor.webp" alt="Hidden-labor article context" loading="lazy">
+  <img src="../../../assets/slides/w03/time.webp" alt="TIME headline: &#x27;OpenAI Used Kenyan Workers on Less Than $2 Per Hour to Make ChatGPT Less Toxic&#x27;" loading="lazy">
   <div class="quote-text">
     <blockquote>Time reported that OpenAI had subcontracted Kenyan workers making less than two dollars a day to filter out gore, hate speech, child sexual abuse material, and pornographic images from ChatGPT and OpenAI&#x27;s image-generation tool.</blockquote>
-    <p class="attribution">— Bender &amp; Hanna, on the labor that made the chatbot polite</p>
+    <p class="attribution">— Bender &amp; Hanna, on the labor that made the chatbot less toxic</p>
   </div>
 </section>
         <section class="slide-image-bullets" id="anthropic-settlement">
           <div class="bullets-text">
 
             <h2>The training set is also a legal record</h2>
-            <ul><li>August 2025: authors celebrate a historic settlement in the Anthropic class action.</li>
+            <ul><li>September 2025: authors settle for $1.5 billion in the first-of-its-kind Anthropic copyright suit.</li>
 <li>The training corpus is the legal exhibit.</li>
 <li>Where does <em>your</em> writing sit inside that record?</li></ul>
 
           </div>
-          <img src="../../../assets/slides/w03/anthropic-settlement.webp" alt="Anthropic settlement article" loading="lazy">
+          <img src="../../../assets/slides/w03/anthropic-npr.webp" alt="NPR headline: &#x27;Anthropic settles with authors in first-of-its-kind AI copyright infringement lawsuit,&#x27; with a phone showing the Anthropic logo" loading="lazy">
         </section>
 <section class="slide-section" id="claude-projects">
   <p class="kicker">Part 2</p>
@@ -245,7 +356,7 @@
 <section class="slide-demo-slot" id="demo-corpus">
   <p class="kicker">Live demo</p>
   <h2>A corpus I haven&#x27;t opened</h2>
-  <p>Watch the iteration. Notice when I push back, ask Claude to reconsider, point out a mistake. The iteration is the humanities work.</p>
+
 </section>
         <section class="slide-exercise" id="exercise-corpus">
           <p class="kicker">Exercise</p>
@@ -255,57 +366,20 @@
 <li>Run the sequence: stopword filter → bag-of-words → key phrases → character or theme network → comparative read.</li>
 <li>Ask Claude for an <strong>Artifact</strong> that visualizes one finding (a frequency chart, a network, a comparative table).</li>
 <li>Critique what you see. Compare to what close reading would surface.</li>
-<li><strong>Document at least one place Claude got it wrong.</strong> That&#x27;s the deliverable.</li></ol>
+<li><strong>Document at least one place Claude got it wrong.</strong> That&#x27;s the deliverable.</li>
+<li><strong>Then run the same corpus through NotebookLM</strong> — note how the workflow and the visibility of the code differ.</li></ol>
         </section>
-<section class="slide-quote no-image" id="iteration-is-the-work">
-
-  <div class="quote-text">
-    <blockquote>The point of this exercise is not the visualization. The point is the iteration. Notice when you have to push back, refine, ask Claude to reconsider. That iteration is the actual humanities work — and it is teachable.</blockquote>
-    <p class="attribution">— Pedagogical note for Workshop 2</p>
-  </div>
+<section class="slide-embed" id="rettberg-podcast">
+  <h2>What the Audio Overview is really doing</h2>
+  <div class="embed-wrap"><blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:zioa2zfpvlezm77m4alwk3sn/app.bsky.feed.post/3mmbc3rdbjs2s" data-bluesky-cid="bafyreicdwtvnes4flwnodssfd6j3gtj2ukwrnuku77u4mde5j2l2fdcivm" data-bluesky-embed-color-mode="system"><p lang="en">Here’s a video from the same podcast as linked in my previous post where you can hear the audio too. I love this because it really lays bare how LLMs fool us - but really they’re just slotting words into linguistic patterns that we’re familiar with. Genres like a podcast or LinkedIn post.<br><br><a href="https://bsky.app/profile/did:plc:zioa2zfpvlezm77m4alwk3sn/post/3mmbc3rdbjs2s?ref_src=embed">[image or embed]</a></p>&mdash; Jill Walker Rettberg (<a href="https://bsky.app/profile/did:plc:zioa2zfpvlezm77m4alwk3sn?ref_src=embed">@jilltxt.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:zioa2zfpvlezm77m4alwk3sn/post/3mmbc3rdbjs2s?ref_src=embed">May 20, 2026 at 2:36 AM</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script></div>
+  <p class="caption">Supplement to Rettberg, Jill Walker. 2026. &quot;AI-generated podcasts: Synthetic Intimacy and Cultural Mistranslation in Audio Overviews from Google&#x27;s NotebookLM.&quot; <em>Media, Culture &amp; Society</em>. <a href="https://dataverse.no/dataset.xhtml?persistentId=doi:10.18710/RNTF9H">Dataset</a> · <a href="https://doi.org/10.1177/01634437261452160">doi:10.1177/01634437261452160</a></p>
 </section>
-        <section class="slide-image-bullets" id="artifact-summary">
-          <div class="bullets-text">
-
-            <h2>End in an Artifact</h2>
-            <ul><li>Word cloud, frequency chart, network diagram, comparative table.</li>
-<li>Artifacts are <em>small interactive web pages</em> — Claude can build one in a single turn.</li>
-<li>They&#x27;re shareable to a class, a colleague, a Twitter thread.</li>
-<li>Save the URL — we revisit Artifacts in Workshop 3.</li></ul>
-
-          </div>
-          <img src="../../../assets/slides/w03/artifact-summary.webp" alt="Artifact-style visualization" loading="lazy">
-        </section>
-        <section class="slide-image-bullets" id="where-claude-fails">
-          <div class="bullets-text">
-
-            <h2>Where Claude <em>will</em> fail</h2>
-            <ul><li>Confabulating quotes that aren&#x27;t in the source.</li>
-<li>Smoothing genre or period differences into a fake consensus.</li>
-<li>Quietly losing files when the conversation grows.</li>
-<li><strong>Your job in this exercise is to find one of these.</strong></li></ul>
-
-          </div>
-          <img src="../../../assets/slides/w03/claude-fails.webp" alt="Critique-the-AI illustration" loading="lazy">
-        </section>
-        <section class="slide-image-bullets" id="scaffold-iteration">
-          <div class="bullets-text">
-
-            <h2>Scaffolding for students</h2>
-            <ul><li>Require <em>three prompts</em> documented before the result they used.</li>
-<li>Require an annotated screenshot of one bad answer.</li>
-<li>Require a one-paragraph reflection: <em>what did close reading catch that this missed?</em></li>
-<li>Grade the iteration, not the artifact.</li></ul>
-
-          </div>
-          <img src="../../../assets/slides/w03/scaffold-iteration.webp" alt="Pedagogical scaffolding" loading="lazy">
-        </section>
 <section class="slide-section" id="discussion">
   <p class="kicker">Part 5</p>
   <h2>Discussion</h2>
   <p class="lead">Where did Claude help? Where did it hallucinate? What would a student need to know before they used this for an assignment in your course?</p>
 </section>
-        <section class="slide-image-bullets" id="wrap">
+        <section class="slide-image-bullets no-image" id="wrap">
           <div class="bullets-text">
 
             <h2>Bring forward to Workshop 3</h2>
@@ -314,11 +388,11 @@
 <li>Workshop 3 (Week 5): we move from text to image. Bring 5–10 images you have rights to use.</li></ul>
 
           </div>
-          <img src="../../../assets/slides/w03/bring-forward.webp" alt="Looking ahead to Workshop 3" loading="lazy">
+
         </section>
         <section class="slide-closing" id="closing">
           <h2>Carry it forward</h2>
-          <p class="lead">The Project you built today is yours. Add to it across the semester; it&#x27;s the closest thing this workshop offers to a portable workspace.</p>
+
           <ul class="links"><li><a href="../../../weeks/week-03.html">Workshop 2 page</a></li>
 <li><a href="../../../weeks/week-04.html">Week 4 (async): Distant Reading</a></li>
 <li><a href="https://tedunderwood.com/2025/07/02/a-more-interesting-upside-of-ai/">Reading: Underwood, <em>More Interesting Upside of AI</em></a></li>

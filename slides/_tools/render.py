@@ -42,7 +42,6 @@ from pathlib import Path
 from textwrap import dedent
 
 from PIL import Image
-import imageio_ffmpeg
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -78,6 +77,7 @@ def optimize_video(src: Path, dst: Path) -> bool:
     if src.stat().st_size > VIDEO_MAX_BYTES:
         return False
     dst.parent.mkdir(parents=True, exist_ok=True)
+    import imageio_ffmpeg  # imported lazily: only image decks need no ffmpeg
     ffmpeg = imageio_ffmpeg.get_ffmpeg_exe()
     cmd = [
         ffmpeg, "-y", "-loglevel", "error",
@@ -262,6 +262,40 @@ def render_slide(slide: dict, week: str) -> str:
           {f'<p class="caption">{md_inline(slide.get("caption",""))}</p>' if slide.get("caption") else ''}
         </section>""")
 
+    if layout == "two-image":
+        figs = []
+        for im in slide.get("images", []):
+            cap = im.get("caption", "")
+            cap_html = f'<figcaption>{md_inline(cap)}</figcaption>' if cap else ''
+            figs.append(f'<figure>{img_tag(im, week)}{cap_html}</figure>')
+        figs_html = "\n".join(figs)
+        return dedent(f"""\
+        <section class="slide-two-image"{sec_attrs}>
+          {f'<h2>{md_inline(title)}</h2>' if title else ''}
+          {f'<p class="lead">{md_inline(slide.get("lead",""))}</p>' if slide.get("lead") else ''}
+          <div class="img-row">{figs_html}</div>
+        </section>""")
+
+    if layout == "embed":
+        # `embed_html` is raw HTML (e.g. a Bluesky/X blockquote + script) and is
+        # injected verbatim — do NOT escape it.
+        return dedent(f"""\
+        <section class="slide-embed"{sec_attrs}>
+          {f'<h2>{md_inline(title)}</h2>' if title else ''}
+          <div class="embed-wrap">{slide.get("embed_html","")}</div>
+          {f'<p class="caption">{md_inline(slide.get("caption",""))}</p>' if slide.get("caption") else ''}
+        </section>""")
+
+    if layout == "iframe":
+        # Note: many sites send X-Frame-Options / CSP that block cross-origin
+        # framing; the caption should carry a direct link as a fallback.
+        return dedent(f"""\
+        <section class="slide-iframe"{sec_attrs}>
+          {f'<h2>{md_inline(title)}</h2>' if title else ''}
+          <iframe src="{esc(slide.get("url",""))}" title="{esc(title)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          {f'<p class="caption">{md_inline(slide.get("caption",""))}</p>' if slide.get("caption") else ''}
+        </section>""")
+
     if layout == "video":
         return dedent(f"""\
         <section class="slide-video"{sec_attrs}>
@@ -388,6 +422,27 @@ HEAD_TEMPLATE = """\
 /* Image-only */
 .reveal .slide-image-only {{ align-items: center; text-align: center; }}
 .reveal .slide-image-only img {{ max-height: 80vh; }}
+
+/* Two-image (side by side) */
+.reveal .slide-two-image {{ align-items: center; }}
+.reveal .slide-two-image h2 {{ text-align: center; }}
+.reveal .slide-two-image .lead {{ text-align: center; max-width: 70ch; margin: 0 auto 1rem; }}
+.reveal .slide-two-image .img-row {{ display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; width: 100%; }}
+.reveal .slide-two-image figure {{ margin: 0; text-align: center; }}
+.reveal .slide-two-image img {{ max-height: 58vh; }}
+.reveal .slide-two-image figcaption {{ font-size: 1rem; color: var(--muted, #5a5a5a); margin-top: 0.5rem; }}
+@media (max-width: 800px) {{ .reveal .slide-two-image .img-row {{ grid-template-columns: 1fr; }} }}
+
+/* Embed (Bluesky / social post) */
+.reveal .slide-embed {{ align-items: center; text-align: center; }}
+.reveal .slide-embed h2 {{ text-align: center; }}
+.reveal .slide-embed .embed-wrap {{ width: 100%; max-width: 560px; max-height: 75vh; overflow-y: auto; margin: 0 auto; }}
+.reveal .slide-embed .bluesky-embed {{ margin: 0 auto; }}
+
+/* Iframe (live web page) */
+.reveal .slide-iframe {{ align-items: center; }}
+.reveal .slide-iframe h2 {{ text-align: center; }}
+.reveal .slide-iframe iframe {{ width: 100%; height: 70vh; border: 2px solid var(--ink, #141414); border-radius: 6px; background: #fff; }}
 
 /* Quote */
 .reveal .slide-quote {{ display: grid !important; grid-template-columns: 1fr 1.4fr; gap: 2rem; align-items: center; background: var(--bone, #faf6ec); }}
