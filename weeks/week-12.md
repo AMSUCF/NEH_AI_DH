@@ -8,10 +8,10 @@ summary: |
   This week's focus is on finishing out your planning for fall's course proposal or course update: the exercises will include some suggestions of how you might use tools like the Claude Code CLI or Cowork to assist with that work without replacing your own pedagogical intention or labor.
 ---
 
-The closing week. There is no in-person session and no required deliverable for the workshop series itself.
+The closing week. There is no in-person session.
 
 <div class="async-callout" markdown="1">
-**Asynchronous closing.** Optional, with one strong recommendation: pick the **Standard** exercise (course-proposal or syllabus revision) if you have only a few hours this week. That's the use of this week with the longest tail.
+**Asynchronous closing.** Complete **at least one** exercise from the menu below — the **Standard** exercise (course-proposal or syllabus revision) is the strongest recommendation if you have only a few hours, since that's the use of this week with the longest tail.
 </div>
 
 ## The Frame for This Week

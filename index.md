@@ -58,7 +58,7 @@ All workshops are at CHDR, 10 AM – noon, on Wednesdays. They are streamed and 
 The off-weeks (2, 4, 6, 8, 10, 12) are designed to **reinforce** what the workshop introduced, not to add new pressure. Each async page presents a **deep-dive menu**:
 
 - **Reading menu** — three to five curated readings tagged <span class="tag tag-light">Light</span> (a single short piece, ~20 minutes), <span class="tag tag-standard">Standard</span> (a chapter or longer essay, ~60 minutes), or <span class="tag tag-deep">Deep</span> (a book section or multi-piece arc, ~3 hours). Pick what fits your schedule. Nobody is "behind."
-- **Exercise menu** — two to three optional exercises at varying time commitments (~30 min, ~90 min, ~3 hours).
+- **Exercise menu** — two to three exercises at varying time commitments (~30 min, ~90 min, ~3 hours). **Complete at least one** and share the result back in the cohort Discord; doing more is welcome.
 
 The full curated list is available on the [Readings](readings.md) page; the full exercise menu is available on the [Exercises](exercises.md) page.
 

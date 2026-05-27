@@ -5,7 +5,7 @@ title: Schedule
 
 # Twelve-week Schedule
 
-Six biweekly **workshops** at CHDR, 10 AM – noon, on Wednesdays. Streamed and recorded; attendance is optional. Six **asynchronous** off-weeks reinforce the workshop content with a deep-dive reading + exercise menu — no required deliverable, pick what fits.
+Six biweekly **workshops** at CHDR, 10 AM – noon, on Wednesdays. Streamed and recorded; attendance is optional. Six **asynchronous** off-weeks reinforce the workshop content with a deep-dive reading + exercise menu — **complete at least one exercise each off-week** and share back in the cohort Discord; readings beyond the Required items are pick-what-fits.
 
 The compact grid lives on the [overview page](./); this page is the long-form version, with a paragraph of context and the key beats for each week.
 
