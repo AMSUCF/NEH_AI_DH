@@ -44,16 +44,18 @@ These four anchor the series. You do not need to read them cover-to-cover — wo
 - <span class="tag tag-light">Light</span> Willison, Simon. ["Not All AI-Assisted Programming is Vibe Coding (But Vibe Coding Rocks)."](https://simonwillison.net/2025/Mar/19/vibe-coding/) March 19, 2025. (Required Light reading for W2.)
 - <span class="tag tag-light">Light</span> Mollick, Ethan. ["Claude Code and What Comes Next."](https://www.oneusefulthing.org/p/claude-code-and-what-comes-next) *One Useful Thing*, January 7, 2026.
 - <span class="tag tag-light">Light</span> Anthropic. ["Use Projects to organize your work."](https://support.anthropic.com/en/articles/9519177-using-projects-on-claude-ai) Help-center docs. (Required Light reading for W2.)
-- <span class="tag tag-light">Light</span> Anthropic. ["Introducing Skills."](https://www.anthropic.com/news/skills) The launch context for Claude Skills (used in W4).
+- <span class="tag tag-required">Required</span> <span class="tag tag-light">Light</span> Anthropic. ["Introducing Skills."](https://claude.com/blog/skills) The launch context for Claude Skills (required for W4).
 
 ### Text analysis, distant reading, and the copyright conversation
 
 - <span class="tag tag-light">Light</span> Houston, Natalie M. ["Text Analysis."](https://digitalpedagogy.hcommons.org/keyword/Text-Analysis/) *Digital Pedagogy in the Humanities.*
-- <span class="tag tag-light">Light</span> Cohen, Dan. ["The Writing Is on the Wall for Handwriting Recognition."](https://newsletter.dancohen.org/archive/the-writing-is-on-the-wall-for-handwriting-recognition/) *Humane Ingenuity.*
+- <span class="tag tag-required">Required</span> <span class="tag tag-light">Light</span> Cohen, Dan. ["The Writing Is on the Wall for Handwriting Recognition."](https://newsletter.dancohen.org/archive/the-writing-is-on-the-wall-for-handwriting-recognition/) *Humane Ingenuity.* (Required for W4.)
 - <span class="tag tag-light">Light</span> Underwood, Ted. ["A More Interesting Upside of AI."](https://tedunderwood.com/2025/07/02/a-more-interesting-upside-of-ai/) *The Stone and the Shell*, July 2, 2025.
 - <span class="tag tag-light">Light</span> ["Authors celebrate historic settlement coming soon in Anthropic class action."](https://arstechnica.com/tech-policy/2025/08/authors-celebrate-historic-settlement-coming-soon-in-anthropic-class-action/) *Ars Technica*, August 2025. Background for the W3 copyright discussion.
-- <span class="tag tag-standard">Standard</span> Underwood, Ted. ["A Genealogy of Distant Reading."](http://digitalhumanities.org:8081/dhq/vol/11/2/000317/000317.html) *Digital Humanities Quarterly* 11.2 (2017).
+- <span class="tag tag-standard">Standard</span> Underwood, Ted. ["A Genealogy of Distant Reading."](https://dhq.digitalhumanities.org/vol/11/2/000317/000317.html) *Digital Humanities Quarterly* 11.2 (2017).
 - <span class="tag tag-standard">Standard</span> Bender, Emily, and Alex Hanna. *The AI Con*, Chapter 3: Leisure for Me, Gig Work for Thee. The labor critique.
+- <span class="tag tag-required">Required</span> <span class="tag tag-standard">Standard</span> Willison, Simon. ["Notes on the Vatican's encyclical on AI."](https://simonwillison.net/2026/May/25/encyclical-on-ai/) *simonwillison.net*, May 25, 2026. A practitioner reading of Leo XIV's encyclical — bridges the labor critique and the daily-use perspective. (Required for W4.)
+- <span class="tag tag-required">Required</span> <span class="tag tag-standard">Standard</span> *Religion Dispatches.* ["Leo XIV Links AI Histories to Enslavement and Exploitation."](https://religiondispatches.org/2026/05/26/leo-xiv-links-ai-histories-enslavement-and-exploitation) May 26, 2026. Pairs with Bender & Hanna Ch. 3; situates the labor and extraction critique inside a longer moral genealogy. (Required for W4.)
 - <span class="tag tag-deep">Deep</span> Walsh, Melanie, and Maria Antoniak. ["The Goodreads 'Classics': A Computational Study."](https://post45.org/2021/04/the-goodreads-classics-a-computational-study-of-readers-amazon-and-crowdsourced-amateur-criticism/) *Post45*, April 2021.
 
 ---
