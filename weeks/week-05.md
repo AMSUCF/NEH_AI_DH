@@ -2,10 +2,10 @@
 week: 5
 title: "Workshop 3: AI for Visual Analysis"
 kind: workshop
-theme: "Visual analysis with Claude Projects + Artifacts"
+theme: "Visual analysis with Claude Projects, Artifacts, and Cowork"
 starts: 2026-06-08
 summary: |
-  Image generation (and multimodal AI more broadly) is among the most contested forms of AI usage, raising questions of copyright and ethics that we'll address in this week's discussions. Our exercises will focus on image analysis and the ways AI is reshaping how we work with visual culture broadly, with pragmatic tasks such as alt-text and metadata alongside image analysis. We'll use both Claude Projects and Claude Artifacts in this week's exercises.
+  Image generation (and multimodal AI more broadly) is among the most contested forms of AI usage, raising questions of copyright and ethics that we'll address in this week's discussions. Our exercises will focus on image analysis and the ways AI is reshaping how we work with visual culture broadly, with pragmatic tasks such as alt-text and metadata alongside image analysis. We'll use Claude Projects, Claude Artifacts, and Claude Cowork in this week's exercises.
 workshop:
   title: "Workshop 3: AI for Visual Analysis"
   date: 2026-06-10
@@ -43,7 +43,7 @@ Optional:
 ## Session Outline (120 minutes)
 
 1. **Two paradigms in one session.** Image *generation* (text-to-image) versus image *analysis* (image-to-text, alt-text, multi-image comparison). Most people think of generation when they think of AI — but *both* are forms of data visualization, and that is the lens we bring to each.
-2. **AI images as information visualization.** Every generated image is a picture of its training data. We look at what search engines and generators reveal about defaults and bias: Safiya Noble's "professor style" results, the way tools return the same man for "a professor," the "make it more" drift toward stereotype, and the *Washington Post* bias interactive ("toys in Iraq," "a house" by country). Crawford & Paglen's "Excavating AI" is the structural critique. Warm-up exercises run throughout: "make it *more*," "draw my life," and generic-then-specific prompting.
+2. **AI images as information visualization.** Every generated image is a picture of its training data. We look at what search engines and generators reveal about defaults and bias: Safiya Noble's "professor style" results, the way tools return the same man for "a professor," the "make it more" drift toward stereotype, and the *Washington Post*'s ["This is how AI image generators see the world"](https://www.washingtonpost.com/technology/interactive/2023/ai-generated-images-bias-racism-sexism-stereotypes/) interactive ("toys in Iraq," "a house" by country). Crawford & Paglen's "Excavating AI" is the structural critique. Warm-up exercises run throughout: "make it *more*," "draw my life," and generic-then-specific prompting.
 3. **The copyright and ethics conversation.** Where the lawsuits stand, what training data was scraped, what we can and can't responsibly generate or analyze, and what working with local models changes about sending images to someone else's server.
 4. **Visualizing images with AI (hands-on).** Each participant uploads their five-to-ten image set to a **Claude Project**: alt-text for each image, a metadata table, three patterns across the set, and an **Artifact** that visualizes the set in a meaningful relationship. Then we try the same workflow in **Claude Cowork**.
 5. **Critical reflection.** What did Claude *see* that you did not? What did it miss? Where does its visual reading reproduce the biases discussed earlier? What's it doing with images of people, in particular?

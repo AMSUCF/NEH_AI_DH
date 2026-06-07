@@ -65,6 +65,7 @@ These four anchor the series. You do not need to read them cover-to-cover — wo
 ### Visual analysis, generation, and ethics
 
 - <span class="tag tag-light">Light</span> Crawford, Kate, and Trevor Paglen. ["Excavating AI."](https://excavating.ai/) 2019. The structural critique.
+- <span class="tag tag-light">Light</span> *The Washington Post.* ["This is How AI Image Generators See the World."](https://www.washingtonpost.com/technology/interactive/2023/ai-generated-images-bias-racism-sexism-stereotypes/) 2023. Bias made visible, prompt by prompt.
 - <span class="tag tag-light">Light</span> Demsky, Ian. ["My Month with Midjourney."](https://electronicbookreview.com/publications/my-month-with-midjourney/) *Electronic Book Review*, April 2, 2023. Iteration as method.
 - <span class="tag tag-light">Light</span> Jebb, Louis. ["On Process: Refik Anadol Seeks to Demystify AI Art."](https://www.theartnewspaper.com/2024/04/05/on-process-refik-anadol-seeks-to-demystify-ai-art-by-showing-how-it-is-put-together) *The Art Newspaper*, April 5, 2024.
 
