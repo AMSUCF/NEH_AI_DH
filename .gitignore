@@ -10,3 +10,7 @@ slides/*.ppt
 slides/_extracted/
 slides/_tools/__pycache__/
 slides/_tools/.venv/
+
+# Slide notes / fix lists (working drafts, not published)
+*Slide*.txt
+*Slides.txt
