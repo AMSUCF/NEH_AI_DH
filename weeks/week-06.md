@@ -20,6 +20,17 @@ Workshop 3 framed image *generation* and image *analysis* as two sides of the sa
 
 A reminder that carries over from Workshop 3: **always point Cowork at a new, empty folder** with only the materials you want it to touch — never a broad personal directory.
 
+## The Tools This Week
+
+You don't need all of these — pick what the exercise you choose calls for:
+
+- **[Claude Cowork](https://claude.ai/)** — Claude working alongside you in a desktop session with read/write access to a local folder. The backbone of Exercises A, B, and C: scheduled tasks, connector-driven work, and file-by-file editing all run here.
+- **[Hugging Face connector](https://claude.ai/settings/connectors)** — added from the connector gallery; lets Claude search the Hub and reason about open, local models (Exercise B).
+- **[Claude Design](https://claude.ai/)** — Claude's slide and document layout mode ("New Slide Deck"); generates editable, PowerPoint-style decks from a prompt (Exercise E).
+- **Claude AI Artifacts** — the Artifacts capability (enabled in Settings) that lets an Artifact call Claude, so you can build a working voice tool with no code (Exercise F).
+- **Outside image generators** — [Microsoft Copilot](https://copilot.microsoft.com/), [Google Gemini](https://gemini.google.com/), and [ChatGPT Images](https://chatgpt.com/) — run the same prompt across tools to read the dataset behind each (Exercise D).
+- **Claude Code** — not required this week, but you'll see Cowork hand off to it; it's where Workshop 4 picks up.
+
 ## Reading Menu
 
 - <span class="tag tag-required">Required</span> <span class="tag tag-standard">Standard</span> Crawford, Kate, and Trevor Paglen. ["Excavating AI."](https://excavating.ai/) If you skipped it for W5, this is the week — it is the structural critique behind Exercise D's "what does the result tell you about the dataset" question.
