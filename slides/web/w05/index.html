@@ -162,116 +162,86 @@
 <section class="slide-section" id="two-paradigms">
   <p class="kicker">Part 1</p>
   <h2>Two paradigms in one session</h2>
-  <p class="lead">Image <em>generation</em> (text-to-image) versus image <em>analysis</em> (image-to-text, alt-text, multi-image comparison). The workshop is about the second; the first is here because we cannot have an honest visual conversation without it.</p>
+  <p class="lead">Image <em>generation</em> (text-to-image) versus image <em>analysis</em> (image-to-text, alt-text, multi-image comparison). Most people think of generation when they think of AI — but <em>both</em> are forms of data visualization, and that is the lens we want students to bring to each.</p>
 </section>
 <section class="slide-image-only" id="multimodal-explainer">
   <img src="../../../assets/slides/w05/multimodal.webp" alt="Multimodal AI explainer: text, image, audio, video, and sensor inputs pass through encoders into a fusion stage, producing text, image, and decision outputs." loading="lazy">
   <p class="caption">Multimodal AI in one diagram — every input type meets in a shared representation, then comes back out as any output type. <em>Generated with ChatGPT Images 2.0.</em></p>
 </section>
-<section class="slide-quote" id="matrix-keywords">
-  <img src="../../../assets/slides/w05/matrix-keywords.webp" alt="Cyberpunk-aesthetic generated image" loading="lazy">
-  <div class="quote-text">
-    <blockquote>matrix, code, hacking, cyberpunk, data, digital, futuristic, neon, digital art, high tech, virtual reality, cyberspace, glitch, technology, sci fi, computer, programming, dark, binary, encryption, AI, network, security</blockquote>
-    <p class="attribution">— OpenJourney + neuralframes — what the prompt-aesthetic <em>actually</em> asks for</p>
-  </div>
-</section>
-        <section class="slide-image-bullets" id="paperclip">
-          <div class="bullets-text">
-
-            <h2>The Paperclip Maximizer (and other thought experiments)</h2>
-            <ul><li><a href="https://www.decisionproblem.com/paperclips/">decisionproblem.com/paperclips</a> — the playable form of an alignment thought experiment.</li>
-<li><em>Not</em> a prediction. A teaching tool for what optimisation without judgement looks like.</li>
-<li>Useful pairing for any visual-AI conversation: what is the AI optimising <em>for</em>?</li></ul>
-
-          </div>
-          <img src="../../../assets/slides/w05/paperclip.webp" alt="Paperclip maximizer game" loading="lazy">
-        </section>
-        <section class="slide-image-bullets" id="sb-53">
-          <div class="bullets-text">
-
-            <h2>Anthropic and SB-53</h2>
-            <ul><li>California&#x27;s SB-53: AI safety reporting and worker protections.</li>
-<li>Anthropic publicly endorsed it; many AI companies did not.</li>
-<li>When you teach AI policy, regulatory choices are part of the curriculum.</li></ul>
-
-          </div>
-          <img src="../../../assets/slides/w05/sb-53.webp" alt="Anthropic SB-53 endorsement" loading="lazy">
-        </section>
         <section class="slide-image-bullets" id="gan-history">
           <div class="bullets-text">
 
-            <h2>Where this came from: 2018 GANs</h2>
-            <ul><li>GAN-generated faces, 2018: still uncanny, mostly monstrous.</li>
-<li>Seven years later: photorealistic.</li>
-<li>The shift was not in <em>kind</em> but in <em>scale</em> — same architecture, more compute, more scraped images.</li></ul>
+            <h2>AI Image origins</h2>
+            <ul><li>Most AI image generation grew out of <strong>GANs</strong> — <em>generative adversarial networks:</em> two neural networks, a generator and a discriminator, trained against each other until the generator&#x27;s fakes can fool the critic.</li>
+<li>GAN-generated faces, 2018: still uncanny, mostly monstrous. Seven years later: photorealistic.</li>
+<li>The shift was not in <em>kind</em> but in <em>scale</em> — same idea, more compute, more scraped images.</li></ul>
 
           </div>
           <img src="../../../assets/slides/w05/gan-history.webp" alt="2018 GAN-generated faces" loading="lazy">
         </section>
-<section class="slide-section" id="demo-section">
+<section class="slide-section" id="images-as-infoviz">
   <p class="kicker">Part 2</p>
-  <h2>Live demo: archival comic covers</h2>
-  <p class="lead">I upload a small set to Claude Sonnet. We walk: describe → alt-text → key features → comparative metadata → relational visualization as an Artifact.</p>
+  <h2>AI Images as Information Visualization</h2>
+  <p class="lead">Every generated image is a picture of the training data — a visualization of what the model has seen, and of whose world it treats as the default.</p>
 </section>
-<section class="slide-demo-slot" id="demo-comics">
-  <p class="kicker">Live demo</p>
-  <h2>Image-to-text on archival comics</h2>
-  <p>Watch where the model invents detail that isn&#x27;t in the image. That&#x27;s the place a student must learn to push back.</p>
+<section class="slide-image-only" id="noble-profstyle">
+  <img src="../../../assets/slides/w05/noble-profstyle.webp" alt="A grid of Google Images search results for the phrase &#x27;professor style,&#x27; almost entirely older white men in tweed jackets, blazers, and ties. Caption: Figure 1.9, Google Images results when searching the phrase &#x27;professor style&#x27; while logged in as myself, September 11, 2015." loading="lazy">
+  <p class="caption">Safiya Noble, <em>Algorithms of Oppression</em> — a search engine&#x27;s idea of a &#x27;professor.&#x27;</p>
 </section>
-        <section class="slide-exercise" id="exercise-image-to-text">
-          <p class="kicker">Exercise</p>
-          <h2>Image-to-text translation set</h2>
-          <p class="prompt">Using your five-to-ten image set:</p>
-          <ol><li>Upload all images to Claude Sonnet (single conversation).</li>
-<li>Generate descriptive <strong>alt-text</strong> for each image, applying accessibility standards.</li>
-<li>Build a metadata table: image, key features, period or context, observations.</li>
-<li>Ask Claude to surface <strong>three patterns</strong> across the set.</li>
-<li>Generate an <strong>Artifact</strong> that visualizes the set in a meaningful relationship.</li>
-<li>Critique the alt-text. Where does Claude&#x27;s vision fail or flatten?</li></ol>
-        </section>
-<section class="slide-quote no-image" id="alt-text-as-draft">
-
+<section class="slide-quote long-quote no-image" id="noble-quote">
   <div class="quote-text">
-    <blockquote>AI-generated alt-text is a <em>draft.</em> It is faster than writing alt-text from scratch, and it is consistently worse than alt-text written by a human who knows the context.</blockquote>
-    <p class="attribution">— Pedagogical note for Workshop 3</p>
+    <blockquote>What we find in search engines about people and culture is important. They oversimplify complex phenomena. They obscure any struggle over understanding, and they can mask history. Search results can reframe our thinking and deny us the ability to engage deeply with essential information and knowledge we need, knowledge that has traditionally been learned through teachers, books, history, and experience. Search results, in the context of commercial advertising companies, lay the groundwork, as I have discussed throughout this book, for implicit bias: bias that is buttressed by advertising profits.</blockquote>
+    <p class="attribution">— Safiya Noble, <em>Algorithms of Oppression</em></p>
   </div>
+</section>
+<section class="slide-image-only" id="prof-comparison">
+  <div style="display:flex; gap:1.5rem; align-items:center; justify-content:center;">
+    <img src="../../../assets/slides/w05/profone.webp" alt="AI-generated image of a smiling middle-aged white male economics professor in a tweed jacket and tie, gesturing at a chalkboard of supply-and-demand graphs and equations, with stacked economics textbooks and a laptop on the desk." loading="lazy" style="max-height:60vh;">
+    <img src="../../../assets/slides/w05/proftwo.webp" alt="AI-generated image of the same middle-aged white male professor in a tweed jacket, now pointing at the viewer and holding a book, in front of a chalkboard of calculus and physics equations reading &#x27;Knowledge is Power,&#x27; with stacked math textbooks on the desk." loading="lazy" style="max-height:60vh;">
+  </div>
+  <p class="caption">Ask for &#x27;a professor&#x27; twice and you get the same man. <em>Generated with ChatGPT Images 2.0.</em></p>
+</section>
+<section class="slide-image-only" id="original-meme">
+  <img src="../../../assets/slides/w05/originalmeme.webp" alt="The &#x27;They&#x27;re the same picture&#x27; meme from The Office: Pam holds up two near-identical photographs of an office building and says &#x27;Corporate needs you to find the differences between this picture and this picture,&#x27; then deadpans &#x27;They&#x27;re the same picture.&#x27;" loading="lazy">
+  <p class="caption">The reference: the original &#x27;They&#x27;re the same picture&#x27; meme.</p>
+</section>
+<section class="slide-image-only" id="meme-fail">
+  <img src="../../../assets/slides/w05/memefail.webp" alt="A failed AI re-creation of the Office meme: instead of Pam holding two photos, the generated professor sits beside Pam, both captioned &#x27;They&#x27;re the same picture.&#x27; The setup of the joke is gone." loading="lazy">
+  <p class="caption">Ask ChatGPT Images 2.0 to remake the meme and the joke collapses — it keeps the punchline but loses the premise.</p>
+</section>
+<section class="slide-image-only" id="gemini-meme">
+  <img src="../../../assets/slides/w05/geminimeme.webp" alt="Gemini&#x27;s version of the meme: two top panels labeled &#x27;ECONOMICS PROFESSOR&#x27; and &#x27;CALCULUS PROFESSOR&#x27; show the same generated professor at two chalkboards, with Pam below captioned &#x27;They&#x27;re the same picture.&#x27;" loading="lazy">
+  <p class="caption">Gemini (Nano Banana 2) gets closer to the meme&#x27;s structure — and makes the same point about sameness.</p>
+</section>
+<section class="slide-image-only" id="more-prof">
+  <img src="../../../assets/slides/w05/moreprof.webp" alt="Tomer Ullman&#x27;s iterative &#x27;make it more&#x27; experiment: at left, the first generated professor — a bespectacled man at a chalkboard; at right, after repeatedly asking to make it &#x27;more&#x27; professor, an absurd wizard-like figure with a huge beard, ornate robes, and a cosmic background." loading="lazy">
+  <p class="caption">Tomer Ullman&#x27;s iterative &#x27;professor,&#x27; generated by ChatGPT and DALL-E — what &#x27;more&#x27; looks like when you keep pushing.</p>
 </section>
         <section class="slide-exercise" id="exercise-make-it-more">
           <p class="kicker">Exercise</p>
-          <h2>Exercise One: Make it More</h2>
-          <p class="prompt">From the source-class deck — useful as a warm-up if you finish early:</p>
+          <h2>Make it &#x27;more&#x27;</h2>
           <ol><li>Pick a word that you associate with your interests or professional goals.</li>
-<li>Ask any text-to-image tool to generate an image of it: &#x27;draw me a gamer,&#x27; &#x27;draw me a lawyer.&#x27;</li>
-<li>Ask it to make it &#x27;more&#x27; [that thing]. Iterate four or five times.</li>
-<li>Compare the trajectory. What stereotypes does the model reach for first? Last?</li></ol>
+<li>Ask any text-to-image tool to generate an image of it — for instance, &#x27;draw me a gamer&#x27; or &#x27;draw me a lawyer.&#x27;</li>
+<li>Ask it to make the image &#x27;more&#x27; [that thing]. Iterate through several rounds.</li>
+<li>Compare the results. What does the model reach for first? What does &#x27;more&#x27; turn out to mean?</li></ol>
         </section>
-        <section class="slide-exercise" id="exercise-make-it-you">
+<section class="slide-image-only" id="chatgpt-thinks">
+  <img src="../../../assets/slides/w05/chatgptthinks.webp" alt="A social-media post by Angie Jones reading &#x27;ChatGPT thinks I&#x27;m a white man,&#x27; above the prompt &#x27;based on what you know about me, draw a picture of what you think your current life looks like.&#x27; The generated image shows a man at a tidy multi-monitor desk in a plant-filled home office." loading="lazy">
+  <p class="caption">Angie Jones: &#x27;ChatGPT thinks I&#x27;m a white man.&#x27;</p>
+</section>
+<section class="slide-image-only" id="chatgpt-life">
+  <img src="../../../assets/slides/w05/chatgptlife.webp" alt="A Bluesky post by Kashmir Hill about outsourcing her decisions to generative AI and running the &#x27;draw what you think my life looks like&#x27; prompt. She notes the result was &#x27;mostly me,&#x27; but &#x27;it erased my husband, which is troubling.&#x27; The image shows a woman reading alone in a warm, book-filled room." loading="lazy">
+  <p class="caption">Kashmir Hill: &#x27;But it erased my husband, which is troubling.&#x27;</p>
+</section>
+<section class="slide-image-only" id="me-claude-gemini">
+  <img src="../../../assets/slides/w05/me-claude-gemini.webp" alt="A colorful cartoon portrait of a bespectacled person in a patchwork sweater typing on a laptop in a lush garden at night, walking a small chihuahua, surrounded by retro game cartridges, swirling hypertext-link code, a TARDIS-like door, a lighthouse, and a winding road — a generative-AI image of the presenter assembled from what Claude and Gemini &#x27;know.&#x27;" loading="lazy">
+  <p class="caption">The same prompt, run on what the tools &#x27;know&#x27; about me — Claude and Gemini.</p>
+</section>
+        <section class="slide-exercise" id="exercise-draw-your-life">
           <p class="kicker">Exercise</p>
-          <h2>Exercise Two: Make it You</h2>
-          <p class="prompt">A second warm-up from the source class:</p>
-          <ol><li>Ask a text-to-image tool to draw <em>you</em>, based on a sentence about your work.</li>
-<li>Note what it gets right, what it invents, what it whitens / flattens.</li>
-<li>This is the same system we just used to write alt-text. The biases ride along.</li></ol>
-        </section>
-        <section class="slide-image-bullets" id="wapo-bias">
-          <div class="bullets-text">
-
-            <h2>AI image bias, in one <em>Washington Post</em> interactive</h2>
-            <ul><li><em><a href="https://www.washingtonpost.com/technology/interactive/2023/ai-generated-images-bias-racism-sexism-stereotypes/">wapo.com/.../ai-generated-images-bias-racism-sexism-stereotypes</a></em></li>
-<li>What the model produces for &#x27;a CEO,&#x27; &#x27;a janitor,&#x27; &#x27;a beautiful person.&#x27;</li>
-<li>Pair with Crawford &amp; Paglen&#x27;s <em>Excavating AI</em> for the structural account.</li></ul>
-
-          </div>
-          <img src="../../../assets/slides/w05/wapo-bias.webp" alt="WaPo interactive on AI image bias" loading="lazy">
-        </section>
-        <section class="slide-exercise" id="exercise-three">
-          <p class="kicker">Exercise</p>
-          <h2>Exercise Three: alt-text in the wild</h2>
-          <p class="prompt">If your discipline involves images, take this back to your teaching:</p>
-          <ol><li>Pick a corpus of images you&#x27;d give a student to work with — archival, art-history, scientific.</li>
-<li>Generate alt-text with Claude for the whole set.</li>
-<li>Have students <em>correct</em> the AI&#x27;s alt-text rather than write theirs from scratch.</li>
-<li>The pedagogical move: students learn to write alt-text by editing a flawed draft.</li></ol>
+          <h2>Draw your life</h2>
+          <p class="prompt">Using a generative AI tool that you have relied upon for life, work, or class experiments in the past, try the prompt:</p>
+          <blockquote>Based on what you know about me, draw a picture of what you think my current life looks like.</blockquote>
         </section>
 <section class="slide-quote no-image" id="critical-reflection">
 
@@ -280,12 +250,59 @@
     <p class="attribution">— Crawford &amp; Paglen, <em>Excavating AI</em></p>
   </div>
 </section>
+        <section class="slide-image-bullets" id="wapo-bias">
+          <div class="bullets-text">
+
+            <h2>How AI image generators see the world</h2>
+            <ul><li>The <em>Washington Post</em>&#x27;s interactive on AI image bias — every image generated, none photographed.</li>
+<li>What the model produces for &#x27;a CEO,&#x27; &#x27;a janitor,&#x27; &#x27;a beautiful person.&#x27;</li>
+<li><a href="https://www.washingtonpost.com/technology/interactive/2023/ai-generated-images-bias-racism-sexism-stereotypes/?itid=lk_interstitial_manual_32">wapo.com/.../ai-generated-images-bias-racism-sexism-stereotypes</a></li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w05/postarticle.webp" alt="Washington Post interactive headline &#x27;This is how AI image generators see the world,&#x27; over a mosaic of generated faces, with a note that all images in the story are AI-generated." loading="lazy">
+        </section>
+<section class="slide-image-only" id="wapo-toys">
+  <img src="../../../assets/slides/w05/toys.webp" alt="From the Washington Post piece: results for the prompt &#x27;toys in Iraq&#x27; — a grid of AI-generated images that are all toy soldiers carrying guns, set against rubble and desert backdrops." loading="lazy">
+  <p class="caption">&#x27;Toys in Iraq&#x27; → soldiers with guns. The dataset&#x27;s assumptions, made visible.</p>
+</section>
+<section class="slide-image-only" id="wapo-houses">
+  <img src="../../../assets/slides/w05/houses.webp" alt="From the Washington Post piece: &#x27;a photo of a house&#x27; generated for the United States, China, and India. The U.S. house is a suburban clapboard home; the others lean on stereotyped architectural cues." loading="lazy">
+  <p class="caption">&#x27;A photo of a house,&#x27; by country — each a composite of what the model assumes.</p>
+</section>
+        <section class="slide-exercise" id="exercise-generic">
+          <p class="kicker">Exercise</p>
+          <h2>Generic, then specific</h2>
+          <ol><li>Ask for generic illustrations — a family, a neighborhood, a profession.</li>
+<li>Then try modifying the prompt with identity-related and location-specific terms.</li>
+<li>Compare. What changes, what stays fixed, and what does the &#x27;default&#x27; turn out to be?</li></ol>
+        </section>
+<section class="slide-section" id="visualizing-section">
+  <p class="kicker">Part 3</p>
+  <h2>Visualizing Images with AI</h2>
+  <p class="lead">From generation to analysis: turning a set of images into structured description, metadata, and a visualization you can interrogate.</p>
+</section>
+        <section class="slide-exercise" id="exercise-image-to-text">
+          <p class="kicker">Exercise</p>
+          <h2>Image-to-text translation set</h2>
+          <p class="prompt">Using your five-to-ten image set:</p>
+          <ol><li>Upload all images to a <strong>Claude Project</strong>.</li>
+<li>Generate descriptive <strong>alt-text</strong> for each image, applying accessibility standards.</li>
+<li>Build a metadata table: image, key features, period or context, observations.</li>
+<li>Ask Claude to surface <strong>three patterns</strong> across the set.</li>
+<li>Generate an <strong>Artifact</strong> that visualizes the set in a meaningful relationship.</li>
+<li>Critique the alt-text. Where does Claude&#x27;s vision fail or flatten?</li></ol>
+        </section>
+        <section class="slide-exercise" id="exercise-cowork">
+          <p class="kicker">Exercise</p>
+          <h2>Then: Claude Cowork</h2>
+          <p class="prompt">Try the same thing, but with <strong>Claude Cowork</strong> if you have access.</p>
+        </section>
 <section class="slide-section" id="discussion">
-  <p class="kicker">Part 5</p>
+  <p class="kicker">Part 4</p>
   <h2>Discussion</h2>
   <p class="lead">Where does this fit in your teaching? An accessibility tool? A scaffolded close-reading exercise? An archival metadata workflow? All three?</p>
 </section>
-        <section class="slide-image-bullets" id="looking-ahead">
+        <section class="slide-image-bullets no-image" id="looking-ahead">
           <div class="bullets-text">
 
             <h2>Looking ahead</h2>
@@ -294,7 +311,6 @@
 <li>Save your Artifact URL from today; we&#x27;ll iterate on it later.</li></ul>
 
           </div>
-          <img src="../../../assets/slides/w05/looking-ahead.webp" alt="Looking ahead from Workshop 3" loading="lazy">
         </section>
         <section class="slide-closing" id="closing">
           <h2>Carry it forward</h2>
