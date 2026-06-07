@@ -42,41 +42,30 @@ Optional:
 
 ## Session Outline (120 minutes)
 
-1. **Two paradigms in one session.** Image *generation* (text-to-image) versus image *analysis* (image-to-text, alt-text, multi-image comparison). The workshop is about both, but we lead with the analytical work because that's where the pedagogical leverage is.
-2. **The copyright and ethics conversation.** Where the lawsuits stand, what training data was scraped, what we can and can't responsibly generate or analyze. The Crawford & Paglen reading is the structural critique; the lawsuits are the live news.
-3. **Live demo: archival comic covers in two tools.** I upload a small set to Claude Sonnet two ways — first to a **Project** (for batch metadata work across many files, with persistent context) and then to a fresh **Artifact** conversation (for the publishable visualization). We walk: describe → alt-text → key features → comparative metadata → relational visualization as an Artifact.
-4. **Hands-on: your image set.** Each participant uploads their five-to-ten image set:
-   - In a **Project** — generate alt-text for each image, build a metadata table, ask Claude for three patterns across the set.
-   - In an **Artifact** — generate a comparative-description gallery (a grid, a typology, a timeline) you can share by URL.
-5. **Critical reflection.** What did Claude *see* that you did not? What did it miss? Where does its visual reading reproduce the biases discussed in Crawford & Paglen? What's it doing with images of people, in particular?
+1. **Two paradigms in one session.** Image *generation* (text-to-image) versus image *analysis* (image-to-text, alt-text, multi-image comparison). Most people think of generation when they think of AI — but *both* are forms of data visualization, and that is the lens we bring to each.
+2. **AI images as information visualization.** Every generated image is a picture of its training data. We look at what search engines and generators reveal about defaults and bias: Safiya Noble's "professor style" results, the way tools return the same man for "a professor," the "make it more" drift toward stereotype, and the *Washington Post* bias interactive ("toys in Iraq," "a house" by country). Crawford & Paglen's "Excavating AI" is the structural critique. Warm-up exercises run throughout: "make it *more*," "draw my life," and generic-then-specific prompting.
+3. **The copyright and ethics conversation.** Where the lawsuits stand, what training data was scraped, what we can and can't responsibly generate or analyze, and what working with local models changes about sending images to someone else's server.
+4. **Visualizing images with AI (hands-on).** Each participant uploads their five-to-ten image set to a **Claude Project**: alt-text for each image, a metadata table, three patterns across the set, and an **Artifact** that visualizes the set in a meaningful relationship. Then we try the same workflow in **Claude Cowork**.
+5. **Critical reflection.** What did Claude *see* that you did not? What did it miss? Where does its visual reading reproduce the biases discussed earlier? What's it doing with images of people, in particular?
 6. **Discussion: where this fits in your teaching.** An accessibility tool? A scaffolded close-reading exercise? An archival metadata workflow? A copyright trap? All of the above?
 
 ## Core Exercise
 
-**Image-to-text translation set, two tools.** Using your image set:
+**Image-to-text translation set.** Using your five-to-ten image set:
 
-**Part A — In a Claude Project (the batch work):**
-
-1. Create a fresh Project. Upload all images.
+1. Upload all images to a **Claude Project**.
 2. Generate descriptive alt-text for each, applying accessibility standards.
 3. Build a metadata table covering: image, key features, period or context, observations.
 4. Ask Claude to surface three patterns across the set.
-
-**Part B — In a Claude Artifact (the shareable output):**
-
-5. Open a new conversation; ask Claude to build an Artifact that visualizes the set in a meaningful relationship — a grid, a comparative table, a typology.
-6. Iterate on the Artifact: change the layout, add captions from your alt-text, fix what's flat.
-7. Publish it. Save the URL.
-
-**Part C — The critique:**
-
-8. Where does Claude's vision fail or flatten? Where did the Project handle scale better than the Artifact, or vice versa? What would you tell a student to watch for?
+5. Ask Claude to build an **Artifact** that visualizes the set in a meaningful relationship — a grid, a comparative table, a typology. Iterate on the layout and captions, then publish and save the URL.
+6. Critique the alt-text. Where does Claude's vision fail or flatten? What's it doing with images of people, in particular? What would you tell a student to watch for?
+7. If you have access, try the same workflow in **Claude Cowork**.
 
 ## Pedagogical Note
 
 For accessibility-minded readers: AI-generated alt-text is *a draft.* It is faster than writing alt-text from scratch, and it is consistently worse than alt-text written by a human who knows the context. Use it as scaffolding for students learning to write alt-text, not as a finished artifact. The same applies to metadata: AI accelerates a draft; human curation is the work.
 
-For the copyright conversation: there is no current legal answer, only a moving target. The honest pedagogical move is to teach students to ask the question — what was this trained on, what gives us the right to use this image, who is harmed if we get it wrong — not to give them a stable answer.
+For the copyright conversation: there is no current legal answer, only a moving target. The honest pedagogical move is to teach students to ask the question — what was this trained on, what gives us the right to use this image, who is harmed if we get it wrong — not to give them a stable answer. Working with local models instead of web-based products like Claude can remove one piece of the problem: sending images to someone else's server. We'll discuss this more as we get into Claude Code.
 
 ## Cross-references
 
