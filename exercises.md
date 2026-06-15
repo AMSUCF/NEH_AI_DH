@@ -61,11 +61,11 @@ Every workshop has one core exercise; every async week offers a deep-dive menu a
 
 ### Workshop 4 (June 24) — Agentic AI + GitHub Pages, two paths
 
-<span class="tag tag-standard">Standard</span> **Pick a path. Both deploy to GitHub Pages.**
-- *Path A — CV → ePortfolio.* Bring a CV / syllabus / project description. Claude Code Web reads it, builds a one-page site, deploys to Pages.
-- *Path B — Dataset → visualization.* Bring a CSV / JSON. Claude Code Web reads it, proposes three visualization approaches, deploys the chosen one.
+<span class="tag tag-standard">Standard</span> **Pick a path. Both build and deploy agentically in Claude Code Web — plan → iterate → deploy to GitHub Pages, no local setup.** In the live demo, both builds are run in Claude Code Desktop to compare the local workflow with the browser one.
+- *Path A — CV → ePortfolio.* Bring a CV / syllabus / project description. Code Web plans, builds a one-page site, deploys to Pages.
+- *Path B — Image set → annotated slideshow.* Bring 5–15 images you have rights to. Code Web generates descriptive alt text, renames the files to match their contents, and builds a deployed slideshow. *(Adapted from the* Image Metadata with Claude Code *demo, [DHSI 2026](https://anastasiasalter.net/DHSI_DH_AI_2026/).)*
 
-*Source: [HumanitiesAI/weekeleven](https://anastasiasalter.net/HumanitiesAI/weekeleven.html); [CriticalMaking2026/exercises/ten_visualization](https://anastasiasalter.net/CriticalMaking2026/exercises/ten_visualization.html).*
+*Source: [HumanitiesAI/weekeleven](https://anastasiasalter.net/HumanitiesAI/weekeleven.html); [CriticalMaking2026/exercises/ten_visualization](https://anastasiasalter.net/CriticalMaking2026/exercises/ten_visualization.html); [DHSI 2026](https://anastasiasalter.net/DHSI_DH_AI_2026/).*
 
 ### Week 8 (async) — Multiple small projects
 
@@ -117,6 +117,6 @@ Pick two or three. Each is small. Each ends in a deployed URL.
 | W1 (May 13) — Introducing AI | A laptop. A document, conversation, or short piece of writing for your first prompt. |
 | W3 (May 27) — Textual Analysis | A small corpus (3–10 texts) you have rights to use. |
 | W5 (June 10) — Visual Analysis | An image set (5–10 images you have rights to). |
-| W7 (June 24) — Web Applications | A CV / syllabus *or* a dataset (CSV / JSON). A free GitHub account. |
+| W7 (June 24) — Web Applications | A CV / syllabus *or* 5–15 images you have rights to. A free GitHub account. |
 | W9 (July 8) — Playful + Policy | A concept from your course. A draft AI policy paragraph. The W7 site URL. |
 | W11 (July 22) — Agentic Futures | All your artifacts (W7, W9, AI policy, Skill from W4). Optional: a personal laptop with admin access. |
