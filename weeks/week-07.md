@@ -25,7 +25,7 @@ Streamed and recorded. Open to UCF faculty, graduate students, and the larger ar
 
 ## What to Bring
 
-- A free [GitHub account](https://github.com/) — created ahead of time if possible, but we will walk through signup at the start of the session for anyone who is new. Use your `.edu` email so you can apply for [GitHub Education](https://education.github.com/) benefits.
+- A free [GitHub account](https://github.com/) — created ahead of time if possible, but we will walk through signup at the start of the session for anyone who is new. Use your `.edu` email so you can apply for [GitHub Education](https://education.github.com/) benefits. Note: UCF community members are having difficulty with the account verification process, so if you can't get EDU benefits, that's OK — we don't need them for this activity.
 - **One** of the following, depending on which path you want to take:
   - **ePortfolio path:** your CV, a course syllabus, a project description, or a short bio paragraph in `.docx`, `.pdf`, or `.md`.
   - **Image-slideshow path:** a small set of images you have rights to use (5–15) — your own photographs, public-domain scans, or Creative Commons images. Examples: documentation of your fieldwork or making, a teaching image set, a small selection from an archive.
@@ -45,20 +45,23 @@ Optional:
 
 ## Session Outline (120 minutes)
 
-1. **What "agentic AI" actually means.** Tool use (the model can call functions you give it), planning (the model decides what to do next, in what order, when to stop), and subagents (the model can spawn helper instances of itself). An *agent* is the loop these compose into. Why this is a meaningful shift from chat-only Claude — and why everything we did in W1–W6 is still the substrate.
+1. **What "agentic AI" actually means.** Tool use (the model can call functions you give it), planning (the model decides what to do next, in what order, when to stop), and subagents (the model can spawn helper instances of itself). An *agent* is the loop these compose into. Why this is a meaningful shift from chat-only Claude — and why everything we did in W1–W6 is still the substrate. Agentic behavior is no longer confined to one place: **Cowork** is also agentic, and tool use is now possible throughout the Claude web interface — but **Claude Code is the more powerful agentic harness**, which is why it anchors this stage.
 2. **GitHub and GitHub Pages, from scratch.** Walk through, together: creating an account, what a *repository* is, what a *commit* is in plain language, what *main* means, and what GitHub Pages does (a free public URL pointed at the contents of your repo). Anyone who needs to sign up does it now; everyone leaves this section with a working account and one empty repository.
 3. **From Artifact to Code Web.** What persists, what changes. Why a real GitHub repository matters even for a one-page site (version history, attribution, sharing). What Claude Code Web can and cannot do compared to **Claude Code Desktop** — the local app I demo alongside it today and that we tour fully in Workshop 6 (W11).
-4. **Live demo: two builds, in Claude Code Desktop.** I run both builds in **Claude Code Desktop** (the version that lives on your own machine) so you can compare it with the browser workflow you'll do hands-on:
-   - **CV → ePortfolio**: plan, build, and deploy a single-page personal site.
-   - **Image set → annotated slideshow**: generate alt text for each image, rename the files to match their contents, and build a slideshow.
-   Both ship to GitHub Pages within the demo. We watch the URLs go live, we iterate visibly, and we name what's different between the local (Desktop) and browser (Code Web) workflows.
+4. **Live demo: one build per interface.** I run one demo in **Claude Code Web** (the browser) and one in **Claude Code Desktop** (the version that lives on your own machine), so we can compare the two interfaces and talk through the advantages and challenges of each:
+   - **CV → ePortfolio, in Claude Code Web**: plan, build, and deploy a single-page personal site.
+   - **Image set → annotated slideshow, in Claude Code Desktop**: generate alt text for each image, rename the files to match their contents, and build a slideshow.
+   Both ship to GitHub Pages within the demo. We watch the URLs go live, we iterate visibly, and we name what's different between the browser (Code Web) and local (Desktop) workflows.
 5. **Hands-on: your document or your images.** Pick a path. Each participant follows the demo on their own materials, in Claude Code Web. Roving help, pair support encouraged.
 6. **Discussion: assignment design.** Open Q&A on how AI fits into the assignments and projects you are building. What changes when "build a website" becomes a 90-minute exercise instead of a semester project? What gets *added* to the assignment to keep it pedagogical?
 7. **Wrap.** What broke today? What surprised you?
+8. **ELC 5 team: creativity and AI (11:30 – noon).** The [*Electronic Literature Collection*, Volume 5](https://eliterature.github.io/elc5-info/) team (Electronic Literature Organization) joins us to discuss creativity and AI.
+
+The ELC 5 team continues with a longer session and Q&A from **1 – 2:30 PM** — all participants are encouraged to attend. More information: [eliterature.github.io/elc5-info](https://eliterature.github.io/elc5-info/).
 
 ## Core Exercise
 
-**Both paths build and deploy agentically in [Claude Code Web](https://claude.ai/code) — plan, iterate, deploy to GitHub Pages, straight from the browser with no local setup. Pick one.** In the live demo I run the same two builds in **Claude Code Desktop** (the local app) so you can watch the difference between the browser workflow you'll use here and the local-files-plus-Desktop workflow we tour properly in Workshop 6.
+**Both paths build and deploy agentically in [Claude Code Web](https://claude.ai/code) — plan, iterate, deploy to GitHub Pages, straight from the browser with no local setup. Pick one.** In the live demo I run one build in **Claude Code Web** and one in **Claude Code Desktop** (the local app) so we can compare the two interfaces and the advantages and challenges of each — the Desktop workflow is the one we tour more fully in Workshop 6.
 
 > **If the GitHub connector asks for a token:** Code Web's GitHub connection sometimes needs a personal access token (PAT) rather than one-click authorize. If it does: GitHub → *Settings → Developer settings → Personal access tokens → Fine-grained tokens*, give it read/write on your repository, and paste it when Code Web prompts. We'll walk through this together if it comes up.
 
@@ -85,7 +88,7 @@ Optional:
 6. **Deploy via GitHub Pages.** *Settings → Pages*, source `main` branch, folder `/site` (or `/(root)`). Wait two minutes; the live URL appears.
 7. **Save the URL.** Bring it to W9.
 
-**While you build, watch the comparison.** The demo runs both of these in Claude Code Desktop — same agentic loop (plan → build → deploy), same Pages target, but the files live on my machine and I commit through GitHub Desktop instead of the browser. Notice where the two workflows diverge: setup, where your files live, how you connect to GitHub, what persists between sessions. That contrast is the on-ramp to the CLI tour in Workshop 6.
+**While you build, watch the comparison.** We run one demo in **Claude Code Web** and one in **Claude Code Desktop**, comparing the two interfaces and discussing the advantages and challenges of each — same agentic loop (plan → build → deploy) and same Pages target, but Desktop keeps the files on my machine and commits through GitHub Desktop instead of the browser. Notice where the two workflows diverge: setup, where your files live, how you connect to GitHub, what persists between sessions. That contrast is the on-ramp to the CLI tour in Workshop 6.
 
 ## Pedagogical Note
 
