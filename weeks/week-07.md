@@ -92,7 +92,7 @@ The ELC 5 team continues with a longer session and Q&A from **1 – 2:30 PM** �
 
 ## Pedagogical Note
 
-This is the workshop where some participants will feel the strongest dissonance: *I just made a website without writing any code.* The honest answer is yes — and also: you wrote prose, you made design decisions, you reviewed the output, you committed changes. That is a literacy, even if it is not the literacy you grew up calling "programming." Read Martin's *PMLA* essay before the session if you want a frame for the conversation it will provoke.
+This is the workshop where some participants will feel the strongest dissonance: *I just made a website without writing any code.* It is worth naming what *did* happen. Describing what you want in prose and steering what the model builds is a kind of **natural language programming** — the prompt is the source, the running site is the output. And it is continuous with **distant coding**: just as distant reading lets us work with a corpus too large to read line by line, agentic AI lets us work with code without authoring every line — reading it, directing it, and judging it instead. You still made the design decisions, reviewed the output, and committed the changes. That is a literacy, even if it is not the one you grew up calling "programming." Read Martin's *PMLA* essay before the session if you want a frame for the conversation it will provoke.
 
 For your own teaching: this is a high-leverage assignment design, but it is also one where students can use the tool poorly. Scaffold by requiring (a) at least three iteration cycles documented in the conversation history, (b) a reflection on at least one design decision the student overrode, and (c) attribution of AI use in the README.
 
