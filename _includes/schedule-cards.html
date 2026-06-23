@@ -7,7 +7,7 @@ Weeks above `last_open_week` render as locked "Coming soon" cards: title is
 plain text, week-page link and slide-deck link are suppressed. Bump the
 threshold as new weeks are released.
 {%- endcomment -%}
-{%- assign last_open_week = 7 -%}
+{%- assign last_open_week = 8 -%}
 {% assign weekpages = site.pages | where_exp:"p","p.week" | sort:"week" %}
 {%- assign workshop_colors = "coral,cobalt,mustard,plum" | split: "," -%}
 {%- assign workshop_seen = 0 -%}

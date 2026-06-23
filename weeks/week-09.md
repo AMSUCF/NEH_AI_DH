@@ -27,6 +27,7 @@ Streamed and recorded. Open to UCF faculty, graduate students, and the larger ar
 - The W7 site URL (we may iterate on it, or branch off it).
 - A draft AI policy from your current syllabus, even one paragraph. If you do not have one, bring a syllabus with no AI policy and a willingness to draft.
 - **A concept from your course you'd be willing to turn into a game** — a key term to learn, a decision tree to internalize, a periodization to memorize, a set of texts to compare. Anything where "play it" might teach better than "study it."
+- **Ideas for more complicated tools or problems you'd love to solve** — the harder, messier things you wish you could build for your research or teaching, whether or not you think Claude Code can help. We'll use these to map where these tools genuinely reach and where they don't (yet).
 
 ## Pre-Workshop Reading
 
