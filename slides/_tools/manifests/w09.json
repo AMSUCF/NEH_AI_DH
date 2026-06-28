@@ -178,6 +178,17 @@
       "media": []
     },
     {
+      "id": "ucf-frame",
+      "layout": "image-bullets",
+      "title": "The frame you're drafting inside: UCF and agentic AI",
+      "bullets": [
+        "**UCF IT:** agentic coding tools (Claude Code, Cursor) approved only for *unrestricted* data — [infosec.ucf.edu/document/ai-guidance](https://infosec.ucf.edu/document/ai-guidance/).",
+        "**AI for All:** agents can “complete online assignments and discussion board posts” — [avoid them](https://aiforall.ucf.edu/agents/) on UCF devices and data.",
+        "An agent *doing the coursework* meets UCF's [definition of academic misconduct.](https://guides.ucf.edu/ai/academic-integrity) Your policy can *hinder* or *encourage* — name the line *and* the welcome."
+      ],
+      "media": []
+    },
+    {
       "id": "udl-frame",
       "layout": "image-bullets",
       "title": "UDL as the frame",
@@ -291,6 +302,14 @@
         {
           "label": "MLA statement on AI agents",
           "url": "https://news.mla.hcommons.org/2026/01/30/educational-technologies-and-ai-agents/"
+        },
+        {
+          "label": "UCF IT: Use of AI Tools",
+          "url": "https://infosec.ucf.edu/document/ai-guidance/"
+        },
+        {
+          "label": "UCF AI for All: Agents",
+          "url": "https://aiforall.ucf.edu/agents/"
         }
       ],
       "media": []

@@ -34,6 +34,7 @@ Streamed and recorded. Open to UCF faculty, graduate students, and the larger ar
 - Noble, Safiya Umoja, ["Algorithms Aren't Neutral: Safiya Noble on AI, Bias, and Building Public-Interest Technology."](https://calearninglab.org/myrobotteacher/mrt6/) *My Robot Teacher* podcast. (~30 min listen or transcript.) Required.
 - Costanza-Chock, Sasha. *[Design Justice](https://design-justice.pubpub.org/),* Introduction. (~25 min) Open access.
 - MLA Executive Council. ["Educational Technologies and AI Agents."](https://news.mla.hcommons.org/2026/01/30/educational-technologies-and-ai-agents/) *MLA News*, January 30, 2026. (~10 min) A direct disciplinary statement on AI policy in humanities classrooms.
+- University of Central Florida. ["Use of Artificial Intelligence (AI) Tools"](https://infosec.ucf.edu/document/ai-guidance/) (UCF IT) and ["Agents"](https://aiforall.ucf.edu/agents/) (AI for All). (~10 min skim) UCF's institutional position on agentic AI — the frame your course policy sits inside. Required.
 
 Optional:
 
@@ -56,7 +57,7 @@ Optional:
    - **Equity of access.** Who pays for Pro? Are alternatives provided?
    - **Labor.** Whose labor is being replaced or extended?
    - **UDL.** Multiple means of engagement, representation, action/expression.
-   - **Agentic specifically.** What changes in the policy when "use AI" can mean "let an agent do the work"? *This is the new question this week.*
+   - **Agentic specifically.** What changes in the policy when "use AI" can mean "let an agent do the work"? *This is the new question this week.* UCF's own [guidance](https://infosec.ucf.edu/document/ai-guidance/) already restricts agentic tools and treats an agent doing the coursework as misconduct — see the Pedagogical Note below.
 6. **Discussion.** Read each other's policies. What surprised you? What would your colleagues push back on?
 
 ## Core Exercise
@@ -76,6 +77,10 @@ Iterate the plan with Claude before letting it build. Notice what questions it a
 The most common mistake in AI policies is treating them as a fence. The students who most need clear AI guidance are the ones least likely to ask — the ones who already feel anxious about what counts as cheating. A policy framed as *invitation* (here is when AI use is welcome, here is how to attribute it, here is what to do if you are unsure) reaches those students. A policy framed as *prohibition* drives them underground.
 
 The agentic shift specifically: a student saying "Claude wrote this paper" is one kind of question. A student saying "I told Claude what I wanted, planned it together, reviewed three drafts, overrode two design decisions, and committed each version" is a different kind of work — closer to what we're asking them to do anyway. The policy has to be able to tell those apart.
+
+This is not abstract, and it is not only ours to decide. UCF's institutional position is already restrictive on exactly the kind of work we're practicing. UCF IT's [AI guidance](https://infosec.ucf.edu/document/ai-guidance/) names *agentic* AI explicitly and approves agentic coding tools like Claude Code only for *unrestricted* data, prohibiting them for anything classified as restricted or highly restricted. The AI for All [guidance on agents](https://aiforall.ucf.edu/agents/) goes further, warning that an agentic browser "can complete online assignments and discussion board posts" and urging students, faculty, and staff to "avoid installing or using agents on UCF devices or any device that connects to UCF data." Read alongside UCF's [definition of academic misconduct](https://guides.ucf.edu/ai/academic-integrity) — work that obstructs the instructor's ability to accurately assess a student's own understanding — letting an agent *do* the coursework is squarely an honor-code problem, not a gray area.
+
+That is the frame our course policies sit inside, and the tension is real: this workshop teaches agentic work while the institution, for good reasons of data security and integrity, warns against much of it. The choices we make can either *hinder* or *encourage* learning and engagement. A policy that simply echoes the prohibition as blanket caution teaches students to avoid the tools — or to use them quietly and unaccountably. A policy that names the genuine limits (data classification, and the bright line where an agent doing the assignment *is* the misconduct) *and* the spaces where agentic work is welcome and attributed teaches them to work openly and responsibly. As you draft, ask which one yours does: does it close the door, or does it show students how to walk through it well?
 
 ## Cross-references
 
