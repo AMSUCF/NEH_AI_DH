@@ -5,7 +5,7 @@ kind: workshop
 theme: "Course games, planning mode, and AI policy"
 starts: 2026-07-06
 summary: |
-  Now that we've built more confidence with Claude Code Web, we'll engage with more of its potential for playful and experimental pedagogy: in this week's workshop, we will build simple games based on concepts from your courses, and use planning mode to convey complex intention and override basic design choices. We will also think through what this type of agentic way of working means for AI policies and pedagogy.
+  Now that we've built more confidence with Claude Code, we'll move to Claude Code Desktop with the Superpowers plugin and engage with more of its potential for playful and experimental pedagogy: in this week's workshop, we will build simple games and tools based on concepts from your courses, and use planning mode to convey complex intention and override basic design choices. We'll manage our projects with GitHub Desktop and deploy to Pages. We will also think through what this type of agentic way of working means for AI policies and pedagogy.
 workshop:
   title: "Workshop 5: Playful Approaches and Creative Code"
   date: 2026-07-08
@@ -42,14 +42,13 @@ Optional:
 
 ## Session Outline (120 minutes)
 
-1. **Why playful, why games.** Refik Anadol does it. Mark Sample does it. Allison Parrish does it. Play makes the labor of iteration visible and survivable. Games are arguments — and humanities-scale games (Twine, Bitsy, single-page browser games) are inside reach for a non-coder with Claude Code Web.
+1. **Why playful, why games.** Refik Anadol does it. Mark Sample does it. Allison Parrish does it. Play makes the labor of iteration visible and survivable. Games are arguments — and humanities-scale games (Twine, Bitsy, single-page browser games) are inside reach for a non-coder with Claude Code Desktop.
 2. **Planning mode, the workshop's central technical move.** We don't just prompt and watch. Before Claude builds anything, we ask it to *plan*: "Enter plan mode. Do not exit plan mode until I confirm the plan is ready. Ask clarifying questions until you understand what I want." This single move is the difference between a fast wrong build and a slower right one. We practice it together.
-3. **Live build: a course-concept game.** I take a single concept from a course I teach, and we build a small browser game around it together — using planning mode to surface the design questions before any code is written. Could be a Bitsy-style room-based piece, a single-page choice game, a quiz with explanatory feedback, or a memorization tool with a twist.
-4. **Hands-on: build your tool.** Each participant builds a small interactive tool with planning mode on the topic they brought:
+3. **Live build: a playable artifact from a sample text.** I take a sample text and we build a small playable artifact around it together — something you move through rather than just read — using planning mode to surface the design questions before any code is written. Could be a Bitsy-style room-based piece, a single-page choice game, or another small browser-playable form. Watch how the source text shapes the design.
+4. **Hands-on: build your tool or game.** Each participant builds a small interactive piece with planning mode on the topic they brought:
    - A clickable timeline for a course unit
-   - A recommender that takes inputs and returns a curated suggestion
-   - A quiz or knowledge-check tool with results that *explain* rather than grade
-   - A single-page choice-driven game (a Twine-style structure rendered in HTML/CSS/JS)
+   - A game built from something in your course that *should* be playable — a concept, a decision, a text
+   - A tool that assists your students with some type of work they actually have to do
    - A generator (a Markov-chain mash-up of public-domain text, a centosizer for poetry, a found-poetry tool)
 5. **AI policy, after agentic.** Pivot to the syllabus question. Now that you've spent two workshops *being* the agent, what does that mean for the AI policy in your course? Working in pairs, draft (or revise) a one-page course AI policy that addresses:
    - **Copyright and attribution.** What gets cited, what gets attributed, what gets refused.
@@ -64,9 +63,9 @@ Optional:
 
 Two halves, both required:
 
-**Part A — Build a small game or playful tool with planning mode.** Use Claude Code Web. Deploy via GitHub Pages. Prioritize delight, weirdness, and clarity over scale — small is good. The opening prompt structure:
+**Part A — Build a small game or playful tool with planning mode.** Use Claude Code Desktop with the Superpowers plugin (install it and add your customization first). Manage the project as a local repository in GitHub Desktop and deploy via GitHub Pages. Prioritize delight, weirdness, and clarity over scale — small is good. The opening prompt structure:
 
-> *"Enter plan mode. Do not exit plan mode until I confirm the plan is ready. I want to build [describe the tool: a quiz / a Bitsy-style room game / a recommender / a generator] about [the course concept you brought]. The audience is [students in this course / a public-facing audience / a colleague]. The constraint is HTML / CSS / JS only, deployed on GitHub Pages, no build step. Ask me clarifying questions until you understand what I want."*
+> *"Enter plan mode. Do not exit plan mode until I confirm the plan is ready. I want to build [describe it: a Bitsy-style room game / a playable artifact from a sample text / a tool that helps my students with a task / a generator] about [the course concept you brought]. The audience is [students in this course / a public-facing audience / a colleague]. The constraint is HTML / CSS / JS only, deployed on GitHub Pages, no build step. Ask me clarifying questions until you understand what I want."*
 
 Iterate the plan with Claude before letting it build. Notice what questions it asks; notice what it gets wrong about your discipline that you have to override.
 

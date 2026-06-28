@@ -74,10 +74,10 @@
       ]
     },
     {
-      "id": "demo-memorial",
+      "id": "demo-playable",
       "layout": "demo-slot",
-      "title": "Live build: a memorial Artifact",
-      "note": "I build something small and a little strange — a memorial, a generator, a recommender for an obscure corpus. Watch how the dataset shapes the design.",
+      "title": "Live build: a playable Artifact",
+      "note": "I take a sample text and build something small and a little strange — a playable artifact you can move through, not just read. Watch how the source text shapes the design.",
       "media": []
     },
     {
@@ -86,8 +86,8 @@
       "title": "Pick one (or invent your own)",
       "bullets": [
         "A **clickable timeline** for a course unit.",
-        "A **recommender** that takes a few inputs and returns a curated suggestion.",
-        "A **quiz / knowledge-check** that *explains* rather than grades.",
+        "A **game** built from something in your course that *should* be playable — a concept, a decision, a text.",
+        "A **tool** that assists your students with some type of work they actually have to do.",
         "A **generator** — Markov mash-up of public-domain text, a centosizer, a found-poetry tool."
       ],
       "image": {
@@ -106,35 +106,34 @@
     {
       "id": "exercise-build-tool",
       "layout": "exercise",
-      "title": "Build your tool",
-      "prompt": "Use Claude Code Web. Deploy via GitHub Pages.",
+      "title": "Build your tool or game",
+      "prompt": "Claude Code Desktop + the Superpowers plugin. GitHub Desktop for the repo, deployed to Pages.",
       "steps": [
-        "Pick a topic or dataset *you brought today.*",
-        "Choose one of the four shapes above (or invent yours).",
-        "Prompt Claude with: *what it is, who it's for, what's strange about it.*",
-        "Iterate three times. Each iteration: one specific design decision documented in the conversation.",
-        "Deploy to Pages. Save the URL — you'll share it in the discussion."
+        "Install the **Superpowers** plugin and add your customization.",
+        "In **GitHub Desktop**, create a local repository for your project.",
+        "Turn on **planning mode** and describe it: *what it is, who it's for, what's strange about it.* Confirm the plan before any code.",
+        "Build and iterate. Each pass: one specific design decision documented in the conversation.",
+        "Commit in GitHub Desktop and deploy to Pages. Save the URL — you'll share it in the discussion."
       ],
       "media": []
     },
     {
-      "id": "wapo-bias-recall",
+      "id": "stanfill-tools",
       "layout": "image-bullets",
-      "title": "Stay alert: bias travels with the model",
+      "title": "Sample Tools by Mel Stanfill",
       "bullets": [
-        "*[wapo.com/.../ai-generated-images-bias](https://www.washingtonpost.com/technology/interactive/2023/ai-generated-images-bias-racism-sexism-stereotypes/)* — the same biases ride into your generator.",
-        "Your dataset is a counterweight. Choose it deliberately.",
-        "If you're building a recommender, *whose voices are recommendable?*"
+        "[github.com/mstanfill](https://github.com/mstanfill) — research scrapers built as small, public, single-purpose tools.",
+        "AO3, Bluesky, Tumblr, Reddit, fan-fiction metadata — each tool scoped to one corpus.",
+        "The model for what you're building: specific, open, made to do one thing well."
       ],
       "image": {
-        "src": "wapo-bias-recall.webp",
-        "alt": "WaPo bias article"
+        "src": "stanfill-tools.webp",
+        "alt": "Mel Stanfill's GitHub profile showing pinned research scraper repositories"
       },
       "media": [
         {
-          "source": "AI_WeekNine",
-          "file": "image52.png",
-          "as": "wapo-bias-recall",
+          "path": "slides/_sources/w09/stanfillgithub.png",
+          "as": "stanfill-tools",
           "kind": "image"
         }
       ]
@@ -205,7 +204,7 @@
       "id": "exercise-policy",
       "layout": "exercise",
       "title": "Draft your AI policy",
-      "prompt": "One page. Bring it to the discussion at minute 105.",
+      "prompt": "One page. Bring it to the discussion.",
       "steps": [
         "Pick a course you teach (or plan to teach).",
         "Address the five axes above (copyright, accessibility, equity, labor, UDL).",
@@ -214,35 +213,6 @@
         "Include a question: *what should a student do if they're unsure?*"
       ],
       "media": []
-    },
-    {
-      "id": "noble-anchor",
-      "layout": "quote",
-      "quote": "Algorithms aren't neutral. They reflect the people who build them, the data that train them, and the contexts they're deployed in.",
-      "attribution": "Safiya Umoja Noble, *My Robot Teacher* podcast",
-      "media": []
-    },
-    {
-      "id": "design-justice",
-      "layout": "image-bullets",
-      "title": "Design Justice as the higher bar",
-      "bullets": [
-        "Costanza-Chock: design *with*, not *for*, the communities most affected.",
-        "Apply that to your course AI policy: *whose feedback shaped it?*",
-        "If only the syllabus drafter signed off, you're not done."
-      ],
-      "image": {
-        "src": "design-justice.webp",
-        "alt": "Design Justice book"
-      },
-      "media": [
-        {
-          "source": "AI_Week_Twelve",
-          "file": "image22.png",
-          "as": "design-justice",
-          "kind": "image"
-        }
-      ]
     },
     {
       "id": "discussion-policies",
@@ -257,7 +227,7 @@
       "layout": "image-bullets",
       "title": "Where the discipline is, January 2026",
       "bullets": [
-        "**MLA Executive Council** statement on educational technologies & AI agents.",
+        "**MLA Executive Council**, [“Educational Technologies and AI Agents.”](https://news.mla.hcommons.org/2026/01/30/educational-technologies-and-ai-agents/)",
         "Most direct disciplinary statement on AI policy in humanities classrooms.",
         "Worth reading *before* you finalize your own policy."
       ],
@@ -280,7 +250,7 @@
       "title": "Looking ahead",
       "bullets": [
         "**Async Week 10:** *UDL and AI Policy* — refine the draft you wrote today.",
-        "**Workshop 6 (Week 11):** the agentic horizon — Cowork, Claude CLI, MCP, Superpowers. Tour, not tutorial.",
+        "**Workshop 6 (Week 11):** the agentic horizon — Claude CLI, MCP, local models, Ollama. Tour, not tutorial.",
         "Bring all three artifacts (ePortfolio, playful tool, AI policy) to Workshop 6."
       ],
       "image": {
