@@ -31,34 +31,21 @@ Streamed and recorded. Open to UCF faculty, graduate students, and the larger ar
 
 ## Pre-Workshop Reading
 
-- Noble, Safiya Umoja, ["Algorithms Aren't Neutral: Safiya Noble on AI, Bias, and Building Public-Interest Technology."](https://calearninglab.org/myrobotteacher/mrt6/) *My Robot Teacher* podcast. (~30 min listen or transcript.) Required.
-- Costanza-Chock, Sasha. *[Design Justice](https://design-justice.pubpub.org/),* Introduction. (~25 min) Open access.
-- MLA Executive Council. ["Educational Technologies and AI Agents."](https://news.mla.hcommons.org/2026/01/30/educational-technologies-and-ai-agents/) *MLA News*, January 30, 2026. (~10 min) A direct disciplinary statement on AI policy in humanities classrooms.
-- University of Central Florida. ["Use of Artificial Intelligence (AI) Tools"](https://infosec.ucf.edu/document/ai-guidance/) (UCF IT) and ["Agents"](https://aiforall.ucf.edu/agents/) (AI for All). (~10 min skim) UCF's institutional position on agentic AI — the frame your course policy sits inside. Required.
+- <span class="tag tag-required">Required</span> <span class="tag tag-light">Light</span> Noble, Safiya Umoja, ["Algorithms Aren't Neutral: Safiya Noble on AI, Bias, and Building Public-Interest Technology."](https://calearninglab.org/myrobotteacher/mrt6/) *My Robot Teacher* podcast. (~30 min listen or transcript.)
+- <span class="tag tag-required">Required</span> <span class="tag tag-light">Light</span> University of Central Florida. ["Use of Artificial Intelligence (AI) Tools"](https://infosec.ucf.edu/document/ai-guidance/) (UCF IT) and ["Agents"](https://aiforall.ucf.edu/agents/) (AI for All). (~10 min skim) UCF's institutional position on agentic AI — the frame your course policy sits inside.
+- <span class="tag tag-light">Light</span> Costanza-Chock, Sasha. *[Design Justice](https://design-justice.pubpub.org/),* Introduction. (~25 min) Open access.
+- <span class="tag tag-light">Light</span> MLA Executive Council. ["Educational Technologies and AI Agents."](https://news.mla.hcommons.org/2026/01/30/educational-technologies-and-ai-agents/) *MLA News*, January 30, 2026. (~10 min) A direct disciplinary statement on AI policy in humanities classrooms.
 
 Optional:
 
-- Sample, Mark. ["Procedural Rhetoric."](https://www.electronicbookreview.com/essay/procedural-rhetoric/) On games as arguments — useful frame for the build half of the session.
-- Noble, *Algorithms of Oppression*, Chapter 1. ([UCF library ebook](https://go.openathens.net/redirector/ucf.edu?url=https%3A%2F%2Fdoi.org%2F10.2307%2Fj.ctt1pwt9w5))
+- <span class="tag tag-standard">Standard</span> Sample, Mark. ["Procedural Rhetoric."](https://www.electronicbookreview.com/essay/procedural-rhetoric/) On games as arguments — useful frame for the build half of the session.
+- <span class="tag tag-standard">Standard</span> Noble, *Algorithms of Oppression*, Chapter 1. ([UCF library ebook](https://go.openathens.net/redirector/ucf.edu?url=https%3A%2F%2Fdoi.org%2F10.2307%2Fj.ctt1pwt9w5))
 
-## Session Outline (120 minutes)
+## The Session
 
-1. **Why playful, why games.** Refik Anadol does it. Mark Sample does it. Allison Parrish does it. Play makes the labor of iteration visible and survivable. Games are arguments — and humanities-scale games (Twine, Bitsy, single-page browser games) are inside reach for a non-coder with Claude Code Desktop.
-2. **Planning mode, the workshop's central technical move.** We don't just prompt and watch. Before Claude builds anything, we ask it to *plan*: "Enter plan mode. Do not exit plan mode until I confirm the plan is ready. Ask clarifying questions until you understand what I want." This single move is the difference between a fast wrong build and a slower right one. We practice it together.
-3. **Live build: a playable artifact from a sample text.** I take a sample text and we build a small playable artifact around it together — something you move through rather than just read — using planning mode to surface the design questions before any code is written. Could be a Bitsy-style room-based piece, a single-page choice game, or another small browser-playable form. Watch how the source text shapes the design.
-4. **Hands-on: build your tool or game.** Each participant builds a small interactive piece with planning mode on the topic they brought:
-   - A clickable timeline for a course unit
-   - A game built from something in your course that *should* be playable — a concept, a decision, a text
-   - A tool that assists your students with some type of work they actually have to do
-   - A generator (a Markov-chain mash-up of public-domain text, a centosizer for poetry, a found-poetry tool)
-5. **AI policy, after agentic.** Pivot to the syllabus question. Now that you've spent two workshops *being* the agent, what does that mean for the AI policy in your course? Working in pairs, draft (or revise) a one-page course AI policy that addresses:
-   - **Copyright and attribution.** What gets cited, what gets attributed, what gets refused.
-   - **Accessibility.** AI as a tool *for* accessibility — alt-text, captioning, plain-language translation — not just a problem.
-   - **Equity of access.** Who pays for Pro? Are alternatives provided?
-   - **Labor.** Whose labor is being replaced or extended?
-   - **UDL.** Multiple means of engagement, representation, action/expression.
-   - **Agentic specifically.** What changes in the policy when "use AI" can mean "let an agent do the work"? *This is the new question this week.* UCF's own [guidance](https://infosec.ucf.edu/document/ai-guidance/) already restricts agentic tools and treats an agent doing the coursework as misconduct — see the Pedagogical Note below.
-6. **Discussion.** Read each other's policies. What surprised you? What would your colleagues push back on?
+The workshop runs in two movements. **First we build something playable.** Using Claude Code Desktop with the Superpowers plugin and planning mode, each of us makes a small, strange, course-specific artifact — a clickable timeline, a game, a tool your students would actually use, or a generator — and deploys it to GitHub Pages. We work in planning mode throughout: describing what we want, watching Claude ask clarifying questions, and overriding what it gets wrong about our disciplines before any code is written.
+
+**Then we turn to the syllabus.** Having spent two workshops *being* the agent, we pivot to the policy question that follows from it. Working in pairs, we draft (or revise) a one-page course AI policy and read each other's, framing the policy as an invitation rather than a fence — and reckoning with what changes when "use AI" can mean "let an agent do the work." UCF's own [guidance](https://infosec.ucf.edu/document/ai-guidance/) already restricts agentic tools and treats an agent doing the coursework as misconduct; see the Pedagogical Note below.
 
 ## Core Exercise
 
