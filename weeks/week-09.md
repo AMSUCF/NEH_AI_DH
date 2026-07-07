@@ -5,7 +5,7 @@ kind: workshop
 theme: "Course games, planning mode, and AI policy"
 starts: 2026-07-06
 summary: |
-  Now that we've built more confidence with Claude Code, we'll move to Claude Code Desktop with the Superpowers plugin and engage with more of its potential for playful and experimental pedagogy: in this week's workshop, we will build simple games and tools based on concepts from your courses, and use planning mode to convey complex intention and override basic design choices. We'll manage our projects with GitHub Desktop and deploy to Pages. We will also think through what this type of agentic way of working means for AI policies and pedagogy.
+  Now that we've built more confidence with Claude Code, we'll move to Claude Code Desktop with the Superpowers plugin and engage with more of its potential for playful and experimental pedagogy. We'll open with demos of tools for research and pedagogy — Sarah Norris on finding data, and Mel Stanfill on building research scrapers with AI assistance. Then, in the build half of the workshop, we will make simple games and tools based on concepts from your courses, and use planning mode to convey complex intention and override basic design choices. We'll manage our projects with GitHub Desktop and deploy to Pages. We will also think through what this type of agentic way of working means for AI policies and pedagogy.
 workshop:
   title: "Workshop 5: Playful Approaches and Creative Code"
   date: 2026-07-08
@@ -43,7 +43,9 @@ Optional:
 
 ## The Session
 
-The workshop runs in two movements. **First we build something playable.** Using Claude Code Desktop with the Superpowers plugin and planning mode, each of us makes a small, strange, course-specific artifact — a clickable timeline, a game, a tool your students would actually use, or a generator — and deploys it to GitHub Pages. We work in planning mode throughout: describing what we want, watching Claude ask clarifying questions, and overriding what it gets wrong about our disciplines before any code is written.
+The workshop runs in three movements. **First, building tools for research and pedagogy.** Sarah Norris opens with a demo on finding data, and Mel Stanfill walks through her research scrapers — an AO3 tag crawler built iteratively with an AI coding assistant, from the first scraping prompt through debugging, co-occurrence networks, and heatmaps, with the versioned file tree as a record of the process. These are the model for what we build next: small, open, single-purpose tools.
+
+**Then we build games and course resources.** Using Claude Code Desktop with the Superpowers plugin and planning mode, each of us makes a small, strange, course-specific artifact — a clickable timeline, a game, a tool your students would actually use, or a generator — and deploys it to GitHub Pages. We work in planning mode throughout: describing what we want, watching Claude ask clarifying questions, and overriding what it gets wrong about our disciplines before any code is written.
 
 **Then we turn to the syllabus.** Having spent two workshops *being* the agent, we pivot to the policy question that follows from it. Working in pairs, we draft (or revise) a one-page course AI policy and read each other's, framing the policy as an invitation rather than a fence — and reckoning with what changes when "use AI" can mean "let an agent do the work." UCF's own [guidance](https://infosec.ucf.edu/document/ai-guidance/) already restricts agentic tools and treats an agent doing the coursework as misconduct; see the Pedagogical Note below.
 
