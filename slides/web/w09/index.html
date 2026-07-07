@@ -74,6 +74,19 @@
 .reveal .slide-image-only { align-items: center; text-align: center; }
 .reveal .slide-image-only img { max-height: 80vh; }
 
+/* Demo gallery — multi-screenshot slides */
+.reveal .slide-demo-gallery h2 { font-size: clamp(1.5rem, 3.2vw, 2.2rem); }
+.reveal .slide-demo-gallery .gallery { display: grid; gap: 0.8rem; justify-items: center; align-items: center; }
+.reveal .slide-demo-gallery .gallery img { max-height: 21vh; box-shadow: 0 2px 10px rgba(0,0,0,0.12); }
+.reveal .slide-demo-gallery .gallery.solo img { max-height: 58vh; }
+.reveal .slide-demo-gallery .gallery.grid-2x2 { grid-template-columns: 1fr 1fr; }
+.reveal .slide-demo-gallery .gallery.grid-2x2 img { max-height: 29vh; }
+.reveal .slide-demo-gallery .gallery.split { grid-template-columns: 1fr 1.2fr; }
+.reveal .slide-demo-gallery .gallery.split .stack { display: grid; gap: 0.8rem; justify-items: center; }
+.reveal .slide-demo-gallery .gallery.split .stack img { max-height: 28vh; }
+.reveal .slide-demo-gallery .gallery.split .result { max-height: 62vh; }
+@media (max-width: 800px) { .reveal .slide-demo-gallery .gallery.grid-2x2, .reveal .slide-demo-gallery .gallery.split { grid-template-columns: 1fr; } }
+
 /* Quote */
 .reveal .slide-quote { display: grid !important; grid-template-columns: 1fr 1.4fr; gap: 2rem; align-items: center; background: var(--bone, #faf6ec); }
 .reveal .slide-quote.no-image { display: block !important; max-width: 60ch; margin-left: auto !important; margin-right: auto !important; }
@@ -88,6 +101,11 @@
 
 /* Video */
 .reveal .slide-video video { width: 100%; max-height: 65vh; }
+
+/* Iframe */
+.reveal .slide-iframe { align-items: center; }
+.reveal .slide-iframe h2 { text-align: center; }
+.reveal .slide-iframe iframe { width: 100%; height: 70vh; border: 2px solid var(--ink, #141414); border-radius: 6px; background: #fff; }
 
 /* Demo slot */
 .reveal .slide-demo-slot { background: var(--mustard, #e8b53a); color: var(--ink, #141414); }
@@ -201,6 +219,11 @@
   <h2>Live build: a playable Artifact</h2>
   <p>I take a sample text and build something small and a little strange — a playable artifact you can move through, not just read. Watch how the source text shapes the design.</p>
 </section>
+<section class="slide-iframe" id="demo-tool-canvas">
+  <p class="kicker">Demo</p>
+  <h2>Tool: Canvas</h2>
+  <iframe src="https://www.youtube.com/embed/IsNIRgeqxww" title="Tool: Canvas demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</section>
         <section class="slide-image-bullets no-image" id="examples-tools">
           <div class="bullets-text">
 
@@ -232,6 +255,65 @@
 
           </div>
           <img src="../../../assets/slides/w09/stanfill-tools.webp" alt="Mel Stanfill's GitHub profile showing pinned research scraper repositories" loading="lazy">
+        </section>
+        <section class="slide-demo-gallery" id="demo-tag-data">
+          <p class="kicker">Demo · AO3 Tag Crawler</p>
+          <h2>The data: AO3&#x27;s tag ecosystem</h2>
+          <div class="gallery solo">
+            <img src="../../../assets/slides/w09/Slide1-AO3Tags.png" alt="Screenshot of AO3's Tags page showing a large word-cloud of popular fanfiction tags like Angst, Fluff, and Hurt/Comfort" loading="lazy">
+          </div>
+          <p class="caption">Archive of Our Own&#x27;s tag cloud — community-made metadata, and the corpus the scraper collects.</p>
+        </section>
+        <section class="slide-demo-gallery" id="demo-scraper-prompts">
+          <p class="kicker">Demo · AO3 Tag Crawler</p>
+          <h2>Building the scraper: prompt, debug, retry</h2>
+          <div class="gallery">
+            <img src="../../../assets/slides/w09/slide2a-prompt1.png" alt="Prompt asking the AI to build an AO3 scraper from an existing repo: collect the tag list as CSV, then metadata for each tag's 100 newest stories" loading="lazy">
+            <img src="../../../assets/slides/w09/slide2b-prompt2.png" alt="Debugging follow-up: the scraper reports zero tags found because the tags-cloud selector didn't match" loading="lazy">
+            <img src="../../../assets/slides/w09/slide2c-prompt3.png" alt="Follow-up prompt asking the AI to restore the error list and retry the failed work IDs" loading="lazy">
+          </div>
+        </section>
+        <section class="slide-demo-gallery" id="demo-network">
+          <p class="kicker">Demo · AO3 Tag Crawler</p>
+          <h2>Which tags travel together?</h2>
+          <div class="gallery split">
+            <div class="stack">
+              <img src="../../../assets/slides/w09/slide3a-prompt1.png" alt="Prompt asking for the statistically most and least likely tag co-occurrences, with an adjustable-threshold visualization" loading="lazy">
+              <img src="../../../assets/slides/w09/slide3b-prompt2.png" alt="Prompt asking how to add interactive filters to show or hide tags and categories in the HTML network visualization" loading="lazy">
+            </div>
+            <img class="result" src="../../../assets/slides/w09/slide3c-network.png" alt="Dense force-directed network graph of AO3 tag co-occurrences, with a tight central cluster and radiating blue link bundles" loading="lazy">
+          </div>
+        </section>
+        <section class="slide-demo-gallery" id="demo-heatmaps">
+          <p class="kicker">Demo · AO3 Tag Crawler</p>
+          <h2>Heatmaps: tags × ratings, tags × tags</h2>
+          <div class="gallery grid-2x2">
+            <img src="../../../assets/slides/w09/slide4a-prompt1.png" alt="Prompt asking for a frequency-threshold setting to control which tags appear in the heatmap" loading="lazy">
+            <img src="../../../assets/slides/w09/slide4b-prompt2.png" alt="Prompt asking for ways to visualize links between seed tags and metadata fields like rating, warnings, and fandom" loading="lazy">
+            <img src="../../../assets/slides/w09/slide4c-heatmap1.png" alt="Heatmap of fanfiction tags by AO3 content rating, from General Audiences to Explicit" loading="lazy">
+            <img src="../../../assets/slides/w09/slide4d-heatmap2.png" alt="Red-blue diverging heatmap of statistical co-occurrence between AO3 tag pairs like Found Family and Enemies to Lovers" loading="lazy">
+          </div>
+        </section>
+        <section class="slide-demo-gallery" id="demo-analysis">
+          <p class="kicker">Demo · AO3 Tag Crawler</p>
+          <h2>Refining the analysis pipeline</h2>
+          <div class="gallery">
+            <img src="../../../assets/slides/w09/slide5a-prompt1.png" alt="Prompt requesting a new analysis pipeline to find the most and least frequent tags and cluster metadata categories that co-occur" loading="lazy">
+            <img src="../../../assets/slides/w09/slide5b-prompt2.png" alt="Prompt asking to split the tag analysis output into seed tags, top non-seed tags, and least-frequent tags" loading="lazy">
+            <img src="../../../assets/slides/w09/slide5c-prompt3.png" alt="Prompt asking for toggles between top and all tags, plus a minimum cluster-size setting" loading="lazy">
+          </div>
+        </section>
+        <section class="slide-image-bullets" id="demo-iteration">
+          <div class="bullets-text">
+
+            <p class="kicker">Demo · AO3 Tag Crawler</p>
+            <h2>Iteration is the method</h2>
+            <ul><li>One project folder, dozens of versions: the scraper to v5, the visualizer to v9, the analysis to v5.</li>
+<li>Error logs and CSVs pile up alongside the notebooks — a record of the conversation.</li>
+<li>Nothing here was right the first time. That&#x27;s not failure; that&#x27;s the workflow.</li></ul>
+
+          </div>
+          <img src="../../../assets/slides/w09/slide6-iteration.png" alt="VS Code file tree showing many versioned scraper, analysis, and visualizer files, from v1 up to v9, from iterative AI-assisted coding" loading="lazy">
         </section>
 <section class="slide-section" id="policy-section">
   <p class="kicker">Part 4</p>
