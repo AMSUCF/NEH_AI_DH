@@ -88,7 +88,7 @@ These four anchor the series. You do not need to read them cover-to-cover — wo
 
 ---
 
-## Stage 3 — Code Web and Public DH (Weeks 7–10)
+## Stage 3 — Claude Code and Public DH (Weeks 7–10)
 
 ### Programming with AI, agents, planning mode
 

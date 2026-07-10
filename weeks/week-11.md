@@ -35,7 +35,7 @@ The answer this session offers: the *vocabulary* (agentic, MCP, skills, subagent
 
 ## What to Bring
 
-- A laptop. Admin access if you want to follow the optional install demos in real time on a personal machine; not required.
+- A laptop. If it is a personal machine and you want to follow along, install the [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) — or at least Claude Code Desktop — and [Ollama](https://ollama.com/) beforehand, and make a [Hugging Face account](https://huggingface.co/join) if you want to try fine-tuning or playing with models. None of this is required.
 - The artifacts you have built across the series: your W7 ePortfolio URL, your W9 playful tool URL, your draft AI policy, your Skill from W4 if you built one. The Cowork demo will use them.
 - A notebook (paper or digital) for the `CLAUDE.md` writing exercise.
 

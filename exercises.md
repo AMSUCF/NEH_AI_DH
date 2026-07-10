@@ -88,9 +88,11 @@ Pick two or three. Each is small. Each ends in a deployed URL.
 
 ### Week 10 (async) — UDL + AI policy, by your discipline
 
-- <span class="tag tag-light">Light</span> **Policy A/B.** Use Claude in a Project to identify three UDL-aligned revisions to an existing AI policy.
-- <span class="tag tag-standard">Standard</span> **Accessibility audit + fix in Code Web.** Run W7 site through WAVE or axe DevTools. Use planning mode in Claude Code Web to fix the top three issues.
-- <span class="tag tag-deep">Deep</span> **Full syllabus integration.** Revise a syllabus to integrate AI policy, signature assignment, and at least one AI-aware exercise. Anchor in CAST UDL framework.
+Pick one. All three run in Claude Code (Desktop with Superpowers, or Web).
+
+- <span class="tag tag-light">Light</span> **Syllabus review + policy research.** Give Claude Code your syllabus; ask it to suggest an AI policy and research existing policies in your field. Compare how Claude frames AI usage versus your discipline's framing; feed it your draft policy for critique if you have one.
+- <span class="tag tag-standard">Standard</span> **Teaching portfolio on GitHub Pages.** Give Claude Code your old and current syllabi, assignments, and other materials you control; ask it to build a job-application showcase that preserves all the content. Host with GitHub Pages.
+- <span class="tag tag-deep">Deep</span> **Course-updating tool via the Webcourses API.** Generate an API token in Webcourses, then ask Claude to build a tool that updates your course for aesthetics, accessibility, dates, and broken links. Use Superpowers and planning mode in Claude Code Desktop.
 
 ---
 
@@ -119,4 +121,4 @@ Pick two or three. Each is small. Each ends in a deployed URL.
 | W5 (June 10) — Visual Analysis | An image set (5–10 images you have rights to). |
 | W7 (June 24) — Web Applications | A CV / syllabus *or* 5–15 images you have rights to. A free GitHub account. |
 | W9 (July 8) — Playful + Policy | A concept from your course. A draft AI policy paragraph. The W7 site URL. |
-| W11 (July 22) — Agentic Futures | All your artifacts (W7, W9, AI policy, Skill from W4). Optional: a personal laptop with admin access. |
+| W11 (July 22) — Agentic Futures | All your artifacts (W7, W9, AI policy, Skill from W4). Optional: a personal laptop with Claude Code CLI (or Claude Code Desktop) and Ollama installed, and a Hugging Face account if you want to try fine-tuning. |

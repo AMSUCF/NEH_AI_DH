@@ -35,7 +35,7 @@ The series unfolds across four arcs:
 
 1. **Stage 1 — Text** *(Weeks 1–4)*. We start with what an LLM actually is — through the historical line from ELIZA in 1966 to the ChatGPT moment in 2022 to today's "frontier" or "foundation" models. We look at how **reasoning layers** and human feedback (RLHF) sit on top of the base model, and at the higher-ed conversation that has shifted from chatbot-cheating to *agentic* questions. We use **Claude Projects** and **Claude Skills** to work with text, including discipline-specific corpora.
 2. **Stage 2 — Visual and Multimodal** *(Weeks 5–6)*. We use **Claude Projects + Artifacts** for image analysis, alt-text generation, archival metadata, and critical reflection on AI-generated imagery — and we look beyond Claude at multimodal tools like **Google Gemini Nano Banana**, **OpenAI Images 2.0**, **Claude Design** for slides, and voice interfaces. This stage foregrounds **copyright**, **bias**, and the comparative-tool eye humanists need.
-3. **Stage 3 — Code** *(Weeks 7–10)*. We use **Claude Code Web** to build small interactive tools — an ePortfolio, a dataset visualization, a course-concept game, an interactive worksheet, a public-scholarship one-pager. We introduce **GitHub** and **GitHub Pages** from scratch, address agentic workflows including *planning mode*, and draft **discipline-specific AI policies** through a UDL lens.
+3. **Stage 3 — Code** *(Weeks 7–10)*. We use **Claude Code** — starting in the browser with Code Web, then moving to **Claude Code Desktop** with the Superpowers plugin — to build small interactive tools: an ePortfolio, a dataset visualization, a course-concept game, a teaching portfolio, a public-scholarship one-pager. We introduce **GitHub** and **GitHub Pages** from scratch, address agentic workflows including *planning mode*, and draft **discipline-specific AI policies** through a UDL lens.
 4. **Stage 4 — Agentic Futures** *(Weeks 11–12)*. The final live session is a **demo tour** of local agentic powertools — Cowork, the Claude CLI, MCP, the Superpowers workflow — with attention to UCF policy on local installation and the consequences for our disciplines and our students' careers. The closing async week is reserved for **fall course planning** and sharing back to the open community.
 
 ## Tool Stages
@@ -44,7 +44,7 @@ The series unfolds across four arcs:
 |-------|-------|------|-----------------|
 | 1 | W1–W4 | Claude Projects + Skills | Persistent context, file uploads, text analysis, custom instruction sets |
 | 2 | W5–W6 | Claude Artifacts + multimodal AI | Visual analysis, infographic generation, slides, voice interfaces |
-| 3 | W7–W10 | Claude Code Web | Multi-file projects, planning mode, GitHub Pages deployment |
+| 3 | W7–W10 | Claude Code (Web → Desktop) | Multi-file projects, planning mode, GitHub Pages deployment |
 | 4 | W11–W12 | Cowork + Claude CLI (tour only) | Agentic workflows, MCP, terminal-native AI |
 
 ## Schedule
@@ -74,10 +74,11 @@ The full curated list is available on the [Readings](readings.md) page; the full
 
 - A free [GitHub account](https://github.com/) (use your `.edu` email for [GitHub Education](https://education.github.com/) benefits)
 - Claude Code Web access (included with Pro subscription)
+- Claude Code Desktop with the Superpowers plugin — the exercises from W9 on run there
 
 **For Stage 4** (Workshop 6, weeks 11–12):
 
-- Optional: install [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) and [Ollama](https://ollama.com/) before the session if you want to follow along on your own machine. The session itself is demo-driven.
+- Optional: install [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) (or at least Claude Code Desktop) and [Ollama](https://ollama.com/) on a personal laptop before the session if you want to follow along, and make a free [Hugging Face account](https://huggingface.co/join) if you want to try fine-tuning or playing with models. The session itself is demo-driven.
 
 ## Weekly Modules
 
