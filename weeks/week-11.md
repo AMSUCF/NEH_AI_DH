@@ -2,10 +2,10 @@
 week: 11
 title: "Workshop 6: Agentic Futures, Curricular Sustainability"
 kind: workshop
-theme: "Local agentic powertools (demo-only) and disciplinary consequences"
+theme: "Local agentic powertools (demos you can follow along with) and disciplinary consequences"
 starts: 2026-07-20
 summary: |
-  While Claude Code Web is one of the most powerful agentic tools available through the web, the real agentic powertools are usually run on your own machine. In this session, we'll demo what these types of tools are capable of, and discuss the consequences of these ways of working for our disciplines and our students future careers. Currently, UCF does not allow faculty to install local agentic tools on university computers without considerable permissions considerations, so this week's workshop will primarily demo ways of working you mmight want to explore further on your own machine.
+  While Claude Code Web is one of the most powerful agentic tools available through the web, the real agentic powertools are usually run on your own machine. In this session, we'll demo what these types of tools are capable of, and discuss the consequences of these ways of working for our disciplines and our students future careers. Currently, UCF does not allow faculty to install local agentic tools on university computers without considerable permissions considerations, so this week's workshop will primarily demo ways of working you might want to explore further on your own machine — or try later on our new CHDR Spark.
 workshop:
   title: "Workshop 6: Agentic Futures, Curricular Sustainability"
   date: 2026-07-22
@@ -13,7 +13,7 @@ workshop:
   location: CHDR
 ---
 
-The hands-on portion is a writing exercise, not an installation: drafting a `CLAUDE.md` for your own work.
+We're going to take a tour through the Claude CLI, MCP, Hugging Face, and Ollama. Feel free to follow along if you have your own device — and remember you can also try some of these tools later on our new CHDR Spark.
 
 <div class="workshop-callout" markdown="1">
 **NEH Workshop 6 — Wednesday, July 22, 10 AM – noon, CHDR**
@@ -31,16 +31,16 @@ This is a demo-driven session because, for most of you, *installation isn't the 
 - **Your students likely will install these.** Especially anyone going into industry roles, library/archive work, or research-adjacent careers. Knowing what these tools *do* — even without running them — is part of what they need from us.
 - **The pedagogical question is therefore: what do you teach people to recognize, even if you don't teach them to install?**
 
-The answer this session offers: the *vocabulary* (agentic, MCP, skills, subagents, planning mode), the *workflow* (Brainstorm → Spec → Plan → Implementation → Review), and the *artifact you can write today without installing anything*: a `CLAUDE.md` for your own work.
+The answer this session offers: the *vocabulary* (agentic, MCP, skills, subagents, planning mode), the *demos* (Claude CLI, MCP servers, local models, Ollama), and a *place to try it all without installing anything on your own machine*: the new CHDR Spark.
 
 ## What to Bring
 
-- A laptop. If it is a personal machine and you want to follow along, install the [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) — or at least Claude Code Desktop — and [Ollama](https://ollama.com/) beforehand, and make a [Hugging Face account](https://huggingface.co/join) if you want to try fine-tuning or playing with models. None of this is required.
-- The artifacts you have built across the series: your W7 ePortfolio URL, your W9 playful tool URL, your draft AI policy, your Skill from W4 if you built one. The Cowork demo will use them.
-- A notebook (paper or digital) for the `CLAUDE.md` writing exercise.
+- A laptop. If it is a personal machine and you want to follow along, install the [Claude Code CLI](https://code.claude.com/docs/en/quickstart) — or at least Claude Code Desktop — and [Ollama](https://ollama.com/download) beforehand, and make a [Hugging Face account](https://huggingface.co/join) if you want to try fine-tuning or playing with models. None of this is required.
+- [GitHub Desktop](https://desktop.github.com/), if you want the easiest on-ramp to the CLI: select **Repository → Open in Command Prompt** (or Terminal) and type `claude`.
 
 ## Pre-Workshop Reading
 
+- Mollick, Ethan. ["The Twilight of the Chatbots."](https://www.oneusefulthing.org/p/the-twilight-of-the-chatbots) *One Useful Thing.* (~15 min) Why the chat window is giving way to agents — the framing we open with.
 - Underwood, Ted. ["The Marionette Theater of AI."](https://tedunderwood.com/2026/02/08/the-marionette-theater-of-ai/) *The Stone and the Shell*, February 8, 2026. (~20 min) A lucid recent essay on what agentic systems are doing to scholarly work.
 - Cohen, Dan. ["AI and Libraries, Archives, and Museums, Loosely Coupled."](https://newsletter.dancohen.org) *Humane Ingenuity.* (~15 min) The DH-specific framing for MCP and connected tools.
 - Anthropic. ["Introduction to Model Context Protocol."](https://docs.anthropic.com/en/docs/build-with-claude/mcp) (~10 min) Skim — you do not need to install anything.
@@ -52,17 +52,17 @@ Optional, for those who want the deeper picture:
 
 ## Session Outline (120 minutes)
 
-1. **The vocabulary, restated.** Agentic, tool use, planning, subagents, MCP, skills. Why "agent" is doing a lot of work in the discourse and what it actually means inside Claude.
-2. **Cowork tour.** Live walkthrough of a Cowork session — Claude working alongside me in real time on a shared problem. We use one of *your* W7 or W9 artifacts as the working surface. The point is *what changes when the conversation is collaborative rather than turn-taking.*
-3. **Claude CLI tour.** Claude in the terminal on my personal machine. Slash commands, `/init`, `/plan`, `CLAUDE.md` for context engineering, the Superpowers workflow (Brainstorm → Spec → Plan → Implementation → Review). I demo on a small humanities project; you watch.
-4. **MCP, briefly.** What MCP is — "USB-C for AI" — and one example: connecting Claude to a Zotero library so research and writing share a context. Hugging Face MCP for archival audio (Whisper transcription) is another humanities-relevant example. Why this matters for the next academic year.
-5. **The disciplinary and career conversation.** What happens to research, writing, and teaching workflows when *some* people in your department are using these tools at the CLI level and others aren't? What does this mean for graduate students entering academic and adjacent job markets in 2027–2030? Where is the institutional policy conversation right now? This is the part of the session that's pure discussion — bring the questions you've been collecting.
-6. **Writing exercise: your `CLAUDE.md`.** Draft a `CLAUDE.md` document — a context file an agent could read to understand your research domain, your typical workflows, your preferences, and your boundaries. No installation required; we just write the markdown. Templates and examples on screen.
-7. **Open Q&A and closing.** Last in-person session of the series. Bring whatever questions about agentic tools, your `CLAUDE.md`, or what to carry into the fall you have not had a chance to ask yet.
+1. **Framing: demoing the power tools.** A tour through the Claude CLI, MCP, Hugging Face, and Ollama. Follow along if you have your own device — or try these tools later on our new CHDR Spark.
+2. **The twilight of the chatbots.** Mollick's argument that the chat window is giving way to agents — and the labor reality check that comes with it: Altman's ["jobs that aren't real work"](https://www.tomshardware.com/tech-industry/sam-altman-says-ai-could-eliminate-jobs-that-arent-real-work) and Graeber's bullshit jobs.
+3. **Demo: Claude CLI.** [Installation directions](https://code.claude.com/docs/en/quickstart); the easiest way in is to select **Repository → Open in Command Prompt** (or Terminal) from GitHub Desktop and type `claude`. Overview of the commands: slash commands and the Shift+Tab modes.
+4. **Installing an MCP server.** Example one: the [Hugging Face plugin](https://huggingface.co/mcp). Example two: the [Zotero MCP](https://github.com/54yyyu/zotero-mcp), so research and writing share a context.
+5. **Live demo: Claude CLI running local models.** Using Superpowers, we'll describe the project, have Claude select the best local model for audio transcription, and build an interface for our transcription tool.
+6. **Live demo: Ollama.** [Installation](https://ollama.com/download); then the Claude Code CLI with Ollama — a local model driving the same power tool (a less competent agent).
+7. **Closing: where will this take you?** All of these tools seem to be on a trajectory of growing more powerful (and potentially more expensive) — but local models are also rising in capability. Open Q&A: this is the last in-person session of the series, so bring the questions you've been collecting.
 
-## Core Exercise
+## Take-Home Exercise
 
-**Write a `CLAUDE.md` for your work.** This is a low-tech exercise with high pedagogical leverage. The document is a piece of *meta-pedagogy*: thinking about how an AI agent should be onboarded to your work clarifies what your work actually is.
+**Write a `CLAUDE.md` for your work.** The in-session time goes to the demos, but this is the artifact to draft afterward — a low-tech exercise with high pedagogical leverage. The document is a piece of *meta-pedagogy*: thinking about how an AI agent should be onboarded to your work clarifies what your work actually is.
 
 Cover at minimum:
 
