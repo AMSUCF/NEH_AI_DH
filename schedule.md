@@ -18,4 +18,4 @@ The compact grid lives on the [overview page](./); this page is the long-form ve
 | 1 | W1–W4 | Claude Projects | Persistent context, file uploads, text analysis |
 | 2 | W5–W6 | Claude Artifacts | Visual analysis, shareable interactive outputs |
 | 3 | W7–W10 | Claude Code (Web → Desktop) | Multi-file projects, GitHub Pages deployment |
-| 4 | W11–W12 | Cowork + Claude CLI (tour only) | Agentic workflows, terminal-native AI |
+| 4 | W11–W12 | Claude CLI + local models (demo tour) | Agentic workflows, terminal-native AI |

@@ -54,7 +54,7 @@ Optional, for those who want the deeper picture:
 
 1. **Framing: demoing the power tools.** A tour through the Claude CLI, MCP, Hugging Face, and Ollama. Follow along if you have your own device — or try these tools later on our new CHDR Spark.
 2. **The twilight of the chatbots.** Mollick's argument that the chat window is giving way to agents — and the labor reality check that comes with it: Altman's ["jobs that aren't real work"](https://www.tomshardware.com/tech-industry/sam-altman-says-ai-could-eliminate-jobs-that-arent-real-work) and Graeber's bullshit jobs.
-3. **Demo: Claude CLI.** [Installation directions](https://code.claude.com/docs/en/quickstart); the easiest way in is to select **Repository → Open in Command Prompt** (or Terminal) from GitHub Desktop and type `claude`. Overview of the commands: slash commands and the Shift+Tab modes.
+3. **Demo: Claude CLI.** [Installation directions](https://code.claude.com/docs/en/quickstart); the easiest way in is to select **Repository → Open in Command Prompt** (or Terminal) from GitHub Desktop and type `claude`. Overview of the commands: slash commands, the Shift+Tab modes, plugins, and skills.
 4. **Installing an MCP server.** Example one: the [Hugging Face plugin](https://huggingface.co/mcp). Example two: the [Zotero MCP](https://github.com/54yyyu/zotero-mcp), so research and writing share a context.
 5. **Live demo: Claude CLI running local models.** Using Superpowers, we'll describe the project, have Claude select the best local model for audio transcription, and build an interface for our transcription tool.
 6. **Live demo: Ollama.** [Installation](https://ollama.com/download); then the Claude Code CLI with Ollama — a local model driving the same power tool (a less competent agent).

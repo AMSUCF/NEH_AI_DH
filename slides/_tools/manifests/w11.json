@@ -31,11 +31,21 @@
     },
     {
       "id": "twilight-chatbots",
-      "layout": "iframe",
+      "layout": "image-only",
       "title": "The Twilight of the Chatbots",
-      "url": "https://www.oneusefulthing.org/p/the-twilight-of-the-chatbots",
-      "note": "Substack sends frame-ancestors CSP, so the embed renders blank; the HTML adds a fallback open-in-new-tab caption link.",
-      "media": []
+      "image": {
+        "src": "mollick.webp",
+        "alt": "Header art from Ethan Mollick's The Twilight of the Chatbots: a robot watching people run toward a machine city at sunset"
+      },
+      "caption": "[Mollick, 'The Twilight of the Chatbots' — open in a new tab ↗](https://www.oneusefulthing.org/p/the-twilight-of-the-chatbots)",
+      "media": [
+        {
+          "source": "w11",
+          "file": "mollick.jpg",
+          "as": "mollick",
+          "kind": "image"
+        }
+      ]
     },
     {
       "id": "altman-jobs",
@@ -90,7 +100,9 @@
       "title": "Commands",
       "bullets": [
         "**Slash commands:** type `/` for the menu — `/init`, `/help`, `/model`, and friends.",
-        "**Shift+Tab:** cycles the modes — normal, auto-accept, and plan mode."
+        "**Shift+Tab:** cycles the modes — normal, auto-accept, and plan mode.",
+        "**Plugins:** `/plugin` installs bundles of commands, agents, and MCP servers from a marketplace.",
+        "**Skills:** reusable instructions Claude loads on demand — Superpowers is a set of these."
       ],
       "media": []
     },
@@ -102,18 +114,7 @@
         "**Example one:** the [Hugging Face plugin](https://huggingface.co/mcp) — models, datasets, and Spaces inside Claude.",
         "**Example two:** the [Zotero MCP](https://github.com/54yyyu/zotero-mcp) — your research library shares a context with your writing."
       ],
-      "image": {
-        "src": "mcp-zotero.webp",
-        "alt": "MCP Zotero integration concept"
-      },
-      "media": [
-        {
-          "source": "AI_WeekThirteen",
-          "file": "image27.png",
-          "as": "mcp-zotero",
-          "kind": "image"
-        }
-      ]
+      "media": []
     },
     {
       "id": "demo-local-models",

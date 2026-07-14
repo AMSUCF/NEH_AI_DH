@@ -36,7 +36,7 @@ The series unfolds across four arcs:
 1. **Stage 1 — Text** *(Weeks 1–4)*. We start with what an LLM actually is — through the historical line from ELIZA in 1966 to the ChatGPT moment in 2022 to today's "frontier" or "foundation" models. We look at how **reasoning layers** and human feedback (RLHF) sit on top of the base model, and at the higher-ed conversation that has shifted from chatbot-cheating to *agentic* questions. We use **Claude Projects** and **Claude Skills** to work with text, including discipline-specific corpora.
 2. **Stage 2 — Visual and Multimodal** *(Weeks 5–6)*. We use **Claude Projects + Artifacts** for image analysis, alt-text generation, archival metadata, and critical reflection on AI-generated imagery — and we look beyond Claude at multimodal tools like **Google Gemini Nano Banana**, **OpenAI Images 2.0**, **Claude Design** for slides, and voice interfaces. This stage foregrounds **copyright**, **bias**, and the comparative-tool eye humanists need.
 3. **Stage 3 — Code** *(Weeks 7–10)*. We use **Claude Code** — starting in the browser with Code Web, then moving to **Claude Code Desktop** with the Superpowers plugin — to build small interactive tools: an ePortfolio, a dataset visualization, a course-concept game, a teaching portfolio, a public-scholarship one-pager. We introduce **GitHub** and **GitHub Pages** from scratch, address agentic workflows including *planning mode*, and draft **discipline-specific AI policies** through a UDL lens.
-4. **Stage 4 — Agentic Futures** *(Weeks 11–12)*. The final live session is a **demo tour** of local agentic powertools — Cowork, the Claude CLI, MCP, the Superpowers workflow — with attention to UCF policy on local installation and the consequences for our disciplines and our students' careers. The closing async week is reserved for **fall course planning** and sharing back to the open community.
+4. **Stage 4 — Agentic Futures** *(Weeks 11–12)*. The final live session is a **demo tour** of local agentic powertools — the Claude CLI, MCP, Hugging Face, and Ollama — with attention to UCF policy on local installation and the consequences for our disciplines and our students' careers. The closing async week is reserved for **fall course planning** and sharing back to the open community.
 
 ## Tool Stages
 
@@ -45,7 +45,7 @@ The series unfolds across four arcs:
 | 1 | W1–W4 | Claude Projects + Skills | Persistent context, file uploads, text analysis, custom instruction sets |
 | 2 | W5–W6 | Claude Artifacts + multimodal AI | Visual analysis, infographic generation, slides, voice interfaces |
 | 3 | W7–W10 | Claude Code (Web → Desktop) | Multi-file projects, planning mode, GitHub Pages deployment |
-| 4 | W11–W12 | Cowork + Claude CLI (tour only) | Agentic workflows, MCP, terminal-native AI |
+| 4 | W11–W12 | Claude CLI + local models (demo tour) | Agentic workflows, MCP, terminal-native AI |
 
 ## Schedule
 

@@ -98,9 +98,9 @@ Pick one. All three run in Claude Code (Desktop with Superpowers, or Web).
 
 ## Stage 4 — Agentic Futures (Weeks 11–12)
 
-### Workshop 6 (July 22) — Demo + write your `CLAUDE.md`
+### Workshop 6 (July 22) — Demo tour + take-home `CLAUDE.md`
 
-<span class="tag tag-light">Light</span> **Watch the demo, write a `CLAUDE.md`.** This session is mostly demo (Cowork, Claude CLI, MCP, Superpowers). Your hands-on portion: in a text editor, draft a `CLAUDE.md` describing your research domain, typical workflows, preferences, and boundaries. No installation required.
+<span class="tag tag-light">Light</span> **Follow the demos, then write a `CLAUDE.md`.** This session is a demo tour (Claude CLI, MCP, Hugging Face, Ollama) — follow along on your own device if you have one. Take-home: in a text editor, draft a `CLAUDE.md` describing your research domain, typical workflows, preferences, and boundaries. No installation required.
 
 *Source: [DHSI 2026 — dhsi-2026-course-packet](https://anastasiasalter.net/DHSI_DH_AI_2026/dhsi-2026-course-packet.html) (context engineering).*
 
@@ -108,7 +108,7 @@ Pick one. All three run in Claude Code (Desktop with Superpowers, or Web).
 
 - <span class="tag tag-light">Light</span> **Final reflection (500 words).** What did you build, what surprised you, what will you carry into fall? *Source pattern: [HumanitiesAI/finalreflection](https://anastasiasalter.net/HumanitiesAI/finalreflection.html).*
 - <span class="tag tag-standard">Standard</span> **Course proposal / syllabus revision in a Claude Project.** Upload syllabus / proposal + your AI policy + one artifact + your `CLAUDE.md`. Iterate as a critical-reader conversation. Specifically check learning-outcome alignment and draft a 250-word public-facing summary.
-- <span class="tag tag-deep">Deep</span> **One CLI or Cowork session on a personal machine.** Optional. Install [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code), run one Brainstorm → Spec → Plan → Implementation cycle on a small project (could be your fall course site).
+- <span class="tag tag-deep">Deep</span> **One CLI session on a personal machine.** Optional. Install the [Claude Code CLI](https://code.claude.com/docs/en/quickstart), run one Brainstorm → Spec → Plan → Implementation cycle on a small project (could be your fall course site).
 
 ---
 
