@@ -21,6 +21,8 @@ By the end of the session, every participant will have a working Claude account 
 Streamed and recorded. Open to UCF faculty, graduate students, and the larger arts and humanities community.
 
 [Open the slide deck →]({{ '/slides/web/w01/' | relative_url }}){:.btn}
+
+[Read the session recap →](week-01-recap.md){:.btn}
 </div>
 
 ## What to Bring
