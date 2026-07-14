@@ -14,3 +14,6 @@ slides/_tools/.venv/
 # Slide notes / fix lists (working drafts, not published)
 *Slide*.txt
 *Slides.txt
+
+# Zoom workshop recordings drop-zone (recap source material; mp4s exceed GitHub limits)
+videos/
