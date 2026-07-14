@@ -118,6 +118,7 @@ These four anchor the series. You do not need to read them cover-to-cover — wo
 
 ## Stage 4 — Agentic Futures (Weeks 11–12)
 
+- <span class="tag tag-required">Required</span> <span class="tag tag-light">Light</span> Mollick, Ethan. ["The Twilight of the Chatbots."](https://www.oneusefulthing.org/p/the-twilight-of-the-chatbots) *One Useful Thing.* (Required for W11–W12.)
 - <span class="tag tag-light">Light</span> Underwood, Ted. ["The Marionette Theater of AI."](https://tedunderwood.com/2026/02/08/the-marionette-theater-of-ai/) *The Stone and the Shell*, February 8, 2026.
 - <span class="tag tag-light">Light</span> Cohen, Dan. ["AI and Libraries, Archives, and Museums, Loosely Coupled."](https://newsletter.dancohen.org) *Humane Ingenuity.*
 - <span class="tag tag-light">Light</span> Anthropic. ["Introduction to Model Context Protocol."](https://docs.anthropic.com/en/docs/build-with-claude/mcp) Anthropic Documentation.

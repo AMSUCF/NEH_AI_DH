@@ -106,9 +106,9 @@ Pick one. All three run in Claude Code (Desktop with Superpowers, or Web).
 
 ### Week 12 (async) — Course proposal / course update
 
-- <span class="tag tag-light">Light</span> **Final reflection (500 words).** What did you build, what surprised you, what will you carry into fall? *Source pattern: [HumanitiesAI/finalreflection](https://anastasiasalter.net/HumanitiesAI/finalreflection.html).*
-- <span class="tag tag-standard">Standard</span> **Course proposal / syllabus revision in a Claude Project.** Upload syllabus / proposal + your AI policy + one artifact + your `CLAUDE.md`. Iterate as a critical-reader conversation. Specifically check learning-outcome alignment and draft a 250-word public-facing summary.
-- <span class="tag tag-deep">Deep</span> **One CLI session on a personal machine.** Optional. Install the [Claude Code CLI](https://code.claude.com/docs/en/quickstart), run one Brainstorm → Spec → Plan → Implementation cycle on a small project (could be your fall course site).
+- <span class="tag tag-light">Light</span> **Final reflection (500 words).** What did you build, what surprised you, what will you carry into fall? Share on the Discord. *Source pattern: [HumanitiesAI/finalreflection](https://anastasiasalter.net/HumanitiesAI/finalreflection.html).*
+- <span class="tag tag-standard">Standard</span> **Course proposal / syllabus revision in a Claude Project.** Upload syllabus / proposal + your AI policy + one artifact + your `CLAUDE.md`. Iterate as a critical-reader conversation. Specifically check learning-outcome alignment and draft a 250-word public-facing summary. Share your course progress and plans on the Discord.
+- <span class="tag tag-deep">Deep</span> **One Cowork or Claude Code session.** Optional. Using either Cowork or Claude Code (Desktop, Web, or [CLI](https://code.claude.com/docs/en/quickstart)) as you prefer, run one Brainstorm → Spec → Plan → Implementation cycle on a small project (could be your fall course site).
 
 ---
 
@@ -121,4 +121,4 @@ Pick one. All three run in Claude Code (Desktop with Superpowers, or Web).
 | W5 (June 10) — Visual Analysis | An image set (5–10 images you have rights to). |
 | W7 (June 24) — Web Applications | A CV / syllabus *or* 5–15 images you have rights to. A free GitHub account. |
 | W9 (July 8) — Playful + Policy | A concept from your course. A draft AI policy paragraph. The W7 site URL. |
-| W11 (July 22) — Agentic Futures | All your artifacts (W7, W9, AI policy, Skill from W4). Optional: a personal laptop with Claude Code CLI (or Claude Code Desktop) and Ollama installed, and a Hugging Face account if you want to try fine-tuning. |
+| W11 (July 22) — Agentic Futures | A laptop. Optional: Claude Code CLI (or Claude Code Desktop) and Ollama installed on a personal machine, a Hugging Face account, and GitHub Desktop as the easiest on-ramp to the CLI. |

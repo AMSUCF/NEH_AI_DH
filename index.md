@@ -78,7 +78,7 @@ The full curated list is available on the [Readings](readings.md) page; the full
 
 **For Stage 4** (Workshop 6, weeks 11–12):
 
-- Optional: install [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) (or at least Claude Code Desktop) and [Ollama](https://ollama.com/) on a personal laptop before the session if you want to follow along, and make a free [Hugging Face account](https://huggingface.co/join) if you want to try fine-tuning or playing with models. The session itself is demo-driven.
+- Optional: install [Claude Code CLI](https://code.claude.com/docs/en/quickstart) (or at least Claude Code Desktop) and [Ollama](https://ollama.com/download) on a personal laptop before the session if you want to follow along, and make a free [Hugging Face account](https://huggingface.co/join) if you want to try fine-tuning or playing with models. The session itself is demo-driven.
 
 ## Weekly Modules
 

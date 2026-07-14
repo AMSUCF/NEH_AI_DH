@@ -44,9 +44,9 @@ Pick one. **All three run in Claude Code** — the point of the week is putting 
 ## What to Carry Into Workshop 6
 
 - Bring **everything you've built across the series**: your W7 ePortfolio URL, your W9 playful tool URL, your draft AI policy, your Skill from W4 (if you built one), your image gallery from W5.
-- If you have your own laptop, consider installing the [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) — or at least Claude Code Desktop — and [Ollama](https://ollama.com/) if you are interested in following along with the demos.
+- If you have your own laptop, consider installing the [Claude Code CLI](https://code.claude.com/docs/en/quickstart) — or at least Claude Code Desktop — and [Ollama](https://ollama.com/download) if you are interested in following along with the demos.
 - Make an account on [Hugging Face](https://huggingface.co/join) if you want to try fine-tuning or playing with models.
-- Workshop 6 is a tour, not a tutorial — but the demos will pull from *your* artifacts where useful. Have them findable.
+- Workshop 6 is a demo tour — follow along on your own device if you have one, and remember you can also try the tools later on the new CHDR Spark.
 
 ## Cross-references
 
