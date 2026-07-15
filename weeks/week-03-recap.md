@@ -48,6 +48,8 @@ The deeper worry is recursive, as that flood becomes the training data for the n
 
 ![Slide showing Matthew Kirschenbaum's Atlantic article Prepare for the Textpocalypse, with an illustration of a fiery comet descending toward an open book]({{ '/assets/recaps/w03/02-textpocalypse.jpg' | relative_url }})
 
+The labor thread ran darker still, with one participant framing AI as the endpoint of a long history of wanting labor without the will attached to it, and another connecting the moment to inversions of Marx. Salter answered by updating the syllabus on the spot, adding two just-published pieces to the next asynchronous readings: Simon Willison's notes on the new Vatican encyclical on AI, and Roopika Risam's new essay linking AI to histories of enslavement and exploitation, which they noted spoke directly to both comments. That an encyclical had taken over their entire Bluesky feed, Salter added, speaks to how hungry people are for public displays of expertise that take human conditions and labor seriously.
+
 The costs to the web itself got equal time: AI crawlers have repeatedly broken scholarly journal websites, AI search siphons readers past the ads that funded online journalism, and open-access publishing is caught in the middle. A participant who manages university IT servers reported having to block entire regions of the world because of scraping traffic, and noted that many institutional repositories are going dark in response, trading openness for survival. Salter tied it off with Cory Doctorow's coinage.
 
 > "What Cory Doctorow has called enshittification, truly one of the most useful frameworks of our time, because you can look at just about anything, from our medical system to our search engines, and see it in action."
