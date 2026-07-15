@@ -21,6 +21,8 @@ By the end of the session, every participant will have a live URL to either a de
 Streamed and recorded. Open to UCF faculty, graduate students, and the larger arts and humanities community.
 
 [Open the slide deck →]({{ '/slides/web/w07/' | relative_url }}){:.btn}
+
+[Read the session recap →](week-07-recap.md){:.btn}
 </div>
 
 ## What to Bring
