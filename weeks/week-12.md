@@ -16,7 +16,7 @@ The closing week. There is no in-person session.
 
 ## The Frame for This Week
 
-The series ends not with a flourish but with a course proposal — yours. Most of you came in with a syllabus that needed updating, a course you wanted to propose, or a unit you wanted to redesign. This week is for finishing that work, with whatever AI assistance is *useful* to you and *not replacing* the pedagogical labor you actually want to do.
+The series ends not with a flourish but with a course proposal — yours. Most of you came in with a syllabus that needed updating, a course you wanted to propose, or a unit you wanted to redesign. This week is for finishing that work, with whatever AI assistance is *useful* to you and *without replacing* the pedagogical labor you actually want to do.
 
 A useful sorting question, before you open Claude this week:
 
@@ -36,7 +36,7 @@ That third category is the one to watch.
 ## Exercise Menu
 
 - <span class="tag tag-light">Light</span> **Final reflection (500 words, ~30 min).** What did you build across the series, what surprised you, and what will you carry into your fall classroom? Share on the Discord. *Source pattern: [HumanitiesAI/finalreflection](https://anastasiasalter.net/HumanitiesAI/finalreflection.html).*
-- <span class="tag tag-standard">Standard</span> **Course proposal / syllabus revision with Claude Projects (~2–3 hr).** This is the headline exercise of the week. Open a fresh Claude Project. Upload: your existing syllabus (if revising) or a CFP and your draft proposal (if proposing); the AI policy you drafted in W9; one of the artifacts you built across the series; and your `CLAUDE.md` from W11. Then iterate on the proposal or syllabus inside the Project, with Claude as a critical reader. Specifically:
+- <span class="tag tag-standard">Standard</span> **Course proposal / syllabus revision with Claude Projects (~2–3 hr).** This is the headline exercise of the week. Open a fresh Claude Project. Upload: your existing syllabus (if revising) or your institution's course-proposal guidelines and your draft proposal (if proposing); the AI policy you drafted in W9; one of the artifacts you built across the series; and your `CLAUDE.md` from W11. Then iterate on the proposal or syllabus inside the Project, with Claude as a critical reader. Specifically:
   1. Ask Claude to identify three places your stated learning outcomes don't match the actual assignments. Decide which ones are real misalignments and which are Claude misreading.
   2. Ask Claude to suggest one assignment that would teach the same outcome with the AI policy you drafted.
   3. Ask Claude to draft a 250-word public-facing summary of the course for your department's website. Edit it heavily before you save it.
@@ -47,7 +47,7 @@ That third category is the one to watch.
 
 ## A Few Sentences About Sharing
 
-The NEH learning community continues beyond this twelve-week series. Workshop recordings, materials, and contributed artifacts will remain open at this site. Future cohorts will run during subsequent academic terms. **If you would like to contribute** a session, an exercise, a reading, or a syllabus revision back to the community, three options:
+The NEH learning community continues beyond this twelve-week series. Workshop materials, session recaps, and contributed artifacts will remain open at this site. Future cohorts will run during subsequent academic terms. **If you would like to contribute** a session, an exercise, a reading, or a syllabus revision back to the community, three options:
 
 - Post to [Humanities Commons](https://hcommons.org/) or GitHub Pages and link from your CV.
 - Open a public GitHub repo with a clear README and tag it for discoverability.
