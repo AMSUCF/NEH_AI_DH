@@ -19,6 +19,8 @@ workshop:
 Streamed and recorded. Open to UCF faculty, graduate students, and the larger arts and humanities community.
 
 [Open the slide deck →]({{ '/slides/web/w03/' | relative_url }}){:.btn}
+
+[Read the session recap →](week-03-recap.md){:.btn}
 </div>
 
 ## What to Bring
