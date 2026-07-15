@@ -19,6 +19,8 @@ workshop:
 Streamed and recorded. Open to UCF faculty, graduate students, and the larger arts and humanities community.
 
 [Open the slide deck →]({{ '/slides/web/w09/' | relative_url }}){:.btn}
+
+[Read the session recap →](week-09-recap.md){:.btn}
 </div>
 
 ## What to Bring
@@ -43,7 +45,7 @@ Optional:
 
 ## The Session
 
-The workshop runs in three movements. **First, building tools for research and pedagogy.** Sarah Norris opens with a demo on finding data, and Mel Stanfill walks through her research scrapers — an AO3 tag crawler built iteratively with an AI coding assistant, from the first scraping prompt through debugging, co-occurrence networks, and heatmaps, with the versioned file tree as a record of the process. These are the model for what we build next: small, open, single-purpose tools.
+The workshop runs in three movements. **First, building tools for research and pedagogy.** Sarah Norris opens with a demo on finding data, and Mel Stanfill walks through their research scrapers — an AO3 tag crawler built iteratively with an AI coding assistant, from the first scraping prompt through debugging, co-occurrence networks, and heatmaps, with the versioned file tree as a record of the process. These are the model for what we build next: small, open, single-purpose tools.
 
 **Then we build games and course resources.** Using Claude Code Desktop with the Superpowers plugin and planning mode, each of us makes a small, strange, course-specific artifact — a clickable timeline, a game, a tool your students would actually use, or a generator — and deploys it to GitHub Pages. We work in planning mode throughout: describing what we want, watching Claude ask clarifying questions, and overriding what it gets wrong about our disciplines before any code is written.
 
