@@ -46,7 +46,7 @@ If anything breaks on either track — a build error, a deploy failure, a plugin
 
 - <span class="tag tag-required">Required</span> <span class="tag tag-standard">Standard</span> Willison, Simon. ["Beyond Vibe Coding."](https://simonwillison.net/2025/Sep/4/beyond-vibe-coding/) September 4, 2025. (~30 min) When the chat-driven model breaks down, and what to do instead — the frame for moving from "vibe" to a real, repeatable build process, which is exactly the jump these four projects ask for.
 - <span class="tag tag-required">Required</span> <span class="tag tag-light">Light</span> Farrell, Henry. ["After Software Eats the World, What Comes Out the Other End?"](https://www.programmablemutter.com/p/after-software-eats-the-world-what) October 3, 2024. (~25 min) Helpful framing for what you just did in W7 and are extending now: what changes when building software gets this cheap.
-- <span class="tag tag-light">Light</span> Cohen, Dan. ["The Index and the Vector."](https://newsletter.dancohen.org) *Humane Ingenuity.* (~15 min) The DH-specific framing of what these tools change for archives and reference work.
+- <span class="tag tag-light">Light</span> Cohen, Dan. ["The Index and the Vector."](https://newsletter.dancohen.org/archive/the-index-and-the-vector) *Humane Ingenuity.* (~15 min) The DH-specific framing of what these tools change for archives and reference work.
 - <span class="tag tag-standard">Standard</span> Littman, *Code to Joy*, Chapters 2–3 (The What of Programming; Sequencing Commands). (~90 min) An accessible introduction to programming concepts; a useful counterpoint to vibe-coding hype, and good ground before the Desktop projects.
 
 ## Project Menu — Pick One

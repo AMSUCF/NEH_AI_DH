@@ -120,7 +120,7 @@ These four anchor the series. You do not need to read them cover-to-cover — wo
 
 - <span class="tag tag-required">Required</span> <span class="tag tag-light">Light</span> Mollick, Ethan. ["The Twilight of the Chatbots."](https://www.oneusefulthing.org/p/the-twilight-of-the-chatbots) *One Useful Thing.* (Required for W11–W12.)
 - <span class="tag tag-light">Light</span> Underwood, Ted. ["The Marionette Theater of AI."](https://tedunderwood.com/2026/02/08/the-marionette-theater-of-ai/) *The Stone and the Shell*, February 8, 2026.
-- <span class="tag tag-light">Light</span> Cohen, Dan. ["AI and Libraries, Archives, and Museums, Loosely Coupled."](https://newsletter.dancohen.org) *Humane Ingenuity.*
+- <span class="tag tag-light">Light</span> Cohen, Dan. ["AI and Libraries, Archives, and Museums, Loosely Coupled."](https://newsletter.dancohen.org/archive/ai-and-libraries-archives-and-museums-loosely-coupled) *Humane Ingenuity.*
 - <span class="tag tag-light">Light</span> Anthropic. ["Introduction to Model Context Protocol."](https://docs.anthropic.com/en/docs/build-with-claude/mcp) Anthropic Documentation.
 - <span class="tag tag-light">Light</span> Vincent, Jesse. ["Superpowers: How I'm Using Coding Agents in October 2025."](https://blog.fsck.com/2025/10/09/superpowers/) *blog.fsck.com.*
 - <span class="tag tag-light">Light</span> Mollick, Ethan. ["On Holding Back the Strange AI Tide."](https://www.oneusefulthing.org/p/on-holding-back-the-strange-ai-tide) *One Useful Thing.*
