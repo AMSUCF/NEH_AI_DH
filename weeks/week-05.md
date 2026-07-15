@@ -21,6 +21,8 @@ By the end of the session, every participant will have an Artifact gallery from 
 Streamed and recorded. Open to UCF faculty, graduate students, and the larger arts and humanities community.
 
 [Open the slide deck →]({{ '/slides/web/w05/' | relative_url }}){:.btn}
+
+[Read the session recap →](week-05-recap.md){:.btn}
 </div>
 
 ## What to Bring
