@@ -36,7 +36,7 @@ The bias chain began where Salter said they always like to begin pedagogically, 
 
 > "Pedagogically, I always like to start with Safiya Noble and the search engine."
 
-From there the group requested a photorealistic professor across ChatGPT and Gemini and watched the tools converge on the same figure. Participants ran the prompts on their own accounts and reported the results live in chat: a pipe-smoking professor, a "Soviet general" look, a lecture-hall white man, then a white woman, then academic regalia, and one participant's wry nod to a real "professor of African Studies" as an echo of what the tools produced. Salter then demonstrated the "make it more professor" iteration trick, pushing the same image further and further until it drifted into a wizardly Dumbledore-Gandalf figure. The value of the exercise, they said, is that it exposes the model's underlying idea of the category.
+From there the group requested a photorealistic professor across ChatGPT and Gemini and watched the tools converge on the same figure. Participants ran the prompts on their own accounts and reported the results live in chat: a pipe-smoking professor, a Soviet-general look, a lecture-hall white man, then a white woman, then academic regalia, and one participant's wry nod to a real professor of African Studies as an echo of what the tools produced. Salter then demonstrated the "make it more professor" iteration trick, pushing the same image further and further until it drifted into a wizardly Dumbledore-Gandalf figure. The value of the exercise, they said, is that it exposes the model's underlying idea of the category.
 
 > "You're pushing at the actual data structure underlying it. You're pushing it to make its definition of professor more visible."
 
@@ -190,7 +190,7 @@ One example was fixing proper nouns in course-video captions, where Cowork pulls
 
 > "It actually pulls the slides from the video, for names, as well as anything it needs from the syllabus."
 
-(The demo frame for this beat was left out of this recap for privacy, since the file sidebar showed a colleague's name.) Participants offered their own: a technical-theatre portfolio of 25 to 35 images sorted correctly by production with generated alt-text and captions, and curatorial alt-text that came back "pretty on point." The honest caution came with the recipe-transcription example, where the model invented content for the oldest, hardest-to-read pages. On those archival gaps, Salter named the risk plainly, echoing the week's note that AI accelerates a draft while human curation remains the work.
+(The demo frame for this beat was left out of this recap for privacy, since the file sidebar showed a colleague's name.) Participants offered their own: a technical-theatre portfolio of 25 to 35 images sorted correctly by production with generated alt-text and captions, and curatorial alt-text that the participant judged largely on point. The honest caution came with the recipe-transcription example, where the model invented content for the oldest, hardest-to-read pages. On those archival gaps, Salter named the risk plainly, echoing the week's note that AI accelerates a draft while human curation remains the work.
 
 > "Those sorts of gaps are opportunities for invention."
 
@@ -238,4 +238,4 @@ Missed the session, or want to run the workflow on your own images? The Week 5 p
 
 ---
 
-*Quotes are drawn from the session transcript, lightly edited to remove filler words and false starts, and to correct obvious automatic-captioning errors (for example "Sophia Noble" → Safiya Noble, "clawed code" → Claude Code, "cloth" → Claude, and "the other mom" → the other model) to the words the speaker actually said. Participant comments are paraphrased without attribution.*
+*Quotes are drawn from the session transcript, lightly edited to remove filler words and false starts, and to correct obvious automatic-captioning errors (for example "Sophia Noble" → Safiya Noble, "clawed code" → Claude Code, "cloth" and "the cloud" → Claude, "and its outputs" → in its outputs, and "the other mom" → the other model) to the words the speaker actually said. Participant comments are paraphrased without attribution.*
