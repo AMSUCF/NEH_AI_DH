@@ -21,6 +21,8 @@ We're going to take a tour through the Claude CLI, MCP, Hugging Face, and Ollama
 Streamed and recorded. Open to UCF faculty, graduate students, and the larger arts and humanities community. This is the last in-person session of the series, so we will reserve time for closing Q&A.
 
 [Open the slide deck →]({{ '/slides/web/w11/' | relative_url }}){:.btn}
+
+[Read the session recap →](week-11-recap.md){:.btn}
 </div>
 
 ## A Note on Installation This Week
