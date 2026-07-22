@@ -161,6 +161,15 @@ a:hover, a:focus {
 }
 .page-content pre code { background: transparent; padding: 0; color: inherit; }
 
+/* Images — screenshots in recaps and elsewhere stay inside the column
+   and never exceed 80% of the viewport width */
+.page-content img {
+  display: block;
+  max-width: min(100%, 80vw);
+  height: auto;
+  margin: 1.2rem 0;
+}
+
 /* Blockquote */
 .page-content blockquote {
   border-left: 4px solid var(--coral);
